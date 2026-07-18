@@ -1,0 +1,45 @@
+name: build
+
+on:
+  push:
+    tags: ['v*']
+    branches: [master, main]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: windows-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build proxy
+        shell: cmd
+        run: build.bat release --name ThiefGold
+
+      - name: Package drop-in zip
+        shell: pwsh
+        run: |
+          New-Item -ItemType Directory dist | Out-Null
+          Copy-Item build/bin/release/d3d9.dll dist/
+          Copy-Item assets/remix-comp-proxy.ini dist/
+          Copy-Item assets/rtx.conf dist/
+          Copy-Item assets/bridge.conf dist/
+          Copy-Item assets/INSTALL.txt dist/
+          $name = if ('${{ github.ref_type }}' -eq 'tag') { '${{ github.ref_name }}' } else { '${{ github.sha }}'.Substring(0, 7) }
+          Compress-Archive -Path dist/* -DestinationPath "ThiefGold-RTX-Remix-$name.zip"
+
+      - name: Upload CI artifact
+        if: github.ref_type != 'tag'
+        uses: actions/upload-artifact@v4
+        with:
+          name: ThiefGold-RTX-Remix
+          path: '*.zip'
+
+      - name: Publish release
+        if: github.ref_type == 'tag'
+        shell: pwsh
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh release create '${{ github.ref_name }}' (Get-Item *.zip).Name --title 'Thief Gold RTX Remix ${{ github.ref_name }}' --generate-notes

@@ -1,0 +1,28 @@
+Thief Gold RTX Remix proxy — drop-in install
+============================================
+
+Prerequisites
+1. Thief Gold (Steam) patched with TFix Lite (NewDark 1.27).
+   Do NOT run Steam "Verify integrity of game files" afterwards — it reverts NewDark.
+2. RTX Remix runtime 1.5.2+ (d3d9_remix.dll + .trex folder) from
+   https://github.com/NVIDIAGameWorks/rtx-remix/releases
+   Copy d3d9_remix.dll and the .trex folder into the game directory.
+3. An RTX GPU (Remix requirement).
+
+Install (files from this zip -> game directory, e.g.
+F:\SteamLibrary\steamapps\common\thief_gold)
+  d3d9.dll               the proxy (this project)
+  remix-comp-proxy.ini   proxy configuration
+  rtx.conf               Remix settings tuned for Thief (HUD, exposure)
+  bridge.conf            enables the Remix API (proxy dies with exit code 11 without it)
+
+Game setup (cam_ext.cfg in the game directory)
+  - force_windowed (windowed mode recommended, e.g. 1920x1080)
+  - disable MSAA, alpha-to-coverage, and distortion
+
+Notes
+  - Load a mission; a console window shows the proxy log.
+  - F4 toggles the debug overlay.
+  - Logs land in the game dir under rtx_comp\ (console.log, diagnostics.log).
+  - PITFALL: "Save Settings" in the Remix menu writes user.conf and can DELETE
+    rtx.conf. If HUD/exposure break after saving, restore rtx.conf from this zip.
