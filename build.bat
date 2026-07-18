@@ -42,8 +42,15 @@ for %%p in (
 ) do (
     if exist %%p set "VCVARS=%%~p"
 )
+:: Fall back to vswhere for other editions/versions (e.g. CI runners)
 if "%VCVARS%"=="" (
-    echo ERROR: Visual Studio 2022 not found
+    set "VSWHERE=%ProgramFiles(x86)%\Microsoft Visual Studio\Installer\vswhere.exe"
+    if exist "!VSWHERE!" (
+        for /f "usebackq tokens=*" %%i in (`"!VSWHERE!" -latest -products * -requires Microsoft.VisualStudio.Component.VC.Tools.x86.x64 -find VC\Auxiliary\Build\vcvarsall.bat`) do set "VCVARS=%%i"
+    )
+)
+if "%VCVARS%"=="" (
+    echo ERROR: Visual Studio with C++ tools not found
     exit /b 1
 )
 call "%VCVARS%" x86 >nul 2>&1
