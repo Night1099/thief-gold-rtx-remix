@@ -1,9 +1,11 @@
 # ThiefGold RTX Remix Port — Session Handoff
 
-Last updated: 2026-07-18. Read this first, then `PHASE4_LIGHTING_HUD.md`
-(lighting/HUD architecture + pitfalls), `findings.md` (detailed technical log)
-and `kb.h` (addresses/structs). Self-contained remix-comp-proxy project under
-`patches/ThiefGold/`.
+Last updated: 2026-07-18 (camera bob/sway fix + standalone repo/CI). Read this
+first, then `PHASE4_LIGHTING_HUD.md` (lighting/HUD architecture + pitfalls),
+`findings.md` (detailed technical log) and `kb.h` (addresses/structs).
+Self-contained remix-comp-proxy project under `patches/ThiefGold/`, which is
+also its own git repo published at
+https://github.com/Night1099/thief-gold-rtx-remix (see item 10).
 
 ## What this project is
 
@@ -64,6 +66,19 @@ Remix can path-trace it.
    (~15° mid-turn). Now reads the live render camera (see addresses below);
    fix live-verified in-game. Side benefits: correct standing eye height
    (+2.6) and crouch height in the reconstruction.
+10. **Standalone public repo + CI releases** (2026-07-18): `patches/ThiefGold/`
+    is `git init`-ed as its own repo (the parent Vibe-Reverse-Engineering repo
+    ignores `patches/`) and published to
+    https://github.com/Night1099/thief-gold-rtx-remix (MIT). A GitHub Actions
+    workflow (`.github/workflows/release.yml`) builds `d3d9.dll` on every push
+    and, on `v*` tags, publishes a drop-in release zip (`d3d9.dll`,
+    `remix-comp-proxy.ini`, `rtx.conf`, `bridge.conf`, `INSTALL.txt` — all
+    sourced from `assets/`). Cutting a release = `git tag v1.x.x && git push
+    origin v1.x.x`. v1.0.0 is live. The whitelist `.gitignore` excludes
+    backups/, ghidra/, traces/, index.db, *.pdb, and `assets/.trex/` (NVIDIA
+    runtime — never commit). `build.bat` falls back to vswhere when the
+    hardcoded VS 2022 paths miss (CI runners, newer VS). Commit + push + tag
+    here after each verified working change.
 
 ## Build / deploy / test
 
@@ -95,7 +110,12 @@ line mid-mission = the fingerprint rebuild self-healing a mid-load snapshot),
 - `src/comp/game/worldrep.hpp` / `game.{hpp,cpp}` — structs, camera, `rva()`.
 - `src/shared/common/remix_api.{hpp,cpp}` — Remix bridge (CreateLight etc.).
 
-## Verified addresses (static VAs, image base 0x400000; runtime +0x480000)
+## Verified addresses (static VAs, image base 0x400000)
+
+**Runtime base varies per launch** — observed both +0x480000 and 0xE90000
+(+0xA90000) on different days. Always run `livetools modules --filter thief`
+after attaching and rebase live addresses from the actual base; never assume
+the offset from a previous session.
 
 - **Camera — use the LIVE render camera**: pos `0xC19AC0` (float3, z-up,
   written per frame by `WRCacheRenderCam 0x4CDC40`, includes head-bob + crouch
@@ -144,10 +164,10 @@ line mid-mission = the fingerprint rebuild self-healing a mid-load snapshot),
    color linearly — subdivision if smearing shows.
 6. Lower priority: weapon viewmodel via Remix view-model treatment,
    DrawPrimitiveUP perf, object-path hash stability.
-7. **Housekeeping**: today's work (SkipTexIds, mid-load fingerprint rebuild,
-   ForceSpot, lightmap attenuation) is uncommitted — commit the working state.
-   Stray note-files litter the repo root (`"g_wrCells @ ..."` etc.) — ask the
-   user before deleting.
+7. **Housekeeping**: patch-side work is now committed in the standalone repo
+   (item 10) — keep committing there after each verified change. Still
+   pending in the PARENT Vibe-Reverse-Engineering repo: stray note-files in
+   the repo root (`"g_wrCells @ ..."` etc.) — ask the user before deleting.
 
 ## Working method notes
 
@@ -160,3 +180,8 @@ line mid-mission = the fingerprint rebuild self-healing a mid-load snapshot),
 - The user launches/closes the game and reports what they see; drive tests
   through them. Screenshots via `CopyFromScreen` on the (windowed) game work
   well for visual verification.
+- `livetools gamectl` posted keys drive movement fine (held W walks, held
+  LEFT turns — great for sampling memory while the player moves), but some
+  action binds don't register via posted messages (crouch didn't; the user's
+  crouch bind is F). Ask the user to perform those inputs instead. Sim +
+  camera globals freeze whenever the game window loses focus.
