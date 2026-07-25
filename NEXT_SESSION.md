@@ -1,7 +1,8 @@
 # Next Session
 
-Updated 2026-07-25 (PM): FFP light mode verified and released as v1.2.0 —
-see the closed section below. Read `HANDOFF.md` (project state) first, then
+Updated 2026-07-25 (PM): FFP light mode verified and shipped — current
+release is v0.0.1 "Fixed Remix captures and no more API needed" (history
+reset; v1.x deleted). See the closed sections below. Read `HANDOFF.md` (project state) first, then
 `PHASE4_LIGHTING_HUD.md` (overlay/injection architecture) if unfamiliar.
 
 ## Closed this session — drawn weapon no longer breaks path tracing
@@ -31,7 +32,7 @@ set** — `unproject::flush_overlay_ui` is the reference implementation.
 
 Verified in-game 2026-07-25 (`Mode=ffp`, mission lighting matches api path)
 and in a capture: `captures/capture_2026-07-25_13-49-14.usd` references 362
-`lights/light_*.usd` sublayer files. Released as v1.2.0 (commit f4376cc).
+`lights/light_*.usd` sublayer files (fix commit f4376cc).
 Note: light prims live in the capture's `lights/` subfolder — a grep of the
 top-level .usd alone finds only the sublayer reference.
 
