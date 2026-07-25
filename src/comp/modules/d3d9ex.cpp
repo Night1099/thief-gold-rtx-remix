@@ -157,6 +157,10 @@ namespace comp
 		game::patch_render_device_globals(this, m_pIDirect3DDevice9);
 		if (auto* u = unproject::get()) u->on_present();
 
+		// The ray-traced scene is injected once per frame, not once per scene:
+		// a drawn weapon adds off-screen passes that each open their own scene.
+		m_scene_submitted = false;
+
 		auto hr = m_pIDirect3DDevice9->Present(pSourceRect, pDestRect, hDestWindowOverride, pDirtyRegion);
 		if (auto* t = tracer::get()) t->on_present();
 		return hr;
@@ -302,16 +306,24 @@ namespace comp
 
 	void d3d9ex::D3D9Device::submit_scene_to_remix()
 	{
+		// Latched for the whole frame, not per scene: equipping a weapon makes
+		// the engine render extra off-screen passes (item icon) that each open
+		// their own BeginScene/EndScene. Submitting the worldrep and light set
+		// into those render targets drops the frame to raster. The main scene
+		// always submits first — at its z-only overlay clear, or at its
+		// EndScene — so the later passes find the latch already set.
 		if (m_scene_submitted || shared::globals::imgui_is_rendering) {
 			return;
 		}
 		m_scene_submitted = true;
 
+		// Lights first: FFP light state must be set before the worldrep draws
+		// so the runtime flushes it with this frame's geometry.
+		if (engine_lights::is_initialized()) {
+			engine_lights::get()->submit(m_pIDirect3DDevice9);
+		}
 		if (worldrep_render::is_initialized()) {
 			worldrep_render::get()->submit(m_pIDirect3DDevice9);
-		}
-		if (engine_lights::is_initialized()) {
-			engine_lights::get()->submit();
 		}
 	}
 
@@ -319,7 +331,6 @@ namespace comp
 	{
 		TRACE_IF_ACTIVE_NOARGS(trace_BeginScene);
 		shared::common::ffp_state::get().on_begin_scene();
-		m_scene_submitted = false;
 		if (auto* u = unproject::get()) u->on_scene_begin();
 		if (auto* d = diagnostics::get()) d->on_begin_scene(shared::common::ffp_state::get().scene_count());
 

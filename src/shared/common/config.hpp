@@ -68,6 +68,11 @@ namespace shared::common
 		struct lights_settings
 		{
 			bool enabled = true;        // mirror engine lights into Remix as sphere lights
+			// Submission path: false = Remix API (CreateLight/DrawLightInstance),
+			// true = D3D9 fixed-function SetLight/LightEnable. Only FFP lights are
+			// written into Remix captures and matched against toolkit light
+			// replacements; API lights are renderer-only.
+			bool ffp = false;
 			float radiance_scale = 20.0f; // engine color units (~0..5) -> Remix radiance multiplier
 			float emitter_radius = 0.4f; // sphere-light emitter size, engine units
 			bool skip_infinite = false;  // skip radius==0 records (radius 0 is common on normal lights — leave off)

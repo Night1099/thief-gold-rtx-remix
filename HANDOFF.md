@@ -1,6 +1,11 @@
 # ThiefGold RTX Remix Port — Session Handoff
 
-Last updated: 2026-07-18 (camera bob/sway fix + standalone repo/CI). Read this
+> **2026-07-25: the drawn-weapon raster fallback is FIXED and verified in-game.**
+> Root cause was duplicate scene submission across the engine's off-screen
+> passes, not the weapon's draw calls — see "Drawn weapon dropped the frame to
+> raster" below. `NEXT_SESSION.md` covers what is still open.
+
+Last updated: 2026-07-25 (drawn-weapon raster fallback). Read this
 first, then `PHASE4_LIGHTING_HUD.md` (lighting/HUD architecture + pitfalls),
 `findings.md` (detailed technical log) and `kb.h` (addresses/structs).
 Self-contained remix-comp-proxy project under `patches/ThiefGold/`, which is
@@ -57,8 +62,31 @@ Remix can path-trace it.
    log's "Buckets (texId:tris)" line lists ids). Sky rendering itself is
    Remix-side (`rtx.conf`).
 8. Objects (characters/items) still use per-frame `unproject` reconstruction
-   (expected hash churn; later phase). Weapon viewmodel renders flat as part of
-   the overlay pass (vanilla look).
+   (expected hash churn; later phase). The first-person weapon passes straight
+   through as ordinary main-scene geometry — no special handling.
+8a. **Drawn weapon dropped the frame to raster — SOLVED** (2026-07-25,
+   verified in-game). Drawing the sword/bow knocked the whole frame out of path
+   tracing until it was holstered. Root cause: equipping a weapon makes NewDark
+   render two **extra off-screen passes** (item icon — `SetRenderTarget` to a
+   texture, `ColorFill`, one of them with **no depth surface**), each wrapped in
+   its own `BeginScene`/`EndScene`. `submit_scene_to_remix()` latched
+   per-*scene* (reset at `BeginScene`), so a weapon-out frame submitted the
+   full worldrep + entire light set **three times** — twice into an off-screen
+   surface. Remix fell back to raster. Fix: the latch resets at `Present`
+   instead, so the scene is injected exactly once per frame; the main scene
+   always submits first (at its z-only overlay clear, or its `EndScene`) and
+   the off-screen passes find the latch set. One-line-scale change in
+   `d3d9ex.cpp`.
+   **The weapon's own draw calls were never involved** — the frame is fine with
+   them passing through untouched. Two earlier fixes built on the opposite
+   premise (that the weapon's draws exposed a second perspective camera) were
+   removed; suppressing those draws entirely changed nothing, which is what
+   ruled the theory out. Evidence: paired tracer captures holstered vs drawn,
+   `captures/dxtrace_20260725_031448.jsonl` (1 scene/frame) and
+   `dxtrace_20260725_031526.jsonl` (3 scenes, +2 `SetRenderTarget`,
+   +2 `SetDepthStencilSurface`, +2 `ColorFill`).
+   **Do not restore a per-scene submission latch** — Thief runs multiple scenes
+   per frame whenever a weapon is equipped.
 9. **Camera bob/sway solved** (2026-07-18): unprojected characters used to bob
    while walking and sway during mouse-look. Root cause: `read_camera()` read
    the engine's motion-detection snapshot (`0x8CD0F4`), which excludes the

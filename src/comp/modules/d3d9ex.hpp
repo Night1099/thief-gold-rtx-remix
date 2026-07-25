@@ -141,7 +141,7 @@ namespace comp
 			void submit_scene_to_remix();
 
 			IDirect3DDevice9 *m_pIDirect3DDevice9;
-			bool m_scene_submitted = false; // per-scene latch, reset at BeginScene
+			bool m_scene_submitted = false; // per-frame latch, reset at Present
 		};
 
 	public:

@@ -4,451 +4,451 @@
 @ 0x408F00 crt_xmatch_006108A0;
 
 // [sigdb: byte, 0.85] crt
-@ 0x40B5B0 crt_xmatch_006108A0;
+@ 0x40B5B0 crt_xmatch_006108A0_40B5B0;
 
 // [sigdb: byte, 0.85] crt
-@ 0x431260 crt_xmatch_006108A0;
+@ 0x431260 crt_xmatch_006108A0_431260;
 
 // [sigdb: byte, 0.85] crt
-@ 0x431930 crt_xmatch_006108A0;
+@ 0x431930 crt_xmatch_006108A0_431930;
 
 // [sigdb: byte, 0.85] crt
-@ 0x43DE40 crt_xmatch_006108A0;
+@ 0x43DE40 crt_xmatch_006108A0_43DE40;
 
 // [sigdb: byte, 0.85] crt
-@ 0x446B80 crt_xmatch_006108A0;
+@ 0x446B80 crt_xmatch_006108A0_446B80;
 
 // [sigdb: byte, 0.85] crt
-@ 0x460C00 crt_xmatch_006108A0;
+@ 0x460C00 crt_xmatch_006108A0_460C00;
 
 // [sigdb: byte, 0.85] crt
-@ 0x4616B0 crt_xmatch_006108A0;
+@ 0x4616B0 crt_xmatch_006108A0_4616B0;
 
 // [sigdb: byte, 0.85] crt
-@ 0x4616F0 crt_xmatch_006108A0;
+@ 0x4616F0 crt_xmatch_006108A0_4616F0;
 
 // [sigdb: byte, 0.85] crt
-@ 0x464970 crt_xmatch_006108A0;
+@ 0x464970 crt_xmatch_006108A0_464970;
 
 // [sigdb: byte, 0.85] crt
-@ 0x4649B0 crt_xmatch_006108A0;
+@ 0x4649B0 crt_xmatch_006108A0_4649B0;
 
 // [sigdb: byte, 0.85] crt
-@ 0x4649F0 crt_xmatch_006108A0;
+@ 0x4649F0 crt_xmatch_006108A0_4649F0;
 
 // [sigdb: byte, 0.85] crt
-@ 0x464A30 crt_xmatch_006108A0;
+@ 0x464A30 crt_xmatch_006108A0_464A30;
 
 // [sigdb: byte, 0.85] crt
-@ 0x464A70 crt_xmatch_006108A0;
+@ 0x464A70 crt_xmatch_006108A0_464A70;
 
 // [sigdb: byte, 0.85] crt
-@ 0x466810 crt_xmatch_006108A0;
+@ 0x466810 crt_xmatch_006108A0_466810;
 
 // [sigdb: byte, 0.85] crt
-@ 0x467CD0 crt_xmatch_006108A0;
+@ 0x467CD0 crt_xmatch_006108A0_467CD0;
 
 // [sigdb: byte, 0.85] crt
-@ 0x474080 crt_xmatch_006108A0;
+@ 0x474080 crt_xmatch_006108A0_474080;
 
 // [sigdb: byte, 0.85] crt
-@ 0x481AA0 crt_xmatch_006108A0;
+@ 0x481AA0 crt_xmatch_006108A0_481AA0;
 
 // [sigdb: byte, 0.85] crt
-@ 0x4824F0 crt_xmatch_006108A0;
+@ 0x4824F0 crt_xmatch_006108A0_4824F0;
 
 // [sigdb: byte, 0.85] crt
-@ 0x4890B0 crt_xmatch_006108A0;
+@ 0x4890B0 crt_xmatch_006108A0_4890B0;
 
 // [sigdb: byte, 0.85] crt
-@ 0x48F110 crt_xmatch_006108A0;
+@ 0x48F110 crt_xmatch_006108A0_48F110;
 
 // [sigdb: byte, 0.85] crt
-@ 0x48F150 crt_xmatch_006108A0;
+@ 0x48F150 crt_xmatch_006108A0_48F150;
 
 // [sigdb: byte, 0.85] crt
-@ 0x48F190 crt_xmatch_006108A0;
+@ 0x48F190 crt_xmatch_006108A0_48F190;
 
 // [sigdb: byte, 0.85] crt
-@ 0x495380 crt_xmatch_006108A0;
+@ 0x495380 crt_xmatch_006108A0_495380;
 
 // [sigdb: byte, 0.85] crt
-@ 0x498980 crt_xmatch_006108A0;
+@ 0x498980 crt_xmatch_006108A0_498980;
 
 // [sigdb: byte, 0.85] crt
-@ 0x49E2B0 crt_xmatch_006108A0;
+@ 0x49E2B0 crt_xmatch_006108A0_49E2B0;
 
 // [sigdb: byte, 0.85] crt
-@ 0x49F100 crt_xmatch_006108A0;
+@ 0x49F100 crt_xmatch_006108A0_49F100;
 
 // [sigdb: byte, 0.85] crt
-@ 0x4A1950 crt_xmatch_006108A0;
+@ 0x4A1950 crt_xmatch_006108A0_4A1950;
 
 // [sigdb: byte, 0.85] crt
-@ 0x4A1990 crt_xmatch_006108A0;
+@ 0x4A1990 crt_xmatch_006108A0_4A1990;
 
 // [sigdb: byte, 0.85] crt
-@ 0x4A3510 crt_xmatch_006108A0;
+@ 0x4A3510 crt_xmatch_006108A0_4A3510;
 
 // [sigdb: byte, 0.85] crt
-@ 0x4A4A30 crt_xmatch_006108A0;
+@ 0x4A4A30 crt_xmatch_006108A0_4A4A30;
 
 // [sigdb: byte, 0.85] crt
-@ 0x4B0CC0 crt_xmatch_006108A0;
+@ 0x4B0CC0 crt_xmatch_006108A0_4B0CC0;
 
 // [sigdb: byte, 0.85] crt
-@ 0x4B0D20 crt_xmatch_006108A0;
+@ 0x4B0D20 crt_xmatch_006108A0_4B0D20;
 
 // [sigdb: byte, 0.85] crt
-@ 0x4B0D60 crt_xmatch_006108A0;
+@ 0x4B0D60 crt_xmatch_006108A0_4B0D60;
 
 // [sigdb: byte, 0.85] crt
-@ 0x4B1AF0 crt_xmatch_006108A0;
+@ 0x4B1AF0 crt_xmatch_006108A0_4B1AF0;
 
 // [sigdb: byte, 0.85] crt
-@ 0x4B2430 crt_xmatch_006108A0;
+@ 0x4B2430 crt_xmatch_006108A0_4B2430;
 
 // [sigdb: byte, 0.85] crt
-@ 0x4B6FA0 crt_xmatch_006108A0;
+@ 0x4B6FA0 crt_xmatch_006108A0_4B6FA0;
 
 // [sigdb: byte, 0.85] crt
-@ 0x4B6FE0 crt_xmatch_006108A0;
+@ 0x4B6FE0 crt_xmatch_006108A0_4B6FE0;
 
 // [sigdb: byte, 0.85] crt
-@ 0x4B7020 crt_xmatch_006108A0;
+@ 0x4B7020 crt_xmatch_006108A0_4B7020;
 
 // [sigdb: byte, 0.85] crt
-@ 0x4B7060 crt_xmatch_006108A0;
+@ 0x4B7060 crt_xmatch_006108A0_4B7060;
 
 // [sigdb: byte, 0.85] crt
-@ 0x4B70A0 crt_xmatch_006108A0;
+@ 0x4B70A0 crt_xmatch_006108A0_4B70A0;
 
 // [sigdb: byte, 0.85] crt
-@ 0x4B70E0 crt_xmatch_006108A0;
+@ 0x4B70E0 crt_xmatch_006108A0_4B70E0;
 
 // [sigdb: byte, 0.85] crt
-@ 0x4B7140 crt_xmatch_006108A0;
+@ 0x4B7140 crt_xmatch_006108A0_4B7140;
 
 // [sigdb: byte, 0.85] crt
-@ 0x4B71E0 crt_xmatch_006108A0;
+@ 0x4B71E0 crt_xmatch_006108A0_4B71E0;
 
 // [sigdb: byte, 0.85] crt
-@ 0x4B7240 crt_xmatch_006108A0;
+@ 0x4B7240 crt_xmatch_006108A0_4B7240;
 
 // [sigdb: byte, 0.85] crt
-@ 0x4B7280 crt_xmatch_006108A0;
+@ 0x4B7280 crt_xmatch_006108A0_4B7280;
 
 // [sigdb: byte, 0.85] crt
-@ 0x4B72E0 crt_xmatch_006108A0;
+@ 0x4B72E0 crt_xmatch_006108A0_4B72E0;
 
 // [sigdb: byte, 0.85] crt
-@ 0x4B7320 crt_xmatch_006108A0;
+@ 0x4B7320 crt_xmatch_006108A0_4B7320;
 
 // [sigdb: byte, 0.85] crt
-@ 0x4B7380 crt_xmatch_006108A0;
+@ 0x4B7380 crt_xmatch_006108A0_4B7380;
 
 // [sigdb: byte, 0.85] crt
-@ 0x4B9930 crt_xmatch_006108A0;
+@ 0x4B9930 crt_xmatch_006108A0_4B9930;
 
 // [sigdb: byte, 0.85] crt
-@ 0x4B9990 crt_xmatch_006108A0;
+@ 0x4B9990 crt_xmatch_006108A0_4B9990;
 
 // [sigdb: byte, 0.85] crt
-@ 0x4B99D0 crt_xmatch_006108A0;
+@ 0x4B99D0 crt_xmatch_006108A0_4B99D0;
 
 // [sigdb: byte, 0.85] crt
-@ 0x4BC680 crt_xmatch_006108A0;
+@ 0x4BC680 crt_xmatch_006108A0_4BC680;
 
 // [sigdb: byte, 0.85] crt
-@ 0x4BC6C0 crt_xmatch_006108A0;
+@ 0x4BC6C0 crt_xmatch_006108A0_4BC6C0;
 
 // [sigdb: byte, 0.85] crt
-@ 0x4BC700 crt_xmatch_006108A0;
+@ 0x4BC700 crt_xmatch_006108A0_4BC700;
 
 // [sigdb: byte, 0.85] crt
-@ 0x4BC740 crt_xmatch_006108A0;
+@ 0x4BC740 crt_xmatch_006108A0_4BC740;
 
 // [sigdb: byte, 0.85] crt
-@ 0x4BC7A0 crt_xmatch_006108A0;
+@ 0x4BC7A0 crt_xmatch_006108A0_4BC7A0;
 
 // [sigdb: byte, 0.85] crt
-@ 0x4BC7E0 crt_xmatch_006108A0;
+@ 0x4BC7E0 crt_xmatch_006108A0_4BC7E0;
 
 // [sigdb: byte, 0.85] crt
-@ 0x4BC840 crt_xmatch_006108A0;
+@ 0x4BC840 crt_xmatch_006108A0_4BC840;
 
 // [sigdb: byte, 0.85] crt
-@ 0x4BD310 crt_xmatch_006108A0;
+@ 0x4BD310 crt_xmatch_006108A0_4BD310;
 
 // [sigdb: byte, 0.85] crt
-@ 0x4BDDD0 crt_xmatch_006108A0;
+@ 0x4BDDD0 crt_xmatch_006108A0_4BDDD0;
 
 // [sigdb: byte, 0.85] crt
-@ 0x4C5140 crt_xmatch_006108A0;
+@ 0x4C5140 crt_xmatch_006108A0_4C5140;
 
 // [sigdb: byte, 0.85] crt
-@ 0x4C74C0 crt_xmatch_006108A0;
+@ 0x4C74C0 crt_xmatch_006108A0_4C74C0;
 
 // [sigdb: byte, 0.85] crt
-@ 0x4C7F50 crt_xmatch_006108A0;
+@ 0x4C7F50 crt_xmatch_006108A0_4C7F50;
 
 // [sigdb: byte, 0.85] crt
-@ 0x4CB950 crt_xmatch_006108A0;
+@ 0x4CB950 crt_xmatch_006108A0_4CB950;
 
 // [sigdb: byte, 0.85] crt
-@ 0x4E8AD0 crt_xmatch_006108A0;
+@ 0x4E8AD0 crt_xmatch_006108A0_4E8AD0;
 
 // [sigdb: byte, 0.85] crt
-@ 0x4E9EC0 crt_xmatch_006108A0;
+@ 0x4E9EC0 crt_xmatch_006108A0_4E9EC0;
 
 // [sigdb: byte, 0.85] crt
-@ 0x4EF140 crt_xmatch_006108A0;
+@ 0x4EF140 crt_xmatch_006108A0_4EF140;
 
 // [sigdb: byte, 0.85] crt
-@ 0x4EF180 crt_xmatch_006108A0;
+@ 0x4EF180 crt_xmatch_006108A0_4EF180;
 
 // [sigdb: byte, 0.85] crt
-@ 0x4EF1C0 crt_xmatch_006108A0;
+@ 0x4EF1C0 crt_xmatch_006108A0_4EF1C0;
 
 // [sigdb: byte, 0.85] crt
-@ 0x4EF890 crt_xmatch_006108A0;
+@ 0x4EF890 crt_xmatch_006108A0_4EF890;
 
 // [sigdb: byte, 0.85] crt
-@ 0x4F5190 crt_xmatch_006108A0;
+@ 0x4F5190 crt_xmatch_006108A0_4F5190;
 
 // [sigdb: byte, 0.85] crt
-@ 0x51F190 crt_xmatch_006108A0;
+@ 0x51F190 crt_xmatch_006108A0_51F190;
 
 // [sigdb: byte, 0.85] crt
-@ 0x522000 crt_xmatch_006108A0;
+@ 0x522000 crt_xmatch_006108A0_522000;
 
 // [sigdb: byte, 0.85] crt
-@ 0x522040 crt_xmatch_006108A0;
+@ 0x522040 crt_xmatch_006108A0_522040;
 
 // [sigdb: byte, 0.85] crt
-@ 0x5220A0 crt_xmatch_006108A0;
+@ 0x5220A0 crt_xmatch_006108A0_5220A0;
 
 // [sigdb: byte, 0.85] crt
-@ 0x5259E0 crt_xmatch_006108A0;
+@ 0x5259E0 crt_xmatch_006108A0_5259E0;
 
 // [sigdb: byte, 0.85] crt
-@ 0x525A20 crt_xmatch_006108A0;
+@ 0x525A20 crt_xmatch_006108A0_525A20;
 
 // [sigdb: byte, 0.85] crt
-@ 0x525A60 crt_xmatch_006108A0;
+@ 0x525A60 crt_xmatch_006108A0_525A60;
 
 // [sigdb: byte, 0.85] crt
-@ 0x525AA0 crt_xmatch_006108A0;
+@ 0x525AA0 crt_xmatch_006108A0_525AA0;
 
 // [sigdb: byte, 0.85] crt
-@ 0x525B00 crt_xmatch_006108A0;
+@ 0x525B00 crt_xmatch_006108A0_525B00;
 
 // [sigdb: byte, 0.85] crt
-@ 0x532E20 crt_xmatch_006108A0;
+@ 0x532E20 crt_xmatch_006108A0_532E20;
 
 // [sigdb: byte, 0.85] crt
-@ 0x532E80 crt_xmatch_006108A0;
+@ 0x532E80 crt_xmatch_006108A0_532E80;
 
 // [sigdb: byte, 0.85] crt
-@ 0x534390 crt_xmatch_006108A0;
+@ 0x534390 crt_xmatch_006108A0_534390;
 
 // [sigdb: byte, 0.85] crt
-@ 0x53D6C0 crt_xmatch_006108A0;
+@ 0x53D6C0 crt_xmatch_006108A0_53D6C0;
 
 // [sigdb: byte, 0.85] crt
-@ 0x545550 crt_xmatch_006108A0;
+@ 0x545550 crt_xmatch_006108A0_545550;
 
 // [sigdb: byte, 0.85] crt
-@ 0x545590 crt_xmatch_006108A0;
+@ 0x545590 crt_xmatch_006108A0_545590;
 
 // [sigdb: byte, 0.85] crt
-@ 0x5455D0 crt_xmatch_006108A0;
+@ 0x5455D0 crt_xmatch_006108A0_5455D0;
 
 // [sigdb: byte, 0.85] crt
-@ 0x554050 crt_xmatch_006108A0;
+@ 0x554050 crt_xmatch_006108A0_554050;
 
 // [sigdb: byte, 0.85] crt
-@ 0x554090 crt_xmatch_006108A0;
+@ 0x554090 crt_xmatch_006108A0_554090;
 
 // [sigdb: byte, 0.85] crt
-@ 0x558860 crt_xmatch_006108A0;
+@ 0x558860 crt_xmatch_006108A0_558860;
 
 // [sigdb: byte, 0.85] crt
-@ 0x5588C0 crt_xmatch_006108A0;
+@ 0x5588C0 crt_xmatch_006108A0_5588C0;
 
 // [sigdb: byte, 0.85] crt
-@ 0x558920 crt_xmatch_006108A0;
+@ 0x558920 crt_xmatch_006108A0_558920;
 
 // [sigdb: byte, 0.85] crt
-@ 0x558980 crt_xmatch_006108A0;
+@ 0x558980 crt_xmatch_006108A0_558980;
 
 // [sigdb: byte, 0.85] crt
-@ 0x560970 crt_xmatch_006108A0;
+@ 0x560970 crt_xmatch_006108A0_560970;
 
 // [sigdb: byte, 0.85] crt
-@ 0x561C80 crt_xmatch_006108A0;
+@ 0x561C80 crt_xmatch_006108A0_561C80;
 
 // [sigdb: byte, 0.85] crt
-@ 0x565790 crt_xmatch_006108A0;
+@ 0x565790 crt_xmatch_006108A0_565790;
 
 // [sigdb: byte, 0.85] crt
-@ 0x56BEC0 crt_xmatch_006108A0;
+@ 0x56BEC0 crt_xmatch_006108A0_56BEC0;
 
 // [sigdb: byte, 0.85] crt
-@ 0x56BF00 crt_xmatch_006108A0;
+@ 0x56BF00 crt_xmatch_006108A0_56BF00;
 
 // [sigdb: byte, 0.85] crt
-@ 0x570CB0 crt_xmatch_006108A0;
+@ 0x570CB0 crt_xmatch_006108A0_570CB0;
 
 // [sigdb: byte, 0.85] crt
-@ 0x5749F0 crt_xmatch_006108A0;
+@ 0x5749F0 crt_xmatch_006108A0_5749F0;
 
 // [sigdb: byte, 0.85] crt
-@ 0x5769D0 crt_xmatch_006108A0;
+@ 0x5769D0 crt_xmatch_006108A0_5769D0;
 
 // [sigdb: byte, 0.85] crt
-@ 0x5788F0 crt_xmatch_006108A0;
+@ 0x5788F0 crt_xmatch_006108A0_5788F0;
 
 // [sigdb: byte, 0.85] crt
-@ 0x579F80 crt_xmatch_006108A0;
+@ 0x579F80 crt_xmatch_006108A0_579F80;
 
 // [sigdb: byte, 0.85] crt
-@ 0x579FC0 crt_xmatch_006108A0;
+@ 0x579FC0 crt_xmatch_006108A0_579FC0;
 
 // [sigdb: byte, 0.85] crt
-@ 0x57A000 crt_xmatch_006108A0;
+@ 0x57A000 crt_xmatch_006108A0_57A000;
 
 // [sigdb: byte, 0.85] crt
-@ 0x57BC20 crt_xmatch_006108A0;
+@ 0x57BC20 crt_xmatch_006108A0_57BC20;
 
 // [sigdb: byte, 0.85] crt
-@ 0x57D300 crt_xmatch_006108A0;
+@ 0x57D300 crt_xmatch_006108A0_57D300;
 
 // [sigdb: byte, 0.85] crt
-@ 0x57ECF0 crt_xmatch_006108A0;
+@ 0x57ECF0 crt_xmatch_006108A0_57ECF0;
 
 // [sigdb: byte, 0.85] crt
-@ 0x5825A0 crt_xmatch_006108A0;
+@ 0x5825A0 crt_xmatch_006108A0_5825A0;
 
 // [sigdb: byte, 0.85] crt
-@ 0x583AC0 crt_xmatch_006108A0;
+@ 0x583AC0 crt_xmatch_006108A0_583AC0;
 
 // [sigdb: byte, 0.85] crt
-@ 0x5892B0 crt_xmatch_006108A0;
+@ 0x5892B0 crt_xmatch_006108A0_5892B0;
 
 // [sigdb: byte, 0.85] crt
-@ 0x5892F0 crt_xmatch_006108A0;
+@ 0x5892F0 crt_xmatch_006108A0_5892F0;
 
 // [sigdb: byte, 0.85] crt
-@ 0x589330 crt_xmatch_006108A0;
+@ 0x589330 crt_xmatch_006108A0_589330;
 
 // [sigdb: byte, 0.85] crt
-@ 0x589370 crt_xmatch_006108A0;
+@ 0x589370 crt_xmatch_006108A0_589370;
 
 // [sigdb: byte, 0.85] crt
-@ 0x5893B0 crt_xmatch_006108A0;
+@ 0x5893B0 crt_xmatch_006108A0_5893B0;
 
 // [sigdb: byte, 0.85] crt
-@ 0x5893F0 crt_xmatch_006108A0;
+@ 0x5893F0 crt_xmatch_006108A0_5893F0;
 
 // [sigdb: byte, 0.85] crt
-@ 0x589430 crt_xmatch_006108A0;
+@ 0x589430 crt_xmatch_006108A0_589430;
 
 // [sigdb: byte, 0.85] crt
-@ 0x589470 crt_xmatch_006108A0;
+@ 0x589470 crt_xmatch_006108A0_589470;
 
 // [sigdb: byte, 0.85] crt
-@ 0x5894B0 crt_xmatch_006108A0;
+@ 0x5894B0 crt_xmatch_006108A0_5894B0;
 
 // [sigdb: byte, 0.85] crt
-@ 0x5894F0 crt_xmatch_006108A0;
+@ 0x5894F0 crt_xmatch_006108A0_5894F0;
 
 // [sigdb: byte, 0.85] crt
-@ 0x5995E0 crt_xmatch_006108A0;
+@ 0x5995E0 crt_xmatch_006108A0_5995E0;
 
 // [sigdb: byte, 0.85] crt
-@ 0x59B480 crt_xmatch_006108A0;
+@ 0x59B480 crt_xmatch_006108A0_59B480;
 
 // [sigdb: byte, 0.85] crt
-@ 0x59C6E0 crt_xmatch_006108A0;
+@ 0x59C6E0 crt_xmatch_006108A0_59C6E0;
 
 // [sigdb: byte, 0.85] crt
-@ 0x59C740 crt_xmatch_006108A0;
+@ 0x59C740 crt_xmatch_006108A0_59C740;
 
 // [sigdb: byte, 0.85] crt
-@ 0x59E510 crt_xmatch_006108A0;
+@ 0x59E510 crt_xmatch_006108A0_59E510;
 
 // [sigdb: byte, 0.85] crt
-@ 0x59E550 crt_xmatch_006108A0;
+@ 0x59E550 crt_xmatch_006108A0_59E550;
 
 // [sigdb: byte, 0.85] crt
-@ 0x5A0330 crt_xmatch_006108A0;
+@ 0x5A0330 crt_xmatch_006108A0_5A0330;
 
 // [sigdb: byte, 0.85] crt
-@ 0x5A1150 crt_xmatch_006108A0;
+@ 0x5A1150 crt_xmatch_006108A0_5A1150;
 
 // [sigdb: byte, 0.85] crt
-@ 0x5A17E0 crt_xmatch_006108A0;
+@ 0x5A17E0 crt_xmatch_006108A0_5A17E0;
 
 // [sigdb: byte, 0.85] crt
-@ 0x5A31E0 crt_xmatch_006108A0;
+@ 0x5A31E0 crt_xmatch_006108A0_5A31E0;
 
 // [sigdb: byte, 0.85] crt
-@ 0x5A3220 crt_xmatch_006108A0;
+@ 0x5A3220 crt_xmatch_006108A0_5A3220;
 
 // [sigdb: byte, 0.85] crt
-@ 0x5A3280 crt_xmatch_006108A0;
+@ 0x5A3280 crt_xmatch_006108A0_5A3280;
 
 // [sigdb: byte, 0.85] crt
-@ 0x5A43E0 crt_xmatch_006108A0;
+@ 0x5A43E0 crt_xmatch_006108A0_5A43E0;
 
 // [sigdb: byte, 0.85] crt
-@ 0x5A5110 crt_xmatch_006108A0;
+@ 0x5A5110 crt_xmatch_006108A0_5A5110;
 
 // [sigdb: byte, 0.85] crt
-@ 0x5BB2D0 crt_xmatch_006108A0;
+@ 0x5BB2D0 crt_xmatch_006108A0_5BB2D0;
 
 // [sigdb: byte, 0.85] crt
-@ 0x5BB370 crt_xmatch_006108A0;
+@ 0x5BB370 crt_xmatch_006108A0_5BB370;
 
 // [sigdb: byte, 0.85] crt
-@ 0x5C7E40 crt_xmatch_006108A0;
+@ 0x5C7E40 crt_xmatch_006108A0_5C7E40;
 
 // [sigdb: byte, 0.85] crt
-@ 0x5C7EA0 crt_xmatch_006108A0;
+@ 0x5C7EA0 crt_xmatch_006108A0_5C7EA0;
 
 // [sigdb: byte, 0.85] crt
-@ 0x5C7F00 crt_xmatch_006108A0;
+@ 0x5C7F00 crt_xmatch_006108A0_5C7F00;
 
 // [sigdb: byte, 0.85] crt
-@ 0x5C7F40 crt_xmatch_006108A0;
+@ 0x5C7F40 crt_xmatch_006108A0_5C7F40;
 
 // [sigdb: byte, 0.85] crt
-@ 0x5C7F80 crt_xmatch_006108A0;
+@ 0x5C7F80 crt_xmatch_006108A0_5C7F80;
 
 // [sigdb: byte, 0.85] crt
-@ 0x5C91A0 crt_xmatch_006108A0;
+@ 0x5C91A0 crt_xmatch_006108A0_5C91A0;
 
 // [sigdb: byte, 0.85] crt
-@ 0x5D0680 crt_xmatch_006108A0;
+@ 0x5D0680 crt_xmatch_006108A0_5D0680;
 
 // [sigdb: byte, 0.85] crt
-@ 0x5D24C0 crt_xmatch_006108A0;
+@ 0x5D24C0 crt_xmatch_006108A0_5D24C0;
 
 // [sigdb: byte, 0.85] crt
-@ 0x5D6990 crt_xmatch_006108A0;
+@ 0x5D6990 crt_xmatch_006108A0_5D6990;
 
 // [sigdb: byte, 0.85] crt
-@ 0x611F80 crt_xmatch_006108A0;
+@ 0x611F80 crt_xmatch_006108A0_611F80;
 
 // [sigdb: byte, 0.85] crt
-@ 0x628FC0 crt_xmatch_006108A0;
+@ 0x628FC0 crt_xmatch_006108A0_628FC0;
 
 // [sigdb: byte, 0.85] crt
-@ 0x6699D0 crt_xmatch_006108A0;
+@ 0x6699D0 crt_xmatch_006108A0_6699D0;
 
 // [sigdb: byte, 0.85] crt
-@ 0x69DAD0 crt_xmatch_006108A0;
+@ 0x69DAD0 crt_xmatch_006108A0_69DAD0;
 
 // [sigdb: byte, 0.70] crt
 @ 0x6B3230 crt_xmatch_00EECC20;
@@ -7394,1305 +7394,6 @@
 // hierarchy: .?AVcMissionFogZones@@ -> .?AV?$cFileVar@UsMissionFogZones@@$1?g_FogZoneFileVarDesc@@3UsFileVarDesc@@A@@ -> .?AUsMissionFogZones@@ -> .?AVcFileVarBase@@ -> .?AUsFileVarData@@
 @ 0x72EF5C cMissionFogZones_vtable;
 
-// [string] "Failed to load module!"
-@ 0x6F6F94 str_Failed_to_load_module;
-
-// [string] "ERROR: failed to open file '%s' for writing"
-@ 0x6F7CF8 str_ERROR__failed_to_open_file___s__for_writ;
-
-// [string] "WARNING: loading a savegame made with '%s' but current gamesys is '%s'. Are you "
-@ 0x6F84C8 str_WARNING__loading_a_savegame_made_with;
-
-// [string] "Failed to open %s file %s"
-@ 0x6F854C str_Failed_to_open__s_file__s;
-
-// [string] "SYNTAX ERROR: invalid [] indexing syntax"
-@ 0x6F860C str_SYNTAX_ERROR__invalid____indexing_syntax;
-
-// [string] "SYNTAX ERROR: parameter value missing"
-@ 0x6F8638 str_SYNTAX_ERROR__parameter_value_missing;
-
-// [string] "SYNTAX ERROR: unexpected EOF"
-@ 0x6F8660 str_SYNTAX_ERROR__unexpected_EOF;
-
-// [string] "WARNING: pointer field type is not supported (%s::"%s" in object %s)"
-@ 0x6F8680 str_WARNING__pointer_field_type_is_not_suppo;
-
-// [string] "WARNING: cannot change read-only field (%s::"%s" in object %s)"
-@ 0x6F86C8 str_WARNING__cannot_change_read_only_field;
-
-// [string] "WARNING: could assign value %s::"%s" = "%s" in object %s"
-@ 0x6F8744 str_WARNING__could_assign_value__s____s;
-
-// [string] "WARNING: pointer field type is not supported (%s::"%s" on object %d)"
-@ 0x6F8780 str_WARNING__pointer_field_type_is_not_suppo;
-
-// [string] "WARNING: cannot change read-only field (%s::"%s" on object %d)"
-@ 0x6F87C8 str_WARNING__cannot_change_read_only_field;
-
-// [string] "WARNING: could not assign value %s::"%s" = "%s" on object %d"
-@ 0x6F884C str_WARNING__could_not_assign_value__s____s;
-
-// [string] "WARNING: pointer field type is not supported (%s::"%s" on %s %08X, obj %d)"
-@ 0x6F8890 str_WARNING__pointer_field_type_is_not_suppo;
-
-// [string] "WARNING: cannot change read-only field (%s::"%s" on %s %08X, obj %d)"
-@ 0x6F88E0 str_WARNING__cannot_change_read_only_field;
-
-// [string] "WARNING: could not assign value %s::"%s" = "%s" on %s %08X, obj %d"
-@ 0x6F8970 str_WARNING__could_not_assign_value__s____s;
-
-// [string] "WARNING: invalid object id 0, skipping"
-@ 0x6F89B4 str_WARNING__invalid_object_id_0__skipping;
-
-// [string] "WARNING: incorrect dbmod context for concrete objects (ObjID %d), skipping"
-@ 0x6F89E0 str_WARNING__incorrect_dbmod_context_for_con;
-
-// [string] "WARNING: incorrect dbmod context for abstract objects (ObjID %d), skipping"
-@ 0x6F8A30 str_WARNING__incorrect_dbmod_context_for_abs;
-
-// [string] "WARNING: invalid link id %08X, %s"
-@ 0x6F8A7C str_WARNING__invalid_link_id__08X___s;
-
-// [string] "WARNING: incorrect dbmod context for link with concrete (ObjID %d -> %d), %s"
-@ 0x6F8AA0 str_WARNING__incorrect_dbmod_context_for_lin;
-
-// [string] "WARNING: incorrect dbmod context for link between abstract objects (ObjID %d -> "
-@ 0x6F8AF0 str_WARNING__incorrect_dbmod_context_for_lin;
-
-// [string] "WARNING: invalid receptron id %08X, %s"
-@ 0x6F8B4C str_WARNING__invalid_receptron_id__08X___s;
-
-// [string] "WARNING: incorrect dbmod context for receptron on concrete (ObjID %d), %s"
-@ 0x6F8B78 str_WARNING__incorrect_dbmod_context_for_rec;
-
-// [string] "WARNING: incorrect dbmod context for receptron on abstract (ObjID %d), %s"
-@ 0x6F8BC8 str_WARNING__incorrect_dbmod_context_for_rec;
-
-// [string] "WARNING: invalid stim source id %08X, %s"
-@ 0x6F8C14 str_WARNING__invalid_stim_source_id__08X___s;
-
-// [string] "WARNING: incorrect dbmod context for stim source on concrete (ObjID %d), %s"
-@ 0x6F8C40 str_WARNING__incorrect_dbmod_context_for_sti;
-
-// [string] "WARNING: incorrect dbmod context for stim source on abstract (ObjID %d), %s"
-@ 0x6F8C90 str_WARNING__incorrect_dbmod_context_for_sti;
-
-// [string] "SYNTAX ERROR: expected {"
-@ 0x6F8D50 str_SYNTAX_ERROR__expected;
-
-// [string] "SYNTAX ERROR: expected OSM name after #script statement"
-@ 0x6F8D74 str_SYNTAX_ERROR__expected_OSM_name_after__s;
-
-// [string] "WARNING: cannot find sdesc '%s' for tag object '%s', skipping"
-@ 0x6F8DFC str_WARNING__cannot_find_sdesc___s__for_tag;
-
-// [string] "WARNING: sdesc '%s' has no fields (object '%s'), skipping"
-@ 0x6F8E3C str_WARNING__sdesc___s__has_no_fields__objec;
-
-// [string] "WARNING: cannot find field %s::"%s" (tag object '%s'), skipping"
-@ 0x6F8E78 str_WARNING__cannot_find_field__s____s___tag;
-
-// [string] "WARNING: cannot find tag object '%s', skipping"
-@ 0x6F8EBC str_WARNING__cannot_find_tag_object___s___sk;
-
-// [string] "WARNING: no object named "%s" was found, skipping"
-@ 0x6F8F0C str_WARNING__no_object_named___s__was_found;
-
-// [string] "SYNTAX ERROR: expected int val (%s)"
-@ 0x6F8F40 str_SYNTAX_ERROR__expected_int_val___s;
-
-// [string] "WARNING: failed to delete property "%s" from object %d"
-@ 0x6F8F98 str_WARNING__failed_to_delete_property___s;
-
-// [string] "WARNING: property "%s" does not exist for object %d, skipping delete"
-@ 0x6F8FD0 str_WARNING__property___s__does_not_exist_fo;
-
-// [string] "WARNING: cannot find sdesc '%s' for property "%s" (ObjID %d), skipping"
-@ 0x6F9018 str_WARNING__cannot_find_sdesc___s__for_prop;
-
-// [string] "WARNING: sdesc '%s' has no fields (property "%s" ObjID %d), skipping"
-@ 0x6F9060 str_WARNING__sdesc___s__has_no_fields__prope;
-
-// [string] "WARNING: property "%s" could not be created for object %d, skipping"
-@ 0x6F90A8 str_WARNING__property___s__could_not_be_crea;
-
-// [string] "WARNING: property "%s" does not exist for object %d, skipping"
-@ 0x6F911C str_WARNING__property___s__does_not_exist_fo;
-
-// [string] "WARNING: cannot get IDataOps for property "%s" (ObjID %d), skipping"
-@ 0x6F9160 str_WARNING__cannot_get_IDataOps_for_propert;
-
-// [string] "WARNING: field "%s" does not exist for property "%s" (ObjID %d), skipping"
-@ 0x6F91E0 str_WARNING__field___s__does_not_exist_for_p;
-
-// [string] "WARNING: cannot find field %s::"%s" (prop "%s" ObjID %d), skipping"
-@ 0x6F9230 str_WARNING__cannot_find_field__s____s___pro;
-
-// [string] "WARNING: cannot find property "%s" (ObjID %d), skipping"
-@ 0x6F9274 str_WARNING__cannot_find_property___s___ObjI;
-
-// [string] "WARNING: cannot find object %d, skipping"
-@ 0x6F92B0 str_WARNING__cannot_find_object__d__skipping;
-
-// [string] "SYNTAX ERROR: expected (positive) hex val (%s)"
-@ 0x6F92FC str_SYNTAX_ERROR__expected__positive__hex_va;
-
-// [string] "WARNING: link %08X does not link %d -> %d as expected, %s"
-@ 0x6F9348 str_WARNING__link__08X_does_not_link__d;
-
-// [string] "WARNING: invalid link type "%s", skipping"
-@ 0x6F9384 str_WARNING__invalid_link_type___s___skippin;
-
-// [string] "WARNING: link %08X is not of type "%s" as expected, skipping"
-@ 0x6F93B0 str_WARNING__link__08X_is_not_of_type___s__a;
-
-// [string] "WARNING: link of type "Receptron" not supported, use 'Receptron' command instead"
-@ 0x6F93F0 str_WARNING__link_of_type__Receptron__not_su;
-
-// [string] "WARNING: link of type "arSrcDesc" not supported, use 'StimSource' command instea"
-@ 0x6F9450 str_WARNING__link_of_type__arSrcDesc__not_su;
-
-// [string] "WARNING: link type "%s" cannot be modified, skipping"
-@ 0x6F94B0 str_WARNING__link_type___s__cannot_be_modifi;
-
-// [string] "WARNING: no "%s" link found for %d -> %d, skipping"
-@ 0x6F94E8 str_WARNING__no___s__link_found_for__d_____d;
-
-// [string] "WARNING: failed to delete "%s" link %08X (%d -> %d)"
-@ 0x6F954C str_WARNING__failed_to_delete___s__link__08X;
-
-// [string] "WARNING: failed to create link '%d -> %d' of type "%s", skipping"
-@ 0x6F9588 str_WARNING__failed_to_create_link___d_____d;
-
-// [string] "WARNING: cannot find sdesc '%s' for link "%s", skipping"
-@ 0x6F9608 str_WARNING__cannot_find_sdesc___s__for_link;
-
-// [string] "WARNING: sdesc '%s' has no fields (link "%s"), skipping"
-@ 0x6F9644 str_WARNING__sdesc___s__has_no_fields__link;
-
-// [string] "WARNING: cannot find field %s::"%s" (link "%s" LinkID %d), skipping"
-@ 0x6F96C0 str_WARNING__cannot_find_field__s____s___lin;
-
-// [string] "WARNING: "%s" is not a valid stimulus (receptron for obj %d), skipping"
-@ 0x6F9730 str_WARNING____s__is_not_a_valid_stimulus__r;
-
-// [string] "WARNING: receptron %08X does not link obj %d and stim "%s" as expected, %s"
-@ 0x6F9778 str_WARNING__receptron__08X_does_not_link_ob;
-
-// [string] "WARNING: failed to get receptron data for receptron %08X (obj %d stim "%s"), %s"
-@ 0x6F97C8 str_WARNING__failed_to_get_receptron_data_fo;
-
-// [string] "WARNING: no receptron found for obj %d and stim "%s", skipping"
-@ 0x6F9820 str_WARNING__no_receptron_found_for_obj__d_a;
-
-// [string] "WARNING: failed to delete receptron %08X (obj %d stim "%s")"
-@ 0x6F9898 str_WARNING__failed_to_delete_receptron__08X;
-
-// [string] "WARNING: invalid effect name "%s" on receptron %08X, obj %d), skipping"
-@ 0x6F9A70 str_WARNING__invalid_effect_name___s__on_rec;
-
-// [string] "WARNING: cannot find sdesc '%s' for receptron effect "%s", skipping"
-@ 0x6F9AF8 str_WARNING__cannot_find_sdesc___s__for_rece;
-
-// [string] "WARNING: sdesc '%s' has no fields (receptron effect "%s"), skipping"
-@ 0x6F9B40 str_WARNING__sdesc___s__has_no_fields__recep;
-
-// [string] "WARNING: cannot find field %s::"%s" (effect "%s" on receptron %08X, obj %d), ski"
-@ 0x6F9B98 str_WARNING__cannot_find_field__s____s___eff;
-
-// [string] "SYNTAX ERROR: unknown/unexpected keyword '%s'"
-@ 0x6F9BF0 str_SYNTAX_ERROR__unknown_unexpected_keyword;
-
-// [string] "WARNING: failed to create receptron for stim "%s" on object %d, skipping"
-@ 0x6F9C20 str_WARNING__failed_to_create_receptron_for;
-
-// [string] "WARNING: "%s" is not a valid stimulus (stim source for obj %d), skipping"
-@ 0x6F9CE8 str_WARNING____s__is_not_a_valid_stimulus__s;
-
-// [string] "WARNING: stim source %08X does not link obj %d and stim "%s" as expected, %s"
-@ 0x6F9D38 str_WARNING__stim_source__08X_does_not_link;
-
-// [string] "WARNING: failed to get stim source data for source %08X (obj %d stim "%s"), %s"
-@ 0x6F9D88 str_WARNING__failed_to_get_stim_source_data;
-
-// [string] "WARNING: no stim source found for obj %d and stim "%s", skipping"
-@ 0x6F9DD8 str_WARNING__no_stim_source_found_for_obj__d;
-
-// [string] "WARNING: failed to delete stim source %08X, obj %d"
-@ 0x6F9E48 str_WARNING__failed_to_delete_stim_source__0;
-
-// [string] "SYNTAX ERROR: invalid propagator name "%s" (stim source %08X, obj %d)"
-@ 0x6F9F48 str_SYNTAX_ERROR__invalid_propagator_name;
-
-// [string] "WARNING: type not found for propagator %s params for propagator "%s", skipping"
-@ 0x6F9FF8 str_WARNING__type_not_found_for_propagator;
-
-// [string] "WARNING: sdesc '%s' has no fields (propagator %s params for propagator "%s"), sk"
-@ 0x6FA048 str_WARNING__sdesc___s__has_no_fields__propa;
-
-// [string] "WARNING: cannot find field %s::"%s" (%s params for propagator "%s" on stim sourc"
-@ 0x6FA0B0 str_WARNING__cannot_find_field__s____s____s;
-
-// [string] "WARNING: failed to create stim source for stim "%s" on object %d, skipping"
-@ 0x6FA120 str_WARNING__failed_to_create_stim_source_fo;
-
-// [string] "WARNING: cannot add meta property, %d is not a meta property"
-@ 0x6FA1E8 str_WARNING__cannot_add_meta_property___d_is;
-
-// [string] "WARNING: object %d is a meta property, cannot add meta property to another"
-@ 0x6FA228 str_WARNING__object__d_is_a_meta_property__c;
-
-// [string] "WARNING: failed to remove meta property %d from object %d"
-@ 0x6FA2A8 str_WARNING__failed_to_remove_meta_property;
-
-// [string] "WARNING: failed to add meta property %d to object %d"
-@ 0x6FA424 str_WARNING__failed_to_add_meta_property__d;
-
-// [string] "WARNING: incorrect dbmod context for 'CreateArch' command, skipping"
-@ 0x6FA480 str_WARNING__incorrect_dbmod_context_for__Cr;
-
-// [string] "WARNING: incorrect dbmod context for 'Create' command, skipping"
-@ 0x6FA4C8 str_WARNING__incorrect_dbmod_context_for__Cr;
-
-// [string] "WARNING: 'CreateArch' does not take a concrete object (ObjID %d) as archetype ar"
-@ 0x6FA510 str_WARNING___CreateArch__does_not_take_a_co;
-
-// [string] "WARNING: %s "%s" not created, an object (%d) with that name already exists"
-@ 0x6FA578 str_WARNING___s___s__not_created__an_object;
-
-// [string] "SYNTAX ERROR: unknown/unexpected token '%s'"
-@ 0x6FA634 str_SYNTAX_ERROR__unknown_unexpected_token;
-
-// [string] "SYNTAX ERROR: expected qvar name"
-@ 0x6FA68C str_SYNTAX_ERROR__expected_qvar_name;
-
-// [string] "SYNTAX ERROR: expected a comparison operator ("==" / "!=" / "<" / ">" / "<=" / ""
-@ 0x6FA710 str_SYNTAX_ERROR__expected_a_comparison_oper;
-
-// [string] "ERROR: incorrect dbmod context for concrete object (ObjID %d) in fingerprint"
-@ 0x6FA890 str_ERROR__incorrect_dbmod_context_for_concr;
-
-// [string] "SYNTAX ERROR: expected property name"
-@ 0x6FA8E0 str_SYNTAX_ERROR__expected_property_name;
-
-// [string] "ERROR: no property named "%s""
-@ 0x6FA908 str_ERROR__no_property_named___s;
-
-// [string] "SYNTAX ERROR: expected object name"
-@ 0x6FA9E4 str_SYNTAX_ERROR__expected_object_name;
-
-// [string] "SYNTAX ERROR: expected gamesys name"
-@ 0x6FAAB8 str_SYNTAX_ERROR__expected_gamesys_name;
-
-// [string] "SYNTAX ERROR: object position fingerprint rule must specify a concrete object ID"
-@ 0x6FAB90 str_SYNTAX_ERROR__object_position_fingerprin;
-
-// [string] "SYNTAX ERROR: fingerprint contains duplicate object ID %d, no cheating allowed!"
-@ 0x6FABE8 str_SYNTAX_ERROR__fingerprint_contains_dupli;
-
-// [string] "SYNTAX ERROR: expected ["
-@ 0x6FAC3C str_SYNTAX_ERROR__expected;
-
-// [string] "SYNTAX ERROR: expected ]"
-@ 0x6FAC58 str_SYNTAX_ERROR__expected;
-
-// [string] "SYNTAX ERROR: parameters missing for fingerprint rule"
-@ 0x6FACF4 str_SYNTAX_ERROR__parameters_missing_for_fin;
-
-// [string] "SYNTAX ERROR: QVAR fingerprint rules may not be used in a gamesys dbmod"
-@ 0x6FAD40 str_SYNTAX_ERROR__QVAR_fingerprint_rules_may;
-
-// [string] "SYNTAX ERROR: object position fingerprint rules may not be used in a gamesys dbm"
-@ 0x6FADB8 str_SYNTAX_ERROR__object_position_fingerprin;
-
-// [string] "WARNING: too many object positions in fingerprint, only the first %d are used, t"
-@ 0x6FAE10 str_WARNING__too_many_object_positions_in_fi;
-
-// [string] "SYNTAX ERROR: fingerprints must contain at least %d object positions, or none at"
-@ 0x6FAE78 str_SYNTAX_ERROR__fingerprints_must_contain;
-
-// [string] "WARNING: file '%s' in path '%s' failed to load"
-@ 0x6FB0D4 str_WARNING__file___s__in_path___s__failed_t;
-
-// [string] "SYNTAX ERROR: file '%s' in path '%s' does not have correct format (invalid heade"
-@ 0x6FB110 str_SYNTAX_ERROR__file___s__in_path___s__doe;
-
-// [string] "ERROR: file '%s' in path '%s' failed to parse correctly"
-@ 0x6FB1AC str_ERROR__file___s__in_path___s__failed_to;
-
-// [string] "fail_dsound_check"
-@ 0x6FC118 str_fail_dsound_check;
-
-// [string] "fail_ddraw_check"
-@ 0x6FC15C str_fail_ddraw_check;
-
-// [string] "fail_d3d_enum"
-@ 0x6FC180 str_fail_d3d_enum;
-
-// [string] "Failed to host"
-@ 0x6FD334 str_Failed_to_host;
-
-// [string] "Failed to join %s"
-@ 0x6FD350 str_Failed_to_join__s;
-
-// [string] "failed"
-@ 0x700E34 str_failed;
-
-// [string] "set_mode_failed"
-@ 0x7010E4 str_set_mode_failed;
-
-// [string] "version_failed"
-@ 0x7010F4 str_version_failed;
-
-// [string] "DrSPocketFail"
-@ 0x701998 str_DrSPocketFail;
-
-// [string] "failed to save savegame"
-@ 0x702A54 str_failed_to_save_savegame;
-
-// [string] "failed to load savegame"
-@ 0x702A90 str_failed_to_load_savegame;
-
-// [string] "ERROR: failed to load savegame, mission file %d not found (mission possibly not "
-@ 0x702AA8 str_ERROR__failed_to_load_savegame__mission;
-
-// [string] "failure"
-@ 0x702B5C str_failure;
-
-// [string] "failed to load psapi.dll"
-@ 0x702E4C str_failed_to_load_psapi_dll;
-
-// [string] "failed to resolve functions from psapi.dll"
-@ 0x702E94 str_failed_to_resolve_functions_from_psapi_d;
-
-// [string] "bow_abort_auto"
-@ 0x703358 str_bow_abort_auto;
-
-// [string] "Reset On Fail"
-@ 0x704040 str_Reset_On_Fail;
-
-// [string] "Prep level for difficulty.  Warning: This may destroy some objects"
-@ 0x7052D0 str_Prep_level_for_difficulty___Warning__Thi;
-
-// [string] "ERROR: Attempted to destroy an instance of cAI (%d) that may still be in use, %d"
-@ 0x70D290 str_ERROR__Attempted_to_destroy_an_instance;
-
-// [string] "ERROR: Attempted to destroy an instance of cAI (%d) that may still be in use"
-@ 0x70D370 str_ERROR__Attempted_to_destroy_an_instance;
-
-// [string] "WARNING: Apparent cell cycle in portal_traverse_scene (cell %d, center %g %g %g)"
-@ 0x717518 str_WARNING__Apparent_cell_cycle_in_portal_t;
-
-// [string] "clip2d_compute_intersection: Invalid clip code type"
-@ 0x717594 str_clip2d_compute_intersection__Invalid_cli;
-
-// [string] "cache_feedback: failed to cache surface."
-@ 0x7176E0 str_cache_feedback__failed_to_cache_surface;
-
-// [string] "Assertion failed: %s %d"
-@ 0x717720 str_Assertion_failed___s__d;
-
-// [string] "Invalid PhysModel type: %d"
-@ 0x71A71C str_Invalid_PhysModel_type___d;
-
-// [string] "ERROR: Failed to load WR, mission requires a newer game version."
-@ 0x71F2F0 str_ERROR__Failed_to_load_WR__mission_requir;
-
-// [string] "ERROR: likely mismatch between creature type and mesh model for object %d, this "
-@ 0x71F3A0 str_ERROR__likely_mismatch_between_creature;
-
-// [string] "ERROR: corrupt mesh model cal/length data for object %d, this is a fatal error"
-@ 0x71F408 str_ERROR__corrupt_mesh_model_cal_length_dat;
-
-// [string] "ERROR: can't add more families (max %d)"
-@ 0x728F1C str_ERROR__can_t_add_more_families__max__d;
-
-// [string] "scrn_loop_fail_msg"
-@ 0x72E17C str_scrn_loop_fail_msg;
-
-// [string] "+QSyntax error"
-@ 0x72F6B2 str_QSyntax_error;
-
-// [string] "PngFileWrite failed"
-@ 0x72F6EC str_PngFileWrite_failed;
-
-// [string] "** failed, no HW support"
-@ 0x72F94C str_failed__no_HW_support;
-
-// [string] "** failed, no 16-bit/32-bit support"
-@ 0x72F968 str_failed__no_16_bit_32_bit_support;
-
-// [string] "** failed, no RGB support"
-@ 0x72F98C str_failed__no_RGB_support;
-
-// [string] "** failed color gouraud shading"
-@ 0x72F9A8 str_failed_color_gouraud_shading;
-
-// [string] "** failed alpha blending"
-@ 0x72F9C8 str_failed_alpha_blending;
-
-// [string] "** failed texture mapping"
-@ 0x72F9E4 str_failed_texture_mapping;
-
-// [string] "** failed table fog"
-@ 0x72FA00 str_failed_table_fog;
-
-// [string] "** failed vertex fog"
-@ 0x72FA14 str_failed_vertex_fog;
-
-// [string] "** failed to create ddraw object"
-@ 0x72FAA4 str_failed_to_create_ddraw_object;
-
-// [string] "** failed to obtain ddraw4 interface"
-@ 0x72FAC8 str_failed_to_obtain_ddraw4_interface;
-
-// [string] "** failed to obtain D3D interface"
-@ 0x72FB04 str_failed_to_obtain_D3D_interface;
-
-// [string] "** failed, no supported display modes found"
-@ 0x72FB60 str_failed__no_supported_display_modes_fo;
-
-// [string] "** failed to find any supported hardware 3D devices, make sure hardware accelera"
-@ 0x72FC00 str_failed_to_find_any_supported_hardware;
-
-// [string] "couldn't load texture: error %i."
-@ 0x72FE3C str_couldn_t_load_texture__error__i;
-
-// [string] "cD8Effect_ScreenDistort: CreatePixelShader failed"
-@ 0x7300E8 str_cD8Effect_ScreenDistort__CreatePixelShad;
-
-// [string] "ERROR: %s: error %d: %s"
-@ 0x73011C str_ERROR___s__error__d___s;
-
-// [string] "cD8Effect_FakeDOF: CreatePixelShader failed"
-@ 0x730134 str_cD8Effect_FakeDOF__CreatePixelShader_fai;
-
-// [string] "cD8Effect_Blur2pass: CreatePixelShader failed"
-@ 0x730160 str_cD8Effect_Blur2pass__CreatePixelShader_f;
-
-// [string] "cD8Effect_PostProcess: CreatePixelShader 1 failed"
-@ 0x730190 str_cD8Effect_PostProcess__CreatePixelShader;
-
-// [string] "cD8Effect_PostProcess: CreatePixelShader 2 failed"
-@ 0x7301C4 str_cD8Effect_PostProcess__CreatePixelShader;
-
-// [string] "cD8Effect_PostProcess: CreatePixelShader %d failed"
-@ 0x7301F8 str_cD8Effect_PostProcess__CreatePixelShader;
-
-// [string] "FATAL: trying to set non-power-of-two sized texture in lgd3d (%dx%d)"
-@ 0x7305A8 str_FATAL__trying_to_set_non_power_of_two_si;
-
-// [string] "** failed texture wrapping"
-@ 0x7308D8 str_failed_texture_wrapping;
-
-// [string] "** failed, no hardware 3D support, make sure hardware acceleration is enabled in"
-@ 0x7308F8 str_failed__no_hardware_3D_support__make;
-
-// [string] "** failed, device out of video memory"
-@ 0x730958 str_failed__device_out_of_video_memory;
-
-// [string] "** failed, could not query device caps (%s)"
-@ 0x730980 str_failed__could_not_query_device_caps;
-
-// [string] "Adapter %d skipped, failed to query adapter id (%s)"
-@ 0x7309D0 str_Adapter__d_skipped__failed_to_query_adap;
-
-// [string] "ERROR: D3D effect "%s" failed to compile: %s"
-@ 0x730AD0 str_ERROR__D3D_effect___s__failed_to_compile;
-
-// [string] "D3D9::CreateCubeTexture failed for systex (0x%X): %dx%d fmt=%d mips=%d"
-@ 0x730B30 str_D3D9__CreateCubeTexture_failed_for_syste;
-
-// [string] "D3D9::CreateTexture failed for systex (0x%X): %dx%d fmt=%d mips=%d lm=%d"
-@ 0x730B78 str_D3D9__CreateTexture_failed_for_systex__0;
-
-// [string] "D3D9::CreateCubeTexture failed (0x%X): %dx%d fmt=%d mips=%d"
-@ 0x730BC4 str_D3D9__CreateCubeTexture_failed__0x_X;
-
-// [string] "D3D9::CreateTexture failed (0x%X): %dx%d fmt=%d mips=%d lm=%d"
-@ 0x730C00 str_D3D9__CreateTexture_failed__0x_X____dx_d;
-
-// [string] "D3D9::CreateTexture failed for hw2d systex (0x%X): %dx%d fmt=%d mips=%d"
-@ 0x730C40 str_D3D9__CreateTexture_failed_for_hw2d_syst;
-
-// [string] "D3D9::CreateTexture failed for hw2d (0x%X): %dx%d fmt=%d mips=%d usage=0x%X mana"
-@ 0x730C88 str_D3D9__CreateTexture_failed_for_hw2d__0x;
-
-// [string] "Failed to load script module "%s" (init failed)"
-@ 0x7318F4 str_Failed_to_load_script_module___s___init;
-
-// [string] "Failed to load script module "%s" (error code %u)"
-@ 0x731924 str_Failed_to_load_script_module___s___error;
-
-// [string] "Error opening file"
-@ 0x7322E8 str_Error_opening_file;
-
-// [string] "Invalid input control"
-@ 0x732378 str_Invalid_input_control;
-
-// [string] "ERROR: unsupported DDS format (%d-bit, %08x %08x %08x %08x)"
-@ 0x732708 str_ERROR__unsupported_DDS_format___d_bit;
-
-// [string] "ERROR: invalid dds cubemap file, all sides are required"
-@ 0x732748 str_ERROR__invalid_dds_cubemap_file__all_sid;
-
-// [string] "WARNING: too deep nesting of '.%s' in material '%s'"
-@ 0x732D04 str_WARNING__too_deep_nesting_of____s__in_ma;
-
-// [string] "WARNING: '.%s' argument is missing in material '%s'"
-@ 0x732D3C str_WARNING_____s__argument_is_missing_in_ma;
-
-// [string] "WARNING: invalid argument "%s" for '.%s' in material '%s'"
-@ 0x732D7C str_WARNING__invalid_argument___s__for____s;
-
-// [string] "WARNING: non-matching '.else' in material '%s'"
-@ 0x732DB8 str_WARNING__non_matching___else__in_materia;
-
-// [string] "WARNING: non-matching '.endif' in material '%s'"
-@ 0x732DE8 str_WARNING__non_matching___endif__in_materi;
-
-// [string] "WARNING: unknown preprocessor command '.%s' in material '%s'"
-@ 0x732E2C str_WARNING__unknown_preprocessor_command;
-
-// [string] "WARNING: skipping unknown blend function '%s' in material '%s'"
-@ 0x732F00 str_WARNING__skipping_unknown_blend_function;
-
-// [string] "WARNING: skipping unknown uv source '%s' in material '%s'"
-@ 0x732F6C str_WARNING__skipping_unknown_uv_source___s;
-
-// [string] "WARNING: skipping unknown wave function type '%s' for 'render_pass' param '%s' i"
-@ 0x732FF8 str_WARNING__skipping_unknown_wave_function;
-
-// [string] "WARNING: frequency is 0, skipping '%s' wave function for 'render_pass' param '%s"
-@ 0x733060 str_WARNING__frequency_is_0__skipping___s__w;
-
-// [string] "ERROR: invalid 'render_pass' syntax, expected '{' found '%s', in material '%s'"
-@ 0x7330C8 str_ERROR__invalid__render_pass__syntax__exp;
-
-// [string] "WARNING: too many texture layers, skipping 'render_pass' in material '%s'"
-@ 0x733118 str_WARNING__too_many_texture_layers__skippi;
-
-// [string] "ERROR: unexptected EOF in 'render_pass' block in material '%s'"
-@ 0x733168 str_ERROR__unexptected_EOF_in__render_pass;
-
-// [string] "WARNING: 'texture' param in 'render_pass' block in material '%s' failed to load "
-@ 0x7331B0 str_WARNING___texture__param_in__render_pass;
-
-// [string] "WARNING: 'texture' param in 'render_pass' block in material '%s' exceeds maximum"
-@ 0x733218 str_WARNING___texture__param_in__render_pass;
-
-// [string] "WARNING: 'texture' param in 'render_pass' block in material '%s' failed to load "
-@ 0x733288 str_WARNING___texture__param_in__render_pass;
-
-// [string] "WARNING: skipping multiple 'texture' params in 'render_pass' block in material '"
-@ 0x7332F0 str_WARNING__skipping_multiple__texture__par;
-
-// [string] "WARNING: 'texture' param in 'render_pass' block in material '%s' failed to load "
-@ 0x733348 str_WARNING___texture__param_in__render_pass;
-
-// [string] "WARNING: skipping unknown ani_mode '%s' for 'render_pass' in material '%s'"
-@ 0x7333E8 str_WARNING__skipping_unknown_ani_mode___s;
-
-// [string] "WARNING: could not load/use LUT texture '%s' for 'render_pass' param 'alpha func"
-@ 0x733478 str_WARNING__could_not_load_use_LUT_texture;
-
-// [string] "WARNING: skipping unknown 'func' type '%s' for 'render_pass' param '%s' in mater"
-@ 0x7334F0 str_WARNING__skipping_unknown__func__type;
-
-// [string] "WARNING: could not load/use LUT texture '%s' for 'render_pass' param 'rgb func I"
-@ 0x733560 str_WARNING__could_not_load_use_LUT_texture;
-
-// [string] "WARNING: skipping unknown function type '%s' for 'render_pass' param '%s' in mat"
-@ 0x733670 str_WARNING__skipping_unknown_function_type;
-
-// [string] "WARNING: skipping unknown 'render_pass' sub-param '%s' in material '%s'"
-@ 0x7336D0 str_WARNING__skipping_unknown__render_pass;
-
-// [string] "WARNING: skipping unknown ani_mode '%s' in material '%s'"
-@ 0x7337C0 str_WARNING__skipping_unknown_ani_mode___s;
-
-// [string] "WARNING: invalid tile_factor '%dx%d' in material '%s'"
-@ 0x733828 str_WARNING__invalid_tile_factor___dx_d__in;
-
-// [string] "WARNING: invalid terrain_scale '%dx%d' in material '%s'"
-@ 0x733870 str_WARNING__invalid_terrain_scale___dx_d__i;
-
-// [string] "WARNING: 'env_map' param in material '%s' failed to load texture "%s""
-@ 0x7338D0 str_WARNING___env_map__param_in_material___s;
-
-// [string] "WARNING: too many texture layers, skipping '%s' in material '%s'"
-@ 0x733918 str_WARNING__too_many_texture_layers__skippi;
-
-// [string] "WARNING: 'illum_map' param in material '%s' failed to load texture "%s""
-@ 0x733968 str_WARNING___illum_map__param_in_material;
-
-// [string] "WARNING: skipping unknown param '%s' in material '%s'"
-@ 0x7339B4 str_WARNING__skipping_unknown_param___s__in;
-
-// [string] "internal write transform logic error"
-@ 0x733BC8 str_internal_write_transform_logic_error;
-
-// [string] "Ignoring invalid time value"
-@ 0x733CAC str_Ignoring_invalid_time_value;
-
-// [string] "zlib IO error"
-@ 0x733D18 str_zlib_IO_error;
-
-// [string] "invalid chromaticities"
-@ 0x733E38 str_invalid_chromaticities;
-
-// [string] "internal error checking chromaticities"
-@ 0x733E50 str_internal_error_checking_chromaticities;
-
-// [string] "invalid sRGB rendering intent"
-@ 0x733E8C str_invalid_sRGB_rendering_intent;
-
-// [string] "invalid length"
-@ 0x733F60 str_invalid_length;
-
-// [string] "invalid rendering intent"
-@ 0x733F84 str_invalid_rendering_intent;
-
-// [string] "invalid signature"
-@ 0x733FC0 str_invalid_signature;
-
-// [string] "invalid ICC profile color space"
-@ 0x73404C str_invalid_ICC_profile_color_space;
-
-// [string] "invalid embedded Abstract ICC profile"
-@ 0x73406C str_invalid_embedded_Abstract_ICC_profile;
-
-// [string] "internal error handling cHRM coefficients"
-@ 0x7341F0 str_internal_error_handling_cHRM_coefficient;
-
-// [string] "internal error handling cHRM->XYZ"
-@ 0x73421C str_internal_error_handling_cHRM__XYZ;
-
-// [string] "Invalid image width in IHDR"
-@ 0x73425C str_Invalid_image_width_in_IHDR;
-
-// [string] "Invalid image height in IHDR"
-@ 0x7342F0 str_Invalid_image_height_in_IHDR;
-
-// [string] "Invalid bit depth in IHDR"
-@ 0x734338 str_Invalid_bit_depth_in_IHDR;
-
-// [string] "Invalid color type in IHDR"
-@ 0x734354 str_Invalid_color_type_in_IHDR;
-
-// [string] "Invalid color type/bit depth combination in IHDR"
-@ 0x734370 str_Invalid_color_type_bit_depth_combination;
-
-// [string] "Invalid filter method in IHDR"
-@ 0x73440C str_Invalid_filter_method_in_IHDR;
-
-// [string] "Invalid IHDR data"
-@ 0x73442C str_Invalid_IHDR_data;
-
-// [string] "Invalid palette size, hIST allocation skipped"
-@ 0x7344C8 str_Invalid_palette_size__hIST_allocation_sk;
-
-// [string] "Invalid pCAL equation type"
-@ 0x734520 str_Invalid_pCAL_equation_type;
-
-// [string] "Invalid pCAL parameter count"
-@ 0x73453C str_Invalid_pCAL_parameter_count;
-
-// [string] "Invalid format for pCAL parameter"
-@ 0x73455C str_Invalid_format_for_pCAL_parameter;
-
-// [string] "Invalid sCAL unit"
-@ 0x734618 str_Invalid_sCAL_unit;
-
-// [string] "Invalid sCAL width"
-@ 0x73462C str_Invalid_sCAL_width;
-
-// [string] "Invalid sCAL height"
-@ 0x734640 str_Invalid_sCAL_height;
-
-// [string] "Memory allocation failed while processing sCAL"
-@ 0x734654 str_Memory_allocation_failed_while_processin;
-
-// [string] "Invalid palette length"
-@ 0x734684 str_Invalid_palette_length;
-
-// [string] "Invalid palette"
-@ 0x73469C str_Invalid_palette;
-
-// [string] "png_set_sPLT: invalid sPLT"
-@ 0x734754 str_png_set_sPLT__invalid_sPLT;
-
-// [string] "invalid location in png_set_unknown_chunks"
-@ 0x7347B8 str_invalid_location_in_png_set_unknown_chun;
-
-// [string] "PngStreamRead failed"
-@ 0x734D14 str_PngStreamRead_failed;
-
-// [string] "deflateEnd failed (ignored)"
-@ 0x734DA8 str_deflateEnd_failed__ignored;
-
-// [string] "error writing ancillary chunked compressed data"
-@ 0x734DE0 str_error_writing_ancillary_chunked_compress;
-
-// [string] "Invalid bit depth for grayscale image"
-@ 0x734E10 str_Invalid_bit_depth_for_grayscale_image;
-
-// [string] "Invalid bit depth for RGB image"
-@ 0x734E38 str_Invalid_bit_depth_for_RGB_image;
-
-// [string] "Invalid bit depth for paletted image"
-@ 0x734E58 str_Invalid_bit_depth_for_paletted_image;
-
-// [string] "Invalid bit depth for grayscale+alpha image"
-@ 0x734E80 str_Invalid_bit_depth_for_grayscale_alpha_im;
-
-// [string] "Invalid bit depth for RGBA image"
-@ 0x734EAC str_Invalid_bit_depth_for_RGBA_image;
-
-// [string] "Invalid image color type specified"
-@ 0x734ED0 str_Invalid_image_color_type_specified;
-
-// [string] "Invalid compression type specified"
-@ 0x734EF4 str_Invalid_compression_type_specified;
-
-// [string] "Invalid filter type specified"
-@ 0x734F18 str_Invalid_filter_type_specified;
-
-// [string] "Invalid interlace type specified"
-@ 0x734F38 str_Invalid_interlace_type_specified;
-
-// [string] "Invalid number of colors in palette"
-@ 0x734F5C str_Invalid_number_of_colors_in_palette;
-
-// [string] "Invalid sRGB rendering intent specified"
-@ 0x734FDC str_Invalid_sRGB_rendering_intent_specified;
-
-// [string] "ICC profile length invalid (not a multiple of 4)"
-@ 0x735038 str_ICC_profile_length_invalid__not_a_multip;
-
-// [string] "iCCP: invalid keyword"
-@ 0x73506C str_iCCP__invalid_keyword;
-
-// [string] "sPLT: invalid keyword"
-@ 0x735084 str_sPLT__invalid_keyword;
-
-// [string] "Invalid sBIT depth specified"
-@ 0x73509C str_Invalid_sBIT_depth_specified;
-
-// [string] "Invalid number of transparent colors specified"
-@ 0x7350BC str_Invalid_number_of_transparent_colors_spe;
-
-// [string] "Invalid background palette index"
-@ 0x735198 str_Invalid_background_palette_index;
-
-// [string] "Invalid number of histogram entries specified"
-@ 0x735240 str_Invalid_number_of_histogram_entries_spec;
-
-// [string] "tEXt: invalid keyword"
-@ 0x735270 str_tEXt__invalid_keyword;
-
-// [string] "zTXt: invalid compression type"
-@ 0x73529C str_zTXt__invalid_compression_type;
-
-// [string] "zTXt: invalid keyword"
-@ 0x7352BC str_zTXt__invalid_keyword;
-
-// [string] "iTXt: invalid keyword"
-@ 0x7352D4 str_iTXt__invalid_keyword;
-
-// [string] "iTXt: invalid compression"
-@ 0x7352EC str_iTXt__invalid_compression;
-
-// [string] "pCAL: invalid keyword"
-@ 0x735380 str_pCAL__invalid_keyword;
-
-// [string] "Invalid time specified for tIME chunk"
-@ 0x7353E4 str_Invalid_time_specified_for_tIME_chunk;
-
-// [string] "internal error: array alloc"
-@ 0x73540C str_internal_error__array_alloc;
-
-// [string] "internal error: array realloc"
-@ 0x735428 str_internal_error__array_realloc;
-
-// [string] "invalid window size"
-@ 0x73548C str_invalid_window_size;
-
-// [string] "invalid block type"
-@ 0x7354D0 str_invalid_block_type;
-
-// [string] "invalid stored block lengths"
-@ 0x7354E4 str_invalid_stored_block_lengths;
-
-// [string] "invalid code lengths set"
-@ 0x735528 str_invalid_code_lengths_set;
-
-// [string] "invalid bit length repeat"
-@ 0x735544 str_invalid_bit_length_repeat;
-
-// [string] "invalid code -- missing end-of-block"
-@ 0x735560 str_invalid_code____missing_end_of_block;
-
-// [string] "invalid literal/lengths set"
-@ 0x735588 str_invalid_literal_lengths_set;
-
-// [string] "invalid distances set"
-@ 0x7355A4 str_invalid_distances_set;
-
-// [string] "invalid literal/length code"
-@ 0x7355BC str_invalid_literal_length_code;
-
-// [string] "invalid distance code"
-@ 0x7355D8 str_invalid_distance_code;
-
-// [string] "invalid distance too far back"
-@ 0x7355F0 str_invalid_distance_too_far_back;
-
-// [string] "Invalid attempt to read row data"
-@ 0x735708 str_Invalid_attempt_to_read_row_data;
-
-// [string] "internal sequential row size calculation error"
-@ 0x735760 str_internal_sequential_row_size_calculation;
-
-// [string] "invalid after png_start_read_image or png_read_update_info"
-@ 0x735924 str_invalid_after_png_start_read_image_or_pn;
-
-// [string] "invalid background gamma type"
-@ 0x735998 str_invalid_background_gamma_type;
-
-// [string] "buffer error"
-@ 0x735AA8 str_buffer_error;
-
-// [string] "data error"
-@ 0x735AB8 str_data_error;
-
-// [string] "stream error"
-@ 0x735AC4 str_stream_error;
-
-// [string] "file error"
-@ 0x735AD4 str_file_error;
-
-// [string] "PNG file corrupted by ASCII conversion"
-@ 0x735B30 str_PNG_file_corrupted_by_ASCII_conversion;
-
-// [string] "CRC error"
-@ 0x735B58 str_CRC_error;
-
-// [string] "invalid window size (libpng)"
-@ 0x735B88 str_invalid_window_size__libpng;
-
-// [string] "invalid"
-@ 0x735BE4 str_invalid;
-
-// [string] "invalid values"
-@ 0x735C54 str_invalid_values;
-
-// [string] "invalid with alpha channel"
-@ 0x735D3C str_invalid_with_alpha_channel;
-
-// [string] "invalid index"
-@ 0x735D58 str_invalid_index;
-
-// [string] "invalid parameter count"
-@ 0x735D88 str_invalid_parameter_count;
-
-// [string] "invalid data"
-@ 0x735DBC str_invalid_data;
-
-// [string] "invalid unit"
-@ 0x735DCC str_invalid_unit;
-
-// [string] "Read failure in png_handle_zTXt"
-@ 0x735E8C str_Read_failure_in_png_handle_zTXt;
-
-// [string] "error in user chunk"
-@ 0x735EE8 str_error_in_user_chunk;
-
-// [string] "invalid chunk type"
-@ 0x735F80 str_invalid_chunk_type;
-
-// [string] "internal row logic error"
-@ 0x735FAC str_internal_row_logic_error;
-
-// [string] "internal row size calculation error"
-@ 0x735FC8 str_internal_row_size_calculation_error;
-
-// [string] "internal row width error"
-@ 0x735FEC str_internal_row_width_error;
-
-// [string] "invalid user transform pixel depth"
-@ 0x736008 str_invalid_user_transform_pixel_depth;
-
-// [string] "COM initialization failed"
-@ 0x736180 str_COM_initialization_failed;
-
-// [string] "SetSP() failed"
-@ 0x7361BC str_SetSP___failed;
-
-// [string] "DPlay initialization error: %s (0x%X)"
-@ 0x7361CC str_DPlay_initialization_error___s__0x_X;
-
-// [string] "AddComponent() failed"
-@ 0x736218 str_AddComponent___failed;
-
-// [string] "Host() failed"
-@ 0x736230 str_Host___failed;
-
-// [string] "WARNING"
-@ 0x73670C str_WARNING;
-
-// [string] "ASSERT"
-@ 0x736714 str_ASSERT;
-
-// [string] "ERROR: FM "%s" not found in FM path "%s" or no write permission"
-@ 0x737808 str_ERROR__FM___s__not_found_in_FM_path___s;
-
-// [string] "ERROR: Cannot set FM path, path "%s" does not exist or no write permission (usin"
-@ 0x737850 str_ERROR__Cannot_set_FM_path__path___s__doe;
-
-// [string] "ERROR: "
-@ 0x7378DC str_ERROR;
-
-// [string] "WARNING: "
-@ 0x7378F0 str_WARNING;
-
-// [string] "Failed to load "lgalloc.dll""
-@ 0x737938 str_Failed_to_load__lgalloc_dll;
-
-// [string] "Failed to locate "GetMalloc()" in "lgalloc.dll""
-@ 0x737958 str_Failed_to_locate__GetMalloc____in__lgall;
-
-// [string] "Failed to load allocator from in "lgalloc.dll""
-@ 0x737988 str_Failed_to_load_allocator_from_in__lgallo;
-
-// [string] "Failed to locate and load implode.dll!"
-@ 0x738070 str_Failed_to_locate_and_load_implode_dll;
-
-// [string] "WARNING: failed to enable raw mouse input (%d), using normal mouse input"
-@ 0x7382E8 str_WARNING__failed_to_enable_raw_mouse_inpu;
-
-// [string] "WARNING: could not enable raw mouse input, not supported by OS"
-@ 0x738334 str_WARNING__could_not_enable_raw_mouse_inpu;
-
-// [string] "D3DERR_DRIVERINTERNALERROR"
-@ 0x739008 str_D3DERR_DRIVERINTERNALERROR;
-
-// [string] "D3DERR_INVALIDDEVICE"
-@ 0x73909C str_D3DERR_INVALIDDEVICE;
-
-// [string] "D3DERR_INVALIDCALL"
-@ 0x7390B4 str_D3DERR_INVALIDCALL;
-
-// [string] "D3DERR_DRIVERINVALIDCALL"
-@ 0x7390C8 str_D3DERR_DRIVERINVALIDCALL;
-
-// [string] "E_INVALIDARG"
-@ 0x7390E4 str_E_INVALIDARG;
-
-// [string] "D3D Unknown Error Code %08X"
-@ 0x7390F4 str_D3D_Unknown_Error_Code__08X;
-
-// [string] "Lock count of DirectDraw surfaces appears corrupted"
-@ 0x7391B4 str_Lock_count_of_DirectDraw_surfaces_appear;
-
-// [string] "failed, unsupported backbuffer depth (%d)"
-@ 0x7396C0 str_failed__unsupported_backbuffer_depth___d;
-
-// [string] "failed, unsupported bit depth (%d)"
-@ 0x739740 str_failed__unsupported_bit_depth___d;
-
-// [string] "failed, unsupported bit depth (%d) for current mode"
-@ 0x739764 str_failed__unsupported_bit_depth___d__for_c;
-
-// [string] "failed to create secondary surf"
-@ 0x739798 str_failed_to_create_secondary_surf;
-
-// [string] "failed to create secondary hw surf"
-@ 0x7397B8 str_failed_to_create_secondary_hw_surf;
-
-// [string] "d3d_disp_limit_gpu_frames failed to init"
-@ 0x739948 str_d3d_disp_limit_gpu_frames_failed_to_init;
-
-// [string] "WARNING: failed to load al_reverb.ini"
-@ 0x739D5C str_WARNING__failed_to_load_al_reverb_ini;
-
-// [string] "WARNING: parse error reading al_reverb.ini (for reverb preset #%d), file skipped"
-@ 0x739D88 str_WARNING__parse_error_reading_al_reverb_i;
-
-// [string] "Failed to resolve AL extension call: %s"
-@ 0x739E78 str_Failed_to_resolve_AL_extension_call___s;
-
-// [string] "Failed to resolve AL call: %s"
-@ 0x73A108 str_Failed_to_resolve_AL_call___s;
-
-// [string] "alGetError"
-@ 0x73A1C0 str_alGetError;
-
-// [string] "alcGetError"
-@ 0x73A518 str_alcGetError;
-
-// [string] "Skipping device "%s", failed to open"
-@ 0x73A68C str_Skipping_device___s___failed_to_open;
-
-// [string] "WARNING: Current AL device could not initialize with user defined speaker config"
-@ 0x73A748 str_WARNING__Current_AL_device_could_not_ini;
-
-// [string] "Skipping device "%s", failed to create context"
-@ 0x73A828 str_Skipping_device___s___failed_to_create_c;
-
-// [string] "OpenAL not found on system or failed to load, install AL redist package or chose"
-@ 0x73AA18 str_OpenAL_not_found_on_system_or_failed_to;
-
-// [string] "failed to open device"
-@ 0x73AB14 str_failed_to_open_device;
-
-// [string] "Failed to find or open any device"
-@ 0x73ABE0 str_Failed_to_find_or_open_any_device;
-
-// [string] "WARNING: Could not set user defined speaker config "%s" (%d), reverting to defau"
-@ 0x73ADD8 str_WARNING__Could_not_set_user_defined_spea;
-
-// [string] "ERROR: GetFormat failed on primary sound buffer (err %08X)"
-@ 0x73AE38 str_ERROR__GetFormat_failed_on_primary_sound;
-
-// [string] "ERROR: GetFormat size query failed on primary sound buffer (err %08X)"
-@ 0x73AE78 str_ERROR__GetFormat_size_query_failed_on_pr;
-
-// [string] "SndCrackWaveHeader returned error"
-@ 0x73AFB0 str_SndCrackWaveHeader_returned_error;
-
-// [string] "SndCrackVocHeader returned error"
-@ 0x73AFE8 str_SndCrackVocHeader_returned_error;
-
-// [string] "SndCrackOggHeader returned error"
-@ 0x73B00C str_SndCrackOggHeader_returned_error;
-
-// [string] "Failed to find/load lgvid.dll, no movie playback possible"
-@ 0x73B650 str_Failed_to_find_load_lgvid_dll__no_movie;
-
-// [string] "Invalid lgvid.dll, no movie playback possible"
-@ 0x73B6BC str_Invalid_lgvid_dll__no_movie_playback_pos;
-
-// [string] "Failed to locate subtitle font '%s' in '%s', no subtitles will be displayed"
-@ 0x73B7C0 str_Failed_to_locate_subtitle_font___s__in;
-
-// [string] "LOG: subtitles> file '%s' in path '%s'> SYNTAX WARNING (line %d): '%s' expected "
-@ 0x73B878 str_LOG__subtitles__file___s__in_path___s;
-
-// [string] "WARNING: subtitle file '%s' in path '%s'> SYNTAX WARNING (line %d): '%s' expecte"
-@ 0x73B8F8 str_WARNING__subtitle_file___s__in_path___s;
-
-// [string] "LOG: subtitles> file '%s' in path '%s'> SYNTAX ERROR (line %d): newline in quote"
-@ 0x73B990 str_LOG__subtitles__file___s__in_path___s;
-
-// [string] "ERROR: subtitle file '%s' in path '%s'> SYNTAX ERROR (line %d): newline in quote"
-@ 0x73B9F0 str_ERROR__subtitle_file___s__in_path___s;
-
-// [string] "LOG: subtitles> file '%s' in path '%s'> WARNING (line %d): 'skipping MultiSub "%"
-@ 0x73BA78 str_LOG__subtitles__file___s__in_path___s;
-
-// [string] "WARNING: subtitle file '%s' in path '%s'> WARNING (line %d): 'skipping MultiSub "
-@ 0x73BAF8 str_WARNING__subtitle_file___s__in_path___s;
-
-// [string] "LOG: subtitles> file '%s' in path '%s'> WARNING (line %d): 'MultiSub "%s"' entry"
-@ 0x73BB78 str_LOG__subtitles__file___s__in_path___s;
-
-// [string] "WARNING: subtitle file '%s' in path '%s'> WARNING (line %d): 'MultiSub "%s"' ent"
-@ 0x73BBF0 str_WARNING__subtitle_file___s__in_path___s;
-
-// [string] "LOG: subtitles> file '%s' in path '%s'> WARNING (line %d): Failed to open SRT su"
-@ 0x73BC68 str_LOG__subtitles__file___s__in_path___s;
-
-// [string] "WARNING: subtitle file '%s' in path '%s'> WARNING (line %d): Failed to open SRT "
-@ 0x73BCD0 str_WARNING__subtitle_file___s__in_path___s;
-
-// [string] "LOG: subtitles> file '%s' in path '%s'> WARNING (line %d): Failed to read SRT su"
-@ 0x73BD38 str_LOG__subtitles__file___s__in_path___s;
-
-// [string] "WARNING: subtitle file '%s' in path '%s'> WARNING (line %d): Failed to read SRT "
-@ 0x73BDA0 str_WARNING__subtitle_file___s__in_path___s;
-
-// [string] "LOG: subtitles> file '%s' in path '%s'> WARNING (line %d): 'SrtSub "%s"' SRT fil"
-@ 0x73BE40 str_LOG__subtitles__file___s__in_path___s;
-
-// [string] "WARNING: subtitle file '%s' in path '%s'> WARNING (line %d): 'SrtSub "%s"' SRT f"
-@ 0x73BEC8 str_WARNING__subtitle_file___s__in_path___s;
-
-// [string] "LOG: subtitles> file '%s' in path '%s'> SYNTAX ERROR (line %d): expected '{'"
-@ 0x73BF50 str_LOG__subtitles__file___s__in_path___s;
-
-// [string] "ERROR: subtitle file '%s' in path '%s'> SYNTAX ERROR (line %d): expected '{'"
-@ 0x73BFA0 str_ERROR__subtitle_file___s__in_path___s;
-
-// [string] "LOG: subtitles> file '%s' in path '%s'> SYNTAX WARNING (line %d): unexpected '{'"
-@ 0x73BFF0 str_LOG__subtitles__file___s__in_path___s;
-
-// [string] "WARNING: subtitle file '%s' in path '%s'> SYNTAX WARNING (line %d): unexpected '"
-@ 0x73C058 str_WARNING__subtitle_file___s__in_path___s;
-
-// [string] "LOG: subtitles> file '%s' in path '%s'> SYNTAX ERROR (line %d): unexpected EOF a"
-@ 0x73C0E0 str_LOG__subtitles__file___s__in_path___s;
-
-// [string] "ERROR: subtitle file '%s' in path '%s'> SYNTAX ERROR (line %d): unexpected EOF a"
-@ 0x73C140 str_ERROR__subtitle_file___s__in_path___s;
-
-// [string] "LOG: subtitles> file '%s' in path '%s'> SYNTAX WARNING (line %d): unexpected '{'"
-@ 0x73C1A0 str_LOG__subtitles__file___s__in_path___s;
-
-// [string] "WARNING: subtitle file '%s' in path '%s'> SYNTAX WARNING (line %d): unexpected '"
-@ 0x73C218 str_WARNING__subtitle_file___s__in_path___s;
-
-// [string] "LOG: subtitles> file '%s' in path '%s'> SYNTAX WARNING (line %d): skipping dupli"
-@ 0x73C290 str_LOG__subtitles__file___s__in_path___s;
-
-// [string] "WARNING: subtitle file '%s' in path '%s'> SYNTAX WARNING (line %d): skipping dup"
-@ 0x73C300 str_WARNING__subtitle_file___s__in_path___s;
-
-// [string] "LOG: subtitles> file '%s' in path '%s'> SYNTAX WARNING (line %d): skipping '%s ""
-@ 0x73C378 str_LOG__subtitles__file___s__in_path___s;
-
-// [string] "WARNING: subtitle file '%s' in path '%s'> SYNTAX WARNING (line %d): skipping '%s"
-@ 0x73C420 str_WARNING__subtitle_file___s__in_path___s;
-
-// [string] "LOG: subtitles> file '%s' in path '%s'> SYNTAX WARNING (line %d): skipping '%s %"
-@ 0x73C4C8 str_LOG__subtitles__file___s__in_path___s;
-
-// [string] "WARNING: subtitle file '%s' in path '%s'> SYNTAX WARNING (line %d): skipping '%s"
-@ 0x73C570 str_WARNING__subtitle_file___s__in_path___s;
-
-// [string] "LOG: subtitles> file '%s' in path '%s'> SYNTAX WARNING (line %d): '%s' has empty"
-@ 0x73C630 str_LOG__subtitles__file___s__in_path___s;
-
-// [string] "WARNING: subtitle file '%s' in path '%s'> SYNTAX WARNING (line %d): '%s' has emp"
-@ 0x73C6A0 str_WARNING__subtitle_file___s__in_path___s;
-
-// [string] "LOG: subtitles> file '%s' in path '%s'> SYNTAX WARNING (line %d): multiple '%s' "
-@ 0x73C710 str_LOG__subtitles__file___s__in_path___s;
-
-// [string] "WARNING: subtitle file '%s' in path '%s'> SYNTAX WARNING (line %d): multiple '%s"
-@ 0x73C7A0 str_WARNING__subtitle_file___s__in_path___s;
-
-// [string] "LOG: subtitles> file '%s' in path '%s'> SYNTAX WARNING (line %d): '%s' has bad p"
-@ 0x73C838 str_LOG__subtitles__file___s__in_path___s;
-
-// [string] "WARNING: subtitle file '%s' in path '%s'> SYNTAX WARNING (line %d): '%s' has bad"
-@ 0x73C8A8 str_WARNING__subtitle_file___s__in_path___s;
-
-// [string] "LOG: subtitles> file '%s' in path '%s'> SYNTAX WARNING (line %d): '%s' has too l"
-@ 0x73C918 str_LOG__subtitles__file___s__in_path___s;
-
-// [string] "WARNING: subtitle file '%s' in path '%s'> SYNTAX WARNING (line %d): '%s' has too"
-@ 0x73C998 str_WARNING__subtitle_file___s__in_path___s;
-
-// [string] "LOG: subtitles> file '%s' in path '%s'> SYNTAX WARNING (line %d): '%s' has no 'T"
-@ 0x73CA18 str_LOG__subtitles__file___s__in_path___s;
-
-// [string] "WARNING: subtitle file '%s' in path '%s'> SYNTAX WARNING (line %d): '%s' has no "
-@ 0x73CA80 str_WARNING__subtitle_file___s__in_path___s;
-
-// [string] "LOG: subtitles> file '%s' in path '%s'> SYNTAX ERROR (line %d): '%s' is missing "
-@ 0x73CB30 str_LOG__subtitles__file___s__in_path___s;
-
-// [string] "ERROR: subtitle file '%s' in path '%s'> SYNTAX ERROR (line %d): '%s' is missing "
-@ 0x73CB98 str_ERROR__subtitle_file___s__in_path___s;
-
-// [string] "LOG: subtitles> file '%s' in path '%s'> SYNTAX ERROR (line %d): unknown"
-@ 0x73CC00 str_LOG__subtitles__file___s__in_path___s;
-
-// [string] "ERROR: subtitle file '%s' in path '%s'> SYNTAX ERROR (line %d): unknown"
-@ 0x73CC50 str_ERROR__subtitle_file___s__in_path___s;
-
-// [string] "LOG: subtitles> file '%s' in path '%s'> SYNTAX WARNING (line %d): skipping unkno"
-@ 0x73CC98 str_LOG__subtitles__file___s__in_path___s;
-
-// [string] "WARNING: subtitle file '%s' in path '%s'> SYNTAX WARNING (line %d): skipping unk"
-@ 0x73CD10 str_WARNING__subtitle_file___s__in_path___s;
-
-// [string] "LOG: subtitles> file '%s' in path '%s'> SYNTAX ERROR (line %d): invalid file hea"
-@ 0x73CD90 str_LOG__subtitles__file___s__in_path___s;
-
-// [string] "ERROR: subtitle file '%s' in path '%s'> SYNTAX ERROR (line %d): invalid file hea"
-@ 0x73CDE8 str_ERROR__subtitle_file___s__in_path___s;
-
-// [string] "WARNING: Failed to open subtitle file '%s' in path '%s'"
-@ 0x73CE48 str_WARNING__Failed_to_open_subtitle_file;
-
-// [string] "WARNING: Failed to read subtitle file '%s' in path '%s'"
-@ 0x73CE80 str_WARNING__Failed_to_read_subtitle_file;
-
-// [string] "ERROR: Partially or completely failed to load subtitle file '%s' in path '%s'"
-@ 0x73CEB8 str_ERROR__Partially_or_completely_failed_to;
-
-// [string] "invalid map/set<T> iterator"
-@ 0x73D010 str_invalid_map_set_T__iterator;
-
-// [string] "CRASH HANDLER: failed to create minidump file 'crash.dmp'"
-@ 0x73D0EC str_CRASH_HANDLER__failed_to_create_minidump;
-
-// [string] "CRASH HANDLER: failed to save minidump to 'crash.dmp'"
-@ 0x73D158 str_CRASH_HANDLER__failed_to_save_minidump_t;
-
-// [string] "GetLastError"
-@ 0x7848F4 str_GetLastError;
-
-// [string] "InvalidateRect"
-@ 0x7850F4 str_InvalidateRect;
-
-// [string] "?what@exception@std@@UBEPBDXZ"
-@ 0x7859AA str_what_exception_std__UBEPBDXZ;
-
-// [string] "??1exception@std@@UAE@XZ"
-@ 0x7859CA str_1exception_std__UAE_XZ;
-
-// [string] "??0exception@std@@QAE@XZ"
-@ 0x7859E6 str_0exception_std__QAE_XZ;
-
-// [string] "??0exception@std@@QAE@ABQBD@Z"
-@ 0x785A02 str_0exception_std__QAE_ABQBD_Z;
-
-// [string] "??0exception@std@@QAE@ABV01@@Z"
-@ 0x785A22 str_0exception_std__QAE_ABV01__Z;
-
-// [string] "_invalid_parameter_noinfo"
-@ 0x785A44 str_invalid_parameter_noinfo;
-
-// [string] "ferror"
-@ 0x785B3A str_ferror;
-
-// [string] "UnhandledExceptionFilter"
-@ 0x785E04 str_UnhandledExceptionFilter;
-
-// [string] "SetUnhandledExceptionFilter"
-@ 0x785E20 str_SetUnhandledExceptionFilter;
-
-// [string] "_CxxThrowException"
-@ 0x785FA6 str_CxxThrowException;
-
-// [string] "Aim Error"
-@ 0x79E7C0 str_Aim_Error;
-
-// [string] "Abort level"
-@ 0x7B6CB8 str_Abort_level;
-
-// [string] "Abort priority"
-@ 0x7B6CF8 str_Abort_priority;
-
-// [string] "Abort Unless"
-@ 0x7C37D0 str_Abort_Unless;
-
-// [string] ".?AVlength_error@std@@"
-@ 0x8087BC str_AVlength_error_std;
-
-// [string] ".?AVlogic_error@std@@"
-@ 0x8087DC str_AVlogic_error_std;
-
-// [string] ".?AVexception@std@@"
-@ 0x8087FC str_AVexception_std;
-
-// [string] ".?AVDPlayException@@"
-@ 0x80887C str_AVDPlayException;
-
 // [propagated: _thunk_sub_4013C0, 0.80]
 @ 0x401420 _thunk_sub_4013C0;
 
@@ -8709,10 +7410,10 @@
 @ 0x404570 _thunk_sub_4044F0;
 
 // [propagated: _thunk_sub_4044F0, 0.80]
-@ 0x404645 _thunk_sub_4044F0;
+@ 0x404645 _thunk_sub_4044F0_404645;
 
 // [propagated: _thunk_sub_4044F0, 0.80]
-@ 0x404670 _thunk_sub_4044F0;
+@ 0x404670 _thunk_sub_4044F0_404670;
 
 // [propagated: _thunk_sub_6B32E0, 0.80]
 @ 0x405B70 _thunk_sub_6B32E0;
@@ -8727,13 +7428,13 @@
 @ 0x407E70 _thunk_sub_46A890;
 
 // [propagated: _thunk_sub_6B2CA8, 0.80]
-@ 0x40946D _thunk_sub_6B2CA8;
+@ 0x40946D _thunk_sub_6B2CA8_40946D;
 
 // [propagated: _thunk_sub_663210, 0.80]
 @ 0x409B30 _thunk_sub_663210;
 
 // [propagated: _thunk_sub_401000, 0.80]
-@ 0x40A4D0 _thunk_sub_401000;
+@ 0x40A4D0 _thunk_sub_401000_40A4D0;
 
 // [propagated: _thunk_sub_40A4D0, 0.80]
 @ 0x40A550 _thunk_sub_40A4D0;
@@ -8745,7 +7446,7 @@
 @ 0x40ACA0 _thunk_sub_40ACA0;
 
 // [propagated: _thunk_sub_40ACA0, 0.80]
-@ 0x40AD20 _thunk_sub_40ACA0;
+@ 0x40AD20 _thunk_sub_40ACA0_40AD20;
 
 // [propagated: _thunk_sub_40A6A0, 0.80]
 @ 0x40ADA0 _thunk_sub_40A6A0;
@@ -8763,7 +7464,7 @@
 @ 0x40BAB0 _thunk_sub_65A630;
 
 // [propagated: _thunk_sub_65A630, 0.80]
-@ 0x40BC20 _thunk_sub_65A630;
+@ 0x40BC20 _thunk_sub_65A630_40BC20;
 
 // [propagated: _thunk_sub_416CD0, 0.80]
 @ 0x40BD20 _thunk_sub_416CD0;
@@ -8772,19 +7473,19 @@
 @ 0x40BFE0 _thunk_sub_6A5DC0;
 
 // [propagated: _thunk_sub_401000, 0.80]
-@ 0x40DE30 _thunk_sub_401000;
+@ 0x40DE30 _thunk_sub_401000_40DE30;
 
 // [propagated: _thunk_sub_401000, 0.80]
-@ 0x40DE90 _thunk_sub_401000;
+@ 0x40DE90 _thunk_sub_401000_40DE90;
 
 // [propagated: _thunk_sub_401000, 0.80]
-@ 0x40DED0 _thunk_sub_401000;
+@ 0x40DED0 _thunk_sub_401000_40DED0;
 
 // [propagated: _thunk_sub_40E120, 0.80]
 @ 0x40E1B0 _thunk_sub_40E120;
 
 // [propagated: _thunk_sub_40E120, 0.80]
-@ 0x40E240 _thunk_sub_40E120;
+@ 0x40E240 _thunk_sub_40E120_40E240;
 
 // [propagated: _thunk_sub_40E1B0, 0.80]
 @ 0x40E320 _thunk_sub_40E1B0;
@@ -8796,7 +7497,7 @@
 @ 0x40F040 _thunk_sub_40EE70;
 
 // [propagated: _thunk_sub_6B2CA8, 0.80]
-@ 0x40F41C _thunk_sub_6B2CA8;
+@ 0x40F41C _thunk_sub_6B2CA8_40F41C;
 
 // [propagated: _thunk_sub_665660, 0.80]
 @ 0x410150 _thunk_sub_665660;
@@ -8808,19 +7509,19 @@
 @ 0x410A30 _thunk_sub_5E77A0;
 
 // [propagated: _thunk_sub_5E77A0, 0.80]
-@ 0x411600 _thunk_sub_5E77A0;
+@ 0x411600 _thunk_sub_5E77A0_411600;
 
 // [propagated: _thunk_sub_6B2D1C, 0.80]
 @ 0x412170 _thunk_sub_6B2D1C;
 
 // [propagated: _thunk_sub_6B2CA8, 0.80]
-@ 0x4129BE _thunk_sub_6B2CA8;
+@ 0x4129BE _thunk_sub_6B2CA8_4129BE;
 
 // [propagated: _thunk_sub_6B2CA8, 0.80]
-@ 0x412D12 _thunk_sub_6B2CA8;
+@ 0x412D12 _thunk_sub_6B2CA8_412D12;
 
 // [propagated: _thunk_sub_6B2D1C, 0.80]
-@ 0x413190 _thunk_sub_6B2D1C;
+@ 0x413190 _thunk_sub_6B2D1C_413190;
 
 // [propagated: _thunk_sub_6B3226, 0.80]
 @ 0x413570 _thunk_sub_6B3226;
@@ -8832,16 +7533,16 @@
 @ 0x4139E0 _thunk_sub_413630;
 
 // [propagated: _thunk_sub_663210, 0.80]
-@ 0x4144E0 _thunk_sub_663210;
+@ 0x4144E0 _thunk_sub_663210_4144E0;
 
 // [propagated: _thunk_sub_663210, 0.80]
-@ 0x41454C _thunk_sub_663210;
+@ 0x41454C _thunk_sub_663210_41454C;
 
 // [propagated: _thunk_sub_6B2CC4, 0.80]
 @ 0x4147D0 _thunk_sub_6B2CC4;
 
 // [propagated: _thunk_sub_6B2CA8, 0.80]
-@ 0x414E7A _thunk_sub_6B2CA8;
+@ 0x414E7A _thunk_sub_6B2CA8_414E7A;
 
 // [propagated: _thunk_sub_65D900, 0.80]
 @ 0x4156D0 _thunk_sub_65D900;
@@ -8853,16 +7554,16 @@
 @ 0x4164F0 _thunk_sub_416A10;
 
 // [propagated: _thunk_sub_401000, 0.80]
-@ 0x4169C0 _thunk_sub_401000;
+@ 0x4169C0 _thunk_sub_401000_4169C0;
 
 // [propagated: _thunk_sub_401000, 0.80]
-@ 0x416A60 _thunk_sub_401000;
+@ 0x416A60 _thunk_sub_401000_416A60;
 
 // [propagated: _thunk_sub_401000, 0.80]
-@ 0x416A90 _thunk_sub_401000;
+@ 0x416A90 _thunk_sub_401000_416A90;
 
 // [propagated: _thunk_sub_6A5DC0, 0.80]
-@ 0x417610 _thunk_sub_6A5DC0;
+@ 0x417610 _thunk_sub_6A5DC0_417610;
 
 // [propagated: _thunk_sub_65D410, 0.80]
 @ 0x4199E0 _thunk_sub_65D410;
@@ -8871,37 +7572,37 @@
 @ 0x419B50 _thunk_sub_65D470;
 
 // [propagated: _thunk_sub_65D470, 0.80]
-@ 0x419B70 _thunk_sub_65D470;
+@ 0x419B70 _thunk_sub_65D470_419B70;
 
 // [propagated: _thunk_sub_419D20, 0.80]
 @ 0x419F50 _thunk_sub_419D20;
 
 // [propagated: _thunk_sub_6B2CA8, 0.80]
-@ 0x41FFA0 _thunk_sub_6B2CA8;
+@ 0x41FFA0 _thunk_sub_6B2CA8_41FFA0;
 
 // [propagated: _thunk_sub_6B2CA8, 0.80]
-@ 0x4229B7 _thunk_sub_6B2CA8;
+@ 0x4229B7 _thunk_sub_6B2CA8_4229B7;
 
 // [propagated: _thunk_sub_6B2CA8, 0.80]
-@ 0x422D88 _thunk_sub_6B2CA8;
+@ 0x422D88 _thunk_sub_6B2CA8_422D88;
 
 // [propagated: _thunk_sub_65D470, 0.80]
-@ 0x4230D9 _thunk_sub_65D470;
+@ 0x4230D9 _thunk_sub_65D470_4230D9;
 
 // [propagated: _thunk_sub_65D470, 0.80]
-@ 0x423290 _thunk_sub_65D470;
+@ 0x423290 _thunk_sub_65D470_423290;
 
 // [propagated: _thunk_sub_6B2CA8, 0.80]
-@ 0x423613 _thunk_sub_6B2CA8;
+@ 0x423613 _thunk_sub_6B2CA8_423613;
 
 // [propagated: _thunk_sub_6B2CA8, 0.80]
-@ 0x423AAF _thunk_sub_6B2CA8;
+@ 0x423AAF _thunk_sub_6B2CA8_423AAF;
 
 // [propagated: _thunk_sub_423C10, 0.80]
 @ 0x424268 _thunk_sub_423C10;
 
 // [propagated: _thunk_sub_6B2CC4, 0.80]
-@ 0x424710 _thunk_sub_6B2CC4;
+@ 0x424710 _thunk_sub_6B2CC4_424710;
 
 // [propagated: _thunk_sub_409FE0, 0.80]
 @ 0x424A50 _thunk_sub_409FE0;
@@ -8910,16 +7611,16 @@
 @ 0x424B70 _thunk_sub_424A50;
 
 // [propagated: _thunk_sub_6B2CA8, 0.80]
-@ 0x424F13 _thunk_sub_6B2CA8;
+@ 0x424F13 _thunk_sub_6B2CA8_424F13;
 
 // [propagated: _thunk_sub_6B2CA8, 0.80]
-@ 0x425154 _thunk_sub_6B2CA8;
+@ 0x425154 _thunk_sub_6B2CA8_425154;
 
 // [propagated: _thunk_sub_468A00, 0.80]
 @ 0x4253F0 _thunk_sub_468A00;
 
 // [propagated: _thunk_sub_6B2D1C, 0.80]
-@ 0x4264F0 _thunk_sub_6B2D1C;
+@ 0x4264F0 _thunk_sub_6B2D1C_4264F0;
 
 // [propagated: _thunk_sub_6C4748, 0.80]
 @ 0x426550 _thunk_sub_6C4748;
@@ -8928,7 +7629,7 @@
 @ 0x4265C0 _thunk_sub_434530;
 
 // [propagated: _thunk_sub_6B2D1C, 0.80]
-@ 0x4267C0 _thunk_sub_6B2D1C;
+@ 0x4267C0 _thunk_sub_6B2D1C_4267C0;
 
 // [propagated: _thunk_sub_426C80, 0.80]
 @ 0x426930 _thunk_sub_426C80;
@@ -8943,43 +7644,43 @@
 @ 0x427FB0 _thunk_sub_4E74E0;
 
 // [propagated: _thunk_sub_663210, 0.80]
-@ 0x427FF0 _thunk_sub_663210;
+@ 0x427FF0 _thunk_sub_663210_427FF0;
 
 // [propagated: _thunk_sub_663210, 0.80]
-@ 0x428130 _thunk_sub_663210;
+@ 0x428130 _thunk_sub_663210_428130;
 
 // [propagated: _thunk_sub_6B2CC4, 0.80]
-@ 0x428510 _thunk_sub_6B2CC4;
+@ 0x428510 _thunk_sub_6B2CC4_428510;
 
 // [propagated: _thunk_sub_69FDF0, 0.80]
 @ 0x428660 _thunk_sub_69FDF0;
 
 // [propagated: _thunk_sub_665660, 0.80]
-@ 0x42A660 _thunk_sub_665660;
+@ 0x42A660 _thunk_sub_665660_42A660;
 
 // [propagated: _thunk_sub_6B2D1C, 0.80]
-@ 0x42C7B0 _thunk_sub_6B2D1C;
+@ 0x42C7B0 _thunk_sub_6B2D1C_42C7B0;
 
 // [propagated: _thunk_sub_6B2CA8, 0.80]
-@ 0x42CE6B _thunk_sub_6B2CA8;
+@ 0x42CE6B _thunk_sub_6B2CA8_42CE6B;
 
 // [propagated: _thunk_sub_660E40, 0.80]
 @ 0x42CF20 _thunk_sub_660E40;
 
 // [propagated: _thunk_sub_413340, 0.80]
-@ 0x42D150 _thunk_sub_413340;
+@ 0x42D150 _thunk_sub_413340_42D150;
 
 // [propagated: _thunk_sub_6B2CC4, 0.80]
-@ 0x42D640 _thunk_sub_6B2CC4;
+@ 0x42D640 _thunk_sub_6B2CC4_42D640;
 
 // [propagated: _thunk_sub_42D6C0, 0.80]
 @ 0x42D660 _thunk_sub_42D6C0;
 
 // [propagated: _thunk_sub_6B2D1C, 0.80]
-@ 0x42D670 _thunk_sub_6B2D1C;
+@ 0x42D670 _thunk_sub_6B2D1C_42D670;
 
 // [propagated: _thunk_sub_6B2D1C, 0.80]
-@ 0x42D740 _thunk_sub_6B2D1C;
+@ 0x42D740 _thunk_sub_6B2D1C_42D740;
 
 // [propagated: _thunk_sub_431C00, 0.80]
 @ 0x42D8B0 _thunk_sub_431C00;
@@ -8991,19 +7692,19 @@
 @ 0x42DB30 _thunk_sub_534670;
 
 // [propagated: _thunk_sub_42D6C0, 0.80]
-@ 0x42EDEA _thunk_sub_42D6C0;
+@ 0x42EDEA _thunk_sub_42D6C0_42EDEA;
 
 // [propagated: _thunk_sub_430A30, 0.80]
 @ 0x430B80 _thunk_sub_430A30;
 
 // [propagated: _thunk_sub_6B2D1C, 0.80]
-@ 0x431990 _thunk_sub_6B2D1C;
+@ 0x431990 _thunk_sub_6B2D1C_431990;
 
 // [propagated: _thunk_sub_401000, 0.80]
-@ 0x431C00 _thunk_sub_401000;
+@ 0x431C00 _thunk_sub_401000_431C00;
 
 // [propagated: _thunk_sub_401000, 0.80]
-@ 0x431C70 _thunk_sub_401000;
+@ 0x431C70 _thunk_sub_401000_431C70;
 
 // [propagated: _thunk_sub_432180, 0.80]
 @ 0x432300 _thunk_sub_432180;
@@ -9012,10 +7713,10 @@
 @ 0x4337AD _thunk_sub_65A570;
 
 // [propagated: _thunk_sub_65A570, 0.80]
-@ 0x4337B1 _thunk_sub_65A570;
+@ 0x4337B1 _thunk_sub_65A570_4337B1;
 
 // [propagated: _thunk_sub_65A570, 0.80]
-@ 0x433B52 _thunk_sub_65A570;
+@ 0x433B52 _thunk_sub_65A570_433B52;
 
 // [propagated: _thunk_sub_4EE850, 0.80]
 @ 0x433C20 _thunk_sub_4EE850;
@@ -9024,16 +7725,16 @@
 @ 0x434350 _thunk_sub_468670;
 
 // [propagated: _thunk_sub_6B2CA8, 0.80]
-@ 0x434680 _thunk_sub_6B2CA8;
+@ 0x434680 _thunk_sub_6B2CA8_434680;
 
 // [propagated: _thunk_sub_6B2CA8, 0.80]
-@ 0x434780 _thunk_sub_6B2CA8;
+@ 0x434780 _thunk_sub_6B2CA8_434780;
 
 // [propagated: _thunk_sub_401000, 0.80]
-@ 0x434BB0 _thunk_sub_401000;
+@ 0x434BB0 _thunk_sub_401000_434BB0;
 
 // [propagated: _thunk_sub_6B2D1C, 0.80]
-@ 0x434C50 _thunk_sub_6B2D1C;
+@ 0x434C50 _thunk_sub_6B2D1C_434C50;
 
 // [propagated: _thunk_sub_65D850, 0.80]
 @ 0x434D80 _thunk_sub_65D850;
@@ -9045,64 +7746,64 @@
 @ 0x435050 _thunk_sub_435000;
 
 // [propagated: _thunk_sub_6B2D1C, 0.80]
-@ 0x435900 _thunk_sub_6B2D1C;
+@ 0x435900 _thunk_sub_6B2D1C_435900;
 
 // [propagated: _thunk_sub_660E90, 0.80]
 @ 0x435F00 _thunk_sub_660E90;
 
 // [propagated: _thunk_sub_413340, 0.80]
-@ 0x4360B0 _thunk_sub_413340;
+@ 0x4360B0 _thunk_sub_413340_4360B0;
 
 // [propagated: _thunk_sub_437130, 0.80]
 @ 0x436340 _thunk_sub_437130;
 
 // [propagated: _thunk_sub_401000, 0.80]
-@ 0x437060 _thunk_sub_401000;
+@ 0x437060 _thunk_sub_401000_437060;
 
 // [propagated: _thunk_sub_401000, 0.80]
-@ 0x4375A0 _thunk_sub_401000;
+@ 0x4375A0 _thunk_sub_401000_4375A0;
 
 // [propagated: _thunk_sub_435000, 0.80]
-@ 0x4375F0 _thunk_sub_435000;
+@ 0x4375F0 _thunk_sub_435000_4375F0;
 
 // [propagated: _thunk_sub_663210, 0.80]
-@ 0x439500 _thunk_sub_663210;
+@ 0x439500 _thunk_sub_663210_439500;
 
 // [propagated: _thunk_sub_6B2CC4, 0.80]
-@ 0x439610 _thunk_sub_6B2CC4;
+@ 0x439610 _thunk_sub_6B2CC4_439610;
 
 // [propagated: _thunk_sub_43B700, 0.80]
 @ 0x43BA70 _thunk_sub_43B700;
 
 // [propagated: _thunk_sub_468670, 0.80]
-@ 0x43BC10 _thunk_sub_468670;
+@ 0x43BC10 _thunk_sub_468670_43BC10;
 
 // [propagated: _thunk_sub_6C46CE, 0.80]
 @ 0x43C410 _thunk_sub_6C46CE;
 
 // [propagated: _thunk_sub_6B2CA8, 0.80]
-@ 0x43CFBB _thunk_sub_6B2CA8;
+@ 0x43CFBB _thunk_sub_6B2CA8_43CFBB;
 
 // [propagated: _thunk_sub_43DE80, 0.80]
 @ 0x43DBC0 _thunk_sub_43DE80;
 
 // [propagated: _thunk_sub_401000, 0.80]
-@ 0x43DF80 _thunk_sub_401000;
+@ 0x43DF80 _thunk_sub_401000_43DF80;
 
 // [propagated: _thunk_sub_401000, 0.80]
-@ 0x43DFE0 _thunk_sub_401000;
+@ 0x43DFE0 _thunk_sub_401000_43DFE0;
 
 // [propagated: _thunk_sub_401000, 0.80]
-@ 0x43E020 _thunk_sub_401000;
+@ 0x43E020 _thunk_sub_401000_43E020;
 
 // [propagated: _thunk_sub_468670, 0.80]
-@ 0x43E130 _thunk_sub_468670;
+@ 0x43E130 _thunk_sub_468670_43E130;
 
 // [propagated: _thunk_sub_468750, 0.80]
 @ 0x43E190 _thunk_sub_468750;
 
 // [propagated: _thunk_sub_6B2CA8, 0.80]
-@ 0x43F6C1 _thunk_sub_6B2CA8;
+@ 0x43F6C1 _thunk_sub_6B2CA8_43F6C1;
 
 // [propagated: _thunk_sub_43FBC0, 0.80]
 @ 0x43FD80 _thunk_sub_43FBC0;
@@ -9114,28 +7815,28 @@
 @ 0x440650 _thunk_sub_4405C0;
 
 // [propagated: _thunk_sub_401000, 0.80]
-@ 0x4406D0 _thunk_sub_401000;
+@ 0x4406D0 _thunk_sub_401000_4406D0;
 
 // [propagated: _thunk_sub_65A630, 0.80]
-@ 0x4409C0 _thunk_sub_65A630;
+@ 0x4409C0 _thunk_sub_65A630_4409C0;
 
 // [propagated: _thunk_sub_440C20, 0.80]
 @ 0x4415D0 _thunk_sub_440C20;
 
 // [propagated: _thunk_sub_401000, 0.80]
-@ 0x441650 _thunk_sub_401000;
+@ 0x441650 _thunk_sub_401000_441650;
 
 // [propagated: _thunk_sub_468670, 0.80]
-@ 0x443AA0 _thunk_sub_468670;
+@ 0x443AA0 _thunk_sub_468670_443AA0;
 
 // [propagated: _thunk_sub_443BB0, 0.80]
 @ 0x443B90 _thunk_sub_443BB0;
 
 // [propagated: _thunk_sub_468670, 0.80]
-@ 0x444C40 _thunk_sub_468670;
+@ 0x444C40 _thunk_sub_468670_444C40;
 
 // [propagated: _thunk_sub_6B2D1C, 0.80]
-@ 0x446230 _thunk_sub_6B2D1C;
+@ 0x446230 _thunk_sub_6B2D1C_446230;
 
 // [propagated: _thunk_sub_4468F0, 0.80]
 @ 0x4466C0 _thunk_sub_4468F0;
@@ -9153,7 +7854,7 @@
 @ 0x447D90 _thunk_sub_577600;
 
 // [propagated: _thunk_sub_577600, 0.80]
-@ 0x447DE0 _thunk_sub_577600;
+@ 0x447DE0 _thunk_sub_577600_447DE0;
 
 // [propagated: _thunk_sub_448670, 0.80]
 @ 0x449594 _thunk_sub_448670;
@@ -9168,10 +7869,10 @@
 @ 0x4498C0 _thunk_sub_449600;
 
 // [propagated: _thunk_sub_665660, 0.80]
-@ 0x44B390 _thunk_sub_665660;
+@ 0x44B390 _thunk_sub_665660_44B390;
 
 // [propagated: _thunk_sub_65A630, 0.80]
-@ 0x44C490 _thunk_sub_65A630;
+@ 0x44C490 _thunk_sub_65A630_44C490;
 
 // [propagated: _thunk_sub_44C8B0, 0.80]
 @ 0x44C5E0 _thunk_sub_44C8B0;
@@ -9180,61 +7881,61 @@
 @ 0x44CFC0 _thunk_sub_4F4110;
 
 // [propagated: _thunk_sub_468670, 0.80]
-@ 0x44DC60 _thunk_sub_468670;
+@ 0x44DC60 _thunk_sub_468670_44DC60;
 
 // [propagated: _thunk_sub_468670, 0.80]
-@ 0x44DE10 _thunk_sub_468670;
+@ 0x44DE10 _thunk_sub_468670_44DE10;
 
 // [propagated: _thunk_sub_5E77A0, 0.80]
-@ 0x44F210 _thunk_sub_5E77A0;
+@ 0x44F210 _thunk_sub_5E77A0_44F210;
 
 // [propagated: _thunk_sub_6B2CA8, 0.80]
-@ 0x44F990 _thunk_sub_6B2CA8;
+@ 0x44F990 _thunk_sub_6B2CA8_44F990;
 
 // [propagated: _thunk_sub_6B2CA8, 0.80]
-@ 0x44FAF0 _thunk_sub_6B2CA8;
+@ 0x44FAF0 _thunk_sub_6B2CA8_44FAF0;
 
 // [propagated: _thunk_sub_6B2CA8, 0.80]
-@ 0x44FC10 _thunk_sub_6B2CA8;
+@ 0x44FC10 _thunk_sub_6B2CA8_44FC10;
 
 // [propagated: _thunk_sub_6B2CA8, 0.80]
-@ 0x44FD30 _thunk_sub_6B2CA8;
+@ 0x44FD30 _thunk_sub_6B2CA8_44FD30;
 
 // [propagated: _thunk_sub_6B2CA8, 0.80]
-@ 0x4501D9 _thunk_sub_6B2CA8;
+@ 0x4501D9 _thunk_sub_6B2CA8_4501D9;
 
 // [propagated: _thunk_sub_6B2CA8, 0.80]
-@ 0x4501DB _thunk_sub_6B2CA8;
+@ 0x4501DB _thunk_sub_6B2CA8_4501DB;
 
 // [propagated: _thunk_sub_663210, 0.80]
-@ 0x450530 _thunk_sub_663210;
+@ 0x450530 _thunk_sub_663210_450530;
 
 // [propagated: _thunk_sub_6B2CC4, 0.80]
-@ 0x450740 _thunk_sub_6B2CC4;
+@ 0x450740 _thunk_sub_6B2CC4_450740;
 
 // [propagated: _thunk_sub_5B0240, 0.80]
 @ 0x450800 _thunk_sub_5B0240;
 
 // [propagated: _thunk_sub_6B2CA8, 0.80]
-@ 0x452538 _thunk_sub_6B2CA8;
+@ 0x452538 _thunk_sub_6B2CA8_452538;
 
 // [propagated: _thunk_sub_452940, 0.80]
 @ 0x452AC0 _thunk_sub_452940;
 
 // [propagated: _thunk_sub_6B2CA8, 0.80]
-@ 0x453850 _thunk_sub_6B2CA8;
+@ 0x453850 _thunk_sub_6B2CA8_453850;
 
 // [propagated: _thunk_sub_6B2CA8, 0.80]
-@ 0x455AC2 _thunk_sub_6B2CA8;
+@ 0x455AC2 _thunk_sub_6B2CA8_455AC2;
 
 // [propagated: _thunk_sub_663210, 0.80]
-@ 0x4560B0 _thunk_sub_663210;
+@ 0x4560B0 _thunk_sub_663210_4560B0;
 
 // [propagated: _thunk_sub_45DBC0, 0.80]
 @ 0x456250 _thunk_sub_45DBC0;
 
 // [propagated: _thunk_sub_6B2CC4, 0.80]
-@ 0x456BA0 _thunk_sub_6B2CC4;
+@ 0x456BA0 _thunk_sub_6B2CC4_456BA0;
 
 // [propagated: _thunk_sub_431DD0, 0.80]
 @ 0x456CE0 _thunk_sub_431DD0;
@@ -9243,37 +7944,37 @@
 @ 0x457000 _thunk_sub_4EC340;
 
 // [propagated: _thunk_sub_6A5DC0, 0.80]
-@ 0x458080 _thunk_sub_6A5DC0;
+@ 0x458080 _thunk_sub_6A5DC0_458080;
 
 // [propagated: _thunk_sub_6B2CA8, 0.80]
-@ 0x458AE5 _thunk_sub_6B2CA8;
+@ 0x458AE5 _thunk_sub_6B2CA8_458AE5;
 
 // [propagated: _thunk_sub_6A5DC0, 0.80]
-@ 0x458CC0 _thunk_sub_6A5DC0;
+@ 0x458CC0 _thunk_sub_6A5DC0_458CC0;
 
 // [propagated: _thunk_sub_6A5DC0, 0.80]
-@ 0x458D20 _thunk_sub_6A5DC0;
+@ 0x458D20 _thunk_sub_6A5DC0_458D20;
 
 // [propagated: _thunk_sub_6B2CA8, 0.80]
-@ 0x4590A2 _thunk_sub_6B2CA8;
+@ 0x4590A2 _thunk_sub_6B2CA8_4590A2;
 
 // [propagated: _thunk_sub_468670, 0.80]
-@ 0x459770 _thunk_sub_468670;
+@ 0x459770 _thunk_sub_468670_459770;
 
 // [propagated: _thunk_sub_468670, 0.80]
-@ 0x4598E0 _thunk_sub_468670;
+@ 0x4598E0 _thunk_sub_468670_4598E0;
 
 // [propagated: _thunk_sub_6B2CA8, 0.80]
-@ 0x459C56 _thunk_sub_6B2CA8;
+@ 0x459C56 _thunk_sub_6B2CA8_459C56;
 
 // [propagated: _thunk_sub_468670, 0.80]
-@ 0x459D30 _thunk_sub_468670;
+@ 0x459D30 _thunk_sub_468670_459D30;
 
 // [propagated: _thunk_sub_468670, 0.80]
-@ 0x45A040 _thunk_sub_468670;
+@ 0x45A040 _thunk_sub_468670_45A040;
 
 // [propagated: _thunk_sub_6B2D1C, 0.80]
-@ 0x45AB20 _thunk_sub_6B2D1C;
+@ 0x45AB20 _thunk_sub_6B2D1C_45AB20;
 
 // [propagated: _thunk_sub_5F4D70, 0.80]
 @ 0x45BDE0 _thunk_sub_5F4D70;
@@ -9285,7 +7986,7 @@
 @ 0x45D130 _thunk_sub_45D130;
 
 // [propagated: _thunk_sub_4EE850, 0.80]
-@ 0x45D620 _thunk_sub_4EE850;
+@ 0x45D620 _thunk_sub_4EE850_45D620;
 
 // [propagated: _thunk_sub_4E18C0, 0.80]
 @ 0x45DBC0 _thunk_sub_4E18C0;
@@ -9294,13 +7995,13 @@
 @ 0x45DF40 _thunk_sub_6C475A;
 
 // [propagated: _thunk_sub_6B32E0, 0.80]
-@ 0x45E010 _thunk_sub_6B32E0;
+@ 0x45E010 _thunk_sub_6B32E0_45E010;
 
 // [propagated: _thunk_sub_45EEE0, 0.80]
 @ 0x45E860 _thunk_sub_45EEE0;
 
 // [propagated: _thunk_sub_6C475A, 0.80]
-@ 0x45FAE0 _thunk_sub_6C475A;
+@ 0x45FAE0 _thunk_sub_6C475A_45FAE0;
 
 // [propagated: _thunk_sub_460A80, 0.80]
 @ 0x460930 _thunk_sub_460A80;
@@ -9342,7 +8043,7 @@
 @ 0x4652E0 _thunk_sub_66CBD0;
 
 // [propagated: _thunk_sub_66CBD0, 0.80]
-@ 0x465360 _thunk_sub_66CBD0;
+@ 0x465360 _thunk_sub_66CBD0_465360;
 
 // [propagated: _thunk_sub_4666B0, 0.80]
 @ 0x466560 _thunk_sub_4666B0;
@@ -9354,7 +8055,7 @@
 @ 0x467EC0 _thunk_sub_66E3A0;
 
 // [propagated: _thunk_sub_401000, 0.80]
-@ 0x468B90 _thunk_sub_401000;
+@ 0x468B90 _thunk_sub_401000_468B90;
 
 // [propagated: _thunk_sub_6A3140, 0.80]
 @ 0x4690F0 _thunk_sub_6A3140;
@@ -9372,28 +8073,28 @@
 @ 0x46A470 _thunk_sub_46A3D0;
 
 // [propagated: _thunk_sub_46A3D0, 0.80]
-@ 0x46A4C0 _thunk_sub_46A3D0;
+@ 0x46A4C0 _thunk_sub_46A3D0_46A4C0;
 
 // [propagated: _thunk_sub_46A3D0, 0.80]
-@ 0x46A510 _thunk_sub_46A3D0;
+@ 0x46A510 _thunk_sub_46A3D0_46A510;
 
 // [propagated: _thunk_sub_6B2CA8, 0.80]
-@ 0x46A841 _thunk_sub_6B2CA8;
+@ 0x46A841 _thunk_sub_6B2CA8_46A841;
 
 // [propagated: _thunk_sub_46A890, 0.80]
-@ 0x46AB30 _thunk_sub_46A890;
+@ 0x46AB30 _thunk_sub_46A890_46AB30;
 
 // [propagated: _thunk_sub_679F00, 0.80]
 @ 0x46AE40 _thunk_sub_679F00;
 
 // [propagated: _thunk_sub_6B2D1C, 0.80]
-@ 0x46BAB0 _thunk_sub_6B2D1C;
+@ 0x46BAB0 _thunk_sub_6B2D1C_46BAB0;
 
 // [propagated: _thunk_sub_46BDD0, 0.80]
 @ 0x46BED0 _thunk_sub_46BDD0;
 
 // [propagated: _thunk_sub_431DD0, 0.80]
-@ 0x46D860 _thunk_sub_431DD0;
+@ 0x46D860 _thunk_sub_431DD0_46D860;
 
 // [propagated: _thunk_sub_6C46C8, 0.80]
 @ 0x46ECB0 _thunk_sub_6C46C8;
@@ -9402,25 +8103,25 @@
 @ 0x46ECD0 _thunk_sub_46EA90;
 
 // [propagated: _thunk_sub_401000, 0.80]
-@ 0x470190 _thunk_sub_401000;
+@ 0x470190 _thunk_sub_401000_470190;
 
 // [propagated: _thunk_sub_65D6C0, 0.80]
 @ 0x470220 _thunk_sub_65D6C0;
 
 // [propagated: _thunk_sub_663210, 0.80]
-@ 0x4705C0 _thunk_sub_663210;
+@ 0x4705C0 _thunk_sub_663210_4705C0;
 
 // [propagated: _thunk_sub_4F4110, 0.80]
-@ 0x470700 _thunk_sub_4F4110;
+@ 0x470700 _thunk_sub_4F4110_470700;
 
 // [propagated: _thunk_sub_4F4110, 0.80]
-@ 0x470E10 _thunk_sub_4F4110;
+@ 0x470E10 _thunk_sub_4F4110_470E10;
 
 // [propagated: _thunk_sub_470FC0, 0.80]
 @ 0x471060 _thunk_sub_470FC0;
 
 // [propagated: _thunk_sub_470FC0, 0.80]
-@ 0x4711C0 _thunk_sub_470FC0;
+@ 0x4711C0 _thunk_sub_470FC0_4711C0;
 
 // [propagated: _thunk_sub_471500, 0.80]
 @ 0x471470 _thunk_sub_471500;
@@ -9432,34 +8133,34 @@
 @ 0x4716F0 _thunk_sub_4712B0;
 
 // [propagated: _thunk_sub_663210, 0.80]
-@ 0x4725C0 _thunk_sub_663210;
+@ 0x4725C0 _thunk_sub_663210_4725C0;
 
 // [propagated: _thunk_sub_473040, 0.80]
 @ 0x4731E0 _thunk_sub_473040;
 
 // [propagated: _thunk_sub_473040, 0.80]
-@ 0x473250 _thunk_sub_473040;
+@ 0x473250 _thunk_sub_473040_473250;
 
 // [propagated: _thunk_sub_473160, 0.80]
 @ 0x473340 _thunk_sub_473160;
 
 // [propagated: _thunk_sub_473040, 0.80]
-@ 0x473430 _thunk_sub_473040;
+@ 0x473430 _thunk_sub_473040_473430;
 
 // [propagated: _thunk_sub_6B2D1C, 0.80]
-@ 0x474D80 _thunk_sub_6B2D1C;
+@ 0x474D80 _thunk_sub_6B2D1C_474D80;
 
 // [propagated: _thunk_sub_6B2D1C, 0.80]
-@ 0x474DF0 _thunk_sub_6B2D1C;
+@ 0x474DF0 _thunk_sub_6B2D1C_474DF0;
 
 // [propagated: _thunk_sub_663210, 0.80]
-@ 0x474E80 _thunk_sub_663210;
+@ 0x474E80 _thunk_sub_663210_474E80;
 
 // [propagated: _thunk_sub_6B2CC4, 0.80]
-@ 0x474F40 _thunk_sub_6B2CC4;
+@ 0x474F40 _thunk_sub_6B2CC4_474F40;
 
 // [propagated: _thunk_sub_65F730, 0.80]
-@ 0x475600 _thunk_sub_65F730;
+@ 0x475600 _thunk_sub_65F730_475600;
 
 // [propagated: _thunk_sub_6B3220, 0.80]
 @ 0x475740 _thunk_sub_6B3220;
@@ -9468,7 +8169,7 @@
 @ 0x476620 _thunk_sub_4C0E80;
 
 // [propagated: _thunk_sub_6B3220, 0.80]
-@ 0x477080 _thunk_sub_6B3220;
+@ 0x477080 _thunk_sub_6B3220_477080;
 
 // [propagated: _thunk_sub_4794D0, 0.80]
 @ 0x477968 _thunk_sub_4794D0;
@@ -9477,10 +8178,10 @@
 @ 0x4790AF _thunk_sub_4C7700;
 
 // [propagated: _thunk_sub_401000, 0.80]
-@ 0x4793E0 _thunk_sub_401000;
+@ 0x4793E0 _thunk_sub_401000_4793E0;
 
 // [propagated: _thunk_sub_435000, 0.80]
-@ 0x479460 _thunk_sub_435000;
+@ 0x479460 _thunk_sub_435000_479460;
 
 // [propagated: _thunk_sub_6C4754, 0.80]
 @ 0x479630 _thunk_sub_6C4754;
@@ -9489,31 +8190,31 @@
 @ 0x479650 _thunk_sub_426550;
 
 // [propagated: _thunk_sub_426550, 0.80]
-@ 0x479900 _thunk_sub_426550;
+@ 0x479900 _thunk_sub_426550_479900;
 
 // [propagated: _thunk_sub_401000, 0.80]
-@ 0x479950 _thunk_sub_401000;
+@ 0x479950 _thunk_sub_401000_479950;
 
 // [propagated: _thunk_sub_6B2CC4, 0.80]
-@ 0x479990 _thunk_sub_6B2CC4;
+@ 0x479990 _thunk_sub_6B2CC4_479990;
 
 // [propagated: _thunk_sub_401000, 0.80]
-@ 0x479EA0 _thunk_sub_401000;
+@ 0x479EA0 _thunk_sub_401000_479EA0;
 
 // [propagated: _thunk_sub_435000, 0.80]
-@ 0x479F30 _thunk_sub_435000;
+@ 0x479F30 _thunk_sub_435000_479F30;
 
 // [propagated: _thunk_sub_435000, 0.80]
-@ 0x479F70 _thunk_sub_435000;
+@ 0x479F70 _thunk_sub_435000_479F70;
 
 // [propagated: _thunk_sub_401000, 0.80]
-@ 0x479FC0 _thunk_sub_401000;
+@ 0x479FC0 _thunk_sub_401000_479FC0;
 
 // [propagated: _thunk_sub_479990, 0.80]
 @ 0x479FF0 _thunk_sub_479990;
 
 // [propagated: _thunk_sub_479990, 0.80]
-@ 0x47A100 _thunk_sub_479990;
+@ 0x47A100 _thunk_sub_479990_47A100;
 
 // [propagated: _thunk_sub_479FF0, 0.80]
 @ 0x47A440 _thunk_sub_479FF0;
@@ -9528,13 +8229,13 @@
 @ 0x47AB50 _thunk_sub_56A5C0;
 
 // [propagated: _thunk_sub_426550, 0.80]
-@ 0x47AC40 _thunk_sub_426550;
+@ 0x47AC40 _thunk_sub_426550_47AC40;
 
 // [propagated: _thunk_sub_479990, 0.80]
-@ 0x47C330 _thunk_sub_479990;
+@ 0x47C330 _thunk_sub_479990_47C330;
 
 // [propagated: _thunk_sub_479990, 0.80]
-@ 0x47C4A0 _thunk_sub_479990;
+@ 0x47C4A0 _thunk_sub_479990_47C4A0;
 
 // [propagated: _thunk_sub_4C0770, 0.80]
 @ 0x47C4E0 _thunk_sub_4C0770;
@@ -9546,7 +8247,7 @@
 @ 0x47CA00 _thunk_sub_47C550;
 
 // [propagated: _thunk_sub_479990, 0.80]
-@ 0x47CDE0 _thunk_sub_479990;
+@ 0x47CDE0 _thunk_sub_479990_47CDE0;
 
 // [propagated: _thunk_sub_47CD60, 0.80]
 @ 0x47CE30 _thunk_sub_47CD60;
@@ -9555,7 +8256,7 @@
 @ 0x47D1A0 _thunk_sub_4754C0;
 
 // [propagated: _thunk_sub_4754C0, 0.80]
-@ 0x47D520 _thunk_sub_4754C0;
+@ 0x47D520 _thunk_sub_4754C0_47D520;
 
 // [propagated: _thunk_sub_47DBC0, 0.80]
 @ 0x47DCE0 _thunk_sub_47DBC0;
@@ -9564,43 +8265,43 @@
 @ 0x47E280 _thunk_sub_47C130;
 
 // [propagated: _thunk_sub_4754C0, 0.80]
-@ 0x47E7F0 _thunk_sub_4754C0;
+@ 0x47E7F0 _thunk_sub_4754C0_47E7F0;
 
 // [propagated: _thunk_sub_405610, 0.80]
 @ 0x47FC93 _thunk_sub_405610;
 
 // [propagated: _thunk_sub_401000, 0.80]
-@ 0x47FF60 _thunk_sub_401000;
+@ 0x47FF60 _thunk_sub_401000_47FF60;
 
 // [propagated: _thunk_sub_65F7C0, 0.80]
 @ 0x4807D0 _thunk_sub_65F7C0;
 
 // [propagated: _thunk_sub_4754C0, 0.80]
-@ 0x480A10 _thunk_sub_4754C0;
+@ 0x480A10 _thunk_sub_4754C0_480A10;
 
 // [propagated: _thunk_sub_49F420, 0.80]
 @ 0x4828A0 _thunk_sub_49F420;
 
 // [propagated: _thunk_sub_4754C0, 0.80]
-@ 0x483140 _thunk_sub_4754C0;
+@ 0x483140 _thunk_sub_4754C0_483140;
 
 // [propagated: _thunk_sub_4754C0, 0.80]
-@ 0x4831C0 _thunk_sub_4754C0;
+@ 0x4831C0 _thunk_sub_4754C0_4831C0;
 
 // [propagated: _thunk_sub_4754C0, 0.80]
-@ 0x483250 _thunk_sub_4754C0;
+@ 0x483250 _thunk_sub_4754C0_483250;
 
 // [propagated: _thunk_sub_4754C0, 0.80]
-@ 0x4832F0 _thunk_sub_4754C0;
+@ 0x4832F0 _thunk_sub_4754C0_4832F0;
 
 // [propagated: _thunk_sub_6A5DC0, 0.80]
-@ 0x4851D0 _thunk_sub_6A5DC0;
+@ 0x4851D0 _thunk_sub_6A5DC0_4851D0;
 
 // [propagated: _thunk_sub_6B2CC4, 0.80]
-@ 0x485290 _thunk_sub_6B2CC4;
+@ 0x485290 _thunk_sub_6B2CC4_485290;
 
 // [propagated: _thunk_sub_6B2CC4, 0.80]
-@ 0x485840 _thunk_sub_6B2CC4;
+@ 0x485840 _thunk_sub_6B2CC4_485840;
 
 // [propagated: _thunk_sub_661000, 0.80]
 @ 0x4860C2 _thunk_sub_661000;
@@ -9612,31 +8313,31 @@
 @ 0x48724E _thunk_sub_53F040;
 
 // [propagated: _thunk_sub_6B2CA8, 0.80]
-@ 0x488774 _thunk_sub_6B2CA8;
+@ 0x488774 _thunk_sub_6B2CA8_488774;
 
 // [propagated: _thunk_sub_425E60, 0.80]
 @ 0x4888A0 _thunk_sub_425E60;
 
 // [propagated: _thunk_sub_425E60, 0.80]
-@ 0x4889D0 _thunk_sub_425E60;
+@ 0x4889D0 _thunk_sub_425E60_4889D0;
 
 // [propagated: _thunk_sub_4754C0, 0.80]
-@ 0x489B10 _thunk_sub_4754C0;
+@ 0x489B10 _thunk_sub_4754C0_489B10;
 
 // [propagated: _thunk_sub_401000, 0.80]
-@ 0x489B40 _thunk_sub_401000;
+@ 0x489B40 _thunk_sub_401000_489B40;
 
 // [propagated: _thunk_sub_435000, 0.80]
-@ 0x489C10 _thunk_sub_435000;
+@ 0x489C10 _thunk_sub_435000_489C10;
 
 // [propagated: _thunk_sub_435000, 0.80]
-@ 0x48ADBA _thunk_sub_435000;
+@ 0x48ADBA _thunk_sub_435000_48ADBA;
 
 // [propagated: _thunk_sub_488AF0, 0.80]
 @ 0x48ADF0 _thunk_sub_488AF0;
 
 // [propagated: _thunk_sub_488AF0, 0.80]
-@ 0x48AE17 _thunk_sub_488AF0;
+@ 0x48AE17 _thunk_sub_488AF0_48AE17;
 
 // [propagated: _thunk_sub_40DE90, 0.80]
 @ 0x48CB91 _thunk_sub_40DE90;
@@ -9651,13 +8352,13 @@
 @ 0x48E0D0 _thunk_sub_65F600;
 
 // [propagated: _thunk_sub_435000, 0.80]
-@ 0x490110 _thunk_sub_435000;
+@ 0x490110 _thunk_sub_435000_490110;
 
 // [propagated: _thunk_sub_435000, 0.80]
-@ 0x4901B0 _thunk_sub_435000;
+@ 0x4901B0 _thunk_sub_435000_4901B0;
 
 // [propagated: _thunk_sub_4754C0, 0.80]
-@ 0x491250 _thunk_sub_4754C0;
+@ 0x491250 _thunk_sub_4754C0_491250;
 
 // [propagated: _thunk_sub_489B90, 0.80]
 @ 0x493870 _thunk_sub_489B90;
@@ -9672,7 +8373,7 @@
 @ 0x496730 _thunk_sub_496910;
 
 // [propagated: _thunk_sub_496910, 0.80]
-@ 0x496861 _thunk_sub_496910;
+@ 0x496861 _thunk_sub_496910_496861;
 
 // [propagated: _thunk_sub_4969C0, 0.80]
 @ 0x496C70 _thunk_sub_4969C0;
@@ -9687,16 +8388,16 @@
 @ 0x498DF3 _thunk_sub_4A1EF0;
 
 // [propagated: _thunk_sub_401000, 0.80]
-@ 0x498F80 _thunk_sub_401000;
+@ 0x498F80 _thunk_sub_401000_498F80;
 
 // [propagated: _thunk_sub_425E60, 0.80]
-@ 0x498FC0 _thunk_sub_425E60;
+@ 0x498FC0 _thunk_sub_425E60_498FC0;
 
 // [propagated: _thunk_sub_49A810, 0.80]
 @ 0x49A780 _thunk_sub_49A810;
 
 // [propagated: _thunk_sub_413340, 0.80]
-@ 0x49D510 _thunk_sub_413340;
+@ 0x49D510 _thunk_sub_413340_49D510;
 
 // [propagated: _thunk_sub_49FC70, 0.80]
 @ 0x4A0120 _thunk_sub_49FC70;
@@ -9708,13 +8409,13 @@
 @ 0x4A2150 _thunk_sub_4A36E0;
 
 // [propagated: _thunk_sub_401000, 0.80]
-@ 0x4A36E0 _thunk_sub_401000;
+@ 0x4A36E0 _thunk_sub_401000_4A36E0;
 
 // [propagated: _thunk_sub_4A3770, 0.80]
 @ 0x4A37C0 _thunk_sub_4A3770;
 
 // [propagated: _thunk_sub_4AAD20, 0.80]
-@ 0x4A3900 _thunk_sub_4AAD20;
+@ 0x4A3900 _thunk_sub_4AAD20_4A3900;
 
 // [propagated: _thunk_sub_470220, 0.80]
 @ 0x4A4C20 _thunk_sub_470220;
@@ -9729,22 +8430,22 @@
 @ 0x4A6340 _thunk_sub_6C46E0;
 
 // [propagated: _thunk_sub_401000, 0.80]
-@ 0x4A6AD0 _thunk_sub_401000;
+@ 0x4A6AD0 _thunk_sub_401000_4A6AD0;
 
 // [propagated: _thunk_sub_401000, 0.80]
-@ 0x4A6B10 _thunk_sub_401000;
+@ 0x4A6B10 _thunk_sub_401000_4A6B10;
 
 // [propagated: _thunk_sub_65D6C0, 0.80]
-@ 0x4A6B70 _thunk_sub_65D6C0;
+@ 0x4A6B70 _thunk_sub_65D6C0_4A6B70;
 
 // [propagated: _thunk_sub_6B2D1C, 0.80]
-@ 0x4A6C60 _thunk_sub_6B2D1C;
+@ 0x4A6C60 _thunk_sub_6B2D1C_4A6C60;
 
 // [propagated: _thunk_sub_6B2CC4, 0.80]
-@ 0x4A6D30 _thunk_sub_6B2CC4;
+@ 0x4A6D30 _thunk_sub_6B2CC4_4A6D30;
 
 // [propagated: _thunk_sub_426550, 0.80]
-@ 0x4A7620 _thunk_sub_426550;
+@ 0x4A7620 _thunk_sub_426550_4A7620;
 
 // [propagated: _thunk_sub_65E560, 0.80]
 @ 0x4A7780 _thunk_sub_65E560;
@@ -9753,28 +8454,28 @@
 @ 0x4A8280 _thunk_sub_54D350;
 
 // [propagated: _thunk_sub_6B2CC4, 0.80]
-@ 0x4A8F30 _thunk_sub_6B2CC4;
+@ 0x4A8F30 _thunk_sub_6B2CC4_4A8F30;
 
 // [propagated: _thunk_sub_6B2CC4, 0.80]
-@ 0x4A9850 _thunk_sub_6B2CC4;
+@ 0x4A9850 _thunk_sub_6B2CC4_4A9850;
 
 // [propagated: _thunk_sub_401000, 0.80]
-@ 0x4AACE0 _thunk_sub_401000;
+@ 0x4AACE0 _thunk_sub_401000_4AACE0;
 
 // [propagated: _thunk_sub_4829D0, 0.80]
 @ 0x4AAD20 _thunk_sub_4829D0;
 
 // [propagated: _thunk_sub_65A630, 0.80]
-@ 0x4AADF0 _thunk_sub_65A630;
+@ 0x4AADF0 _thunk_sub_65A630_4AADF0;
 
 // [propagated: _thunk_sub_413340, 0.80]
-@ 0x4AAF40 _thunk_sub_413340;
+@ 0x4AAF40 _thunk_sub_413340_4AAF40;
 
 // [propagated: _thunk_sub_401000, 0.80]
-@ 0x4AAF80 _thunk_sub_401000;
+@ 0x4AAF80 _thunk_sub_401000_4AAF80;
 
 // [propagated: _thunk_sub_401000, 0.80]
-@ 0x4AB020 _thunk_sub_401000;
+@ 0x4AB020 _thunk_sub_401000_4AB020;
 
 // [propagated: _thunk_sub_4BE580, 0.80]
 @ 0x4AB240 _thunk_sub_4BE580;
@@ -9786,52 +8487,52 @@
 @ 0x4ABB30 _thunk_sub_4AE920;
 
 // [propagated: _thunk_sub_425E60, 0.80]
-@ 0x4AE6D0 _thunk_sub_425E60;
+@ 0x4AE6D0 _thunk_sub_425E60_4AE6D0;
 
 // [propagated: _thunk_sub_401000, 0.80]
-@ 0x4AE8B0 _thunk_sub_401000;
+@ 0x4AE8B0 _thunk_sub_401000_4AE8B0;
 
 // [propagated: _thunk_sub_4AE8E0, 0.80]
 @ 0x4AE8E0 _thunk_sub_4AE8E0;
 
 // [propagated: _thunk_sub_4AE8E0, 0.80]
-@ 0x4AE920 _thunk_sub_4AE8E0;
+@ 0x4AE920 _thunk_sub_4AE8E0_4AE920;
 
 // [propagated: _thunk_sub_4C9180, 0.80]
-@ 0x4AF633 _thunk_sub_4C9180;
+@ 0x4AF633 _thunk_sub_4C9180_4AF633;
 
 // [propagated: _thunk_sub_4755D0, 0.80]
-@ 0x4AF7A0 _thunk_sub_4755D0;
+@ 0x4AF7A0 _thunk_sub_4755D0_4AF7A0;
 
 // [propagated: _thunk_sub_4755D0, 0.80]
-@ 0x4AF800 _thunk_sub_4755D0;
+@ 0x4AF800 _thunk_sub_4755D0_4AF800;
 
 // [propagated: _thunk_sub_6B2CC4, 0.80]
-@ 0x4AFC80 _thunk_sub_6B2CC4;
+@ 0x4AFC80 _thunk_sub_6B2CC4_4AFC80;
 
 // [propagated: _thunk_sub_4F4110, 0.80]
-@ 0x4B1DB0 _thunk_sub_4F4110;
+@ 0x4B1DB0 _thunk_sub_4F4110_4B1DB0;
 
 // [propagated: _thunk_sub_4F4110, 0.80]
-@ 0x4BA0E0 _thunk_sub_4F4110;
+@ 0x4BA0E0 _thunk_sub_4F4110_4BA0E0;
 
 // [propagated: _thunk_sub_401000, 0.80]
-@ 0x4BD6B0 _thunk_sub_401000;
+@ 0x4BD6B0 _thunk_sub_401000_4BD6B0;
 
 // [propagated: _thunk_sub_4BDEA0, 0.80]
 @ 0x4BD6E0 _thunk_sub_4BDEA0;
 
 // [propagated: _thunk_sub_401000, 0.80]
-@ 0x4BE0D0 _thunk_sub_401000;
+@ 0x4BE0D0 _thunk_sub_401000_4BE0D0;
 
 // [propagated: _thunk_sub_413340, 0.80]
-@ 0x4BE690 _thunk_sub_413340;
+@ 0x4BE690 _thunk_sub_413340_4BE690;
 
 // [propagated: _thunk_sub_4BE690, 0.80]
 @ 0x4BE7C0 _thunk_sub_4BE690;
 
 // [propagated: _thunk_sub_4BE690, 0.80]
-@ 0x4BE880 _thunk_sub_4BE690;
+@ 0x4BE880 _thunk_sub_4BE690_4BE880;
 
 // [propagated: _thunk_sub_4AAF40, 0.80]
 @ 0x4BE8E0 _thunk_sub_4AAF40;
@@ -9840,52 +8541,52 @@
 @ 0x4BECF0 _thunk_sub_4BEBB0;
 
 // [propagated: _thunk_sub_6B2CC4, 0.80]
-@ 0x4BFAA0 _thunk_sub_6B2CC4;
+@ 0x4BFAA0 _thunk_sub_6B2CC4_4BFAA0;
 
 // [propagated: _thunk_sub_4BFE20, 0.80]
 @ 0x4C03F0 _thunk_sub_4BFE20;
 
 // [propagated: _thunk_sub_4BFE20, 0.80]
-@ 0x4C0640 _thunk_sub_4BFE20;
+@ 0x4C0640 _thunk_sub_4BFE20_4C0640;
 
 // [propagated: _thunk_sub_65EBE0, 0.80]
 @ 0x4C0FA0 _thunk_sub_65EBE0;
 
 // [propagated: _thunk_sub_401000, 0.80]
-@ 0x4C1650 _thunk_sub_401000;
+@ 0x4C1650 _thunk_sub_401000_4C1650;
 
 // [propagated: _thunk_sub_4044F0, 0.80]
-@ 0x4C1980 _thunk_sub_4044F0;
+@ 0x4C1980 _thunk_sub_4044F0_4C1980;
 
 // [propagated: _thunk_sub_401000, 0.80]
-@ 0x4C28B0 _thunk_sub_401000;
+@ 0x4C28B0 _thunk_sub_401000_4C28B0;
 
 // [propagated: _thunk_sub_401000, 0.80]
-@ 0x4C3840 _thunk_sub_401000;
+@ 0x4C3840 _thunk_sub_401000_4C3840;
 
 // [propagated: _thunk_sub_5AA690, 0.80]
 @ 0x4C3870 _thunk_sub_5AA690;
 
 // [propagated: _thunk_sub_401000, 0.80]
-@ 0x4C38B0 _thunk_sub_401000;
+@ 0x4C38B0 _thunk_sub_401000_4C38B0;
 
 // [propagated: _thunk_sub_4C5690, 0.80]
 @ 0x4C5800 _thunk_sub_4C5690;
 
 // [propagated: _thunk_sub_6B32E0, 0.80]
-@ 0x4C5C90 _thunk_sub_6B32E0;
+@ 0x4C5C90 _thunk_sub_6B32E0_4C5C90;
 
 // [propagated: _thunk_sub_4C6A20, 0.80]
 @ 0x4C5F50 _thunk_sub_4C6A20;
 
 // [propagated: _thunk_sub_4829D0, 0.80]
-@ 0x4C6604 _thunk_sub_4829D0;
+@ 0x4C6604 _thunk_sub_4829D0_4C6604;
 
 // [propagated: _thunk_sub_4C6830, 0.80]
 @ 0x4C6940 _thunk_sub_4C6830;
 
 // [propagated: _thunk_sub_401000, 0.80]
-@ 0x4C6A20 _thunk_sub_401000;
+@ 0x4C6A20 _thunk_sub_401000_4C6A20;
 
 // [propagated: _thunk_sub_4E20D0, 0.80]
 @ 0x4C6BA0 _thunk_sub_4E20D0;
@@ -9897,22 +8598,22 @@
 @ 0x4C8980 _thunk_sub_49FA00;
 
 // [propagated: _thunk_sub_4C90F0, 0.80]
-@ 0x4C8BF0 _thunk_sub_4C90F0;
+@ 0x4C8BF0 _thunk_sub_4C90F0_4C8BF0;
 
 // [propagated: _thunk_sub_413340, 0.80]
-@ 0x4C9020 _thunk_sub_413340;
+@ 0x4C9020 _thunk_sub_413340_4C9020;
 
 // [propagated: _thunk_sub_4E06F0, 0.80]
 @ 0x4C9050 _thunk_sub_4E06F0;
 
 // [propagated: _thunk_sub_4E06F0, 0.80]
-@ 0x4C90F0 _thunk_sub_4E06F0;
+@ 0x4C90F0 _thunk_sub_4E06F0_4C90F0;
 
 // [propagated: _thunk_sub_4E06F0, 0.80]
-@ 0x4C9180 _thunk_sub_4E06F0;
+@ 0x4C9180 _thunk_sub_4E06F0_4C9180;
 
 // [propagated: _thunk_sub_4E06F0, 0.80]
-@ 0x4C9200 _thunk_sub_4E06F0;
+@ 0x4C9200 _thunk_sub_4E06F0_4C9200;
 
 // [propagated: _thunk_sub_4FAAA0, 0.80]
 @ 0x4C9290 _thunk_sub_4FAAA0;
@@ -9921,10 +8622,10 @@
 @ 0x4C9660 _thunk_sub_4CBB90;
 
 // [propagated: _thunk_sub_401000, 0.80]
-@ 0x4CBB20 _thunk_sub_401000;
+@ 0x4CBB20 _thunk_sub_401000_4CBB20;
 
 // [propagated: _thunk_sub_4E06F0, 0.80]
-@ 0x4CBC50 _thunk_sub_4E06F0;
+@ 0x4CBC50 _thunk_sub_4E06F0_4CBC50;
 
 // [propagated: _thunk_sub_5EAB60, 0.80]
 @ 0x4CBF30 _thunk_sub_5EAB60;
@@ -9948,7 +8649,7 @@
 @ 0x4CFC60 _thunk_sub_4CFDA0;
 
 // [propagated: _thunk_sub_6B3220, 0.80]
-@ 0x4CFCB0 _thunk_sub_6B3220;
+@ 0x4CFCB0 _thunk_sub_6B3220_4CFCB0;
 
 // [propagated: _thunk_sub_4D0100, 0.80]
 @ 0x4D0210 _thunk_sub_4D0100;
@@ -9957,13 +8658,13 @@
 @ 0x4D07C0 _thunk_sub_4D0A40;
 
 // [propagated: _thunk_sub_4D0A40, 0.80]
-@ 0x4D09C0 _thunk_sub_4D0A40;
+@ 0x4D09C0 _thunk_sub_4D0A40_4D09C0;
 
 // [propagated: _thunk_sub_6B32E0, 0.80]
-@ 0x4D0B30 _thunk_sub_6B32E0;
+@ 0x4D0B30 _thunk_sub_6B32E0_4D0B30;
 
 // [propagated: _thunk_sub_6C46C8, 0.80]
-@ 0x4D1740 _thunk_sub_6C46C8;
+@ 0x4D1740 _thunk_sub_6C46C8_4D1740;
 
 // [propagated: _thunk_sub_4D0210, 0.80]
 @ 0x4D1880 _thunk_sub_4D0210;
@@ -9975,13 +8676,13 @@
 @ 0x4D2FA0 _thunk_sub_5C6310;
 
 // [propagated: _thunk_sub_6B3220, 0.80]
-@ 0x4D3620 _thunk_sub_6B3220;
+@ 0x4D3620 _thunk_sub_6B3220_4D3620;
 
 // [propagated: _thunk_sub_665660, 0.80]
-@ 0x4D3DF0 _thunk_sub_665660;
+@ 0x4D3DF0 _thunk_sub_665660_4D3DF0;
 
 // [propagated: _thunk_sub_6B3226, 0.80]
-@ 0x4D47D0 _thunk_sub_6B3226;
+@ 0x4D47D0 _thunk_sub_6B3226_4D47D0;
 
 // [propagated: _thunk_sub_65E5C0, 0.80]
 @ 0x4D49C0 _thunk_sub_65E5C0;
@@ -9993,7 +8694,7 @@
 @ 0x4D5960 _thunk_sub_4D58B0;
 
 // [propagated: _thunk_sub_6B2CA8, 0.80]
-@ 0x4D70FC _thunk_sub_6B2CA8;
+@ 0x4D70FC _thunk_sub_6B2CA8_4D70FC;
 
 // [propagated: _thunk_sub_4D7120, 0.80]
 @ 0x4D7250 _thunk_sub_4D7120;
@@ -10002,70 +8703,70 @@
 @ 0x4D8BE0 _thunk_sub_4D5920;
 
 // [propagated: _thunk_sub_65D900, 0.80]
-@ 0x4D8D80 _thunk_sub_65D900;
+@ 0x4D8D80 _thunk_sub_65D900_4D8D80;
 
 // [propagated: _thunk_sub_5D8210, 0.80]
-@ 0x4DD5E0 _thunk_sub_5D8210;
+@ 0x4DD5E0 _thunk_sub_5D8210_4DD5E0;
 
 // [propagated: _thunk_sub_4DF480, 0.80]
 @ 0x4DF6B9 _thunk_sub_4DF480;
 
 // [propagated: _thunk_sub_4DF480, 0.80]
-@ 0x4DF6BB _thunk_sub_4DF480;
+@ 0x4DF6BB _thunk_sub_4DF480_4DF6BB;
 
 // [propagated: _thunk_sub_4DF480, 0.80]
-@ 0x4E04D0 _thunk_sub_4DF480;
+@ 0x4E04D0 _thunk_sub_4DF480_4E04D0;
 
 // [propagated: _thunk_sub_4DF480, 0.80]
-@ 0x4E0590 _thunk_sub_4DF480;
+@ 0x4E0590 _thunk_sub_4DF480_4E0590;
 
 // [propagated: _thunk_sub_4E06F0, 0.80]
-@ 0x4E0B60 _thunk_sub_4E06F0;
+@ 0x4E0B60 _thunk_sub_4E06F0_4E0B60;
 
 // [propagated: _thunk_sub_4E1440, 0.80]
 @ 0x4E1440 _thunk_sub_4E1440;
 
 // [propagated: _thunk_sub_6B2CA8, 0.80]
-@ 0x4E1730 _thunk_sub_6B2CA8;
+@ 0x4E1730 _thunk_sub_6B2CA8_4E1730;
 
 // [propagated: _thunk_sub_6B3226, 0.80]
-@ 0x4E1B00 _thunk_sub_6B3226;
+@ 0x4E1B00 _thunk_sub_6B3226_4E1B00;
 
 // [propagated: _thunk_sub_409FE0, 0.80]
-@ 0x4E1E80 _thunk_sub_409FE0;
+@ 0x4E1E80 _thunk_sub_409FE0_4E1E80;
 
 // [propagated: _thunk_sub_6B2D1C, 0.80]
-@ 0x4E1F20 _thunk_sub_6B2D1C;
+@ 0x4E1F20 _thunk_sub_6B2D1C_4E1F20;
 
 // [propagated: _thunk_sub_401000, 0.80]
-@ 0x4E2280 _thunk_sub_401000;
+@ 0x4E2280 _thunk_sub_401000_4E2280;
 
 // [propagated: _thunk_sub_4E8270, 0.80]
 @ 0x4E25B0 _thunk_sub_4E8270;
 
 // [propagated: _thunk_sub_6B2CC4, 0.80]
-@ 0x4E31B0 _thunk_sub_6B2CC4;
+@ 0x4E31B0 _thunk_sub_6B2CC4_4E31B0;
 
 // [propagated: _thunk_sub_6B2D1C, 0.80]
-@ 0x4E36A0 _thunk_sub_6B2D1C;
+@ 0x4E36A0 _thunk_sub_6B2D1C_4E36A0;
 
 // [propagated: _thunk_sub_6B2D1C, 0.80]
-@ 0x4E3880 _thunk_sub_6B2D1C;
+@ 0x4E3880 _thunk_sub_6B2D1C_4E3880;
 
 // [propagated: _thunk_sub_4E81F0, 0.80]
 @ 0x4E4C00 _thunk_sub_4E81F0;
 
 // [propagated: _thunk_sub_4E8270, 0.80]
-@ 0x4E4E30 _thunk_sub_4E8270;
+@ 0x4E4E30 _thunk_sub_4E8270_4E4E30;
 
 // [propagated: _thunk_sub_4F2AD0, 0.80]
 @ 0x4E5520 _thunk_sub_4F2AD0;
 
 // [propagated: _thunk_sub_4E8270, 0.80]
-@ 0x4E5840 _thunk_sub_4E8270;
+@ 0x4E5840 _thunk_sub_4E8270_4E5840;
 
 // [propagated: _thunk_sub_4E81F0, 0.80]
-@ 0x4E5F30 _thunk_sub_4E81F0;
+@ 0x4E5F30 _thunk_sub_4E81F0_4E5F30;
 
 // [propagated: _thunk_sub_4E5600, 0.80]
 @ 0x4E6260 _thunk_sub_4E5600;
@@ -10080,22 +8781,22 @@
 @ 0x4E7140 _thunk_sub_4E7300;
 
 // [propagated: _thunk_sub_4E7300, 0.80]
-@ 0x4E7176 _thunk_sub_4E7300;
+@ 0x4E7176 _thunk_sub_4E7300_4E7176;
 
 // [propagated: _thunk_sub_4E74E0, 0.80]
-@ 0x4E7300 _thunk_sub_4E74E0;
+@ 0x4E7300 _thunk_sub_4E74E0_4E7300;
 
 // [propagated: _thunk_sub_65D850, 0.80]
-@ 0x4E74E0 _thunk_sub_65D850;
+@ 0x4E74E0 _thunk_sub_65D850_4E74E0;
 
 // [propagated: _thunk_sub_65D850, 0.80]
-@ 0x4E7590 _thunk_sub_65D850;
+@ 0x4E7590 _thunk_sub_65D850_4E7590;
 
 // [propagated: _thunk_sub_4E8270, 0.80]
-@ 0x4E7980 _thunk_sub_4E8270;
+@ 0x4E7980 _thunk_sub_4E8270_4E7980;
 
 // [propagated: _thunk_sub_6B2D1C, 0.80]
-@ 0x4E80B0 _thunk_sub_6B2D1C;
+@ 0x4E80B0 _thunk_sub_6B2D1C_4E80B0;
 
 // [propagated: _thunk_sub_4E8630, 0.80]
 @ 0x4E8790 _thunk_sub_4E8630;
@@ -10107,19 +8808,19 @@
 @ 0x4E8B10 _thunk_sub_4E8B70;
 
 // [propagated: _thunk_sub_4E74E0, 0.80]
-@ 0x4E93C0 _thunk_sub_4E74E0;
+@ 0x4E93C0 _thunk_sub_4E74E0_4E93C0;
 
 // [propagated: _thunk_sub_4E9700, 0.80]
 @ 0x4E9500 _thunk_sub_4E9700;
 
 // [propagated: _thunk_sub_431DD0, 0.80]
-@ 0x4E9C30 _thunk_sub_431DD0;
+@ 0x4E9C30 _thunk_sub_431DD0_4E9C30;
 
 // [propagated: _thunk_sub_663210, 0.80]
-@ 0x4E9DA0 _thunk_sub_663210;
+@ 0x4E9DA0 _thunk_sub_663210_4E9DA0;
 
 // [propagated: _thunk_sub_6B2D1C, 0.80]
-@ 0x4EB390 _thunk_sub_6B2D1C;
+@ 0x4EB390 _thunk_sub_6B2D1C_4EB390;
 
 // [propagated: _thunk_sub_4EB700, 0.80]
 @ 0x4EB7A0 _thunk_sub_4EB700;
@@ -10128,19 +8829,19 @@
 @ 0x4EC1F0 _thunk_sub_511E40;
 
 // [propagated: _thunk_sub_663210, 0.80]
-@ 0x4EC240 _thunk_sub_663210;
+@ 0x4EC240 _thunk_sub_663210_4EC240;
 
 // [propagated: _thunk_sub_6B2CC4, 0.80]
-@ 0x4EC310 _thunk_sub_6B2CC4;
+@ 0x4EC310 _thunk_sub_6B2CC4_4EC310;
 
 // [propagated: _thunk_sub_6B2D1C, 0.80]
-@ 0x4EC390 _thunk_sub_6B2D1C;
+@ 0x4EC390 _thunk_sub_6B2D1C_4EC390;
 
 // [propagated: _thunk_sub_6B2D1C, 0.80]
-@ 0x4EC3D0 _thunk_sub_6B2D1C;
+@ 0x4EC3D0 _thunk_sub_6B2D1C_4EC3D0;
 
 // [propagated: _thunk_sub_4E8270, 0.80]
-@ 0x4EC690 _thunk_sub_4E8270;
+@ 0x4EC690 _thunk_sub_4E8270_4EC690;
 
 // [propagated: _thunk_sub_4EC4F0, 0.80]
 @ 0x4EC740 _thunk_sub_4EC4F0;
@@ -10155,19 +8856,19 @@
 @ 0x4ED790 _thunk_sub_4ED710;
 
 // [propagated: _thunk_sub_4ED710, 0.80]
-@ 0x4ED980 _thunk_sub_4ED710;
+@ 0x4ED980 _thunk_sub_4ED710_4ED980;
 
 // [propagated: _thunk_sub_4ED710, 0.80]
-@ 0x4EDA40 _thunk_sub_4ED710;
+@ 0x4EDA40 _thunk_sub_4ED710_4EDA40;
 
 // [propagated: _thunk_sub_4EE390, 0.80]
 @ 0x4EDB10 _thunk_sub_4EE390;
 
 // [propagated: _thunk_sub_6B2CA8, 0.80]
-@ 0x4EDBF0 _thunk_sub_6B2CA8;
+@ 0x4EDBF0 _thunk_sub_6B2CA8_4EDBF0;
 
 // [propagated: _thunk_sub_4ED710, 0.80]
-@ 0x4EE160 _thunk_sub_4ED710;
+@ 0x4EE160 _thunk_sub_4ED710_4EE160;
 
 // [propagated: _thunk_sub_4EE220, 0.80]
 @ 0x4EE310 _thunk_sub_4EE220;
@@ -10176,10 +8877,10 @@
 @ 0x4EE440 _thunk_sub_40A060;
 
 // [propagated: _thunk_sub_40A060, 0.80]
-@ 0x4EE490 _thunk_sub_40A060;
+@ 0x4EE490 _thunk_sub_40A060_4EE490;
 
 // [propagated: _thunk_sub_401000, 0.80]
-@ 0x4EE510 _thunk_sub_401000;
+@ 0x4EE510 _thunk_sub_401000_4EE510;
 
 // [propagated: _thunk_sub_4EF200, 0.80]
 @ 0x4EE9E0 _thunk_sub_4EF200;
@@ -10200,7 +8901,7 @@
 @ 0x4F0700 _thunk_sub_4F05C0;
 
 // [propagated: _thunk_sub_6B2CA8, 0.80]
-@ 0x4F0D40 _thunk_sub_6B2CA8;
+@ 0x4F0D40 _thunk_sub_6B2CA8_4F0D40;
 
 // [propagated: _thunk_sub_4F1260, 0.80]
 @ 0x4F1500 _thunk_sub_4F1260;
@@ -10209,37 +8910,37 @@
 @ 0x4F2460 _thunk_sub_65D8C0;
 
 // [propagated: _thunk_sub_65D8C0, 0.80]
-@ 0x4F24E0 _thunk_sub_65D8C0;
+@ 0x4F24E0 _thunk_sub_65D8C0_4F24E0;
 
 // [propagated: _thunk_sub_4F2BE0, 0.80]
 @ 0x4F2920 _thunk_sub_4F2BE0;
 
 // [propagated: _thunk_sub_6B2CC4, 0.80]
-@ 0x4F2E30 _thunk_sub_6B2CC4;
+@ 0x4F2E30 _thunk_sub_6B2CC4_4F2E30;
 
 // [propagated: _thunk_sub_6B2CC4, 0.80]
-@ 0x4F3580 _thunk_sub_6B2CC4;
+@ 0x4F3580 _thunk_sub_6B2CC4_4F3580;
 
 // [propagated: _thunk_sub_4F41E0, 0.80]
 @ 0x4F4110 _thunk_sub_4F41E0;
 
 // [propagated: _thunk_sub_6B2D1C, 0.80]
-@ 0x4F49E0 _thunk_sub_6B2D1C;
+@ 0x4F49E0 _thunk_sub_6B2D1C_4F49E0;
 
 // [propagated: _thunk_sub_6B2CC4, 0.80]
-@ 0x4F4A40 _thunk_sub_6B2CC4;
+@ 0x4F4A40 _thunk_sub_6B2CC4_4F4A40;
 
 // [propagated: _thunk_sub_4F51E0, 0.80]
 @ 0x4F4D50 _thunk_sub_4F51E0;
 
 // [propagated: _thunk_sub_4F51E0, 0.80]
-@ 0x4F5030 _thunk_sub_4F51E0;
+@ 0x4F5030 _thunk_sub_4F51E0_4F5030;
 
 // [propagated: _thunk_sub_4F5240, 0.80]
 @ 0x4F51E0 _thunk_sub_4F5240;
 
 // [propagated: _thunk_sub_401000, 0.80]
-@ 0x4F5510 _thunk_sub_401000;
+@ 0x4F5510 _thunk_sub_401000_4F5510;
 
 // [propagated: _thunk_sub_4F5790, 0.80]
 @ 0x4F5AB0 _thunk_sub_4F5790;
@@ -10248,7 +8949,7 @@
 @ 0x4F5E10 _thunk_sub_4F5D90;
 
 // [propagated: _thunk_sub_4F5D90, 0.80]
-@ 0x4F5E52 _thunk_sub_4F5D90;
+@ 0x4F5E52 _thunk_sub_4F5D90_4F5E52;
 
 // [propagated: _thunk_sub_4F5FA0, 0.80]
 @ 0x4F6070 _thunk_sub_4F5FA0;
@@ -10260,13 +8961,13 @@
 @ 0x4F6550 _thunk_sub_4F5650;
 
 // [propagated: _thunk_sub_401000, 0.80]
-@ 0x4F67F0 _thunk_sub_401000;
+@ 0x4F67F0 _thunk_sub_401000_4F67F0;
 
 // [propagated: _thunk_sub_4F68A0, 0.80]
 @ 0x4F6980 _thunk_sub_4F68A0;
 
 // [propagated: _thunk_sub_401000, 0.80]
-@ 0x4F7BA0 _thunk_sub_401000;
+@ 0x4F7BA0 _thunk_sub_401000_4F7BA0;
 
 // [propagated: _thunk_sub_4F7BA0, 0.80]
 @ 0x4F7CF0 _thunk_sub_4F7BA0;
@@ -10278,46 +8979,46 @@
 @ 0x4F80C0 _thunk_sub_4F8780;
 
 // [propagated: _thunk_sub_6B2CC4, 0.80]
-@ 0x4F9610 _thunk_sub_6B2CC4;
+@ 0x4F9610 _thunk_sub_6B2CC4_4F9610;
 
 // [propagated: _thunk_sub_401000, 0.80]
-@ 0x4F9680 _thunk_sub_401000;
+@ 0x4F9680 _thunk_sub_401000_4F9680;
 
 // [propagated: _thunk_sub_4EE850, 0.80]
-@ 0x4F9B40 _thunk_sub_4EE850;
+@ 0x4F9B40 _thunk_sub_4EE850_4F9B40;
 
 // [propagated: _thunk_sub_6B32E0, 0.80]
-@ 0x4FB280 _thunk_sub_6B32E0;
+@ 0x4FB280 _thunk_sub_6B32E0_4FB280;
 
 // [propagated: _thunk_sub_413340, 0.80]
-@ 0x4FB380 _thunk_sub_413340;
+@ 0x4FB380 _thunk_sub_413340_4FB380;
 
 // [propagated: _thunk_sub_413340, 0.80]
-@ 0x4FB410 _thunk_sub_413340;
+@ 0x4FB410 _thunk_sub_413340_4FB410;
 
 // [propagated: _thunk_sub_4755D0, 0.80]
-@ 0x4FC280 _thunk_sub_4755D0;
+@ 0x4FC280 _thunk_sub_4755D0_4FC280;
 
 // [propagated: _thunk_sub_6B2CA8, 0.80]
-@ 0x4FDB1D _thunk_sub_6B2CA8;
+@ 0x4FDB1D _thunk_sub_6B2CA8_4FDB1D;
 
 // [propagated: _thunk_sub_6B2CA8, 0.80]
-@ 0x4FDB25 _thunk_sub_6B2CA8;
+@ 0x4FDB25 _thunk_sub_6B2CA8_4FDB25;
 
 // [propagated: _thunk_sub_4FCB20, 0.80]
 @ 0x4FDB50 _thunk_sub_4FCB20;
 
 // [propagated: _thunk_sub_6B2CA8, 0.80]
-@ 0x4FE939 _thunk_sub_6B2CA8;
+@ 0x4FE939 _thunk_sub_6B2CA8_4FE939;
 
 // [propagated: _thunk_sub_6B2CA8, 0.80]
-@ 0x4FE943 _thunk_sub_6B2CA8;
+@ 0x4FE943 _thunk_sub_6B2CA8_4FE943;
 
 // [propagated: _thunk_sub_401000, 0.80]
-@ 0x4FF8C0 _thunk_sub_401000;
+@ 0x4FF8C0 _thunk_sub_401000_4FF8C0;
 
 // [propagated: _thunk_sub_65E560, 0.80]
-@ 0x500B10 _thunk_sub_65E560;
+@ 0x500B10 _thunk_sub_65E560_500B10;
 
 // [propagated: _thunk_sub_5027D0, 0.80]
 @ 0x502650 _thunk_sub_5027D0;
@@ -10326,19 +9027,19 @@
 @ 0x502690 _thunk_sub_502750;
 
 // [propagated: _thunk_sub_401000, 0.80]
-@ 0x502710 _thunk_sub_401000;
+@ 0x502710 _thunk_sub_401000_502710;
 
 // [propagated: _thunk_sub_65D850, 0.80]
-@ 0x5027D0 _thunk_sub_65D850;
+@ 0x5027D0 _thunk_sub_65D850_5027D0;
 
 // [propagated: _thunk_sub_517C00, 0.80]
 @ 0x502900 _thunk_sub_517C00;
 
 // [propagated: _thunk_sub_401000, 0.80]
-@ 0x5029C0 _thunk_sub_401000;
+@ 0x5029C0 _thunk_sub_401000_5029C0;
 
 // [propagated: _thunk_sub_6B2CC4, 0.80]
-@ 0x502A90 _thunk_sub_6B2CC4;
+@ 0x502A90 _thunk_sub_6B2CC4_502A90;
 
 // [propagated: _thunk_sub_540330, 0.80]
 @ 0x502C60 _thunk_sub_540330;
@@ -10353,7 +9054,7 @@
 @ 0x507CF0 _thunk_sub_507C90;
 
 // [propagated: _thunk_sub_6B2D1C, 0.80]
-@ 0x508D26 _thunk_sub_6B2D1C;
+@ 0x508D26 _thunk_sub_6B2D1C_508D26;
 
 // [propagated: _thunk_sub_4FF7D0, 0.80]
 @ 0x509370 _thunk_sub_4FF7D0;
@@ -10365,25 +9066,25 @@
 @ 0x510AEC _thunk_sub_514750;
 
 // [propagated: _thunk_sub_401000, 0.80]
-@ 0x510EB0 _thunk_sub_401000;
+@ 0x510EB0 _thunk_sub_401000_510EB0;
 
 // [propagated: _thunk_sub_515440, 0.80]
-@ 0x510EF0 _thunk_sub_515440;
+@ 0x510EF0 _thunk_sub_515440_510EF0;
 
 // [propagated: _thunk_sub_515440, 0.80]
-@ 0x510F20 _thunk_sub_515440;
+@ 0x510F20 _thunk_sub_515440_510F20;
 
 // [propagated: _thunk_sub_515440, 0.80]
-@ 0x5113C0 _thunk_sub_515440;
+@ 0x5113C0 _thunk_sub_515440_5113C0;
 
 // [propagated: _thunk_sub_52C900, 0.80]
 @ 0x5113F0 _thunk_sub_52C900;
 
 // [propagated: _thunk_sub_515440, 0.80]
-@ 0x5118A0 _thunk_sub_515440;
+@ 0x5118A0 _thunk_sub_515440_5118A0;
 
 // [propagated: _thunk_sub_413340, 0.80]
-@ 0x511900 _thunk_sub_413340;
+@ 0x511900 _thunk_sub_413340_511900;
 
 // [propagated: _thunk_sub_435F00, 0.80]
 @ 0x511B00 _thunk_sub_435F00;
@@ -10392,31 +9093,31 @@
 @ 0x511D30 _thunk_sub_4360B0;
 
 // [propagated: _thunk_sub_401000, 0.80]
-@ 0x511E40 _thunk_sub_401000;
+@ 0x511E40 _thunk_sub_401000_511E40;
 
 // [propagated: _thunk_sub_661000, 0.80]
-@ 0x5121A0 _thunk_sub_661000;
+@ 0x5121A0 _thunk_sub_661000_5121A0;
 
 // [propagated: _thunk_sub_661000, 0.80]
-@ 0x5121F0 _thunk_sub_661000;
+@ 0x5121F0 _thunk_sub_661000_5121F0;
 
 // [propagated: _thunk_sub_515440, 0.80]
-@ 0x512D26 _thunk_sub_515440;
+@ 0x512D26 _thunk_sub_515440_512D26;
 
 // [propagated: _thunk_sub_53C5B0, 0.80]
 @ 0x514850 _thunk_sub_53C5B0;
 
 // [propagated: _thunk_sub_65EBE0, 0.80]
-@ 0x514900 _thunk_sub_65EBE0;
+@ 0x514900 _thunk_sub_65EBE0_514900;
 
 // [propagated: _thunk_sub_5027D0, 0.80]
-@ 0x515BE0 _thunk_sub_5027D0;
+@ 0x515BE0 _thunk_sub_5027D0_515BE0;
 
 // [propagated: _thunk_sub_5027D0, 0.80]
-@ 0x515C40 _thunk_sub_5027D0;
+@ 0x515C40 _thunk_sub_5027D0_515C40;
 
 // [propagated: _thunk_sub_5027D0, 0.80]
-@ 0x515CA0 _thunk_sub_5027D0;
+@ 0x515CA0 _thunk_sub_5027D0_515CA0;
 
 // [propagated: _thunk_sub_511790, 0.80]
 @ 0x5179C0 _thunk_sub_511790;
@@ -10425,55 +9126,55 @@
 @ 0x5183A0 _thunk_sub_512E60;
 
 // [propagated: _thunk_sub_65EBE0, 0.80]
-@ 0x519510 _thunk_sub_65EBE0;
+@ 0x519510 _thunk_sub_65EBE0_519510;
 
 // [propagated: _thunk_sub_661000, 0.80]
-@ 0x519590 _thunk_sub_661000;
+@ 0x519590 _thunk_sub_661000_519590;
 
 // [propagated: _thunk_sub_431DD0, 0.80]
-@ 0x519A30 _thunk_sub_431DD0;
+@ 0x519A30 _thunk_sub_431DD0_519A30;
 
 // [propagated: _thunk_sub_661000, 0.80]
-@ 0x51A0D0 _thunk_sub_661000;
+@ 0x51A0D0 _thunk_sub_661000_51A0D0;
 
 // [propagated: _thunk_sub_401000, 0.80]
-@ 0x51A5D0 _thunk_sub_401000;
+@ 0x51A5D0 _thunk_sub_401000_51A5D0;
 
 // [propagated: _thunk_sub_401000, 0.80]
-@ 0x51A910 _thunk_sub_401000;
+@ 0x51A910 _thunk_sub_401000_51A910;
 
 // [propagated: _thunk_sub_6C46C8, 0.80]
-@ 0x51B800 _thunk_sub_6C46C8;
+@ 0x51B800 _thunk_sub_6C46C8_51B800;
 
 // [propagated: _thunk_sub_401000, 0.80]
-@ 0x51C670 _thunk_sub_401000;
+@ 0x51C670 _thunk_sub_401000_51C670;
 
 // [propagated: _thunk_sub_511970, 0.80]
 @ 0x51C6B0 _thunk_sub_511970;
 
 // [propagated: _thunk_sub_4FAAA0, 0.80]
-@ 0x51DE00 _thunk_sub_4FAAA0;
+@ 0x51DE00 _thunk_sub_4FAAA0_51DE00;
 
 // [propagated: _thunk_sub_51E8A0, 0.80]
 @ 0x51E910 _thunk_sub_51E8A0;
 
 // [propagated: _thunk_sub_4F4110, 0.80]
-@ 0x521410 _thunk_sub_4F4110;
+@ 0x521410 _thunk_sub_4F4110_521410;
 
 // [propagated: _thunk_sub_6B2D1C, 0.80]
-@ 0x5225F0 _thunk_sub_6B2D1C;
+@ 0x5225F0 _thunk_sub_6B2D1C_5225F0;
 
 // [propagated: _thunk_sub_526930, 0.80]
 @ 0x5268B0 _thunk_sub_526930;
 
 // [propagated: _thunk_sub_401000, 0.80]
-@ 0x526A50 _thunk_sub_401000;
+@ 0x526A50 _thunk_sub_401000_526A50;
 
 // [propagated: _thunk_sub_4EE850, 0.80]
-@ 0x527A70 _thunk_sub_4EE850;
+@ 0x527A70 _thunk_sub_4EE850_527A70;
 
 // [propagated: _thunk_sub_4EE850, 0.80]
-@ 0x527AC2 _thunk_sub_4EE850;
+@ 0x527AC2 _thunk_sub_4EE850_527AC2;
 
 // [propagated: _thunk_sub_527C10, 0.80]
 @ 0x5280F0 _thunk_sub_527C10;
@@ -10488,52 +9189,52 @@
 @ 0x529300 _thunk_sub_523900;
 
 // [propagated: _thunk_sub_4FAAA0, 0.80]
-@ 0x529780 _thunk_sub_4FAAA0;
+@ 0x529780 _thunk_sub_4FAAA0_529780;
 
 // [propagated: _thunk_sub_4FAAA0, 0.80]
-@ 0x5297C0 _thunk_sub_4FAAA0;
+@ 0x5297C0 _thunk_sub_4FAAA0_5297C0;
 
 // [propagated: _thunk_sub_4FAAA0, 0.80]
-@ 0x529970 _thunk_sub_4FAAA0;
+@ 0x529970 _thunk_sub_4FAAA0_529970;
 
 // [propagated: _thunk_sub_4FAAA0, 0.80]
-@ 0x529A80 _thunk_sub_4FAAA0;
+@ 0x529A80 _thunk_sub_4FAAA0_529A80;
 
 // [propagated: _thunk_sub_52A430, 0.80]
 @ 0x52A610 _thunk_sub_52A430;
 
 // [propagated: _thunk_sub_413340, 0.80]
-@ 0x52B6C0 _thunk_sub_413340;
+@ 0x52B6C0 _thunk_sub_413340_52B6C0;
 
 // [propagated: _thunk_sub_413340, 0.80]
-@ 0x52B750 _thunk_sub_413340;
+@ 0x52B750 _thunk_sub_413340_52B750;
 
 // [propagated: _thunk_sub_413340, 0.80]
-@ 0x52B790 _thunk_sub_413340;
+@ 0x52B790 _thunk_sub_413340_52B790;
 
 // [propagated: _thunk_sub_413340, 0.80]
-@ 0x52B7D0 _thunk_sub_413340;
+@ 0x52B7D0 _thunk_sub_413340_52B7D0;
 
 // [propagated: _thunk_sub_515440, 0.80]
-@ 0x52BF2B _thunk_sub_515440;
+@ 0x52BF2B _thunk_sub_515440_52BF2B;
 
 // [propagated: _thunk_sub_6B2D1C, 0.80]
-@ 0x52D530 _thunk_sub_6B2D1C;
+@ 0x52D530 _thunk_sub_6B2D1C_52D530;
 
 // [propagated: _thunk_sub_401000, 0.80]
-@ 0x52D580 _thunk_sub_401000;
+@ 0x52D580 _thunk_sub_401000_52D580;
 
 // [propagated: _thunk_sub_5281B0, 0.80]
-@ 0x52DAA0 _thunk_sub_5281B0;
+@ 0x52DAA0 _thunk_sub_5281B0_52DAA0;
 
 // [propagated: _thunk_sub_431DD0, 0.80]
-@ 0x52F280 _thunk_sub_431DD0;
+@ 0x52F280 _thunk_sub_431DD0_52F280;
 
 // [propagated: _thunk_sub_6B2CC4, 0.80]
-@ 0x52F330 _thunk_sub_6B2CC4;
+@ 0x52F330 _thunk_sub_6B2CC4_52F330;
 
 // [propagated: _thunk_sub_523900, 0.80]
-@ 0x5304DA _thunk_sub_523900;
+@ 0x5304DA _thunk_sub_523900_5304DA;
 
 // [propagated: _thunk_sub_566E50, 0.80]
 @ 0x5314B0 _thunk_sub_566E50;
@@ -10542,19 +9243,19 @@
 @ 0x531670 _thunk_sub_566D70;
 
 // [propagated: _thunk_sub_566D70, 0.80]
-@ 0x531700 _thunk_sub_566D70;
+@ 0x531700 _thunk_sub_566D70_531700;
 
 // [propagated: _thunk_sub_566EF0, 0.80]
 @ 0x531790 _thunk_sub_566EF0;
 
 // [propagated: _thunk_sub_4FAAA0, 0.80]
-@ 0x531990 _thunk_sub_4FAAA0;
+@ 0x531990 _thunk_sub_4FAAA0_531990;
 
 // [propagated: _thunk_sub_6B2CC4, 0.80]
-@ 0x531A60 _thunk_sub_6B2CC4;
+@ 0x531A60 _thunk_sub_6B2CC4_531A60;
 
 // [propagated: _thunk_sub_6B2CC4, 0.80]
-@ 0x531AA0 _thunk_sub_6B2CC4;
+@ 0x531AA0 _thunk_sub_6B2CC4_531AA0;
 
 // [propagated: _thunk_sub_531A60, 0.80]
 @ 0x531AD0 _thunk_sub_531A60;
@@ -10569,22 +9270,22 @@
 @ 0x534050 _thunk_sub_5341E0;
 
 // [propagated: _thunk_sub_413340, 0.80]
-@ 0x5349C0 _thunk_sub_413340;
+@ 0x5349C0 _thunk_sub_413340_5349C0;
 
 // [propagated: _thunk_sub_413340, 0.80]
-@ 0x534A10 _thunk_sub_413340;
+@ 0x534A10 _thunk_sub_413340_534A10;
 
 // [propagated: _thunk_sub_413340, 0.80]
-@ 0x534C80 _thunk_sub_413340;
+@ 0x534C80 _thunk_sub_413340_534C80;
 
 // [propagated: _thunk_sub_413340, 0.80]
-@ 0x534CB0 _thunk_sub_413340;
+@ 0x534CB0 _thunk_sub_413340_534CB0;
 
 // [propagated: _thunk_sub_413340, 0.80]
-@ 0x534CE0 _thunk_sub_413340;
+@ 0x534CE0 _thunk_sub_413340_534CE0;
 
 // [propagated: _thunk_sub_413340, 0.80]
-@ 0x534D20 _thunk_sub_413340;
+@ 0x534D20 _thunk_sub_413340_534D20;
 
 // [propagated: _thunk_sub_529A80, 0.80]
 @ 0x535EF0 _thunk_sub_529A80;
@@ -10596,10 +9297,10 @@
 @ 0x5378C0 _thunk_sub_537640;
 
 // [propagated: _thunk_sub_6B32E0, 0.80]
-@ 0x538400 _thunk_sub_6B32E0;
+@ 0x538400 _thunk_sub_6B32E0_538400;
 
 // [propagated: _thunk_sub_6B32E0, 0.80]
-@ 0x5384E0 _thunk_sub_6B32E0;
+@ 0x5384E0 _thunk_sub_6B32E0_5384E0;
 
 // [propagated: _thunk_sub_53C8B0, 0.80]
 @ 0x538EF0 _thunk_sub_53C8B0;
@@ -10608,13 +9309,13 @@
 @ 0x539200 _thunk_sub_539190;
 
 // [propagated: _thunk_sub_663210, 0.80]
-@ 0x539540 _thunk_sub_663210;
+@ 0x539540 _thunk_sub_663210_539540;
 
 // [propagated: _thunk_sub_534B10, 0.80]
 @ 0x539A90 _thunk_sub_534B10;
 
 // [propagated: _thunk_sub_6B2D1C, 0.80]
-@ 0x53AF30 _thunk_sub_6B2D1C;
+@ 0x53AF30 _thunk_sub_6B2D1C_53AF30;
 
 // [propagated: _thunk_sub_53AF30, 0.80]
 @ 0x53AFA0 _thunk_sub_53AF30;
@@ -10623,13 +9324,13 @@
 @ 0x53B1F0 _thunk_sub_539270;
 
 // [propagated: _thunk_sub_65D8C0, 0.80]
-@ 0x53BA80 _thunk_sub_65D8C0;
+@ 0x53BA80 _thunk_sub_65D8C0_53BA80;
 
 // [propagated: _thunk_sub_65D8C0, 0.80]
-@ 0x53BBF0 _thunk_sub_65D8C0;
+@ 0x53BBF0 _thunk_sub_65D8C0_53BBF0;
 
 // [propagated: _thunk_sub_65D8C0, 0.80]
-@ 0x53BD60 _thunk_sub_65D8C0;
+@ 0x53BD60 _thunk_sub_65D8C0_53BD60;
 
 // [propagated: _thunk_sub_53C350, 0.80]
 @ 0x53C7D0 _thunk_sub_53C350;
@@ -10644,7 +9345,7 @@
 @ 0x53D410 _thunk_sub_53D700;
 
 // [propagated: _thunk_sub_6B2D1C, 0.80]
-@ 0x53D660 _thunk_sub_6B2D1C;
+@ 0x53D660 _thunk_sub_6B2D1C_53D660;
 
 // [propagated: _thunk_sub_53DE70, 0.80]
 @ 0x53DE10 _thunk_sub_53DE70;
@@ -10653,22 +9354,22 @@
 @ 0x53DF70 _thunk_sub_517DE0;
 
 // [propagated: _thunk_sub_53E870, 0.80]
-@ 0x53E8D0 _thunk_sub_53E870;
+@ 0x53E8D0 _thunk_sub_53E870_53E8D0;
 
 // [propagated: _thunk_sub_53E870, 0.80]
-@ 0x53E920 _thunk_sub_53E870;
+@ 0x53E920 _thunk_sub_53E870_53E920;
 
 // [propagated: _thunk_sub_53E870, 0.80]
-@ 0x53EAD0 _thunk_sub_53E870;
+@ 0x53EAD0 _thunk_sub_53E870_53EAD0;
 
 // [propagated: _thunk_sub_53E870, 0.80]
-@ 0x53EB20 _thunk_sub_53E870;
+@ 0x53EB20 _thunk_sub_53E870_53EB20;
 
 // [propagated: _thunk_sub_58DEE0, 0.80]
 @ 0x53F190 _thunk_sub_58DEE0;
 
 // [propagated: _thunk_sub_6B2CA8, 0.80]
-@ 0x53F2E0 _thunk_sub_6B2CA8;
+@ 0x53F2E0 _thunk_sub_6B2CA8_53F2E0;
 
 // [propagated: _thunk_sub_593480, 0.80]
 @ 0x53F510 _thunk_sub_593480;
@@ -10680,13 +9381,13 @@
 @ 0x541540 _thunk_sub_5297C0;
 
 // [propagated: _thunk_sub_5297C0, 0.80]
-@ 0x541580 _thunk_sub_5297C0;
+@ 0x541580 _thunk_sub_5297C0_541580;
 
 // [propagated: _thunk_sub_6B2CA8, 0.80]
-@ 0x541EF0 _thunk_sub_6B2CA8;
+@ 0x541EF0 _thunk_sub_6B2CA8_541EF0;
 
 // [propagated: _thunk_sub_517DE0, 0.80]
-@ 0x542F20 _thunk_sub_517DE0;
+@ 0x542F20 _thunk_sub_517DE0_542F20;
 
 // [propagated: _thunk_sub_547E60, 0.80]
 @ 0x543410 _thunk_sub_547E60;
@@ -10707,10 +9408,10 @@
 @ 0x544E70 _thunk_sub_5457A0;
 
 // [propagated: _thunk_sub_401000, 0.80]
-@ 0x545A00 _thunk_sub_401000;
+@ 0x545A00 _thunk_sub_401000_545A00;
 
 // [propagated: _thunk_sub_401000, 0.80]
-@ 0x545A40 _thunk_sub_401000;
+@ 0x545A40 _thunk_sub_401000_545A40;
 
 // [propagated: _thunk_sub_543410, 0.80]
 @ 0x5461E0 _thunk_sub_543410;
@@ -10719,46 +9420,46 @@
 @ 0x5462F0 _thunk_sub_547CA0;
 
 // [propagated: _thunk_sub_6A5DC0, 0.80]
-@ 0x546FDE _thunk_sub_6A5DC0;
+@ 0x546FDE _thunk_sub_6A5DC0_546FDE;
 
 // [propagated: _thunk_sub_547720, 0.80]
 @ 0x547580 _thunk_sub_547720;
 
 // [propagated: _thunk_sub_401000, 0.80]
-@ 0x547BE0 _thunk_sub_401000;
+@ 0x547BE0 _thunk_sub_401000_547BE0;
 
 // [propagated: _thunk_sub_547CA0, 0.80]
-@ 0x547C30 _thunk_sub_547CA0;
+@ 0x547C30 _thunk_sub_547CA0_547C30;
 
 // [propagated: _thunk_sub_401000, 0.80]
-@ 0x547D20 _thunk_sub_401000;
+@ 0x547D20 _thunk_sub_401000_547D20;
 
 // [propagated: _thunk_sub_547580, 0.80]
 @ 0x547F40 _thunk_sub_547580;
 
 // [propagated: _thunk_sub_547580, 0.80]
-@ 0x547FE0 _thunk_sub_547580;
+@ 0x547FE0 _thunk_sub_547580_547FE0;
 
 // [propagated: _thunk_sub_4010C0, 0.80]
-@ 0x548540 _thunk_sub_4010C0;
+@ 0x548540 _thunk_sub_4010C0_548540;
 
 // [propagated: _thunk_sub_4F9610, 0.80]
-@ 0x548780 _thunk_sub_4F9610;
+@ 0x548780 _thunk_sub_4F9610_548780;
 
 // [propagated: _thunk_sub_6B2D1C, 0.80]
-@ 0x5489E0 _thunk_sub_6B2D1C;
+@ 0x5489E0 _thunk_sub_6B2D1C_5489E0;
 
 // [propagated: _thunk_sub_548C00, 0.80]
 @ 0x548C80 _thunk_sub_548C00;
 
 // [propagated: _thunk_sub_6B2CC4, 0.80]
-@ 0x548FC0 _thunk_sub_6B2CC4;
+@ 0x548FC0 _thunk_sub_6B2CC4_548FC0;
 
 // [propagated: _thunk_sub_401000, 0.80]
-@ 0x5490A0 _thunk_sub_401000;
+@ 0x5490A0 _thunk_sub_401000_5490A0;
 
 // [propagated: _thunk_sub_65D850, 0.80]
-@ 0x549580 _thunk_sub_65D850;
+@ 0x549580 _thunk_sub_65D850_549580;
 
 // [propagated: _thunk_sub_4D3DF0, 0.80]
 @ 0x549940 _thunk_sub_4D3DF0;
@@ -10770,19 +9471,19 @@
 @ 0x54BC60 _thunk_sub_55B8B0;
 
 // [propagated: _thunk_sub_4F4110, 0.80]
-@ 0x54BFA0 _thunk_sub_4F4110;
+@ 0x54BFA0 _thunk_sub_4F4110_54BFA0;
 
 // [propagated: _thunk_sub_6C4778, 0.80]
 @ 0x54C860 _thunk_sub_6C4778;
 
 // [propagated: _thunk_sub_6C4778, 0.80]
-@ 0x54C8D0 _thunk_sub_6C4778;
+@ 0x54C8D0 _thunk_sub_6C4778_54C8D0;
 
 // [propagated: _thunk_sub_54EDE0, 0.80]
 @ 0x54CE7A _thunk_sub_54EDE0;
 
 // [propagated: _thunk_sub_6B3220, 0.80]
-@ 0x54CFD0 _thunk_sub_6B3220;
+@ 0x54CFD0 _thunk_sub_6B3220_54CFD0;
 
 // [propagated: _thunk_sub_552280, 0.80]
 @ 0x54D190 _thunk_sub_552280;
@@ -10791,34 +9492,34 @@
 @ 0x54DBA0 _thunk_sub_65A7C0;
 
 // [propagated: _thunk_sub_6C46C8, 0.80]
-@ 0x54F190 _thunk_sub_6C46C8;
+@ 0x54F190 _thunk_sub_6C46C8_54F190;
 
 // [propagated: _thunk_sub_6C4778, 0.80]
-@ 0x54F430 _thunk_sub_6C4778;
+@ 0x54F430 _thunk_sub_6C4778_54F430;
 
 // [propagated: _thunk_sub_5E1640, 0.80]
 @ 0x551EBA _thunk_sub_5E1640;
 
 // [propagated: _thunk_sub_6B2D1C, 0.80]
-@ 0x552170 _thunk_sub_6B2D1C;
+@ 0x552170 _thunk_sub_6B2D1C_552170;
 
 // [propagated: _thunk_sub_6B2CC4, 0.80]
-@ 0x5521C0 _thunk_sub_6B2CC4;
+@ 0x5521C0 _thunk_sub_6B2CC4_5521C0;
 
 // [propagated: _thunk_sub_6B2CC4, 0.80]
-@ 0x552240 _thunk_sub_6B2CC4;
+@ 0x552240 _thunk_sub_6B2CC4_552240;
 
 // [propagated: _thunk_sub_4E06F0, 0.80]
-@ 0x5525D0 _thunk_sub_4E06F0;
+@ 0x5525D0 _thunk_sub_4E06F0_5525D0;
 
 // [propagated: _thunk_sub_401000, 0.80]
-@ 0x552690 _thunk_sub_401000;
+@ 0x552690 _thunk_sub_401000_552690;
 
 // [propagated: _thunk_sub_552CB0, 0.80]
 @ 0x552C80 _thunk_sub_552CB0;
 
 // [propagated: _thunk_sub_6B2D1C, 0.80]
-@ 0x553560 _thunk_sub_6B2D1C;
+@ 0x553560 _thunk_sub_6B2D1C_553560;
 
 // [propagated: _thunk_sub_5541F0, 0.80]
 @ 0x5538D0 _thunk_sub_5541F0;
@@ -10827,10 +9528,10 @@
 @ 0x553DA0 _thunk_sub_553EF0;
 
 // [propagated: _thunk_sub_4F4110, 0.80]
-@ 0x554BA0 _thunk_sub_4F4110;
+@ 0x554BA0 _thunk_sub_4F4110_554BA0;
 
 // [propagated: _thunk_sub_413340, 0.80]
-@ 0x5557D0 _thunk_sub_413340;
+@ 0x5557D0 _thunk_sub_413340_5557D0;
 
 // [propagated: _thunk_sub_55AA80, 0.80]
 @ 0x555C80 _thunk_sub_55AA80;
@@ -10839,10 +9540,10 @@
 @ 0x5561F0 _thunk_sub_556B00;
 
 // [propagated: _thunk_sub_6B2CA8, 0.80]
-@ 0x556D60 _thunk_sub_6B2CA8;
+@ 0x556D60 _thunk_sub_6B2CA8_556D60;
 
 // [propagated: _thunk_sub_6B2CA8, 0.80]
-@ 0x5571DC _thunk_sub_6B2CA8;
+@ 0x5571DC _thunk_sub_6B2CA8_5571DC;
 
 // [propagated: _thunk_sub_557910, 0.80]
 @ 0x5577C0 _thunk_sub_557910;
@@ -10857,34 +9558,34 @@
 @ 0x5585B0 _thunk_sub_558700;
 
 // [propagated: _thunk_sub_435000, 0.80]
-@ 0x558E80 _thunk_sub_435000;
+@ 0x558E80 _thunk_sub_435000_558E80;
 
 // [propagated: _thunk_sub_6B2CA8, 0.80]
-@ 0x559290 _thunk_sub_6B2CA8;
+@ 0x559290 _thunk_sub_6B2CA8_559290;
 
 // [propagated: _thunk_sub_5597F0, 0.80]
 @ 0x559AD0 _thunk_sub_5597F0;
 
 // [propagated: _thunk_sub_6B2CA8, 0.80]
-@ 0x55A17D _thunk_sub_6B2CA8;
+@ 0x55A17D _thunk_sub_6B2CA8_55A17D;
 
 // [propagated: _thunk_sub_6B2CA8, 0.80]
-@ 0x55A194 _thunk_sub_6B2CA8;
+@ 0x55A194 _thunk_sub_6B2CA8_55A194;
 
 // [propagated: _thunk_sub_6B2CA8, 0.80]
-@ 0x55A199 _thunk_sub_6B2CA8;
+@ 0x55A199 _thunk_sub_6B2CA8_55A199;
 
 // [propagated: _thunk_sub_556E70, 0.80]
 @ 0x55A4A6 _thunk_sub_556E70;
 
 // [propagated: _thunk_sub_401000, 0.80]
-@ 0x55A830 _thunk_sub_401000;
+@ 0x55A830 _thunk_sub_401000_55A830;
 
 // [propagated: _thunk_sub_401000, 0.80]
-@ 0x55A890 _thunk_sub_401000;
+@ 0x55A890 _thunk_sub_401000_55A890;
 
 // [propagated: _thunk_sub_6B2CA8, 0.80]
-@ 0x55ABAD _thunk_sub_6B2CA8;
+@ 0x55ABAD _thunk_sub_6B2CA8_55ABAD;
 
 // [propagated: _thunk_sub_55A970, 0.80]
 @ 0x55ABE0 _thunk_sub_55A970;
@@ -10893,49 +9594,49 @@
 @ 0x55B2C0 _thunk_sub_55B360;
 
 // [propagated: _thunk_sub_413340, 0.80]
-@ 0x55BAC0 _thunk_sub_413340;
+@ 0x55BAC0 _thunk_sub_413340_55BAC0;
 
 // [propagated: _thunk_sub_413340, 0.80]
-@ 0x55BB40 _thunk_sub_413340;
+@ 0x55BB40 _thunk_sub_413340_55BB40;
 
 // [propagated: _thunk_sub_6B2D1C, 0.80]
-@ 0x55C22A _thunk_sub_6B2D1C;
+@ 0x55C22A _thunk_sub_6B2D1C_55C22A;
 
 // [propagated: _thunk_sub_413340, 0.80]
-@ 0x55C4F0 _thunk_sub_413340;
+@ 0x55C4F0 _thunk_sub_413340_55C4F0;
 
 // [propagated: _thunk_sub_413340, 0.80]
-@ 0x55C590 _thunk_sub_413340;
+@ 0x55C590 _thunk_sub_413340_55C590;
 
 // [propagated: _thunk_sub_413340, 0.80]
-@ 0x55C6E0 _thunk_sub_413340;
+@ 0x55C6E0 _thunk_sub_413340_55C6E0;
 
 // [propagated: _thunk_sub_416AD0, 0.80]
 @ 0x55CE70 _thunk_sub_416AD0;
 
 // [propagated: _thunk_sub_416AD0, 0.80]
-@ 0x55D000 _thunk_sub_416AD0;
+@ 0x55D000 _thunk_sub_416AD0_55D000;
 
 // [propagated: _thunk_sub_541E90, 0.80]
 @ 0x55E100 _thunk_sub_541E90;
 
 // [propagated: _thunk_sub_6B2D1C, 0.80]
-@ 0x55E44F _thunk_sub_6B2D1C;
+@ 0x55E44F _thunk_sub_6B2D1C_55E44F;
 
 // [propagated: _thunk_sub_413340, 0.80]
-@ 0x55E6F0 _thunk_sub_413340;
+@ 0x55E6F0 _thunk_sub_413340_55E6F0;
 
 // [propagated: _thunk_sub_435000, 0.80]
-@ 0x55E790 _thunk_sub_435000;
+@ 0x55E790 _thunk_sub_435000_55E790;
 
 // [propagated: _thunk_sub_401000, 0.80]
-@ 0x55F080 _thunk_sub_401000;
+@ 0x55F080 _thunk_sub_401000_55F080;
 
 // [propagated: _thunk_sub_6B2CC4, 0.80]
-@ 0x55FF00 _thunk_sub_6B2CC4;
+@ 0x55FF00 _thunk_sub_6B2CC4_55FF00;
 
 // [propagated: _thunk_sub_6B2CC4, 0.80]
-@ 0x560090 _thunk_sub_6B2CC4;
+@ 0x560090 _thunk_sub_6B2CC4_560090;
 
 // [propagated: _thunk_sub_560700, 0.80]
 @ 0x560350 _thunk_sub_560700;
@@ -10944,13 +9645,13 @@
 @ 0x560700 _thunk_sub_5609B0;
 
 // [propagated: _thunk_sub_431DD0, 0.80]
-@ 0x561240 _thunk_sub_431DD0;
+@ 0x561240 _thunk_sub_431DD0_561240;
 
 // [propagated: _thunk_sub_561CC0, 0.80]
 @ 0x5619D0 _thunk_sub_561CC0;
 
 // [propagated: _thunk_sub_6B2CA8, 0.80]
-@ 0x5627D6 _thunk_sub_6B2CA8;
+@ 0x5627D6 _thunk_sub_6B2CA8_5627D6;
 
 // [propagated: _thunk_sub_5629F0, 0.80]
 @ 0x562EA6 _thunk_sub_5629F0;
@@ -10959,34 +9660,34 @@
 @ 0x563840 _thunk_sub_5635D0;
 
 // [propagated: _thunk_sub_5629F0, 0.80]
-@ 0x563920 _thunk_sub_5629F0;
+@ 0x563920 _thunk_sub_5629F0_563920;
 
 // [propagated: _thunk_sub_5629F0, 0.80]
-@ 0x563B20 _thunk_sub_5629F0;
+@ 0x563B20 _thunk_sub_5629F0_563B20;
 
 // [propagated: _thunk_sub_401000, 0.80]
-@ 0x563C20 _thunk_sub_401000;
+@ 0x563C20 _thunk_sub_401000_563C20;
 
 // [propagated: _thunk_sub_401000, 0.80]
-@ 0x563C60 _thunk_sub_401000;
+@ 0x563C60 _thunk_sub_401000_563C60;
 
 // [propagated: _thunk_sub_6B2CA8, 0.80]
-@ 0x564416 _thunk_sub_6B2CA8;
+@ 0x564416 _thunk_sub_6B2CA8_564416;
 
 // [propagated: _thunk_sub_564430, 0.80]
 @ 0x5648B0 _thunk_sub_564430;
 
 // [propagated: _thunk_sub_564430, 0.80]
-@ 0x5648F0 _thunk_sub_564430;
+@ 0x5648F0 _thunk_sub_564430_5648F0;
 
 // [propagated: _thunk_sub_564430, 0.80]
-@ 0x564930 _thunk_sub_564430;
+@ 0x564930 _thunk_sub_564430_564930;
 
 // [propagated: _thunk_sub_564ED0, 0.80]
 @ 0x564980 _thunk_sub_564ED0;
 
 // [propagated: _thunk_sub_401000, 0.80]
-@ 0x564ED0 _thunk_sub_401000;
+@ 0x564ED0 _thunk_sub_401000_564ED0;
 
 // [propagated: _thunk_sub_567930, 0.80]
 @ 0x566070 _thunk_sub_567930;
@@ -10995,25 +9696,25 @@
 @ 0x566BD0 _thunk_sub_566A50;
 
 // [propagated: _thunk_sub_4E74E0, 0.80]
-@ 0x566EF0 _thunk_sub_4E74E0;
+@ 0x566EF0 _thunk_sub_4E74E0_566EF0;
 
 // [propagated: _thunk_sub_5672B0, 0.80]
 @ 0x567200 _thunk_sub_5672B0;
 
 // [propagated: _thunk_sub_5672B0, 0.80]
-@ 0x567260 _thunk_sub_5672B0;
+@ 0x567260 _thunk_sub_5672B0_567260;
 
 // [propagated: _thunk_sub_5672B0, 0.80]
-@ 0x56726B _thunk_sub_5672B0;
+@ 0x56726B _thunk_sub_5672B0_56726B;
 
 // [propagated: _thunk_sub_6B32E0, 0.80]
-@ 0x5672B0 _thunk_sub_6B32E0;
+@ 0x5672B0 _thunk_sub_6B32E0_5672B0;
 
 // [propagated: _thunk_sub_4EE490, 0.80]
 @ 0x56A260 _thunk_sub_4EE490;
 
 // [propagated: _thunk_sub_6B2D1C, 0.80]
-@ 0x56A470 _thunk_sub_6B2D1C;
+@ 0x56A470 _thunk_sub_6B2D1C_56A470;
 
 // [propagated: _thunk_sub_56A470, 0.80]
 @ 0x56A4E0 _thunk_sub_56A470;
@@ -11025,28 +9726,28 @@
 @ 0x56AF10 _thunk_sub_56AE20;
 
 // [propagated: _thunk_sub_56AE20, 0.80]
-@ 0x56AF40 _thunk_sub_56AE20;
+@ 0x56AF40 _thunk_sub_56AE20_56AF40;
 
 // [propagated: _thunk_sub_56AE20, 0.80]
-@ 0x56AFA0 _thunk_sub_56AE20;
+@ 0x56AFA0 _thunk_sub_56AE20_56AFA0;
 
 // [propagated: _thunk_sub_56B570, 0.80]
 @ 0x56B010 _thunk_sub_56B570;
 
 // [propagated: _thunk_sub_6B2CC4, 0.80]
-@ 0x56C390 _thunk_sub_6B2CC4;
+@ 0x56C390 _thunk_sub_6B2CC4_56C390;
 
 // [propagated: _thunk_sub_4E74E0, 0.80]
-@ 0x56C4D0 _thunk_sub_4E74E0;
+@ 0x56C4D0 _thunk_sub_4E74E0_56C4D0;
 
 // [propagated: _thunk_sub_401000, 0.80]
-@ 0x56CC30 _thunk_sub_401000;
+@ 0x56CC30 _thunk_sub_401000_56CC30;
 
 // [propagated: _thunk_sub_401000, 0.80]
-@ 0x56CC70 _thunk_sub_401000;
+@ 0x56CC70 _thunk_sub_401000_56CC70;
 
 // [propagated: _thunk_sub_6A5DC0, 0.80]
-@ 0x56D240 _thunk_sub_6A5DC0;
+@ 0x56D240 _thunk_sub_6A5DC0_56D240;
 
 // [propagated: _thunk_sub_570200, 0.80]
 @ 0x56D7D0 _thunk_sub_570200;
@@ -11055,31 +9756,31 @@
 @ 0x56E080 _thunk_sub_56D920;
 
 // [propagated: _thunk_sub_431DD0, 0.80]
-@ 0x56E180 _thunk_sub_431DD0;
+@ 0x56E180 _thunk_sub_431DD0_56E180;
 
 // [propagated: _thunk_sub_65D850, 0.80]
-@ 0x56E3F0 _thunk_sub_65D850;
+@ 0x56E3F0 _thunk_sub_65D850_56E3F0;
 
 // [propagated: _thunk_sub_6B2CA8, 0.80]
-@ 0x56EA4D _thunk_sub_6B2CA8;
+@ 0x56EA4D _thunk_sub_6B2CA8_56EA4D;
 
 // [propagated: _thunk_sub_6B2D1C, 0.80]
-@ 0x56EA80 _thunk_sub_6B2D1C;
+@ 0x56EA80 _thunk_sub_6B2D1C_56EA80;
 
 // [propagated: _thunk_sub_56F8F0, 0.80]
 @ 0x56F650 _thunk_sub_56F8F0;
 
 // [propagated: _thunk_sub_6C46E0, 0.80]
-@ 0x570670 _thunk_sub_6C46E0;
+@ 0x570670 _thunk_sub_6C46E0_570670;
 
 // [propagated: _thunk_sub_6B2D1C, 0.80]
-@ 0x571220 _thunk_sub_6B2D1C;
+@ 0x571220 _thunk_sub_6B2D1C_571220;
 
 // [propagated: _thunk_sub_6B2D1C, 0.80]
-@ 0x571320 _thunk_sub_6B2D1C;
+@ 0x571320 _thunk_sub_6B2D1C_571320;
 
 // [propagated: _thunk_sub_56A5C0, 0.80]
-@ 0x5714B0 _thunk_sub_56A5C0;
+@ 0x5714B0 _thunk_sub_56A5C0_5714B0;
 
 // [propagated: _thunk_sub_5717E0, 0.80]
 @ 0x571890 _thunk_sub_5717E0;
@@ -11088,37 +9789,37 @@
 @ 0x571E20 _thunk_sub_571000;
 
 // [propagated: _thunk_sub_571000, 0.80]
-@ 0x571E90 _thunk_sub_571000;
+@ 0x571E90 _thunk_sub_571000_571E90;
 
 // [propagated: _thunk_sub_570490, 0.80]
 @ 0x572010 _thunk_sub_570490;
 
 // [propagated: _thunk_sub_401000, 0.80]
-@ 0x5726B0 _thunk_sub_401000;
+@ 0x5726B0 _thunk_sub_401000_5726B0;
 
 // [propagated: _thunk_sub_663210, 0.80]
-@ 0x5726F0 _thunk_sub_663210;
+@ 0x5726F0 _thunk_sub_663210_5726F0;
 
 // [propagated: _thunk_sub_6B2CC4, 0.80]
-@ 0x572AA0 _thunk_sub_6B2CC4;
+@ 0x572AA0 _thunk_sub_6B2CC4_572AA0;
 
 // [propagated: _thunk_sub_663210, 0.80]
-@ 0x572B70 _thunk_sub_663210;
+@ 0x572B70 _thunk_sub_663210_572B70;
 
 // [propagated: _thunk_sub_4F9610, 0.80]
-@ 0x572D90 _thunk_sub_4F9610;
+@ 0x572D90 _thunk_sub_4F9610_572D90;
 
 // [propagated: _thunk_sub_573090, 0.80]
 @ 0x5742D0 _thunk_sub_573090;
 
 // [propagated: _thunk_sub_663210, 0.80]
-@ 0x574930 _thunk_sub_663210;
+@ 0x574930 _thunk_sub_663210_574930;
 
 // [propagated: _thunk_sub_574BF0, 0.80]
 @ 0x574B40 _thunk_sub_574BF0;
 
 // [propagated: _thunk_sub_5E77A0, 0.80]
-@ 0x5764A0 _thunk_sub_5E77A0;
+@ 0x5764A0 _thunk_sub_5E77A0_5764A0;
 
 // [propagated: _thunk_sub_577420, 0.80]
 @ 0x577600 _thunk_sub_577420;
@@ -11130,10 +9831,10 @@
 @ 0x577D30 _thunk_sub_46B6E0;
 
 // [propagated: _thunk_sub_578250, 0.80]
-@ 0x578280 _thunk_sub_578250;
+@ 0x578280 _thunk_sub_578250_578280;
 
 // [propagated: _thunk_sub_4EE850, 0.80]
-@ 0x5784E0 _thunk_sub_4EE850;
+@ 0x5784E0 _thunk_sub_4EE850_5784E0;
 
 // [propagated: _thunk_sub_578930, 0.80]
 @ 0x578690 _thunk_sub_578930;
@@ -11142,13 +9843,13 @@
 @ 0x57A5D0 _thunk_sub_4EE440;
 
 // [propagated: _thunk_sub_4EE440, 0.80]
-@ 0x57A640 _thunk_sub_4EE440;
+@ 0x57A640 _thunk_sub_4EE440_57A640;
 
 // [propagated: _thunk_sub_4EE440, 0.80]
-@ 0x57A6A0 _thunk_sub_4EE440;
+@ 0x57A6A0 _thunk_sub_4EE440_57A6A0;
 
 // [propagated: _thunk_sub_4EE440, 0.80]
-@ 0x57A710 _thunk_sub_4EE440;
+@ 0x57A710 _thunk_sub_4EE440_57A710;
 
 // [propagated: _thunk_sub_66C690, 0.80]
 @ 0x57AD34 _thunk_sub_66C690;
@@ -11157,16 +9858,16 @@
 @ 0x57AF90 _thunk_sub_5ACA20;
 
 // [propagated: _thunk_sub_57AF90, 0.80]
-@ 0x57B630 _thunk_sub_57AF90;
+@ 0x57B630 _thunk_sub_57AF90_57B630;
 
 // [propagated: _thunk_sub_57BAA0, 0.80]
 @ 0x57B950 _thunk_sub_57BAA0;
 
 // [propagated: _thunk_sub_663210, 0.80]
-@ 0x57BD80 _thunk_sub_663210;
+@ 0x57BD80 _thunk_sub_663210_57BD80;
 
 // [propagated: _thunk_sub_6B2CC4, 0.80]
-@ 0x57BF00 _thunk_sub_6B2CC4;
+@ 0x57BF00 _thunk_sub_6B2CC4_57BF00;
 
 // [propagated: _thunk_sub_4622C0, 0.80]
 @ 0x57CC30 _thunk_sub_4622C0;
@@ -11175,19 +9876,19 @@
 @ 0x57D0B0 _thunk_sub_57D340;
 
 // [propagated: _thunk_sub_65EBE0, 0.80]
-@ 0x57E030 _thunk_sub_65EBE0;
+@ 0x57E030 _thunk_sub_65EBE0_57E030;
 
 // [propagated: _thunk_sub_4F41E0, 0.80]
-@ 0x57E4B0 _thunk_sub_4F41E0;
+@ 0x57E4B0 _thunk_sub_4F41E0_57E4B0;
 
 // [propagated: _thunk_sub_6B2D1C, 0.80]
-@ 0x581A00 _thunk_sub_6B2D1C;
+@ 0x581A00 _thunk_sub_6B2D1C_581A00;
 
 // [propagated: _thunk_sub_6B2CC4, 0.80]
-@ 0x581B40 _thunk_sub_6B2CC4;
+@ 0x581B40 _thunk_sub_6B2CC4_581B40;
 
 // [propagated: _thunk_sub_6B2CC4, 0.80]
-@ 0x581BA0 _thunk_sub_6B2CC4;
+@ 0x581BA0 _thunk_sub_6B2CC4_581BA0;
 
 // [propagated: _thunk_sub_5823D0, 0.80]
 @ 0x581E70 _thunk_sub_5823D0;
@@ -11199,22 +9900,22 @@
 @ 0x582290 _thunk_sub_5825E0;
 
 // [propagated: _thunk_sub_4F4110, 0.80]
-@ 0x582F60 _thunk_sub_4F4110;
+@ 0x582F60 _thunk_sub_4F4110_582F60;
 
 // [propagated: _thunk_sub_4F4110, 0.80]
-@ 0x582FC0 _thunk_sub_4F4110;
+@ 0x582FC0 _thunk_sub_4F4110_582FC0;
 
 // [propagated: _thunk_sub_4EE850, 0.80]
-@ 0x583CB0 _thunk_sub_4EE850;
+@ 0x583CB0 _thunk_sub_4EE850_583CB0;
 
 // [propagated: _thunk_sub_435000, 0.80]
-@ 0x583D50 _thunk_sub_435000;
+@ 0x583D50 _thunk_sub_435000_583D50;
 
 // [propagated: _thunk_sub_583FC0, 0.80]
 @ 0x584460 _thunk_sub_583FC0;
 
 // [propagated: _thunk_sub_434F70, 0.80]
-@ 0x585200 _thunk_sub_434F70;
+@ 0x585200 _thunk_sub_434F70_585200;
 
 // [propagated: _thunk_sub_40E0A0, 0.80]
 @ 0x585BC0 _thunk_sub_40E0A0;
@@ -11223,10 +9924,10 @@
 @ 0x586450 _thunk_sub_587340;
 
 // [propagated: _thunk_sub_6B2D1C, 0.80]
-@ 0x5864A0 _thunk_sub_6B2D1C;
+@ 0x5864A0 _thunk_sub_6B2D1C_5864A0;
 
 // [propagated: _thunk_sub_6B2CC4, 0.80]
-@ 0x586520 _thunk_sub_6B2CC4;
+@ 0x586520 _thunk_sub_6B2CC4_586520;
 
 // [propagated: _thunk_sub_4F1B20, 0.80]
 @ 0x586580 _thunk_sub_4F1B20;
@@ -11265,28 +9966,28 @@
 @ 0x58A1B0 _thunk_sub_58A470;
 
 // [propagated: _thunk_sub_4010C0, 0.80]
-@ 0x58A420 _thunk_sub_4010C0;
+@ 0x58A420 _thunk_sub_4010C0_58A420;
 
 // [propagated: _thunk_sub_401000, 0.80]
-@ 0x58A470 _thunk_sub_401000;
+@ 0x58A470 _thunk_sub_401000_58A470;
 
 // [propagated: _thunk_sub_52A250, 0.80]
 @ 0x58AE81 _thunk_sub_52A250;
 
 // [propagated: _thunk_sub_401000, 0.80]
-@ 0x58B6A0 _thunk_sub_401000;
+@ 0x58B6A0 _thunk_sub_401000_58B6A0;
 
 // [propagated: _thunk_sub_58BAC0, 0.80]
 @ 0x58B990 _thunk_sub_58BAC0;
 
 // [propagated: _thunk_sub_58BAC0, 0.80]
-@ 0x58B9E0 _thunk_sub_58BAC0;
+@ 0x58B9E0 _thunk_sub_58BAC0_58B9E0;
 
 // [propagated: _thunk_sub_58BAC0, 0.80]
-@ 0x58BA30 _thunk_sub_58BAC0;
+@ 0x58BA30 _thunk_sub_58BAC0_58BA30;
 
 // [propagated: _thunk_sub_4F4110, 0.80]
-@ 0x58BDE0 _thunk_sub_4F4110;
+@ 0x58BDE0 _thunk_sub_4F4110_58BDE0;
 
 // [propagated: _thunk_sub_4E19D0, 0.80]
 @ 0x58BF00 _thunk_sub_4E19D0;
@@ -11301,10 +10002,10 @@
 @ 0x58CF70 _thunk_sub_4D5960;
 
 // [propagated: _thunk_sub_435A30, 0.80]
-@ 0x58D1A0 _thunk_sub_435A30;
+@ 0x58D1A0 _thunk_sub_435A30_58D1A0;
 
 // [propagated: _thunk_sub_6B3220, 0.80]
-@ 0x58D2B0 _thunk_sub_6B3220;
+@ 0x58D2B0 _thunk_sub_6B3220_58D2B0;
 
 // [propagated: _thunk_sub_4CF290, 0.80]
 @ 0x58D450 _thunk_sub_4CF290;
@@ -11313,7 +10014,7 @@
 @ 0x58D900 _thunk_sub_4E9500;
 
 // [propagated: _thunk_sub_6B2CA8, 0.80]
-@ 0x58DCEA _thunk_sub_6B2CA8;
+@ 0x58DCEA _thunk_sub_6B2CA8_58DCEA;
 
 // [propagated: _thunk_sub_58E260, 0.80]
 @ 0x58EA37 _thunk_sub_58E260;
@@ -11322,43 +10023,43 @@
 @ 0x590A55 _thunk_sub_5D7970;
 
 // [propagated: _thunk_sub_5D7970, 0.80]
-@ 0x590A57 _thunk_sub_5D7970;
+@ 0x590A57 _thunk_sub_5D7970_590A57;
 
 // [propagated: _thunk_sub_5D7970, 0.80]
-@ 0x590A9E _thunk_sub_5D7970;
+@ 0x590A9E _thunk_sub_5D7970_590A9E;
 
 // [propagated: _thunk_sub_5D7970, 0.80]
-@ 0x590AA0 _thunk_sub_5D7970;
+@ 0x590AA0 _thunk_sub_5D7970_590AA0;
 
 // [propagated: _thunk_sub_5D7970, 0.80]
-@ 0x590AE7 _thunk_sub_5D7970;
+@ 0x590AE7 _thunk_sub_5D7970_590AE7;
 
 // [propagated: _thunk_sub_5D7970, 0.80]
-@ 0x590AE9 _thunk_sub_5D7970;
+@ 0x590AE9 _thunk_sub_5D7970_590AE9;
 
 // [propagated: _thunk_sub_5D7970, 0.80]
-@ 0x590B25 _thunk_sub_5D7970;
+@ 0x590B25 _thunk_sub_5D7970_590B25;
 
 // [propagated: _thunk_sub_5D7970, 0.80]
-@ 0x5932C5 _thunk_sub_5D7970;
+@ 0x5932C5 _thunk_sub_5D7970_5932C5;
 
 // [propagated: _thunk_sub_66EC80, 0.80]
 @ 0x599A6C _thunk_sub_66EC80;
 
 // [propagated: _thunk_sub_663210, 0.80]
-@ 0x59AB90 _thunk_sub_663210;
+@ 0x59AB90 _thunk_sub_663210_59AB90;
 
 // [propagated: _thunk_sub_6B2CC4, 0.80]
-@ 0x59AF30 _thunk_sub_6B2CC4;
+@ 0x59AF30 _thunk_sub_6B2CC4_59AF30;
 
 // [propagated: _thunk_sub_6B2CA8, 0.80]
-@ 0x59CCD0 _thunk_sub_6B2CA8;
+@ 0x59CCD0 _thunk_sub_6B2CA8_59CCD0;
 
 // [propagated: _thunk_sub_6B3226, 0.80]
-@ 0x59CDA0 _thunk_sub_6B3226;
+@ 0x59CDA0 _thunk_sub_6B3226_59CDA0;
 
 // [propagated: _thunk_sub_6A5DC0, 0.80]
-@ 0x59CF60 _thunk_sub_6A5DC0;
+@ 0x59CF60 _thunk_sub_6A5DC0_59CF60;
 
 // [propagated: _thunk_sub_59E020, 0.80]
 @ 0x59DED0 _thunk_sub_59E020;
@@ -11373,13 +10074,13 @@
 @ 0x59FFF0 _thunk_sub_5A0180;
 
 // [propagated: _thunk_sub_401000, 0.80]
-@ 0x5A0470 _thunk_sub_401000;
+@ 0x5A0470 _thunk_sub_401000_5A0470;
 
 // [propagated: _thunk_sub_6A5DC0, 0.80]
-@ 0x5A06E0 _thunk_sub_6A5DC0;
+@ 0x5A06E0 _thunk_sub_6A5DC0_5A06E0;
 
 // [propagated: _thunk_sub_6A5DC0, 0.80]
-@ 0x5A0740 _thunk_sub_6A5DC0;
+@ 0x5A0740 _thunk_sub_6A5DC0_5A0740;
 
 // [propagated: _thunk_sub_5A0FF0, 0.80]
 @ 0x5A0EA0 _thunk_sub_5A0FF0;
@@ -11388,10 +10089,10 @@
 @ 0x5A2450 _thunk_sub_58D2E0;
 
 // [propagated: _thunk_sub_65EBE0, 0.80]
-@ 0x5A3A80 _thunk_sub_65EBE0;
+@ 0x5A3A80 _thunk_sub_65EBE0_5A3A80;
 
 // [propagated: _thunk_sub_6B3220, 0.80]
-@ 0x5A3BD0 _thunk_sub_6B3220;
+@ 0x5A3BD0 _thunk_sub_6B3220_5A3BD0;
 
 // [propagated: _thunk_sub_5A3A80, 0.80]
 @ 0x5A3D50 _thunk_sub_5A3A80;
@@ -11403,25 +10104,25 @@
 @ 0x5A50B0 _thunk_sub_5A5350;
 
 // [propagated: _thunk_sub_401000, 0.80]
-@ 0x5A52E0 _thunk_sub_401000;
+@ 0x5A52E0 _thunk_sub_401000_5A52E0;
 
 // [propagated: _thunk_sub_401000, 0.80]
-@ 0x5A5350 _thunk_sub_401000;
+@ 0x5A5350 _thunk_sub_401000_5A5350;
 
 // [propagated: _thunk_sub_401000, 0.80]
-@ 0x5A53C0 _thunk_sub_401000;
+@ 0x5A53C0 _thunk_sub_401000_5A53C0;
 
 // [propagated: _thunk_sub_5A5410, 0.80]
 @ 0x5A5410 _thunk_sub_5A5410;
 
 // [propagated: _thunk_sub_5A5410, 0.80]
-@ 0x5A54F0 _thunk_sub_5A5410;
+@ 0x5A54F0 _thunk_sub_5A5410_5A54F0;
 
 // [propagated: _thunk_sub_5A6850, 0.80]
 @ 0x5A6150 _thunk_sub_5A6850;
 
 // [propagated: _thunk_sub_6B2CA8, 0.80]
-@ 0x5A64CF _thunk_sub_6B2CA8;
+@ 0x5A64CF _thunk_sub_6B2CA8_5A64CF;
 
 // [propagated: _thunk_sub_5A61C0, 0.80]
 @ 0x5A6500 _thunk_sub_5A61C0;
@@ -11433,13 +10134,13 @@
 @ 0x5A6B10 _thunk_sub_5A68E0;
 
 // [propagated: _thunk_sub_5A68E0, 0.80]
-@ 0x5A8190 _thunk_sub_5A68E0;
+@ 0x5A8190 _thunk_sub_5A68E0_5A8190;
 
 // [propagated: _thunk_sub_6C46C8, 0.80]
-@ 0x5A9390 _thunk_sub_6C46C8;
+@ 0x5A9390 _thunk_sub_6C46C8_5A9390;
 
 // [propagated: _thunk_sub_4EE490, 0.80]
-@ 0x5A9D60 _thunk_sub_4EE490;
+@ 0x5A9D60 _thunk_sub_4EE490_5A9D60;
 
 // [propagated: _thunk_sub_4E04D0, 0.80]
 @ 0x5AA650 _thunk_sub_4E04D0;
@@ -11463,7 +10164,7 @@
 @ 0x5AC2F0 _thunk_sub_58CB60;
 
 // [propagated: _thunk_sub_5ACA20, 0.80]
-@ 0x5AC570 _thunk_sub_5ACA20;
+@ 0x5AC570 _thunk_sub_5ACA20_5AC570;
 
 // [propagated: _thunk_sub_5AC930, 0.80]
 @ 0x5ACA20 _thunk_sub_5AC930;
@@ -11478,7 +10179,7 @@
 @ 0x5AEDF0 _thunk_sub_5AEB20;
 
 // [propagated: _thunk_sub_5AD780, 0.80]
-@ 0x5AEE50 _thunk_sub_5AD780;
+@ 0x5AEE50 _thunk_sub_5AD780_5AEE50;
 
 // [propagated: _thunk_sub_5AF5C0, 0.80]
 @ 0x5AF280 _thunk_sub_5AF5C0;
@@ -11490,7 +10191,7 @@
 @ 0x5AF4D0 _thunk_sub_5AF540;
 
 // [propagated: _thunk_sub_65D850, 0.80]
-@ 0x5AF5C0 _thunk_sub_65D850;
+@ 0x5AF5C0 _thunk_sub_65D850_5AF5C0;
 
 // [propagated: _thunk_sub_5AFA20, 0.80]
 @ 0x5AF6F0 _thunk_sub_5AFA20;
@@ -11508,16 +10209,16 @@
 @ 0x5AFB10 _thunk_sub_66F5E0;
 
 // [propagated: _thunk_sub_5AFA20, 0.80]
-@ 0x5B0013 _thunk_sub_5AFA20;
+@ 0x5B0013 _thunk_sub_5AFA20_5B0013;
 
 // [propagated: _thunk_sub_5AFA20, 0.80]
-@ 0x5B01F0 _thunk_sub_5AFA20;
+@ 0x5B01F0 _thunk_sub_5AFA20_5B01F0;
 
 // [propagated: _thunk_sub_5B0400, 0.80]
 @ 0x5B03C0 _thunk_sub_5B0400;
 
 // [propagated: _thunk_sub_435000, 0.80]
-@ 0x5B06F0 _thunk_sub_435000;
+@ 0x5B06F0 _thunk_sub_435000_5B06F0;
 
 // [propagated: _thunk_sub_5B0740, 0.80]
 @ 0x5B0780 _thunk_sub_5B0740;
@@ -11535,13 +10236,13 @@
 @ 0x5B2080 _thunk_sub_5DC370;
 
 // [propagated: _thunk_sub_5DC370, 0.80]
-@ 0x5B2F50 _thunk_sub_5DC370;
+@ 0x5B2F50 _thunk_sub_5DC370_5B2F50;
 
 // [propagated: _thunk_sub_5DC370, 0.80]
-@ 0x5B3080 _thunk_sub_5DC370;
+@ 0x5B3080 _thunk_sub_5DC370_5B3080;
 
 // [propagated: _thunk_sub_6C475A, 0.80]
-@ 0x5B5A10 _thunk_sub_6C475A;
+@ 0x5B5A10 _thunk_sub_6C475A_5B5A10;
 
 // [propagated: _thunk_sub_5B6C30, 0.80]
 @ 0x5B6EE0 _thunk_sub_5B6C30;
@@ -11553,28 +10254,28 @@
 @ 0x5B94ED _thunk_sub_5C5760;
 
 // [propagated: _thunk_sub_65EBE0, 0.80]
-@ 0x5B9AC0 _thunk_sub_65EBE0;
+@ 0x5B9AC0 _thunk_sub_65EBE0_5B9AC0;
 
 // [propagated: _thunk_sub_6C477E, 0.80]
 @ 0x5BB710 _thunk_sub_6C477E;
 
 // [propagated: _thunk_sub_6C46E0, 0.80]
-@ 0x5BB750 _thunk_sub_6C46E0;
+@ 0x5BB750 _thunk_sub_6C46E0_5BB750;
 
 // [propagated: _thunk_sub_6B2D1C, 0.80]
-@ 0x5BB860 _thunk_sub_6B2D1C;
+@ 0x5BB860 _thunk_sub_6B2D1C_5BB860;
 
 // [propagated: _thunk_sub_5F2430, 0.80]
 @ 0x5BB990 _thunk_sub_5F2430;
 
 // [propagated: _thunk_sub_665660, 0.80]
-@ 0x5BBAD0 _thunk_sub_665660;
+@ 0x5BBAD0 _thunk_sub_665660_5BBAD0;
 
 // [propagated: _thunk_sub_5AFA20, 0.80]
-@ 0x5BC890 _thunk_sub_5AFA20;
+@ 0x5BC890 _thunk_sub_5AFA20_5BC890;
 
 // [propagated: _thunk_sub_665660, 0.80]
-@ 0x5BDF20 _thunk_sub_665660;
+@ 0x5BDF20 _thunk_sub_665660_5BDF20;
 
 // [propagated: _thunk_sub_5BE460, 0.80]
 @ 0x5BE4A0 _thunk_sub_5BE460;
@@ -11589,25 +10290,25 @@
 @ 0x5C4110 _thunk_sub_5C3BE0;
 
 // [propagated: _thunk_sub_4EE850, 0.80]
-@ 0x5C52C0 _thunk_sub_4EE850;
+@ 0x5C52C0 _thunk_sub_4EE850_5C52C0;
 
 // [propagated: _thunk_sub_4EE850, 0.80]
-@ 0x5C5430 _thunk_sub_4EE850;
+@ 0x5C5430 _thunk_sub_4EE850_5C5430;
 
 // [propagated: _thunk_sub_4EE850, 0.80]
-@ 0x5C56C0 _thunk_sub_4EE850;
+@ 0x5C56C0 _thunk_sub_4EE850_5C56C0;
 
 // [propagated: _thunk_sub_4EE850, 0.80]
-@ 0x5C58D0 _thunk_sub_4EE850;
+@ 0x5C58D0 _thunk_sub_4EE850_5C58D0;
 
 // [propagated: _thunk_sub_4EE850, 0.80]
-@ 0x5C5970 _thunk_sub_4EE850;
+@ 0x5C5970 _thunk_sub_4EE850_5C5970;
 
 // [propagated: _thunk_sub_5A9B80, 0.80]
 @ 0x5C6537 _thunk_sub_5A9B80;
 
 // [propagated: _thunk_sub_5A9B80, 0.80]
-@ 0x5C6539 _thunk_sub_5A9B80;
+@ 0x5C6539 _thunk_sub_5A9B80_5C6539;
 
 // [propagated: _thunk_sub_5B9040, 0.80]
 @ 0x5C6910 _thunk_sub_5B9040;
@@ -11622,10 +10323,10 @@
 @ 0x5C89D0 _thunk_sub_5C8920;
 
 // [propagated: _thunk_sub_6B32E0, 0.80]
-@ 0x5C8B6D _thunk_sub_6B32E0;
+@ 0x5C8B6D _thunk_sub_6B32E0_5C8B6D;
 
 // [propagated: _thunk_sub_6B2CA8, 0.80]
-@ 0x5C9CC4 _thunk_sub_6B2CA8;
+@ 0x5C9CC4 _thunk_sub_6B2CA8_5C9CC4;
 
 // [propagated: _thunk_sub_66FE10, 0.80]
 @ 0x5C9D20 _thunk_sub_66FE10;
@@ -11637,10 +10338,10 @@
 @ 0x5CA1D0 _thunk_sub_5DD580;
 
 // [propagated: _thunk_sub_5DD430, 0.80]
-@ 0x5CA6B0 _thunk_sub_5DD430;
+@ 0x5CA6B0 _thunk_sub_5DD430_5CA6B0;
 
 // [propagated: _thunk_sub_66C690, 0.80]
-@ 0x5CA9F0 _thunk_sub_66C690;
+@ 0x5CA9F0 _thunk_sub_66C690_5CA9F0;
 
 // [propagated: _thunk_sub_5CAA90, 0.80]
 @ 0x5CAA70 _thunk_sub_5CAA90;
@@ -11652,16 +10353,16 @@
 @ 0x5CAD00 _thunk_sub_5CACB0;
 
 // [propagated: _thunk_sub_5AFA20, 0.80]
-@ 0x5CAE00 _thunk_sub_5AFA20;
+@ 0x5CAE00 _thunk_sub_5AFA20_5CAE00;
 
 // [propagated: _thunk_sub_665660, 0.80]
-@ 0x5CD2B0 _thunk_sub_665660;
+@ 0x5CD2B0 _thunk_sub_665660_5CD2B0;
 
 // [propagated: _thunk_sub_5CD310, 0.80]
 @ 0x5CD3A0 _thunk_sub_5CD310;
 
 // [propagated: _thunk_sub_6B3220, 0.80]
-@ 0x5CDC40 _thunk_sub_6B3220;
+@ 0x5CDC40 _thunk_sub_6B3220_5CDC40;
 
 // [propagated: _thunk_sub_5CDF10, 0.80]
 @ 0x5CDF70 _thunk_sub_5CDF10;
@@ -11691,7 +10392,7 @@
 @ 0x5D1F50 _thunk_sub_5D21C0;
 
 // [propagated: _thunk_sub_4F9610, 0.80]
-@ 0x5D24A0 _thunk_sub_4F9610;
+@ 0x5D24A0 _thunk_sub_4F9610_5D24A0;
 
 // [propagated: _thunk_sub_5A5DC0, 0.80]
 @ 0x5D2800 _thunk_sub_5A5DC0;
@@ -11700,25 +10401,25 @@
 @ 0x5D29D0 _thunk_sub_5B0060;
 
 // [propagated: _thunk_sub_6B2CA8, 0.80]
-@ 0x5D2E54 _thunk_sub_6B2CA8;
+@ 0x5D2E54 _thunk_sub_6B2CA8_5D2E54;
 
 // [propagated: _thunk_sub_5D2E70, 0.80]
 @ 0x5D3029 _thunk_sub_5D2E70;
 
 // [propagated: _thunk_sub_5B0060, 0.80]
-@ 0x5D3180 _thunk_sub_5B0060;
+@ 0x5D3180 _thunk_sub_5B0060_5D3180;
 
 // [propagated: _thunk_sub_5D2A90, 0.80]
 @ 0x5D3420 _thunk_sub_5D2A90;
 
 // [propagated: _thunk_sub_435A30, 0.80]
-@ 0x5D3650 _thunk_sub_435A30;
+@ 0x5D3650 _thunk_sub_435A30_5D3650;
 
 // [propagated: _thunk_sub_5D2840, 0.80]
 @ 0x5D3730 _thunk_sub_5D2840;
 
 // [propagated: _thunk_sub_435A30, 0.80]
-@ 0x5D3770 _thunk_sub_435A30;
+@ 0x5D3770 _thunk_sub_435A30_5D3770;
 
 // [propagated: _thunk_sub_59D960, 0.80]
 @ 0x5D3A40 _thunk_sub_59D960;
@@ -11739,7 +10440,7 @@
 @ 0x5D4350 _thunk_sub_5D3D10;
 
 // [propagated: _thunk_sub_6B3220, 0.80]
-@ 0x5D4630 _thunk_sub_6B3220;
+@ 0x5D4630 _thunk_sub_6B3220_5D4630;
 
 // [propagated: _thunk_sub_5D6B60, 0.80]
 @ 0x5D4F80 _thunk_sub_5D6B60;
@@ -11751,7 +10452,7 @@
 @ 0x5D648C _thunk_sub_5D4F80;
 
 // [propagated: _thunk_sub_401000, 0.80]
-@ 0x5D6B60 _thunk_sub_401000;
+@ 0x5D6B60 _thunk_sub_401000_5D6B60;
 
 // [propagated: _thunk_sub_65C450, 0.80]
 @ 0x5D6E70 _thunk_sub_65C450;
@@ -11763,7 +10464,7 @@
 @ 0x5D7CD0 _thunk_sub_5D7C20;
 
 // [propagated: _thunk_sub_5D7C20, 0.80]
-@ 0x5D7DF0 _thunk_sub_5D7C20;
+@ 0x5D7DF0 _thunk_sub_5D7C20_5D7DF0;
 
 // [propagated: _thunk_sub_5D8CA0, 0.80]
 @ 0x5D7F00 _thunk_sub_5D8CA0;
@@ -11775,13 +10476,13 @@
 @ 0x5D9110 _thunk_sub_5D8F30;
 
 // [propagated: _thunk_sub_5D8F30, 0.80]
-@ 0x5D9220 _thunk_sub_5D8F30;
+@ 0x5D9220 _thunk_sub_5D8F30_5D9220;
 
 // [propagated: _thunk_sub_5D8F30, 0.80]
-@ 0x5D93E0 _thunk_sub_5D8F30;
+@ 0x5D93E0 _thunk_sub_5D8F30_5D93E0;
 
 // [propagated: _thunk_sub_5D8F30, 0.80]
-@ 0x5D9460 _thunk_sub_5D8F30;
+@ 0x5D9460 _thunk_sub_5D8F30_5D9460;
 
 // [propagated: _thunk_sub_65E1B0, 0.80]
 @ 0x5D9970 _thunk_sub_65E1B0;
@@ -11790,7 +10491,7 @@
 @ 0x5D9F30 _thunk_sub_5D9E30;
 
 // [propagated: _thunk_sub_5D9E30, 0.80]
-@ 0x5D9F60 _thunk_sub_5D9E30;
+@ 0x5D9F60 _thunk_sub_5D9E30_5D9F60;
 
 // [propagated: _thunk_sub_5DA6A0, 0.80]
 @ 0x5DA8C0 _thunk_sub_5DA6A0;
@@ -11802,13 +10503,13 @@
 @ 0x5DD0F0 _thunk_sub_5DCCF0;
 
 // [propagated: _thunk_sub_5DA750, 0.80]
-@ 0x5DD140 _thunk_sub_5DA750;
+@ 0x5DD140 _thunk_sub_5DA750_5DD140;
 
 // [propagated: _thunk_sub_5DD260, 0.80]
 @ 0x5DD430 _thunk_sub_5DD260;
 
 // [propagated: _thunk_sub_5D7970, 0.80]
-@ 0x5DD580 _thunk_sub_5D7970;
+@ 0x5DD580 _thunk_sub_5D7970_5DD580;
 
 // [propagated: _thunk_sub_5DD700, 0.80]
 @ 0x5DD770 _thunk_sub_5DD700;
@@ -11817,13 +10518,13 @@
 @ 0x5DD920 _thunk_sub_5DD770;
 
 // [propagated: _thunk_sub_65DF10, 0.80]
-@ 0x5DDD90 _thunk_sub_65DF10;
+@ 0x5DDD90 _thunk_sub_65DF10_5DDD90;
 
 // [propagated: _thunk_sub_65DF10, 0.80]
-@ 0x5DDDE0 _thunk_sub_65DF10;
+@ 0x5DDDE0 _thunk_sub_65DF10_5DDDE0;
 
 // [propagated: _thunk_sub_65DF10, 0.80]
-@ 0x5DDE30 _thunk_sub_65DF10;
+@ 0x5DDE30 _thunk_sub_65DF10_5DDE30;
 
 // [propagated: _thunk_sub_5D9870, 0.80]
 @ 0x5DDF10 _thunk_sub_5D9870;
@@ -11832,34 +10533,34 @@
 @ 0x5DE8A0 _thunk_sub_5D7FC0;
 
 // [propagated: _thunk_sub_5D7FC0, 0.80]
-@ 0x5DE9B0 _thunk_sub_5D7FC0;
+@ 0x5DE9B0 _thunk_sub_5D7FC0_5DE9B0;
 
 // [propagated: _thunk_sub_5D7FC0, 0.80]
-@ 0x5DEAB0 _thunk_sub_5D7FC0;
+@ 0x5DEAB0 _thunk_sub_5D7FC0_5DEAB0;
 
 // [propagated: _thunk_sub_66ED50, 0.80]
 @ 0x5DECB0 _thunk_sub_66ED50;
 
 // [propagated: _thunk_sub_6C46C8, 0.80]
-@ 0x5DF220 _thunk_sub_6C46C8;
+@ 0x5DF220 _thunk_sub_6C46C8_5DF220;
 
 // [propagated: _thunk_sub_5E01B0, 0.80]
 @ 0x5DFE40 _thunk_sub_5E01B0;
 
 // [propagated: _thunk_sub_6B3220, 0.80]
-@ 0x5DFFD0 _thunk_sub_6B3220;
+@ 0x5DFFD0 _thunk_sub_6B3220_5DFFD0;
 
 // [propagated: _thunk_sub_6B3226, 0.80]
-@ 0x5E0550 _thunk_sub_6B3226;
+@ 0x5E0550 _thunk_sub_6B3226_5E0550;
 
 // [propagated: _thunk_sub_6B3226, 0.80]
-@ 0x5E0590 _thunk_sub_6B3226;
+@ 0x5E0590 _thunk_sub_6B3226_5E0590;
 
 // [propagated: _thunk_sub_5E0F40, 0.80]
 @ 0x5E0750 _thunk_sub_5E0F40;
 
 // [propagated: _thunk_sub_6B32E0, 0.80]
-@ 0x5E1350 _thunk_sub_6B32E0;
+@ 0x5E1350 _thunk_sub_6B32E0_5E1350;
 
 // [propagated: _thunk_sub_5E1860, 0.80]
 @ 0x5E1792 _thunk_sub_5E1860;
@@ -11868,10 +10569,10 @@
 @ 0x5E17C0 _thunk_sub_5E2710;
 
 // [propagated: _thunk_sub_6B3220, 0.80]
-@ 0x5E19E0 _thunk_sub_6B3220;
+@ 0x5E19E0 _thunk_sub_6B3220_5E19E0;
 
 // [propagated: _thunk_sub_6B3226, 0.80]
-@ 0x5E1A70 _thunk_sub_6B3226;
+@ 0x5E1A70 _thunk_sub_6B3226_5E1A70;
 
 // [propagated: _thunk_sub_5DF730, 0.80]
 @ 0x5E2060 _thunk_sub_5DF730;
@@ -11883,7 +10584,7 @@
 @ 0x5E4810 _thunk_sub_65E0C0;
 
 // [propagated: _thunk_sub_65E560, 0.80]
-@ 0x5E4F00 _thunk_sub_65E560;
+@ 0x5E4F00 _thunk_sub_65E560_5E4F00;
 
 // [propagated: _thunk_sub_5E53E0, 0.80]
 @ 0x5E54F0 _thunk_sub_5E53E0;
@@ -11892,61 +10593,61 @@
 @ 0x5E578D _thunk_sub_5E57B0;
 
 // [propagated: _thunk_sub_6C46C8, 0.80]
-@ 0x5E5AB0 _thunk_sub_6C46C8;
+@ 0x5E5AB0 _thunk_sub_6C46C8_5E5AB0;
 
 // [propagated: _thunk_sub_6B2CA8, 0.80]
-@ 0x5E670E _thunk_sub_6B2CA8;
+@ 0x5E670E _thunk_sub_6B2CA8_5E670E;
 
 // [propagated: _thunk_sub_401000, 0.80]
-@ 0x5E7AA0 _thunk_sub_401000;
+@ 0x5E7AA0 _thunk_sub_401000_5E7AA0;
 
 // [propagated: _thunk_sub_661000, 0.80]
-@ 0x5E7BB0 _thunk_sub_661000;
+@ 0x5E7BB0 _thunk_sub_661000_5E7BB0;
 
 // [propagated: _thunk_sub_6B2D1C, 0.80]
-@ 0x5E7D30 _thunk_sub_6B2D1C;
+@ 0x5E7D30 _thunk_sub_6B2D1C_5E7D30;
 
 // [propagated: _thunk_sub_6B2CC4, 0.80]
-@ 0x5E7DA0 _thunk_sub_6B2CC4;
+@ 0x5E7DA0 _thunk_sub_6B2CC4_5E7DA0;
 
 // [propagated: _thunk_sub_6B2D1C, 0.80]
-@ 0x5E82F0 _thunk_sub_6B2D1C;
+@ 0x5E82F0 _thunk_sub_6B2D1C_5E82F0;
 
 // [propagated: _thunk_sub_413340, 0.80]
-@ 0x5E8D30 _thunk_sub_413340;
+@ 0x5E8D30 _thunk_sub_413340_5E8D30;
 
 // [propagated: _thunk_sub_663B90, 0.80]
 @ 0x5E8F30 _thunk_sub_663B90;
 
 // [propagated: _thunk_sub_6B2CC4, 0.80]
-@ 0x5E8F80 _thunk_sub_6B2CC4;
+@ 0x5E8F80 _thunk_sub_6B2CC4_5E8F80;
 
 // [propagated: _thunk_sub_663B90, 0.80]
-@ 0x5E94B0 _thunk_sub_663B90;
+@ 0x5E94B0 _thunk_sub_663B90_5E94B0;
 
 // [propagated: _thunk_sub_5FB160, 0.80]
 @ 0x5EC1E0 _thunk_sub_5FB160;
 
 // [propagated: _thunk_sub_5FB160, 0.80]
-@ 0x5EC389 _thunk_sub_5FB160;
+@ 0x5EC389 _thunk_sub_5FB160_5EC389;
 
 // [propagated: _thunk_sub_5ED9D0, 0.80]
 @ 0x5EDA50 _thunk_sub_5ED9D0;
 
 // [propagated: _thunk_sub_6B3226, 0.80]
-@ 0x5EDBC0 _thunk_sub_6B3226;
+@ 0x5EDBC0 _thunk_sub_6B3226_5EDBC0;
 
 // [propagated: _thunk_sub_6B3226, 0.80]
-@ 0x5EDC6A _thunk_sub_6B3226;
+@ 0x5EDC6A _thunk_sub_6B3226_5EDC6A;
 
 // [propagated: _thunk_sub_6B3226, 0.80]
-@ 0x5EDE40 _thunk_sub_6B3226;
+@ 0x5EDE40 _thunk_sub_6B3226_5EDE40;
 
 // [propagated: _thunk_sub_6B3226, 0.80]
-@ 0x5EE0F0 _thunk_sub_6B3226;
+@ 0x5EE0F0 _thunk_sub_6B3226_5EE0F0;
 
 // [propagated: _thunk_sub_6B3226, 0.80]
-@ 0x5EE270 _thunk_sub_6B3226;
+@ 0x5EE270 _thunk_sub_6B3226_5EE270;
 
 // [propagated: _thunk_sub_5EE270, 0.80]
 @ 0x5EE2C0 _thunk_sub_5EE270;
@@ -11955,19 +10656,19 @@
 @ 0x5EEE40 _thunk_sub_66D420;
 
 // [propagated: _thunk_sub_5FB160, 0.80]
-@ 0x5EFF2E _thunk_sub_5FB160;
+@ 0x5EFF2E _thunk_sub_5FB160_5EFF2E;
 
 // [propagated: _thunk_sub_5EBB90, 0.80]
 @ 0x5F0548 _thunk_sub_5EBB90;
 
 // [propagated: _thunk_sub_5EBB90, 0.80]
-@ 0x5F0683 _thunk_sub_5EBB90;
+@ 0x5F0683 _thunk_sub_5EBB90_5F0683;
 
 // [propagated: _thunk_sub_6B2D1C, 0.80]
-@ 0x5F0EA0 _thunk_sub_6B2D1C;
+@ 0x5F0EA0 _thunk_sub_6B2D1C_5F0EA0;
 
 // [propagated: _thunk_sub_5EAB60, 0.80]
-@ 0x5F1DB0 _thunk_sub_5EAB60;
+@ 0x5F1DB0 _thunk_sub_5EAB60_5F1DB0;
 
 // [propagated: _thunk_sub_5FFE80, 0.80]
 @ 0x5F20C0 _thunk_sub_5FFE80;
@@ -11982,7 +10683,7 @@
 @ 0x5F4E70 _thunk_sub_5F4BE0;
 
 // [propagated: _thunk_sub_6B2CC4, 0.80]
-@ 0x5F5030 _thunk_sub_6B2CC4;
+@ 0x5F5030 _thunk_sub_6B2CC4_5F5030;
 
 // [propagated: _thunk_sub_5F7C90, 0.80]
 @ 0x5F7CF0 _thunk_sub_5F7C90;
@@ -11991,7 +10692,7 @@
 @ 0x5F8860 _thunk_sub_60DF30;
 
 // [propagated: _thunk_sub_5F7C90, 0.80]
-@ 0x5F8880 _thunk_sub_5F7C90;
+@ 0x5F8880 _thunk_sub_5F7C90_5F8880;
 
 // [propagated: _thunk_sub_5F4F00, 0.80]
 @ 0x5F89A0 _thunk_sub_5F4F00;
@@ -12000,10 +10701,10 @@
 @ 0x5F8B50 _thunk_sub_5F7590;
 
 // [propagated: _thunk_sub_6B2CC4, 0.80]
-@ 0x5F8C10 _thunk_sub_6B2CC4;
+@ 0x5F8C10 _thunk_sub_6B2CC4_5F8C10;
 
 // [propagated: _thunk_sub_6B3220, 0.80]
-@ 0x5FA910 _thunk_sub_6B3220;
+@ 0x5FA910 _thunk_sub_6B3220_5FA910;
 
 // [propagated: _thunk_sub_5FB530, 0.80]
 @ 0x5FAFA0 _thunk_sub_5FB530;
@@ -12018,7 +10719,7 @@
 @ 0x5FDDB0 _thunk_sub_5EBAA0;
 
 // [propagated: _thunk_sub_6B2CA8, 0.80]
-@ 0x602D53 _thunk_sub_6B2CA8;
+@ 0x602D53 _thunk_sub_6B2CA8_602D53;
 
 // [propagated: _thunk_sub_604DA0, 0.80]
 @ 0x604B30 _thunk_sub_604DA0;
@@ -12027,10 +10728,10 @@
 @ 0x60519D _thunk_sub_603700;
 
 // [propagated: _thunk_sub_5FB160, 0.80]
-@ 0x607F6A _thunk_sub_5FB160;
+@ 0x607F6A _thunk_sub_5FB160_607F6A;
 
 // [propagated: _thunk_sub_603700, 0.80]
-@ 0x6088AD _thunk_sub_603700;
+@ 0x6088AD _thunk_sub_603700_6088AD;
 
 // [propagated: _thunk_sub_607D00, 0.80]
 @ 0x608CD0 _thunk_sub_607D00;
@@ -12048,10 +10749,10 @@
 @ 0x60DF30 _thunk_sub_5F8420;
 
 // [propagated: _thunk_sub_6B2CA8, 0.80]
-@ 0x60F102 _thunk_sub_6B2CA8;
+@ 0x60F102 _thunk_sub_6B2CA8_60F102;
 
 // [propagated: _thunk_sub_6C46C8, 0.80]
-@ 0x60F130 _thunk_sub_6C46C8;
+@ 0x60F130 _thunk_sub_6C46C8_60F130;
 
 // [propagated: _thunk_sub_5DDAA0, 0.80]
 @ 0x60FA00 _thunk_sub_5DDAA0;
@@ -12060,22 +10761,22 @@
 @ 0x61046D _thunk_sub_610250;
 
 // [propagated: _thunk_sub_65E1B0, 0.80]
-@ 0x610640 _thunk_sub_65E1B0;
+@ 0x610640 _thunk_sub_65E1B0_610640;
 
 // [propagated: _thunk_sub_65E1B0, 0.80]
-@ 0x610860 _thunk_sub_65E1B0;
+@ 0x610860 _thunk_sub_65E1B0_610860;
 
 // [propagated: _thunk_sub_611390, 0.80]
 @ 0x611550 _thunk_sub_611390;
 
 // [propagated: _thunk_sub_6B2CC4, 0.80]
-@ 0x611810 _thunk_sub_6B2CC4;
+@ 0x611810 _thunk_sub_6B2CC4_611810;
 
 // [propagated: _thunk_sub_6B2C9D, 0.80]
-@ 0x6118C0 _thunk_sub_6B2C9D;
+@ 0x6118C0 _thunk_sub_6B2C9D_6118C0;
 
 // [propagated: _thunk_sub_6B2DDE, 0.80]
-@ 0x611920 _thunk_sub_6B2DDE;
+@ 0x611920 _thunk_sub_6B2DDE_611920;
 
 // [propagated: _thunk_sub_611960, 0.80]
 @ 0x612ED0 _thunk_sub_611960;
@@ -12087,22 +10788,22 @@
 @ 0x6149B0 _thunk_sub_660F80;
 
 // [propagated: _thunk_sub_65F730, 0.80]
-@ 0x614E50 _thunk_sub_65F730;
+@ 0x614E50 _thunk_sub_65F730_614E50;
 
 // [propagated: _thunk_sub_65F730, 0.80]
-@ 0x615540 _thunk_sub_65F730;
+@ 0x615540 _thunk_sub_65F730_615540;
 
 // [propagated: _thunk_sub_611870, 0.80]
 @ 0x6155E0 _thunk_sub_611870;
 
 // [propagated: _thunk_sub_401000, 0.80]
-@ 0x615A70 _thunk_sub_401000;
+@ 0x615A70 _thunk_sub_401000_615A70;
 
 // [propagated: _thunk_sub_6B2CA8, 0.80]
-@ 0x6168D6 _thunk_sub_6B2CA8;
+@ 0x6168D6 _thunk_sub_6B2CA8_6168D6;
 
 // [propagated: _thunk_sub_6B2D1C, 0.80]
-@ 0x617570 _thunk_sub_6B2D1C;
+@ 0x617570 _thunk_sub_6B2D1C_617570;
 
 // [propagated: _thunk_sub_616A60, 0.80]
 @ 0x6176E0 _thunk_sub_616A60;
@@ -12111,13 +10812,13 @@
 @ 0x617F20 _thunk_sub_6A9D60;
 
 // [propagated: _thunk_sub_6B3220, 0.80]
-@ 0x618AB0 _thunk_sub_6B3220;
+@ 0x618AB0 _thunk_sub_6B3220_618AB0;
 
 // [propagated: _thunk_sub_618AB0, 0.80]
 @ 0x618B00 _thunk_sub_618AB0;
 
 // [propagated: _thunk_sub_618AB0, 0.80]
-@ 0x618B50 _thunk_sub_618AB0;
+@ 0x618B50 _thunk_sub_618AB0_618B50;
 
 // [propagated: _thunk_sub_618C80, 0.80]
 @ 0x618CC0 _thunk_sub_618C80;
@@ -12132,22 +10833,22 @@
 @ 0x6193A0 _thunk_sub_619290;
 
 // [propagated: _thunk_sub_619290, 0.80]
-@ 0x6193D0 _thunk_sub_619290;
+@ 0x6193D0 _thunk_sub_619290_6193D0;
 
 // [propagated: _thunk_sub_6B3220, 0.80]
-@ 0x619720 _thunk_sub_6B3220;
+@ 0x619720 _thunk_sub_6B3220_619720;
 
 // [propagated: _thunk_sub_619990, 0.80]
-@ 0x619A60 _thunk_sub_619990;
+@ 0x619A60 _thunk_sub_619990_619A60;
 
 // [propagated: _thunk_sub_665660, 0.80]
-@ 0x619B60 _thunk_sub_665660;
+@ 0x619B60 _thunk_sub_665660_619B60;
 
 // [propagated: _thunk_sub_6B3226, 0.80]
-@ 0x619DD0 _thunk_sub_6B3226;
+@ 0x619DD0 _thunk_sub_6B3226_619DD0;
 
 // [propagated: _thunk_sub_6B3226, 0.80]
-@ 0x619E20 _thunk_sub_6B3226;
+@ 0x619E20 _thunk_sub_6B3226_619E20;
 
 // [propagated: _thunk_sub_619DD0, 0.80]
 @ 0x61A650 _thunk_sub_619DD0;
@@ -12156,13 +10857,13 @@
 @ 0x61B470 _thunk_sub_61BAC0;
 
 // [propagated: _thunk_sub_6B2CC4, 0.80]
-@ 0x61B4D0 _thunk_sub_6B2CC4;
+@ 0x61B4D0 _thunk_sub_6B2CC4_61B4D0;
 
 // [propagated: _thunk_sub_65D680, 0.80]
 @ 0x61BB70 _thunk_sub_65D680;
 
 // [propagated: _thunk_sub_65D680, 0.80]
-@ 0x61BCE0 _thunk_sub_65D680;
+@ 0x61BCE0 _thunk_sub_65D680_61BCE0;
 
 // [propagated: _thunk_sub_61B4D0, 0.80]
 @ 0x61C51C _thunk_sub_61B4D0;
@@ -12171,76 +10872,76 @@
 @ 0x61C620 _thunk_sub_61B890;
 
 // [propagated: _thunk_sub_663210, 0.80]
-@ 0x61C720 _thunk_sub_663210;
+@ 0x61C720 _thunk_sub_663210_61C720;
 
 // [propagated: _thunk_sub_6B2CC4, 0.80]
-@ 0x61C7E0 _thunk_sub_6B2CC4;
+@ 0x61C7E0 _thunk_sub_6B2CC4_61C7E0;
 
 // [propagated: _thunk_sub_6B2CA8, 0.80]
-@ 0x61CDE0 _thunk_sub_6B2CA8;
+@ 0x61CDE0 _thunk_sub_6B2CA8_61CDE0;
 
 // [propagated: _thunk_sub_6B2CA8, 0.80]
-@ 0x61E002 _thunk_sub_6B2CA8;
+@ 0x61E002 _thunk_sub_6B2CA8_61E002;
 
 // [propagated: _thunk_sub_6B2CA8, 0.80]
-@ 0x61E15A _thunk_sub_6B2CA8;
+@ 0x61E15A _thunk_sub_6B2CA8_61E15A;
 
 // [propagated: _thunk_sub_413340, 0.80]
-@ 0x61E9B0 _thunk_sub_413340;
+@ 0x61E9B0 _thunk_sub_413340_61E9B0;
 
 // [propagated: _thunk_sub_6B2CA8, 0.80]
-@ 0x61F86A _thunk_sub_6B2CA8;
+@ 0x61F86A _thunk_sub_6B2CA8_61F86A;
 
 // [propagated: _thunk_sub_6201D0, 0.80]
 @ 0x620374 _thunk_sub_6201D0;
 
 // [propagated: _thunk_sub_6B2D1C, 0.80]
-@ 0x620C20 _thunk_sub_6B2D1C;
+@ 0x620C20 _thunk_sub_6B2D1C_620C20;
 
 // [propagated: _thunk_sub_6B2CA8, 0.80]
-@ 0x622A67 _thunk_sub_6B2CA8;
+@ 0x622A67 _thunk_sub_6B2CA8_622A67;
 
 // [propagated: _thunk_sub_6B2CA8, 0.80]
-@ 0x6232C0 _thunk_sub_6B2CA8;
+@ 0x6232C0 _thunk_sub_6B2CA8_6232C0;
 
 // [propagated: _thunk_sub_621410, 0.80]
 @ 0x6232E0 _thunk_sub_621410;
 
 // [propagated: _thunk_sub_6B2D1C, 0.80]
-@ 0x623CE0 _thunk_sub_6B2D1C;
+@ 0x623CE0 _thunk_sub_6B2D1C_623CE0;
 
 // [propagated: _thunk_sub_624360, 0.80]
 @ 0x624360 _thunk_sub_624360;
 
 // [propagated: _thunk_sub_6B3220, 0.80]
-@ 0x624660 _thunk_sub_6B3220;
+@ 0x624660 _thunk_sub_6B3220_624660;
 
 // [propagated: _thunk_sub_6B3220, 0.80]
-@ 0x624667 _thunk_sub_6B3220;
+@ 0x624667 _thunk_sub_6B3220_624667;
 
 // [propagated: _thunk_sub_625780, 0.80]
 @ 0x6253A0 _thunk_sub_625780;
 
 // [propagated: _thunk_sub_6B2C9D, 0.80]
-@ 0x625890 _thunk_sub_6B2C9D;
+@ 0x625890 _thunk_sub_6B2C9D_625890;
 
 // [propagated: _thunk_sub_6C4790, 0.80]
 @ 0x625D80 _thunk_sub_6C4790;
 
 // [propagated: _thunk_sub_6C4790, 0.80]
-@ 0x625FE0 _thunk_sub_6C4790;
+@ 0x625FE0 _thunk_sub_6C4790_625FE0;
 
 // [propagated: _thunk_sub_6B2CC4, 0.80]
-@ 0x6272B5 _thunk_sub_6B2CC4;
+@ 0x6272B5 _thunk_sub_6B2CC4_6272B5;
 
 // [propagated: _thunk_sub_6B2CA8, 0.80]
-@ 0x6286B3 _thunk_sub_6B2CA8;
+@ 0x6286B3 _thunk_sub_6B2CA8_6286B3;
 
 // [propagated: _thunk_sub_6B3220, 0.80]
-@ 0x6286D0 _thunk_sub_6B3220;
+@ 0x6286D0 _thunk_sub_6B3220_6286D0;
 
 // [propagated: _thunk_sub_6B2CC4, 0.80]
-@ 0x62A250 _thunk_sub_6B2CC4;
+@ 0x62A250 _thunk_sub_6B2CC4_62A250;
 
 // [propagated: _thunk_sub_62A940, 0.80]
 @ 0x62AA63 _thunk_sub_62A940;
@@ -12249,16 +10950,16 @@
 @ 0x62AAF0 _thunk_sub_62AAF0;
 
 // [propagated: _thunk_sub_413340, 0.80]
-@ 0x62ABE0 _thunk_sub_413340;
+@ 0x62ABE0 _thunk_sub_413340_62ABE0;
 
 // [propagated: _thunk_sub_62B5C0, 0.80]
 @ 0x62AE50 _thunk_sub_62B5C0;
 
 // [propagated: _thunk_sub_6B2CA8, 0.80]
-@ 0x62B485 _thunk_sub_6B2CA8;
+@ 0x62B485 _thunk_sub_6B2CA8_62B485;
 
 // [propagated: _thunk_sub_6B3220, 0.80]
-@ 0x62C5C0 _thunk_sub_6B3220;
+@ 0x62C5C0 _thunk_sub_6B3220_62C5C0;
 
 // [propagated: _thunk_sub_62E810, 0.80]
 @ 0x62C700 _thunk_sub_62E810;
@@ -12270,7 +10971,7 @@
 @ 0x62C810 _thunk_sub_6B32DA;
 
 // [propagated: _thunk_sub_6B32DA, 0.80]
-@ 0x62C850 _thunk_sub_6B32DA;
+@ 0x62C850 _thunk_sub_6B32DA_62C850;
 
 // [propagated: _thunk_sub_62CB90, 0.80]
 @ 0x62CF70 _thunk_sub_62CB90;
@@ -12282,40 +10983,40 @@
 @ 0x62DE30 _thunk_sub_62DD60;
 
 // [propagated: _thunk_sub_62DD60, 0.80]
-@ 0x62DE60 _thunk_sub_62DD60;
+@ 0x62DE60 _thunk_sub_62DD60_62DE60;
 
 // [propagated: _thunk_sub_65A570, 0.80]
-@ 0x62E1E2 _thunk_sub_65A570;
+@ 0x62E1E2 _thunk_sub_65A570_62E1E2;
 
 // [propagated: _thunk_sub_65A570, 0.80]
-@ 0x62E240 _thunk_sub_65A570;
+@ 0x62E240 _thunk_sub_65A570_62E240;
 
 // [propagated: _thunk_sub_6B3220, 0.80]
-@ 0x62E5F0 _thunk_sub_6B3220;
+@ 0x62E5F0 _thunk_sub_6B3220_62E5F0;
 
 // [propagated: _thunk_sub_6B2CC4, 0.80]
-@ 0x62E810 _thunk_sub_6B2CC4;
+@ 0x62E810 _thunk_sub_6B2CC4_62E810;
 
 // [propagated: _thunk_sub_65A570, 0.80]
-@ 0x62EC20 _thunk_sub_65A570;
+@ 0x62EC20 _thunk_sub_65A570_62EC20;
 
 // [propagated: _thunk_sub_65A570, 0.80]
-@ 0x62ECE0 _thunk_sub_65A570;
+@ 0x62ECE0 _thunk_sub_65A570_62ECE0;
 
 // [propagated: _thunk_sub_6B2CA8, 0.80]
-@ 0x6307CD _thunk_sub_6B2CA8;
+@ 0x6307CD _thunk_sub_6B2CA8_6307CD;
 
 // [propagated: _thunk_sub_65DF10, 0.80]
-@ 0x6314E0 _thunk_sub_65DF10;
+@ 0x6314E0 _thunk_sub_65DF10_6314E0;
 
 // [propagated: _thunk_sub_65DF10, 0.80]
-@ 0x631720 _thunk_sub_65DF10;
+@ 0x631720 _thunk_sub_65DF10_631720;
 
 // [propagated: _thunk_sub_65DF10, 0.80]
-@ 0x6319C0 _thunk_sub_65DF10;
+@ 0x6319C0 _thunk_sub_65DF10_6319C0;
 
 // [propagated: _thunk_sub_65DF10, 0.80]
-@ 0x631C60 _thunk_sub_65DF10;
+@ 0x631C60 _thunk_sub_65DF10_631C60;
 
 // [propagated: _thunk_sub_632780, 0.80]
 @ 0x632630 _thunk_sub_632780;
@@ -12330,7 +11031,7 @@
 @ 0x632D20 _thunk_sub_644FC0;
 
 // [propagated: _thunk_sub_6B3220, 0.80]
-@ 0x633040 _thunk_sub_6B3220;
+@ 0x633040 _thunk_sub_6B3220_633040;
 
 // [propagated: _thunk_sub_6330F0, 0.80]
 @ 0x633A50 _thunk_sub_6330F0;
@@ -12348,151 +11049,151 @@
 @ 0x6351E0 _thunk_sub_635050;
 
 // [propagated: _thunk_sub_6B32DA, 0.80]
-@ 0x635310 _thunk_sub_6B32DA;
+@ 0x635310 _thunk_sub_6B32DA_635310;
 
 // [propagated: _thunk_sub_6B32DA, 0.80]
-@ 0x635360 _thunk_sub_6B32DA;
+@ 0x635360 _thunk_sub_6B32DA_635360;
 
 // [propagated: _thunk_sub_634E80, 0.80]
 @ 0x6368B0 _thunk_sub_634E80;
 
 // [propagated: _thunk_sub_635DD0, 0.80]
-@ 0x637240 _thunk_sub_635DD0;
+@ 0x637240 _thunk_sub_635DD0_637240;
 
 // [propagated: _thunk_sub_6B2CA8, 0.80]
-@ 0x637896 _thunk_sub_6B2CA8;
+@ 0x637896 _thunk_sub_6B2CA8_637896;
 
 // [propagated: _thunk_sub_661AE0, 0.80]
 @ 0x637910 _thunk_sub_661AE0;
 
 // [propagated: _thunk_sub_6B2C9D, 0.80]
-@ 0x639190 _thunk_sub_6B2C9D;
+@ 0x639190 _thunk_sub_6B2C9D_639190;
 
 // [propagated: _thunk_sub_6B2CA8, 0.80]
-@ 0x63A09C _thunk_sub_6B2CA8;
+@ 0x63A09C _thunk_sub_6B2CA8_63A09C;
 
 // [propagated: _thunk_sub_6B2CC4, 0.80]
-@ 0x63A1A0 _thunk_sub_6B2CC4;
+@ 0x63A1A0 _thunk_sub_6B2CC4_63A1A0;
 
 // [propagated: _thunk_sub_6B2D1C, 0.80]
-@ 0x63A430 _thunk_sub_6B2D1C;
+@ 0x63A430 _thunk_sub_6B2D1C_63A430;
 
 // [propagated: _thunk_sub_63A1A0, 0.80]
 @ 0x63A4F0 _thunk_sub_63A1A0;
 
 // [propagated: _thunk_sub_6B2CA8, 0.80]
-@ 0x63A530 _thunk_sub_6B2CA8;
+@ 0x63A530 _thunk_sub_6B2CA8_63A530;
 
 // [propagated: _thunk_sub_6B2C9D, 0.80]
-@ 0x63A770 _thunk_sub_6B2C9D;
+@ 0x63A770 _thunk_sub_6B2C9D_63A770;
 
 // [propagated: _thunk_sub_6B2D1C, 0.80]
-@ 0x63AE90 _thunk_sub_6B2D1C;
+@ 0x63AE90 _thunk_sub_6B2D1C_63AE90;
 
 // [propagated: _thunk_sub_6DD2B0, 0.80]
 @ 0x63B0B0 _thunk_sub_6DD2B0;
 
 // [propagated: _thunk_sub_660E40, 0.80]
-@ 0x63B180 _thunk_sub_660E40;
+@ 0x63B180 _thunk_sub_660E40_63B180;
 
 // [propagated: _thunk_sub_63B050, 0.80]
 @ 0x63B250 _thunk_sub_63B050;
 
 // [propagated: _thunk_sub_6B3220, 0.80]
-@ 0x63E720 _thunk_sub_6B3220;
+@ 0x63E720 _thunk_sub_6B3220_63E720;
 
 // [propagated: _thunk_sub_6B2CA8, 0.80]
-@ 0x63EDF0 _thunk_sub_6B2CA8;
+@ 0x63EDF0 _thunk_sub_6B2CA8_63EDF0;
 
 // [propagated: _thunk_sub_6B2CA8, 0.80]
-@ 0x63F030 _thunk_sub_6B2CA8;
+@ 0x63F030 _thunk_sub_6B2CA8_63F030;
 
 // [propagated: _thunk_sub_635C70, 0.80]
 @ 0x63F710 _thunk_sub_635C70;
 
 // [propagated: _thunk_sub_6B3226, 0.80]
-@ 0x641DE0 _thunk_sub_6B3226;
+@ 0x641DE0 _thunk_sub_6B3226_641DE0;
 
 // [propagated: _thunk_sub_635DD0, 0.80]
-@ 0x642A30 _thunk_sub_635DD0;
+@ 0x642A30 _thunk_sub_635DD0_642A30;
 
 // [propagated: _thunk_sub_643580, 0.80]
 @ 0x642AA0 _thunk_sub_643580;
 
 // [propagated: _thunk_sub_6B3226, 0.80]
-@ 0x642D30 _thunk_sub_6B3226;
+@ 0x642D30 _thunk_sub_6B3226_642D30;
 
 // [propagated: _thunk_sub_6B3220, 0.80]
-@ 0x6436C0 _thunk_sub_6B3220;
+@ 0x6436C0 _thunk_sub_6B3220_6436C0;
 
 // [propagated: _thunk_sub_644FC0, 0.80]
-@ 0x644FA0 _thunk_sub_644FC0;
+@ 0x644FA0 _thunk_sub_644FC0_644FA0;
 
 // [propagated: _thunk_sub_645310, 0.80]
 @ 0x645390 _thunk_sub_645310;
 
 // [propagated: _thunk_sub_6B2D1C, 0.80]
-@ 0x6479E0 _thunk_sub_6B2D1C;
+@ 0x6479E0 _thunk_sub_6B2D1C_6479E0;
 
 // [propagated: _thunk_sub_6B2D1C, 0.80]
-@ 0x647A40 _thunk_sub_6B2D1C;
+@ 0x647A40 _thunk_sub_6B2D1C_647A40;
 
 // [propagated: _thunk_sub_6B2D1C, 0.80]
-@ 0x647A80 _thunk_sub_6B2D1C;
+@ 0x647A80 _thunk_sub_6B2D1C_647A80;
 
 // [propagated: _thunk_sub_409FE0, 0.80]
-@ 0x647AB0 _thunk_sub_409FE0;
+@ 0x647AB0 _thunk_sub_409FE0_647AB0;
 
 // [propagated: _thunk_sub_6B2D1C, 0.80]
-@ 0x6480D0 _thunk_sub_6B2D1C;
+@ 0x6480D0 _thunk_sub_6B2D1C_6480D0;
 
 // [propagated: _thunk_sub_660F80, 0.80]
-@ 0x648582 _thunk_sub_660F80;
+@ 0x648582 _thunk_sub_660F80_648582;
 
 // [propagated: _thunk_sub_635C70, 0.80]
-@ 0x64A3C0 _thunk_sub_635C70;
+@ 0x64A3C0 _thunk_sub_635C70_64A3C0;
 
 // [propagated: _thunk_sub_635DD0, 0.80]
-@ 0x64C7D0 _thunk_sub_635DD0;
+@ 0x64C7D0 _thunk_sub_635DD0_64C7D0;
 
 // [propagated: _thunk_sub_635DD0, 0.80]
-@ 0x64D450 _thunk_sub_635DD0;
+@ 0x64D450 _thunk_sub_635DD0_64D450;
 
 // [propagated: _thunk_sub_6B2CA8, 0.80]
-@ 0x64D870 _thunk_sub_6B2CA8;
+@ 0x64D870 _thunk_sub_6B2CA8_64D870;
 
 // [propagated: _thunk_sub_64D4F0, 0.80]
 @ 0x64E8F3 _thunk_sub_64D4F0;
 
 // [propagated: _thunk_sub_64D4F0, 0.80]
-@ 0x64E8F6 _thunk_sub_64D4F0;
+@ 0x64E8F6 _thunk_sub_64D4F0_64E8F6;
 
 // [propagated: _thunk_sub_64EE00, 0.80]
 @ 0x64EE60 _thunk_sub_64EE00;
 
 // [propagated: _thunk_sub_6B2CA8, 0.80]
-@ 0x64F5E0 _thunk_sub_6B2CA8;
+@ 0x64F5E0 _thunk_sub_6B2CA8_64F5E0;
 
 // [propagated: _thunk_sub_6B2CA8, 0.80]
-@ 0x64F835 _thunk_sub_6B2CA8;
+@ 0x64F835 _thunk_sub_6B2CA8_64F835;
 
 // [propagated: _thunk_sub_635C70, 0.80]
-@ 0x64FB60 _thunk_sub_635C70;
+@ 0x64FB60 _thunk_sub_635C70_64FB60;
 
 // [propagated: _thunk_sub_6B2CA8, 0.80]
-@ 0x65123A _thunk_sub_6B2CA8;
+@ 0x65123A _thunk_sub_6B2CA8_65123A;
 
 // [propagated: _thunk_sub_6360C0, 0.80]
 @ 0x652FF0 _thunk_sub_6360C0;
 
 // [propagated: _thunk_sub_6360C0, 0.80]
-@ 0x653030 _thunk_sub_6360C0;
+@ 0x653030 _thunk_sub_6360C0_653030;
 
 // [propagated: _thunk_sub_6B3226, 0.80]
-@ 0x653511 _thunk_sub_6B3226;
+@ 0x653511 _thunk_sub_6B3226_653511;
 
 // [propagated: _thunk_sub_6B3226, 0.80]
-@ 0x65353B _thunk_sub_6B3226;
+@ 0x65353B _thunk_sub_6B3226_65353B;
 
 // [propagated: _thunk_sub_64FA80, 0.80]
 @ 0x653EFF _thunk_sub_64FA80;
@@ -12501,25 +11202,25 @@
 @ 0x654B90 _thunk_sub_655F60;
 
 // [propagated: _thunk_sub_4E74E0, 0.80]
-@ 0x654D20 _thunk_sub_4E74E0;
+@ 0x654D20 _thunk_sub_4E74E0_654D20;
 
 // [propagated: _thunk_sub_413340, 0.80]
-@ 0x656760 _thunk_sub_413340;
+@ 0x656760 _thunk_sub_413340_656760;
 
 // [propagated: _thunk_sub_6573E0, 0.80]
 @ 0x6572D0 _thunk_sub_6573E0;
 
 // [propagated: _thunk_sub_6B2CA8, 0.80]
-@ 0x65792E _thunk_sub_6B2CA8;
+@ 0x65792E _thunk_sub_6B2CA8_65792E;
 
 // [propagated: _thunk_sub_657580, 0.80]
 @ 0x657950 _thunk_sub_657580;
 
 // [propagated: _thunk_sub_663210, 0.80]
-@ 0x657BE0 _thunk_sub_663210;
+@ 0x657BE0 _thunk_sub_663210_657BE0;
 
 // [propagated: _thunk_sub_6B2D1C, 0.80]
-@ 0x6580E0 _thunk_sub_6B2D1C;
+@ 0x6580E0 _thunk_sub_6B2D1C_6580E0;
 
 // [propagated: _thunk_sub_6585E0, 0.80]
 @ 0x6583F0 _thunk_sub_6585E0;
@@ -12546,7 +11247,7 @@
 @ 0x659090 _thunk_sub_6586E0;
 
 // [propagated: _thunk_sub_6B2CA8, 0.80]
-@ 0x6596FA _thunk_sub_6B2CA8;
+@ 0x6596FA _thunk_sub_6B2CA8_6596FA;
 
 // [propagated: _thunk_sub_6590E0, 0.80]
 @ 0x6598B0 _thunk_sub_6590E0;
@@ -12555,67 +11256,67 @@
 @ 0x65A52A _thunk_sub_659CB0;
 
 // [propagated: _thunk_sub_659CB0, 0.80]
-@ 0x65A52E _thunk_sub_659CB0;
+@ 0x65A52E _thunk_sub_659CB0_65A52E;
 
 // [propagated: _thunk_sub_6B2CA8, 0.80]
-@ 0x65A660 _thunk_sub_6B2CA8;
+@ 0x65A660 _thunk_sub_6B2CA8_65A660;
 
 // [propagated: _thunk_sub_6B3220, 0.80]
-@ 0x65A7C0 _thunk_sub_6B3220;
+@ 0x65A7C0 _thunk_sub_6B3220_65A7C0;
 
 // [propagated: _thunk_sub_6B3220, 0.80]
-@ 0x65A800 _thunk_sub_6B3220;
+@ 0x65A800 _thunk_sub_6B3220_65A800;
 
 // [propagated: _thunk_sub_6B2CA8, 0.80]
-@ 0x65AA54 _thunk_sub_6B2CA8;
+@ 0x65AA54 _thunk_sub_6B2CA8_65AA54;
 
 // [propagated: _thunk_sub_6B2CA8, 0.80]
-@ 0x65AD21 _thunk_sub_6B2CA8;
+@ 0x65AD21 _thunk_sub_6B2CA8_65AD21;
 
 // [propagated: _thunk_sub_65D500, 0.80]
 @ 0x65AEDA _thunk_sub_65D500;
 
 // [propagated: _thunk_sub_65D500, 0.80]
-@ 0x65B206 _thunk_sub_65D500;
+@ 0x65B206 _thunk_sub_65D500_65B206;
 
 // [propagated: _thunk_sub_6B2CA8, 0.80]
-@ 0x65BCA6 _thunk_sub_6B2CA8;
+@ 0x65BCA6 _thunk_sub_6B2CA8_65BCA6;
 
 // [propagated: _thunk_sub_65CE80, 0.80]
 @ 0x65BCC0 _thunk_sub_65CE80;
 
 // [propagated: _thunk_sub_6B2CA8, 0.80]
-@ 0x65C3C9 _thunk_sub_6B2CA8;
+@ 0x65C3C9 _thunk_sub_6B2CA8_65C3C9;
 
 // [propagated: _thunk_sub_6A5DC0, 0.80]
-@ 0x65C3F0 _thunk_sub_6A5DC0;
+@ 0x65C3F0 _thunk_sub_6A5DC0_65C3F0;
 
 // [propagated: _thunk_sub_65C470, 0.80]
 @ 0x65C450 _thunk_sub_65C470;
 
 // [propagated: _thunk_sub_6B2CA8, 0.80]
-@ 0x65CB1A _thunk_sub_6B2CA8;
+@ 0x65CB1A _thunk_sub_6B2CA8_65CB1A;
 
 // [propagated: _thunk_sub_65CE00, 0.80]
 @ 0x65D0E0 _thunk_sub_65CE00;
 
 // [propagated: _thunk_sub_65CE00, 0.80]
-@ 0x65D100 _thunk_sub_65CE00;
+@ 0x65D100 _thunk_sub_65CE00_65D100;
 
 // [propagated: _thunk_sub_65CE00, 0.80]
-@ 0x65D140 _thunk_sub_65CE00;
+@ 0x65D140 _thunk_sub_65CE00_65D140;
 
 // [propagated: _thunk_sub_65CE00, 0.80]
-@ 0x65D180 _thunk_sub_65CE00;
+@ 0x65D180 _thunk_sub_65CE00_65D180;
 
 // [propagated: _thunk_sub_65CE00, 0.80]
-@ 0x65D1B0 _thunk_sub_65CE00;
+@ 0x65D1B0 _thunk_sub_65CE00_65D1B0;
 
 // [propagated: _thunk_sub_65CE80, 0.80]
-@ 0x65D580 _thunk_sub_65CE80;
+@ 0x65D580 _thunk_sub_65CE80_65D580;
 
 // [propagated: _thunk_sub_65CE00, 0.80]
-@ 0x65D5C0 _thunk_sub_65CE00;
+@ 0x65D5C0 _thunk_sub_65CE00_65D5C0;
 
 // [propagated: _thunk_sub_65D9A0, 0.80]
 @ 0x65D900 _thunk_sub_65D9A0;
@@ -12624,10 +11325,10 @@
 @ 0x65D940 _thunk_sub_65DC20;
 
 // [propagated: _thunk_sub_6B2CA8, 0.80]
-@ 0x65DA70 _thunk_sub_6B2CA8;
+@ 0x65DA70 _thunk_sub_6B2CA8_65DA70;
 
 // [propagated: _thunk_sub_6B2CA8, 0.80]
-@ 0x65DAA0 _thunk_sub_6B2CA8;
+@ 0x65DAA0 _thunk_sub_6B2CA8_65DAA0;
 
 // [propagated: _thunk_sub_65F170, 0.80]
 @ 0x65E0C0 _thunk_sub_65F170;
@@ -12636,76 +11337,76 @@
 @ 0x65E130 _thunk_sub_65F250;
 
 // [propagated: _thunk_sub_65E440, 0.80]
-@ 0x65E3E0 _thunk_sub_65E440;
+@ 0x65E3E0 _thunk_sub_65E440_65E3E0;
 
 // [propagated: _thunk_sub_6C46C8, 0.80]
-@ 0x65E440 _thunk_sub_6C46C8;
+@ 0x65E440 _thunk_sub_6C46C8_65E440;
 
 // [propagated: _thunk_sub_6C46C8, 0.80]
-@ 0x65E4E0 _thunk_sub_6C46C8;
+@ 0x65E4E0 _thunk_sub_6C46C8_65E4E0;
 
 // [propagated: _thunk_sub_6C46C8, 0.80]
-@ 0x65E560 _thunk_sub_6C46C8;
+@ 0x65E560 _thunk_sub_6C46C8_65E560;
 
 // [propagated: _thunk_sub_6C46C8, 0.80]
-@ 0x65E5C0 _thunk_sub_6C46C8;
+@ 0x65E5C0 _thunk_sub_6C46C8_65E5C0;
 
 // [propagated: _thunk_sub_65E560, 0.80]
-@ 0x65E670 _thunk_sub_65E560;
+@ 0x65E670 _thunk_sub_65E560_65E670;
 
 // [propagated: _thunk_sub_65E6F0, 0.80]
 @ 0x65E780 _thunk_sub_65E6F0;
 
 // [propagated: _thunk_sub_65E6F0, 0.80]
-@ 0x65E7D0 _thunk_sub_65E6F0;
+@ 0x65E7D0 _thunk_sub_65E6F0_65E7D0;
 
 // [propagated: _thunk_sub_65E560, 0.80]
-@ 0x65E820 _thunk_sub_65E560;
+@ 0x65E820 _thunk_sub_65E560_65E820;
 
 // [propagated: _thunk_sub_65E6F0, 0.80]
-@ 0x65EA00 _thunk_sub_65E6F0;
+@ 0x65EA00 _thunk_sub_65E6F0_65EA00;
 
 // [propagated: _thunk_sub_65E6F0, 0.80]
-@ 0x65EAA0 _thunk_sub_65E6F0;
+@ 0x65EAA0 _thunk_sub_65E6F0_65EAA0;
 
 // [propagated: _thunk_sub_65E6F0, 0.80]
-@ 0x65F560 _thunk_sub_65E6F0;
+@ 0x65F560 _thunk_sub_65E6F0_65F560;
 
 // [propagated: _thunk_sub_65E6F0, 0.80]
-@ 0x65F5B0 _thunk_sub_65E6F0;
+@ 0x65F5B0 _thunk_sub_65E6F0_65F5B0;
 
 // [propagated: _thunk_sub_65E6F0, 0.80]
-@ 0x65F600 _thunk_sub_65E6F0;
+@ 0x65F600 _thunk_sub_65E6F0_65F600;
 
 // [propagated: _thunk_sub_65F730, 0.80]
-@ 0x65FBC0 _thunk_sub_65F730;
+@ 0x65FBC0 _thunk_sub_65F730_65FBC0;
 
 // [propagated: _thunk_sub_65F730, 0.80]
-@ 0x65FC80 _thunk_sub_65F730;
+@ 0x65FC80 _thunk_sub_65F730_65FC80;
 
 // [propagated: _thunk_sub_65F6E0, 0.80]
-@ 0x65FDB0 _thunk_sub_65F6E0;
+@ 0x65FDB0 _thunk_sub_65F6E0_65FDB0;
 
 // [propagated: _thunk_sub_65FF20, 0.80]
 @ 0x65FEA0 _thunk_sub_65FF20;
 
 // [propagated: _thunk_sub_65F6E0, 0.80]
-@ 0x660000 _thunk_sub_65F6E0;
+@ 0x660000 _thunk_sub_65F6E0_660000;
 
 // [propagated: _thunk_sub_65FD10, 0.80]
 @ 0x660040 _thunk_sub_65FD10;
 
 // [propagated: _thunk_sub_65CE80, 0.80]
-@ 0x660670 _thunk_sub_65CE80;
+@ 0x660670 _thunk_sub_65CE80_660670;
 
 // [propagated: _thunk_sub_6DD2B0, 0.80]
-@ 0x660E00 _thunk_sub_6DD2B0;
+@ 0x660E00 _thunk_sub_6DD2B0_660E00;
 
 // [propagated: _thunk_sub_6B2CC4, 0.80]
-@ 0x660E90 _thunk_sub_6B2CC4;
+@ 0x660E90 _thunk_sub_6B2CC4_660E90;
 
 // [propagated: _thunk_sub_6C46C8, 0.80]
-@ 0x661270 _thunk_sub_6C46C8;
+@ 0x661270 _thunk_sub_6C46C8_661270;
 
 // [propagated: _thunk_sub_661580, 0.80]
 @ 0x661FB0 _thunk_sub_661580;
@@ -12720,7 +11421,7 @@
 @ 0x662EF0 _thunk_sub_662EB0;
 
 // [propagated: _thunk_sub_662EB0, 0.80]
-@ 0x662FA0 _thunk_sub_662EB0;
+@ 0x662FA0 _thunk_sub_662EB0_662FA0;
 
 // [propagated: _thunk_sub_664040, 0.80]
 @ 0x663E40 _thunk_sub_664040;
@@ -12729,25 +11430,25 @@
 @ 0x664040 _thunk_sub_6A6680;
 
 // [propagated: _thunk_sub_6B3226, 0.80]
-@ 0x664830 _thunk_sub_6B3226;
+@ 0x664830 _thunk_sub_6B3226_664830;
 
 // [propagated: _thunk_sub_6A5C80, 0.80]
 @ 0x664BC0 _thunk_sub_6A5C80;
 
 // [propagated: _thunk_sub_6A5DC0, 0.80]
-@ 0x664C10 _thunk_sub_6A5DC0;
+@ 0x664C10 _thunk_sub_6A5DC0_664C10;
 
 // [propagated: _thunk_sub_6A5DC0, 0.80]
-@ 0x664C70 _thunk_sub_6A5DC0;
+@ 0x664C70 _thunk_sub_6A5DC0_664C70;
 
 // [propagated: _thunk_sub_6B3226, 0.80]
-@ 0x665100 _thunk_sub_6B3226;
+@ 0x665100 _thunk_sub_6B3226_665100;
 
 // [propagated: _thunk_sub_6A5DC0, 0.80]
-@ 0x665660 _thunk_sub_6A5DC0;
+@ 0x665660 _thunk_sub_6A5DC0_665660;
 
 // [propagated: _thunk_sub_6A5DC0, 0.80]
-@ 0x665860 _thunk_sub_6A5DC0;
+@ 0x665860 _thunk_sub_6A5DC0_665860;
 
 // [propagated: _thunk_sub_6DD320, 0.80]
 @ 0x6661B0 _thunk_sub_6DD320;
@@ -12759,19 +11460,19 @@
 @ 0x6663A0 _thunk_sub_666350;
 
 // [propagated: _thunk_sub_409FE0, 0.80]
-@ 0x666580 _thunk_sub_409FE0;
+@ 0x666580 _thunk_sub_409FE0_666580;
 
 // [propagated: _thunk_sub_6DD2B0, 0.80]
-@ 0x6665D0 _thunk_sub_6DD2B0;
+@ 0x6665D0 _thunk_sub_6DD2B0_6665D0;
 
 // [propagated: _thunk_sub_6666E0, 0.80]
 @ 0x666D50 _thunk_sub_6666E0;
 
 // [propagated: _thunk_sub_663210, 0.80]
-@ 0x666E70 _thunk_sub_663210;
+@ 0x666E70 _thunk_sub_663210_666E70;
 
 // [propagated: _thunk_sub_6B2CA8, 0.80]
-@ 0x66749D _thunk_sub_6B2CA8;
+@ 0x66749D _thunk_sub_6B2CA8_66749D;
 
 // [propagated: _thunk_sub_6674C0, 0.80]
 @ 0x667A20 _thunk_sub_6674C0;
@@ -12780,13 +11481,13 @@
 @ 0x667D10 _thunk_sub_667D10;
 
 // [propagated: _thunk_sub_667D10, 0.80]
-@ 0x667D50 _thunk_sub_667D10;
+@ 0x667D50 _thunk_sub_667D10_667D50;
 
 // [propagated: _thunk_sub_667D50, 0.80]
 @ 0x667DC0 _thunk_sub_667D50;
 
 // [propagated: _thunk_sub_65CE00, 0.80]
-@ 0x667E20 _thunk_sub_65CE00;
+@ 0x667E20 _thunk_sub_65CE00_667E20;
 
 // [propagated: _thunk_sub_667E20, 0.80]
 @ 0x6680B9 _thunk_sub_667E20;
@@ -12798,40 +11499,40 @@
 @ 0x668A20 _thunk_sub_669250;
 
 // [propagated: _thunk_sub_6B2CA8, 0.80]
-@ 0x669835 _thunk_sub_6B2CA8;
+@ 0x669835 _thunk_sub_6B2CA8_669835;
 
 // [propagated: _thunk_sub_6B2CA8, 0.80]
-@ 0x66A639 _thunk_sub_6B2CA8;
+@ 0x66A639 _thunk_sub_6B2CA8_66A639;
 
 // [propagated: _thunk_sub_6A6680, 0.80]
-@ 0x66A8C0 _thunk_sub_6A6680;
+@ 0x66A8C0 _thunk_sub_6A6680_66A8C0;
 
 // [propagated: _thunk_sub_669F40, 0.80]
 @ 0x66A9B0 _thunk_sub_669F40;
 
 // [propagated: _thunk_sub_6A6680, 0.80]
-@ 0x66AB10 _thunk_sub_6A6680;
+@ 0x66AB10 _thunk_sub_6A6680_66AB10;
 
 // [propagated: _thunk_sub_6C46E0, 0.80]
-@ 0x66AB40 _thunk_sub_6C46E0;
+@ 0x66AB40 _thunk_sub_6C46E0_66AB40;
 
 // [propagated: _thunk_sub_660E90, 0.80]
-@ 0x66B200 _thunk_sub_660E90;
+@ 0x66B200 _thunk_sub_660E90_66B200;
 
 // [propagated: _thunk_sub_66BA30, 0.80]
 @ 0x66B910 _thunk_sub_66BA30;
 
 // [propagated: _thunk_sub_6B32E0, 0.80]
-@ 0x66BAB0 _thunk_sub_6B32E0;
+@ 0x66BAB0 _thunk_sub_6B32E0_66BAB0;
 
 // [propagated: _thunk_sub_6B32E0, 0.80]
-@ 0x66BB20 _thunk_sub_6B32E0;
+@ 0x66BB20 _thunk_sub_6B32E0_66BB20;
 
 // [propagated: _thunk_sub_66BB20, 0.80]
 @ 0x66BBA0 _thunk_sub_66BB20;
 
 // [propagated: _thunk_sub_6B2CA8, 0.80]
-@ 0x66C157 _thunk_sub_6B2CA8;
+@ 0x66C157 _thunk_sub_6B2CA8_66C157;
 
 // [propagated: _thunk_sub_66C1A0, 0.80]
 @ 0x66C270 _thunk_sub_66C1A0;
@@ -12846,25 +11547,25 @@
 @ 0x66C900 _thunk_sub_66D470;
 
 // [propagated: _thunk_sub_66D420, 0.80]
-@ 0x66CB90 _thunk_sub_66D420;
+@ 0x66CB90 _thunk_sub_66D420_66CB90;
 
 // [propagated: _thunk_sub_66D420, 0.80]
-@ 0x66CBD0 _thunk_sub_66D420;
+@ 0x66CBD0 _thunk_sub_66D420_66CBD0;
 
 // [propagated: _thunk_sub_66CCB0, 0.80]
 @ 0x66CD50 _thunk_sub_66CCB0;
 
 // [propagated: _thunk_sub_66CCB0, 0.80]
-@ 0x66CDB0 _thunk_sub_66CCB0;
+@ 0x66CDB0 _thunk_sub_66CCB0_66CDB0;
 
 // [propagated: _thunk_sub_66D140, 0.80]
 @ 0x66D140 _thunk_sub_66D140;
 
 // [propagated: _thunk_sub_66D140, 0.80]
-@ 0x66D190 _thunk_sub_66D140;
+@ 0x66D190 _thunk_sub_66D140_66D190;
 
 // [propagated: _thunk_sub_6B32DA, 0.80]
-@ 0x66EB20 _thunk_sub_6B32DA;
+@ 0x66EB20 _thunk_sub_6B32DA_66EB20;
 
 // [propagated: _thunk_sub_66EB20, 0.80]
 @ 0x66EC00 _thunk_sub_66EB20;
@@ -12876,16 +11577,16 @@
 @ 0x66EE90 _thunk_sub_66F000;
 
 // [propagated: _thunk_sub_6B3220, 0.80]
-@ 0x670420 _thunk_sub_6B3220;
+@ 0x670420 _thunk_sub_6B3220_670420;
 
 // [propagated: _thunk_sub_6B3220, 0.80]
-@ 0x67237B _thunk_sub_6B3220;
+@ 0x67237B _thunk_sub_6B3220_67237B;
 
 // [propagated: _thunk_sub_6AEE70, 0.80]
 @ 0x672600 _thunk_sub_6AEE70;
 
 // [propagated: _thunk_sub_6AEE70, 0.80]
-@ 0x672660 _thunk_sub_6AEE70;
+@ 0x672660 _thunk_sub_6AEE70_672660;
 
 // [propagated: _thunk_sub_6AFCF0, 0.80]
 @ 0x672D90 _thunk_sub_6AFCF0;
@@ -12903,10 +11604,10 @@
 @ 0x673A50 _thunk_sub_673580;
 
 // [propagated: _thunk_sub_6B3226, 0.80]
-@ 0x673AB0 _thunk_sub_6B3226;
+@ 0x673AB0 _thunk_sub_6B3226_673AB0;
 
 // [propagated: _thunk_sub_6B3226, 0.80]
-@ 0x673B50 _thunk_sub_6B3226;
+@ 0x673B50 _thunk_sub_6B3226_673B50;
 
 // [propagated: _thunk_sub_674460, 0.80]
 @ 0x674680 _thunk_sub_674460;
@@ -12915,40 +11616,40 @@
 @ 0x675AC0 _thunk_sub_675900;
 
 // [propagated: _thunk_sub_675900, 0.80]
-@ 0x675E26 _thunk_sub_675900;
+@ 0x675E26 _thunk_sub_675900_675E26;
 
 // [propagated: _thunk_sub_6B3220, 0.80]
-@ 0x676480 _thunk_sub_6B3220;
+@ 0x676480 _thunk_sub_6B3220_676480;
 
 // [propagated: _thunk_sub_6B3220, 0.80]
-@ 0x676500 _thunk_sub_6B3220;
+@ 0x676500 _thunk_sub_6B3220_676500;
 
 // [propagated: _thunk_sub_6B3220, 0.80]
-@ 0x676560 _thunk_sub_6B3220;
+@ 0x676560 _thunk_sub_6B3220_676560;
 
 // [propagated: _thunk_sub_6B3220, 0.80]
-@ 0x6765F0 _thunk_sub_6B3220;
+@ 0x6765F0 _thunk_sub_6B3220_6765F0;
 
 // [propagated: _thunk_sub_6B3220, 0.80]
-@ 0x676680 _thunk_sub_6B3220;
+@ 0x676680 _thunk_sub_6B3220_676680;
 
 // [propagated: _thunk_sub_6B3220, 0.80]
-@ 0x677F80 _thunk_sub_6B3220;
+@ 0x677F80 _thunk_sub_6B3220_677F80;
 
 // [propagated: _thunk_sub_6B3220, 0.80]
-@ 0x678580 _thunk_sub_6B3220;
+@ 0x678580 _thunk_sub_6B3220_678580;
 
 // [propagated: _thunk_sub_6B3220, 0.80]
-@ 0x678680 _thunk_sub_6B3220;
+@ 0x678680 _thunk_sub_6B3220_678680;
 
 // [propagated: _thunk_sub_6B3220, 0.80]
-@ 0x678720 _thunk_sub_6B3220;
+@ 0x678720 _thunk_sub_6B3220_678720;
 
 // [propagated: _thunk_sub_6B3220, 0.80]
-@ 0x6787C0 _thunk_sub_6B3220;
+@ 0x6787C0 _thunk_sub_6B3220_6787C0;
 
 // [propagated: _thunk_sub_6B3220, 0.80]
-@ 0x678860 _thunk_sub_6B3220;
+@ 0x678860 _thunk_sub_6B3220_678860;
 
 // [propagated: _thunk_sub_6B1E14, 0.80]
 @ 0x679670 _thunk_sub_6B1E14;
@@ -12957,49 +11658,49 @@
 @ 0x679A20 _thunk_sub_6B2BF4;
 
 // [propagated: _thunk_sub_66D190, 0.80]
-@ 0x67A320 _thunk_sub_66D190;
+@ 0x67A320 _thunk_sub_66D190_67A320;
 
 // [propagated: _thunk_sub_6A5DC0, 0.80]
-@ 0x67AA70 _thunk_sub_6A5DC0;
+@ 0x67AA70 _thunk_sub_6A5DC0_67AA70;
 
 // [propagated: _thunk_sub_6B2CA8, 0.80]
-@ 0x67AFF3 _thunk_sub_6B2CA8;
+@ 0x67AFF3 _thunk_sub_6B2CA8_67AFF3;
 
 // [propagated: _thunk_sub_6B2CA8, 0.80]
-@ 0x67AFFB _thunk_sub_6B2CA8;
+@ 0x67AFFB _thunk_sub_6B2CA8_67AFFB;
 
 // [propagated: _thunk_sub_66B800, 0.80]
 @ 0x67C260 _thunk_sub_66B800;
 
 // [propagated: _thunk_sub_6B3220, 0.80]
-@ 0x67CB20 _thunk_sub_6B3220;
+@ 0x67CB20 _thunk_sub_6B3220_67CB20;
 
 // [propagated: _thunk_sub_65DC20, 0.80]
-@ 0x67CC80 _thunk_sub_65DC20;
+@ 0x67CC80 _thunk_sub_65DC20_67CC80;
 
 // [propagated: _thunk_sub_6B3220, 0.80]
-@ 0x67D510 _thunk_sub_6B3220;
+@ 0x67D510 _thunk_sub_6B3220_67D510;
 
 // [propagated: _thunk_sub_67EB20, 0.80]
 @ 0x67D620 _thunk_sub_67EB20;
 
 // [propagated: _thunk_sub_6B3220, 0.80]
-@ 0x67EE90 _thunk_sub_6B3220;
+@ 0x67EE90 _thunk_sub_6B3220_67EE90;
 
 // [propagated: _thunk_sub_661320, 0.80]
 @ 0x680380 _thunk_sub_661320;
 
 // [propagated: _thunk_sub_6B3220, 0.80]
-@ 0x682520 _thunk_sub_6B3220;
+@ 0x682520 _thunk_sub_6B3220_682520;
 
 // [propagated: _thunk_sub_682520, 0.80]
 @ 0x682980 _thunk_sub_682520;
 
 // [propagated: _thunk_sub_665660, 0.80]
-@ 0x683E00 _thunk_sub_665660;
+@ 0x683E00 _thunk_sub_665660_683E00;
 
 // [propagated: _thunk_sub_6A5DC0, 0.80]
-@ 0x683F70 _thunk_sub_6A5DC0;
+@ 0x683F70 _thunk_sub_6A5DC0_683F70;
 
 // [propagated: _thunk_sub_682270, 0.80]
 @ 0x6852D0 _thunk_sub_682270;
@@ -13008,7 +11709,7 @@
 @ 0x6862E0 _thunk_sub_686FC0;
 
 // [propagated: _thunk_sub_6B2CC4, 0.80]
-@ 0x6863C0 _thunk_sub_6B2CC4;
+@ 0x6863C0 _thunk_sub_6B2CC4_6863C0;
 
 // [propagated: _thunk_sub_687DD0, 0.80]
 @ 0x686D60 _thunk_sub_687DD0;
@@ -13029,16 +11730,16 @@
 @ 0x689C40 _thunk_sub_6B2DC7;
 
 // [propagated: _thunk_sub_6B2DC7, 0.80]
-@ 0x689C90 _thunk_sub_6B2DC7;
+@ 0x689C90 _thunk_sub_6B2DC7_689C90;
 
 // [propagated: _thunk_sub_6A5DC0, 0.80]
-@ 0x689E40 _thunk_sub_6A5DC0;
+@ 0x689E40 _thunk_sub_6A5DC0_689E40;
 
 // [propagated: _thunk_sub_663210, 0.80]
-@ 0x68A080 _thunk_sub_663210;
+@ 0x68A080 _thunk_sub_663210_68A080;
 
 // [propagated: _thunk_sub_6B2D1C, 0.80]
-@ 0x68A490 _thunk_sub_6B2D1C;
+@ 0x68A490 _thunk_sub_6B2D1C_68A490;
 
 // [propagated: _thunk_sub_68ABE0, 0.80]
 @ 0x68A5D0 _thunk_sub_68ABE0;
@@ -13050,22 +11751,22 @@
 @ 0x68B560 _thunk_sub_68B370;
 
 // [propagated: _thunk_sub_6B2CC4, 0.80]
-@ 0x68D0D0 _thunk_sub_6B2CC4;
+@ 0x68D0D0 _thunk_sub_6B2CC4_68D0D0;
 
 // [propagated: _thunk_sub_6B2CC4, 0.80]
-@ 0x68DBF0 _thunk_sub_6B2CC4;
+@ 0x68DBF0 _thunk_sub_6B2CC4_68DBF0;
 
 // [propagated: _thunk_sub_65F7C0, 0.80]
-@ 0x68E200 _thunk_sub_65F7C0;
+@ 0x68E200 _thunk_sub_65F7C0_68E200;
 
 // [propagated: _thunk_sub_691010, 0.80]
 @ 0x68E330 _thunk_sub_691010;
 
 // [propagated: _thunk_sub_665660, 0.80]
-@ 0x68F550 _thunk_sub_665660;
+@ 0x68F550 _thunk_sub_665660_68F550;
 
 // [propagated: _thunk_sub_691010, 0.80]
-@ 0x68F780 _thunk_sub_691010;
+@ 0x68F780 _thunk_sub_691010_68F780;
 
 // [propagated: _thunk_sub_694520, 0.80]
 @ 0x692760 _thunk_sub_694520;
@@ -13077,37 +11778,37 @@
 @ 0x695310 _thunk_sub_695360;
 
 // [propagated: _thunk_sub_695360, 0.80]
-@ 0x695326 _thunk_sub_695360;
+@ 0x695326 _thunk_sub_695360_695326;
 
 // [propagated: _thunk_sub_6B2CA8, 0.80]
-@ 0x695BDA _thunk_sub_6B2CA8;
+@ 0x695BDA _thunk_sub_6B2CA8_695BDA;
 
 // [propagated: _thunk_sub_6B3220, 0.80]
-@ 0x696E90 _thunk_sub_6B3220;
+@ 0x696E90 _thunk_sub_6B3220_696E90;
 
 // [propagated: _thunk_sub_663210, 0.80]
-@ 0x697880 _thunk_sub_663210;
+@ 0x697880 _thunk_sub_663210_697880;
 
 // [propagated: _thunk_sub_6B2CA8, 0.80]
-@ 0x6981A7 _thunk_sub_6B2CA8;
+@ 0x6981A7 _thunk_sub_6B2CA8_6981A7;
 
 // [propagated: _thunk_sub_6B2CA8, 0.80]
-@ 0x6981AF _thunk_sub_6B2CA8;
+@ 0x6981AF _thunk_sub_6B2CA8_6981AF;
 
 // [propagated: _thunk_sub_6B2CA8, 0.80]
-@ 0x698D60 _thunk_sub_6B2CA8;
+@ 0x698D60 _thunk_sub_6B2CA8_698D60;
 
 // [propagated: _thunk_sub_665660, 0.80]
-@ 0x698FF0 _thunk_sub_665660;
+@ 0x698FF0 _thunk_sub_665660_698FF0;
 
 // [propagated: _thunk_sub_6993B0, 0.80]
 @ 0x699030 _thunk_sub_6993B0;
 
 // [propagated: _thunk_sub_665660, 0.80]
-@ 0x699070 _thunk_sub_665660;
+@ 0x699070 _thunk_sub_665660_699070;
 
 // [propagated: _thunk_sub_6B2CA8, 0.80]
-@ 0x699D32 _thunk_sub_6B2CA8;
+@ 0x699D32 _thunk_sub_6B2CA8_699D32;
 
 // [propagated: _thunk_sub_69ABB0, 0.80]
 @ 0x69AF80 _thunk_sub_69ABB0;
@@ -13125,46 +11826,46 @@
 @ 0x69B8E0 _thunk_sub_69D890;
 
 // [propagated: _thunk_sub_6B2CC4, 0.80]
-@ 0x69B9D0 _thunk_sub_6B2CC4;
+@ 0x69B9D0 _thunk_sub_6B2CC4_69B9D0;
 
 // [propagated: _thunk_sub_69C520, 0.80]
 @ 0x69BAA0 _thunk_sub_69C520;
 
 // [propagated: _thunk_sub_6B2CC4, 0.80]
-@ 0x69BBC0 _thunk_sub_6B2CC4;
+@ 0x69BBC0 _thunk_sub_6B2CC4_69BBC0;
 
 // [propagated: _thunk_sub_69C520, 0.80]
-@ 0x69BC00 _thunk_sub_69C520;
+@ 0x69BC00 _thunk_sub_69C520_69BC00;
 
 // [propagated: _thunk_sub_6B2CC4, 0.80]
-@ 0x69C239 _thunk_sub_6B2CC4;
+@ 0x69C239 _thunk_sub_6B2CC4_69C239;
 
 // [propagated: _thunk_sub_69C570, 0.80]
 @ 0x69C2E0 _thunk_sub_69C570;
 
 // [propagated: _thunk_sub_69C570, 0.80]
-@ 0x69C330 _thunk_sub_69C570;
+@ 0x69C330 _thunk_sub_69C570_69C330;
 
 // [propagated: _thunk_sub_665660, 0.80]
-@ 0x69D090 _thunk_sub_665660;
+@ 0x69D090 _thunk_sub_665660_69D090;
 
 // [propagated: _thunk_sub_665660, 0.80]
-@ 0x69D150 _thunk_sub_665660;
+@ 0x69D150 _thunk_sub_665660_69D150;
 
 // [propagated: _thunk_sub_665660, 0.80]
-@ 0x69D1D0 _thunk_sub_665660;
+@ 0x69D1D0 _thunk_sub_665660_69D1D0;
 
 // [propagated: _thunk_sub_69D9E0, 0.80]
 @ 0x69D970 _thunk_sub_69D9E0;
 
 // [propagated: _thunk_sub_69E370, 0.80]
-@ 0x69E070 _thunk_sub_69E370;
+@ 0x69E070 _thunk_sub_69E370_69E070;
 
 // [propagated: _thunk_sub_69E370, 0.80]
-@ 0x69E090 _thunk_sub_69E370;
+@ 0x69E090 _thunk_sub_69E370_69E090;
 
 // [propagated: _thunk_sub_6B2CC4, 0.80]
-@ 0x69E370 _thunk_sub_6B2CC4;
+@ 0x69E370 _thunk_sub_6B2CC4_69E370;
 
 // [propagated: _thunk_sub_69F440, 0.80]
 @ 0x69E860 _thunk_sub_69F440;
@@ -13173,10 +11874,10 @@
 @ 0x69E930 _thunk_sub_69E860;
 
 // [propagated: _thunk_sub_6B3226, 0.80]
-@ 0x69EAC0 _thunk_sub_6B3226;
+@ 0x69EAC0 _thunk_sub_6B3226_69EAC0;
 
 // [propagated: _thunk_sub_6A5DC0, 0.80]
-@ 0x69F070 _thunk_sub_6A5DC0;
+@ 0x69F070 _thunk_sub_6A5DC0_69F070;
 
 // [propagated: _thunk_sub_6A6120, 0.80]
 @ 0x69F190 _thunk_sub_6A6120;
@@ -13197,7 +11898,7 @@
 @ 0x69FEA0 _thunk_sub_6A6300;
 
 // [propagated: _thunk_sub_6A6300, 0.80]
-@ 0x69FF60 _thunk_sub_6A6300;
+@ 0x69FF60 _thunk_sub_6A6300_69FF60;
 
 // [propagated: _thunk_sub_6A03B0, 0.80]
 @ 0x6A07CD _thunk_sub_6A03B0;
@@ -13212,10 +11913,10 @@
 @ 0x6A1D50 _thunk_sub_6A1CE0;
 
 // [propagated: _thunk_sub_66E180, 0.80]
-@ 0x6A36E0 _thunk_sub_66E180;
+@ 0x6A36E0 _thunk_sub_66E180_6A36E0;
 
 // [propagated: _thunk_sub_6B2CA8, 0.80]
-@ 0x6A3E8D _thunk_sub_6B2CA8;
+@ 0x6A3E8D _thunk_sub_6B2CA8_6A3E8D;
 
 // [propagated: _thunk_sub_6A4390, 0.80]
 @ 0x6A4320 _thunk_sub_6A4390;
@@ -13224,7 +11925,7 @@
 @ 0x6A4F00 _thunk_sub_6A4640;
 
 // [propagated: _thunk_sub_6B2CA8, 0.80]
-@ 0x6A5610 _thunk_sub_6B2CA8;
+@ 0x6A5610 _thunk_sub_6B2CA8_6A5610;
 
 // [propagated: _thunk_sub_664450, 0.80]
 @ 0x6A56E0 _thunk_sub_664450;
@@ -13245,28 +11946,28 @@
 @ 0x6A62A0 _thunk_sub_6A6220;
 
 // [propagated: _thunk_sub_401000, 0.80]
-@ 0x6A6550 _thunk_sub_401000;
+@ 0x6A6550 _thunk_sub_401000_6A6550;
 
 // [propagated: _thunk_sub_6B3220, 0.80]
-@ 0x6A69C0 _thunk_sub_6B3220;
+@ 0x6A69C0 _thunk_sub_6B3220_6A69C0;
 
 // [propagated: _thunk_sub_6B3220, 0.80]
-@ 0x6A6AB0 _thunk_sub_6B3220;
+@ 0x6A6AB0 _thunk_sub_6B3220_6A6AB0;
 
 // [propagated: _thunk_sub_6B3220, 0.80]
-@ 0x6A6B70 _thunk_sub_6B3220;
+@ 0x6A6B70 _thunk_sub_6B3220_6A6B70;
 
 // [propagated: _thunk_sub_6B3220, 0.80]
-@ 0x6A6C70 _thunk_sub_6B3220;
+@ 0x6A6C70 _thunk_sub_6B3220_6A6C70;
 
 // [propagated: _thunk_sub_6B3220, 0.80]
-@ 0x6A73C0 _thunk_sub_6B3220;
+@ 0x6A73C0 _thunk_sub_6B3220_6A73C0;
 
 // [propagated: _thunk_sub_6B3220, 0.80]
-@ 0x6A7550 _thunk_sub_6B3220;
+@ 0x6A7550 _thunk_sub_6B3220_6A7550;
 
 // [propagated: _thunk_sub_6B3220, 0.80]
-@ 0x6A77C0 _thunk_sub_6B3220;
+@ 0x6A77C0 _thunk_sub_6B3220_6A77C0;
 
 // [propagated: _thunk_sub_618A00, 0.80]
 @ 0x6AA6D0 _thunk_sub_618A00;
@@ -13290,7 +11991,7 @@
 @ 0x6ABBB0 _thunk_sub_6ABBB0;
 
 // [propagated: _thunk_sub_6B2CA8, 0.80]
-@ 0x6AC3AF _thunk_sub_6B2CA8;
+@ 0x6AC3AF _thunk_sub_6B2CA8_6AC3AF;
 
 // [propagated: _thunk_sub_6AC3C0, 0.80]
 @ 0x6ACCC8 _thunk_sub_6AC3C0;
@@ -13299,22 +12000,22 @@
 @ 0x6AE340 _thunk_sub_6ADD20;
 
 // [propagated: _thunk_sub_6B2CA8, 0.80]
-@ 0x6AE646 _thunk_sub_6B2CA8;
+@ 0x6AE646 _thunk_sub_6B2CA8_6AE646;
 
 // [propagated: _thunk_sub_6AD400, 0.80]
 @ 0x6AE7A0 _thunk_sub_6AD400;
 
 // [propagated: _thunk_sub_6B2CA8, 0.80]
-@ 0x6AEBFE _thunk_sub_6B2CA8;
+@ 0x6AEBFE _thunk_sub_6B2CA8_6AEBFE;
 
 // [propagated: _thunk_sub_6B2CA8, 0.80]
-@ 0x6AEE3C _thunk_sub_6B2CA8;
+@ 0x6AEE3C _thunk_sub_6B2CA8_6AEE3C;
 
 // [propagated: _thunk_sub_6AEED0, 0.80]
 @ 0x6AEE89 _thunk_sub_6AEED0;
 
 // [propagated: _thunk_sub_6AEED0, 0.80]
-@ 0x6AEEBA _thunk_sub_6AEED0;
+@ 0x6AEEBA _thunk_sub_6AEED0_6AEEBA;
 
 // [propagated: _thunk_sub_6AEF70, 0.80]
 @ 0x6AF076 _thunk_sub_6AEF70;
@@ -13323,19 +12024,19 @@
 @ 0x6B0A36 _thunk_sub_6B1052;
 
 // [propagated: _thunk_sub_6B1052, 0.80]
-@ 0x6B103F _thunk_sub_6B1052;
+@ 0x6B103F _thunk_sub_6B1052_6B103F;
 
 // [propagated: _thunk_sub_6B1B34, 0.80]
 @ 0x6B1A3D _thunk_sub_6B1B34;
 
 // [propagated: _thunk_sub_6B1B34, 0.80]
-@ 0x6B1B21 _thunk_sub_6B1B34;
+@ 0x6B1B21 _thunk_sub_6B1B34_6B1B21;
 
 // [propagated: _thunk_sub_6B1ECC, 0.80]
 @ 0x6B1E2A _thunk_sub_6B1ECC;
 
 // [propagated: _thunk_sub_6B1ECC, 0.80]
-@ 0x6B1EB9 _thunk_sub_6B1ECC;
+@ 0x6B1EB9 _thunk_sub_6B1ECC_6B1EB9;
 
 // [propagated: _thunk_sub_6B1F53, 0.80]
 @ 0x6B1EF6 _thunk_sub_6B1F53;
@@ -13347,13 +12048,13 @@
 @ 0x6B21C6 _thunk_sub_6B22C3;
 
 // [propagated: _thunk_sub_6B22C3, 0.80]
-@ 0x6B22B0 _thunk_sub_6B22C3;
+@ 0x6B22B0 _thunk_sub_6B22C3_6B22B0;
 
 // [propagated: _thunk_sub_6B2C07, 0.80]
 @ 0x6B2A96 _thunk_sub_6B2C07;
 
 // [propagated: _thunk_sub_6B2C07, 0.80]
-@ 0x6B2BF4 _thunk_sub_6B2C07;
+@ 0x6B2BF4 _thunk_sub_6B2C07_6B2BF4;
 
 // [propagated: _thunk_sub_6B35EE, 0.80]
 @ 0x6B35EE _thunk_sub_6B35EE;
@@ -13371,7 +12072,7 @@
 @ 0x6B3F66 _thunk_sub_6B3F8E;
 
 // [propagated: _thunk_sub_6B3F8E, 0.80]
-@ 0x6B3F72 _thunk_sub_6B3F8E;
+@ 0x6B3F72 _thunk_sub_6B3F8E_6B3F72;
 
 // [propagated: _thunk_sub_6B4109, 0.80]
 @ 0x6B40F0 _thunk_sub_6B4109;
@@ -13386,13 +12087,13 @@
 @ 0x6B9E90 _thunk_sub_6B9D90;
 
 // [propagated: _thunk_sub_6B9D90, 0.80]
-@ 0x6BA049 _thunk_sub_6B9D90;
+@ 0x6BA049 _thunk_sub_6B9D90_6BA049;
 
 // [propagated: _thunk_sub_6B3220, 0.80]
-@ 0x6BA6E0 _thunk_sub_6B3220;
+@ 0x6BA6E0 _thunk_sub_6B3220_6BA6E0;
 
 // [propagated: _thunk_sub_6B3220, 0.80]
-@ 0x6BE2D0 _thunk_sub_6B3220;
+@ 0x6BE2D0 _thunk_sub_6B3220_6BE2D0;
 
 // [propagated: _thunk_sub_6BDF90, 0.80]
 @ 0x6BEA10 _thunk_sub_6BDF90;
@@ -13404,13 +12105,13 @@
 @ 0x6C0F80 _thunk_sub_6C0B20;
 
 // [propagated: _thunk_sub_6C0B20, 0.80]
-@ 0x6C1020 _thunk_sub_6C0B20;
+@ 0x6C1020 _thunk_sub_6C0B20_6C1020;
 
 // [propagated: _thunk_sub_6B3220, 0.80]
-@ 0x6C1400 _thunk_sub_6B3220;
+@ 0x6C1400 _thunk_sub_6B3220_6C1400;
 
 // [propagated: _thunk_sub_6B3220, 0.80]
-@ 0x6C1530 _thunk_sub_6B3220;
+@ 0x6C1530 _thunk_sub_6B3220_6C1530;
 
 // [propagated: _thunk_sub_6C14B0, 0.80]
 @ 0x6C1830 _thunk_sub_6C14B0;
@@ -13419,10 +12120,10 @@
 @ 0x6C296B _thunk_sub_41F784D1;
 
 // [propagated: _thunk_sub_6B3220, 0.80]
-@ 0x6C362D _thunk_sub_6B3220;
+@ 0x6C362D _thunk_sub_6B3220_6C362D;
 
 // [propagated: _thunk_sub_6B3220, 0.80]
-@ 0x6C3790 _thunk_sub_6B3220;
+@ 0x6C3790 _thunk_sub_6B3220_6C3790;
 
 // [propagated: _thunk_sub_619630, 0.80]
 @ 0x6C3FF0 _thunk_sub_619630;
@@ -13434,13 +12135,13 @@
 @ 0x6DC2B0 _thunk_crt_xmatch_00EEBD40;
 
 // [propagated: _thunk_sub_6DD2B0, 0.80]
-@ 0x6DCB80 _thunk_sub_6DD2B0;
+@ 0x6DCB80 _thunk_sub_6DD2B0_6DCB80;
 
 // [propagated: _thunk_sub_6DD150, 0.80]
 @ 0x6DD150 _thunk_sub_6DD150;
 
 // [propagated: _thunk_sub_6DD150, 0.80]
-@ 0x6DD1F0 _thunk_sub_6DD150;
+@ 0x6DD1F0 _thunk_sub_6DD150_6DD1F0;
 
 // [propagated: _thunk_sub_6DD1F0, 0.80]
 @ 0x6DD2B0 _thunk_sub_6DD1F0;
@@ -13508,15 +12209,9 @@ $ 0x78ACA4 float g_draw2dScaleY
 @ 0x60E0C0 int SetDrawMode_thunk(int mode, void* param)
 
 // --- Live-verified camera state (2026-07-17) — source for RHW unprojection proxy ---
-$ 0x8CD0F4 float g_renderCamPosX
-$ 0x8CD0F8 float g_renderCamPosY
-$ 0x8CD0FC float g_renderCamPosZ
 $ 0x8CD0E6 uint16_t g_renderCamPitch
 $ 0x8CD108 uint16_t g_renderCamYaw
 $ 0x9CDB4C void* g_pScriptCamera
-$ 0x9CDB48 int g_curCameraLocId
-$ 0x9D915C void* g_pRenderDevice
-@ 0x538C70 void __cdecl UpdateRenderCamCache(void)
 @ 0x53C410 void* __cdecl GetLocationTransform(int locId)
 @ 0x60CE80 void __cdecl FlushPortalCacheDPUP(void)
 

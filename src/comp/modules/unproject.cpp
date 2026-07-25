@@ -3,6 +3,7 @@
 
 #include "shared/common/config.hpp"
 #include "camera_math.hpp"
+#include "draw_util.hpp"
 
 #include <algorithm>
 #include <cfloat>
@@ -56,17 +57,6 @@ namespace comp
 			l.stride = off;
 			l.valid = l.stride == stream_stride && l.tex_count <= 2;
 			return l;
-		}
-
-		uint32_t vertex_count_for(const D3DPRIMITIVETYPE type, const UINT prim_count)
-		{
-			switch (type)
-			{
-			case D3DPT_TRIANGLEFAN:
-			case D3DPT_TRIANGLESTRIP: return prim_count + 2;
-			case D3DPT_TRIANGLELIST:  return prim_count * 3;
-			default: return 0;
-			}
 		}
 
 		inline void cross3(const float* a, const float* b, float* out)

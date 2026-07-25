@@ -1039,3 +1039,84 @@ Verified in-mission (walk via held W, crouch, held LEFT turn; runtime base 0xE90
 0xC21B52/0xC21B54 whenever the live pos is nonzero (falls back to the 0x8CD0F4 cache
 until the first rendered frame). Walk-bob on unprojected characters confirmed fixed
 in-game; the same change also corrects crouch eye height and standing eye height (+2.6).
+
+---
+
+## Drawn weapon dropped the frame to raster — ROOT CAUSE + FIX (2026-07-25)
+
+**Symptom:** drawing the sword/bow knocked the whole frame out of path tracing
+until the weapon was holstered.
+
+**Root cause: duplicate scene submission, not the weapon's geometry.**
+
+Equipping a weapon makes NewDark render two extra off-screen passes (the
+inventory item icon), each wrapped in its own `BeginScene`/`EndScene`:
+
+```
+scene 1  backbuffer     Clear(TARGET|Z) -> 95 world DPUP -> z-only Clear -> overlay draws
+scene 2  off-screen     SetRenderTarget(0x0333CC38), SetDepthStencilSurface(NULL),
+                        ColorFill, 1 DPUP           <- NO depth surface
+scene 3  restore        SetRenderTarget(0x0337E8B0) + depth 0x0337E9A8, 1 DPUP
+```
+
+`submit_scene_to_remix()` latched per-*scene* (`m_scene_submitted` reset at
+`BeginScene`), so a weapon-out frame submitted the full 74,599-triangle
+worldrep plus the entire engine light set **three times a frame** — twice into
+an off-screen surface, one with no depth buffer. Remix dropped to raster.
+
+**Fix:** reset the latch at `Present` instead of `BeginScene` — the ray-traced
+scene is injected exactly once per frame. The main scene always submits first
+(at its z-only overlay clear, else its `EndScene`), so the later off-screen
+passes find the latch already set.
+
+**A render-target guard was tried and rejected.** Gating submission on
+`GetRenderTarget(0) == GetBackBuffer(0,0,...)` blocked the *main* scene too and
+produced a gray, worldrep-less scene: COM interface identity is not preserved
+through the Remix bridge wrapper, so the pointers never compared equal. The
+per-frame latch needs no pointer comparison.
+
+### What this disproves
+
+`findings.md` previously suggested — and `NEXT_SESSION.md` (2026-07-24) asserted
+— that the weapon exposed a *second perspective camera* to Remix via its own
+draws. That is **wrong**. Two fixes built on it were removed:
+
+1. Capture/replay of `DrawIndexedPrimitive`. The engine issues **zero** indexed
+   draws; the hook never once fired. The FVF 0x142 + VB/IB + perspective-matrix
+   block after `EndScene` is a `CreateStateBlock` priming artifact with no draw
+   (already documented in the 3-frame capture section above — the 2026-07-24
+   work was built on the superseded single-frame reading).
+2. Capture/replay of the weapon's `DrawPrimitiveUP` draws. The hook fired
+   correctly, but **suppressing the weapon draws entirely did not restore path
+   tracing** — which is what ruled the second-camera theory out.
+
+The weapon now passes through as ordinary main-scene geometry and the frame
+stays path-traced. The `viewmodel` module and its `[Viewmodel]` INI section were
+deleted (recoverable: `backups/2026-07-25_0310_viewmodel-dpup-fix/`).
+
+### Weapon draw signature (for reference)
+
+The weapon *is* two non-RHW `DrawPrimitiveUP` draws — FVF 0x142
+(`XYZ|DIFFUSE|TEX1`), stride 28, prims 10 and 2 — classified `other:fvf` by
+`unproject` and passed through. Correlation was exact over a 1500-frame
+`[Unproject] DebugLogFrames` capture: 517 holstered gameplay frames had **0**,
+and all 983 drawn frames had **exactly 2**. Harmless; documented only so a
+future reader does not re-derive it as a suspect. Note the menu draws the same
+0x142 signature, and it must keep passing through (the launch menu depends on
+it).
+
+### Evidence
+
+- `captures/dxtrace_20260725_031448.jsonl` — holstered, 2 frames, 292 records
+  each: 1 `BeginScene`, 0 `SetRenderTarget`, 0 `ColorFill`, 1 `SetViewport`.
+- `captures/dxtrace_20260725_031526.jsonl` — drawn, same scene: 3 `BeginScene`,
+  2 `SetRenderTarget`, 2 `SetDepthStencilSurface`, 2 `ColorFill`,
+  5 `SetViewport`.
+
+Capture live with the game running (no relaunch needed):
+`python -m graphics.directx.dx9.tracer trigger --game-dir <DIR> --frames 3 --wait`
+(the CLI's "Expected output not found" warning is a stale path in the helper —
+the proxy writes to `captures/dxtrace_<timestamp>.jsonl`).
+
+**Invariant: do not reintroduce a per-scene submission latch.** Thief runs
+multiple scenes per frame whenever a weapon is equipped.
