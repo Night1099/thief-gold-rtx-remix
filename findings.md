@@ -1120,3 +1120,42 @@ the proxy writes to `captures/dxtrace_<timestamp>.jsonl`).
 
 **Invariant: do not reintroduce a per-scene submission latch.** Thief runs
 multiple scenes per frame whenever a weapon is equipped.
+
+## Escape menu showed frozen raster world — ROOT CAUSE + FIX (2026-07-25)
+
+**Symptom:** pressing Escape in-mission displayed the frozen world in raster
+instead of the menu. The launch menu was fine.
+
+**Root cause: the EndScene-fallback scene submission buried the menu.**
+
+A paused menu frame is (live capture `captures/dxtrace_20260725_144249.jsonl`):
+
+```
+BeginScene -> 3x DrawPrimitiveUP (tri-fan, stride 28) -> EndScene -> Present
+```
+
+No Clear of any kind — the sim is paused, so no world geometry, no HUD, and
+no mid-scene z-only overlay clear. `submit_scene_to_remix()` therefore fell
+through to the EndScene fallback and injected the frozen worldrep + full
+light set AFTER the menu quads, every menu frame. The menu pixels were
+covered and, with no clear and a stale camera context, Remix dropped the
+frame to raster — the same failure family as the drawn-weapon bug (worldrep
+submitted into a scene context Remix does not treat as the main camera pass).
+
+**Menu draw signature** (fresh `unproject_debug.log`, closes the open question
+from NEXT_SESSION): the Escape menu is the **0x142 XYZ variant**, not RHW —
+3 draws/frame classified `other:fvf` (fvf=0x142, stride 28, prims 2,
+v0=(0,0); textured background + two untextured pillarbox bars),
+`world=0 ui=0 other=3` on every menu frame.
+
+**Fix (d3d9ex.cpp EndScene):** the EndScene fallback now submits only when
+the engine drew world geometry this frame (`unproject::m_converted_draws_frame
+> 0`; gameplay frames log world>=27, menu frames exactly 0). The z-only-clear
+submission path is untouched, so gameplay frames are unaffected and the
+per-frame latch invariant from the weapon fix still holds. With submission
+skipped, Remix sees only the three passthrough 0x142 quads — the exact
+situation the launch menu already renders correctly. Verified in-game
+2026-07-25: menu visible, gameplay still path-traced, drawn weapon still fine.
+
+**Invariant: the EndScene fallback must stay gated on world draws.** An
+unconditional fallback resubmits the frozen scene on every paused frame.

@@ -60,58 +60,24 @@ Remix API light path"). Verified in-game. Release history was reset:
 all v1.x releases/tags were deleted and versioning restarted at v0.0.1
 ("Fixed Remix captures and no more API needed").
 
-## Open — Escape menu (and HUD) invisible in-mission, diagnosed, not fixed
+## Closed this session — Escape menu visible again (frozen-raster fixed)
 
-**Symptom:** pressing Escape in a mission shows no menu/HUD graphics — the
-frozen world keeps displaying. The LAUNCH main menu works; only the in-mission
-Escape menu is blank.
+Verified in-game 2026-07-25 (PM). The Escape menu turned out to be the
+**0x142 XYZ variant** (3 draws/frame, `other:fvf`, no clears at all in a menu
+frame — live capture `captures/dxtrace_20260725_144249.jsonl`), so fix-plan
+branch 3 applied: the EndScene-fallback `submit_scene_to_remix()` was burying
+the menu under the frozen worldrep + lights every paused frame and dropping
+the frame to raster (same failure family as the drawn-weapon bug).
 
-**Root cause (from code + a 470-frame menu-only `unproject_debug.log`):**
+**Fix:** the EndScene fallback submission is now gated on
+`unproject::m_converted_draws_frame > 0` (world draws this frame — gameplay
+frames log world>=27, menu frames exactly 0). The z-only-clear submission
+path and the per-frame latch are untouched; menu frames now reach Remix as
+just the passthrough 0x142 quads, same as the working launch menu. Full
+write-up in `findings.md` ("Escape menu showed frozen raster world").
 
-1. Menu screens are full-screen 2D quads drawn via DrawPrimitiveUP *outside*
-   the overlay phase — paused frames issue no mid-scene z-only Clear (that
-   clear precedes HUD model draws, and HUD submission stops when the sim
-   pauses). So `unproject` captures nothing for the ortho EndScene replay.
-2. The quads pass through raw. Two engine variants in the log (same 3
-   quads/frame: textured background + two pillarbox bars):
-   - `ui:flat-rhw` — FVF 0x144 (XYZRHW|DIFFUSE|TEX1), stride 28, depth exactly
-     [1.00..1.00], **ZENABLE=0**. Raw RHW draws are silently DROPPED by this
-     Remix build (PHASE4 pitfall #1) → invisible.
-   - `other:fvf` — FVF 0x142 (XYZ|DIFFUSE|TEX1), stride 28, v0=(0,0). Non-RHW
-     passthrough; renders raster. 1410 of these vs 6 RHW in the log.
-3. **Why the launch menu works but the Escape menu doesn't:**
-   `submit_scene_to_remix()` has no pause/menu guard. In-mission the worldrep is
-   loaded and the camera valid, so the frozen scene + lights are submitted every
-   menu frame AFTER the mid-scene menu draws — Remix's RTX injection then covers
-   whatever menu pixels survived. At the launch menu `worldrep_render::submit`
-   bails (no mission geometry), so the passthrough 0x142 quads are all Remix
-   sees → visible.
-
-**Fix plan (diagnostic first):**
-
-1. Capture the Escape menu's draw signature. The 2026-07-25 attempt with
-   `DebugLogFrames=5` failed to catch it: launch-menu frames log freely (<30
-   draws don't decrement the armed count), so the log burned ~575 launch-menu
-   frames and then the 5 armed frames on the first gameplay frames — it ended
-   before Escape was pressed. Use a large value (e.g. 1500) and hit Escape
-   promptly after loading. The launch menu showed both variants again
-   (`ui:flat-rhw` 0x144 pre-resolution-change, `other:fvf` 0x142 after);
-   in-mission Escape signature still unknown.
-2. If the Escape menu draws are RHW (0x144): capture instead of passing through
-   when `ZENABLE==FALSE && flat rhw && depth≈1.0` — queue into
-   `m_overlay_draws` so `flush_overlay_ui` replays them at EndScene after scene
-   submission (the exact path the HUD already uses). This signature does not
-   collide with pitfall #6 (distant world fans are flat-rhw at LARGE depth with
-   Z enabled) or with HUD models (Z enabled, overlay phase).
-3. If they are the 0x142 XYZ variant: they already render but get overwritten by
-   the scene submission — either defer/replay them too, or skip
-   `submit_scene_to_remix` for scenes that contained menu-signature draws and no
-   overlay clear. **Careful:** any such guard must not break the weapon fix
-   above — the submission must still happen exactly once on normal frames.
-4. Frame-level fallback if the per-draw signature proves ambiguous: defer ALL
-   flat-rhw draws to EndScene; drop them if the scene had an overlay clear
-   (today's behavior — Remix drops them anyway), replay them ortho if it had
-   none (menu frame). Behavior-identical in gameplay frames.
+**Invariant: keep the EndScene fallback gated on world draws** (and still no
+per-scene latch — both invariants now live in findings.md).
 
 ## Backlog
 

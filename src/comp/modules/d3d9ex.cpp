@@ -346,12 +346,19 @@ namespace comp
 		TRACE_IF_ACTIVE_NOARGS(trace_EndScene);
 
 		// Fallback for scenes without an overlay pass (normally submitted at
-		// the overlay clear, before any UI draw).
-		submit_scene_to_remix();
+		// the overlay clear, before any UI draw). Skipped when the engine drew
+		// no world geometry this frame (paused Escape-menu frames: no clears,
+		// only full-screen 2D quads) — submitting the frozen worldrep + lights
+		// after those quads buries the menu and drops the frame to raster. The
+		// menu quads must be all Remix sees, exactly like the launch menu.
+		auto* u = unproject::get();
+		if (!u || u->m_converted_draws_frame > 0) {
+			submit_scene_to_remix();
+		}
 
 		// Replay the captured HUD overlay depth-sorted as ortho UI, after the
 		// ray-traced scene is complete.
-		if (auto* u = unproject::get()) {
+		if (u) {
 			u->flush_overlay_ui(m_pIDirect3DDevice9);
 		}
 
