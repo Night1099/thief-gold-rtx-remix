@@ -1,9 +1,10 @@
 # Next Session
 
-Updated 2026-07-25 (PM): FFP light mode verified and shipped — current
-release is v0.0.1 "Fixed Remix captures and no more API needed" (history
-reset; v1.x deleted). See the closed sections below. Read `HANDOFF.md` (project state) first, then
-`PHASE4_LIGHTING_HUD.md` (overlay/injection architecture) if unfamiliar.
+Updated 2026-07-25 (PM): no open issues — everything below is closed and
+shipped. Current release is v0.0.2 (Escape-menu fix; release history was
+reset earlier today, v1.x deleted). Next work comes from the Backlog.
+Read `HANDOFF.md` (project state) first, then `PHASE4_LIGHTING_HUD.md`
+(overlay/injection architecture) if unfamiliar.
 
 ## Closed this session — drawn weapon no longer breaks path tracing
 
