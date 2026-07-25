@@ -178,6 +178,20 @@ the offset from a previous session.
 
 ## NEXT: ideas backlog (priority order)
 
+0. **Resident object submission** (in progress): submit rigid prop meshes
+   (lamp posts, crates, torches) from resident LGMD model data with per-object
+   transforms, camera-independent — the engine CPU-clips objects to the screen
+   inside its draw, so off-screen objects emit no geometry and Remix loses
+   their occlusion/GI (lamp-post ground-brightness pop). Engine-side culling
+   is already disabled ([NoCull], live-verified) but cannot fix this layer.
+   Full chain mapped in findings.md "Resident object mesh source". FIRST STEP
+   (needs game running): live-verify model-table index == objId — trace
+   Model_BindTextures 0x5AD290 (ecx=slot) against the objId at the location
+   lookup; if they differ, find the mapping in the render-queue record
+   (+0x14 slot, +0x18 objId). Then: angle compose order via 0x5D7D60, texture
+   slot → IDirect3DTexture9* correlation. Skinned NPCs (LGMM/cCreature) are a
+   separate later phase.
+
 1. **Object darkness parity**: world darkens via lightmap attenuation, but
    objects (unproject path) get no equivalent — they read too bright in dark
    rooms. Dark bakes per-vertex lighting into object RHW draws; try Remix's
