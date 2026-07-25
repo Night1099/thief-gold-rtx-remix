@@ -1,6 +1,7 @@
 # Next Session
 
-Written 2026-07-25. Read `HANDOFF.md` (project state) first, then
+Updated 2026-07-25 (PM): FFP light mode verified and released as v1.2.0 —
+see the closed section below. Read `HANDOFF.md` (project state) first, then
 `PHASE4_LIGHTING_HUD.md` (overlay/injection architecture) if unfamiliar.
 
 ## Closed this session — drawn weapon no longer breaks path tracing
@@ -26,40 +27,35 @@ leaked depth-testing-off into the HUD flush and the following frame (visible as
 lesson applies to any future EndScene replay path: **restore every state you
 set** — `unproject::flush_overlay_ui` is the reference implementation.
 
-## Open — FFP light mode, built + deployed, still needs the A/B test
+## Closed this session — FFP light mode verified, captures contain lights
 
-Unchanged from 2026-07-24; nothing this session touched it.
+Verified in-game 2026-07-25 (`Mode=ffp`, mission lighting matches api path)
+and in a capture: `captures/capture_2026-07-25_13-49-14.usd` references 362
+`lights/light_*.usd` sublayer files. Released as v1.2.0 (commit f4376cc).
+Note: light prims live in the capture's `lights/` subfolder — a grep of the
+top-level .usd alone finds only the sublayer reference.
 
-**Problem:** toolkit captures contain no lights. Remix-API lights
-(`CreateLight`/`DrawLightInstance`) are structurally excluded from captures —
-the capturer iterates only the game FFP light table and the internal
-"externally tracked" table, never `m_externalLights` (verified in dxvk-remix at
-the deployed tag `remix-1.5.2` AND current main — upgrading won't help). Only
-D3D9 fixed-function `SetLight`/`LightEnable` lights are captured and matched
-against toolkit light replacements.
+The first ffp test showed almost no lights ("torches only", then "black
+world" — both were the same symptom: near-zero lights landing). Two
+independent runtime constraints, both fixed:
 
-**Built:** `[Lights] Mode=api|ffp` (default `api`, unchanged behavior). `ffp`
-submits the engine light table via `SetLight(i)`/`LightEnable(i)` before the
-worldrep draws so the runtime's DirtyLights flush lands with this frame's
-geometry. Brightness is calibrated to match the api path: with Attenuation0=1
-the runtime uses Range as the attenuation end-distance,
-radiance = 0.01/(pi*r^2)*Range^2 with r =
-`rtx.lightConversionSphereLightFixedRadius`; the proxy inverts that, so rtx.conf
-pins the option to EmitterRadius (0.4). Light hash = f(position, cone shaping) —
-color excluded, so torch flicker keeps a stable capture/replacement identity.
-Spots map Theta=2*acos(+0x24), Phi=2*acos(+0x28).
+1. **GC on untouched lights.** The runtime re-adds FFP lights only on a
+   DirtyLights frame (a frame with a `SetLight` on an enabled light) and
+   garbage-collects lights untouched for `rtx.numFramesToKeepLights` (100)
+   frames. `submit_ffp` now re-issues `SetLight` for every lit record every
+   frame — do not reintroduce a change-gate.
+2. **8-light enable cap.** dxvk-remix's `enabledLightIndices` slot table is
+   sized by `d3d9.maxEnabledLights` (default 8); `LightEnable` beyond 8
+   concurrent lights silently no-ops (`d3d9_device.cpp` LightEnable — no
+   free slot, returns D3D_OK). `assets/rtx.conf` now sets
+   `d3d9.maxEnabledLights = 768` (= LIGHT_TABLE_CAPACITY); the runtime reads
+   `d3d9.*` options from rtx.conf (verified in the remix-1.5.2 log:
+   "Effective Combined Config for DXVK Options").
 
-**Test:** set `Mode=ffp` in the game-dir INI, launch, load a mission. Expect
-identical-looking lighting (flicker included). Then Ctrl+Shift+Q capture and
-confirm SphereLight prims in the capture USD
-(`grep -ac SphereLight rtx-remix/captures/*.usd` > 0) and lights visible in the
-toolkit. If brightness deviates, tune RadianceScale (conversion clamps at
-`rtx.lightConversionMaxIntensity`). If ffp matches api visually, make `ffp` the
-default and consider retiring the api path + `bridge.conf` requirement.
-
-Files: `engine_lights.{hpp,cpp}`, `d3d9ex.cpp`, `config.{hpp,cpp}`,
-`assets/remix-comp-proxy.ini`, `assets/rtx.conf`.
-Backup: `backups/2026-07-24_1520_ffp-light-mode/`.
+**Follow-up decision, not yet made:** flip the shipped INI default from
+`Mode=api` to `ffp` and retire the api path + `bridge.conf`
+(`exposeRemixApi`) requirement. v1.2.0 still ships `Mode=api` default; the
+game-dir INI is on `ffp`.
 
 ## Open — Escape menu (and HUD) invisible in-mission, diagnosed, not fixed
 
@@ -90,12 +86,14 @@ Escape menu is blank.
 
 **Fix plan (diagnostic first):**
 
-1. Set `[Unproject] DebugLogFrames=5`, load a mission, hit Escape. The existing
-   log only covers the LAUNCH menu — the Escape menu's actual draw signature
-   (0x144 vs 0x142, zenable, depth) is needed before coding. Note
-   `dbg_frame_boundary` only decrements armed frames when a frame has ≥30
-   draws, so menu frames log freely; a large value (e.g. 1500) logs continuously
-   through gameplay if you need to catch a transition.
+1. Capture the Escape menu's draw signature. The 2026-07-25 attempt with
+   `DebugLogFrames=5` failed to catch it: launch-menu frames log freely (<30
+   draws don't decrement the armed count), so the log burned ~575 launch-menu
+   frames and then the 5 armed frames on the first gameplay frames — it ended
+   before Escape was pressed. Use a large value (e.g. 1500) and hit Escape
+   promptly after loading. The launch menu showed both variants again
+   (`ui:flat-rhw` 0x144 pre-resolution-change, `other:fvf` 0x142 after);
+   in-mission Escape signature still unknown.
 2. If the Escape menu draws are RHW (0x144): capture instead of passing through
    when `ZENABLE==FALSE && flat rhw && depth≈1.0` — queue into
    `m_overlay_draws` so `flush_overlay_ui` replays them at EndScene after scene
