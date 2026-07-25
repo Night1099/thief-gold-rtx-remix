@@ -317,6 +317,8 @@ namespace comp
 		}
 		m_scene_submitted = true;
 
+		game::no_cull_tick();
+
 		// Lights first: FFP light state must be set before the worldrep draws
 		// so the runtime flushes it with this frame's geometry.
 		if (engine_lights::is_initialized()) {

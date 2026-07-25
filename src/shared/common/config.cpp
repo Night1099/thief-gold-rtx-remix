@@ -120,6 +120,9 @@ namespace shared::common
 		lights.cone_angle_deg = get_float("Lights", "ConeAngleDeg", 70.0f);
 		lights.cone_softness = get_float("Lights", "ConeSoftness", 0.5f);
 
+		// [NoCull] — engine-side visibility culling override
+		nocull.mode = std::clamp(get_int("NoCull", "Mode", 0), 0, 2);
+
 		// [Diagnostics]
 		diagnostics.enabled = get_bool("Diagnostics", "Enabled", true);
 		diagnostics.auto_capture = get_bool("Diagnostics", "AutoCapture", true);

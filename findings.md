@@ -1159,3 +1159,216 @@ situation the launch menu already renders correctly. Verified in-game
 
 **Invariant: the EndScene fallback must stay gated on world draws.** An
 unconditional fallback resubmits the frozen scene on every paused frame.
+
+## Engine-side culling disable — static analysis (2026-07-25)
+
+### Summary
+Thief's per-frame visibility is a **two-stage** system, and the premise in the task
+brief needs one correction: `examine_portals (0x4CD1C0)` is **not** the gate that
+decides which cells get visited. It only builds the per-cell *outgoing-portal table*
+(`g_outgoingPortals 0x810BF0`, count `0x860C34`, cap 0x28000) used for BFS ordering
+(region+0x1b "pending predecessors") and for dedup (`0x4CD170`). Patching it changes
+traversal *order*, not traversal *membership*.
+
+The real cell gate is **`portal_expand_cell (0x4CC0F0)`**, called once per processed
+cell from `portal_traverse_scene` at `0x4CDB63`. For each outgoing portal it applies
+three tests before calling `portal_visit_cell (0x4CD490)` (which does
+`g_travQueue[g_travFrontierCount++] = destCell`):
+
+| # | Test | Site | Failure branch |
+|---|------|------|----------------|
+| G1 | portal backface: `dot(plane.xyz, camPos)+plane.d > g_portalPlaneThreshold(0x73D244 = 0.0f)` | `0x4CC206 fcomp` | `0x4CC211: 75 78  jne 0x4CC28B` |
+| G2 | screen-space clip of the portal polygon against the parent region's clip rect (`0x4D3340` returns NULL) | `0x4CC221 call` | `0x4CC22D: 74 5C  je 0x4CC28B` |
+| G3 | portal draw-distance (only when `g_portalDistCullEnable 0x860C20 != 0`) via `0x4CC0A0` vs `g_portalDistThreshold 0x860D44` | `0x4CC247 call` | `0x4CC251: 75 19  jne 0x4CC26C` (inverted; failure falls through to the free-region path at 0x4CC253) |
+
+**G2 cannot be NOP'd** — `EDI` is the freshly allocated clip-region pointer that
+`0x4CD490` consumes; forcing the branch not-taken passes garbage/NULL downstream.
+
+**The engine already contains a fully un-culled expand path.** At the top of
+`0x4CC0F0`:
+
+```
+0x004CC12B: F6 C1 20      test cl, 0x20        ; cl = WRCell->flags (+0x06)
+0x004CC12E: 74 77         je   0x4CC1A7        ; -> normal, culled path
+;   fall-through 0x4CC130..0x4CC198 = UNCONDITIONAL path:
+;   every portal enqueued via portal_visit_cell_unclipped (0x4CD6C0), which
+;   allocates a FULL-SCREEN clip region: 0x4D0A40(*(0x9E4BE8+8), *(0x9E4BE8+0xA))
+;   -> no plane test, no screen clip, no distance test.
+```
+
+Cell flag bit 0x20 is therefore an engine-native "expand this cell's portals without
+culling" flag. Forcing that path for every cell is the single cleanest way to make
+the portal walk visit the whole level, and it has the very useful side effect of
+giving every visited cell a **full-screen clip rect**, which in turn makes the
+object screen-rect test (stage 2) pass automatically.
+
+### Object culling mechanism (the key unknown — now resolved)
+
+Objects are **not** culled by a per-object frustum test. They are culled by
+*cell membership plus a screen-rect test against their owning cell's portal clip rect*,
+and the final draw is gated by one byte array.
+
+Pipeline, all driven from `WRRenderScene (0x4CE030)`:
+
+1. `memset(g_objInRenderList 0xC255E0, 0, min(numObjs, 0x2000))` — per-frame dedup reset (`0x4CE4B6`).
+2. **Gather** — `for i in 0..g_travProcessedCount: obj_gather_in_cell(g_wrCells[g_travQueue[i]])`
+   (`0x4CCF00`, driven at `0x4CE4EE`). Walks the cell's resident-object linked list
+   (`WRCell+0x2C` into node array `*0x9E51C0`; node `+4`=objId, `+8`=next) and, for each
+   object not already flagged in `g_objInRenderList`:
+   - creates a display node in `g_objNodes 0xB13820` (stride 10; `+0` objId, `+4` next,
+     `+6` cellPtr/type), count `g_objNodeCount 0xC19ACC`, **cap 0x1800**;
+   - links it into the cell region's list head `region+0x1c`;
+   - records `g_objOwnerCell[objId] = cell` (`0xC19B40`) and `g_objHeadNode[objId]` (`0xC288A0`);
+   - appends objId to `g_objRenderList 0xB3B9A0` (count `0xB1378C`, **cap 0x800**).
+
+   **Objects in cells the portal walk never reached are never gathered.** `0x4CCF00`
+   dereferences `*(cell+0x28)` (the per-frame region), which is NULL for unvisited
+   cells — so you cannot simply widen the driver loop to all cells; it would crash.
+3. **Cull test** — `for j in 0..g_objRenderListCount: obj_cull_test(g_objRenderList[j])`
+   (`0x4CC950`, driven at `0x4CE511`). Gets the object's screen AABB from `0x5BF340`,
+   compares it against the owning cell region's 8-int clip rect (`**(cell+0x28)`), then
+   runs a cross-cell occlusion scan (`0x4CC5C0` over `g_travQueue[visitOrder..g_travProcessedCount]`).
+   On rect failure it sets **`g_objHidden[objId] = 1`**.
+4. `obj_cull_post_pass (0x4CCDE0)`.
+5. **Draw** — inside each cell's render (`RenderCell` 0x4D1FB0 / 0x4D2410 / 0x4D2AD0),
+   `RenderCell_DrawObjects (0x4D3000)` walks `region+0x1c` and calls the object draw
+   callback `(**0x7A84E4)(objId, ctx, nodeType)` **only when `g_objHidden[objId] == 0`**.
+   `0x4D2FA0` is the single-object variant.
+
+**`g_objHidden` = byte array at `0x00B39980`, indexed by object id, is THE object
+visibility gate.** Writers of `1`: `0x4CC969` (object has no render data — legitimate),
+`0x4CCA2E` (clip-rect reject — the cull we want to defeat), `0x4CCD34` (batch pass
+`0x4CCBF0`). Readers: `0x4D2FAE`, `0x4D3074`, `0x4D30AF`, `0x4CCAAF`, `0x4CCE3A`, `0x4CD05B`.
+
+`g_useNodeObjPass (0x78BBB9)` = 1 in the shipped image, so the `0x4CC950` / `0x4CCDE0`
+path is the live one; the `0x4CCBF0` batch path is the `==0` alternative.
+
+### Light visible-list (task 3) — lighting only, gates nothing
+
+`Light_CullTestToVisibleList (0x5AB210)` has exactly **one** caller:
+`Light_GatherAtVertex (0x5AB3E0)`, itself reached from `Light_ShadeObject (0x5AB6D0)`
+per shaded object/point. It copies a 0x30-byte light record from
+`g_lightTable 0x9EA660` into `g_visibleLights 0xA026A0` (cap 32) and returns
+`count < 0x20`. Crucially, the candidate set comes from **the object's own cell's
+light index list at `WRCell+0x40`** — *not* from the portal traversal — plus a
+radius + LOS test (`0x4DF540`) for dynamic lights. The filled array is consumed only
+by `Light_AccumVertexColor (0x5A9450)` to produce a software vertex colour.
+
+**Conclusion:** the 32-entry list is pure software vertex lighting for objects. It
+does not gate submission, draw calls, or which lights exist. No patch is needed for
+the Remix proxy, which reads the master table at `0x9EA660` directly. The only
+observable effect of the 32 cap would be object *shading* accuracy in dense-light
+cells, and it is unaffected by cell visibility.
+
+### Proposed patches
+
+All VAs are file/preferred-base (0x400000). The live process observed so far loads at
++0x480000 delta — add that for `livetools mem write`.
+
+**P1 — force un-culled portal expansion for every cell (2 bytes) [primary]**
+
+| | |
+|---|---|
+| VA | `0x004CC12E` |
+| Original | `74 77`  (`je 0x4CC1A7`) |
+| Patched | `90 90`  (NOP NOP) |
+| Effect | every cell takes the `flags & 0x20` unconditional path: all outgoing portals enqueued via `0x4CD6C0`, no plane/clip/distance test, each visited cell gets a **full-screen** clip region. Traversal flood-fills the whole portal-connected level. |
+
+**P2 — never mark an object hidden on the clip-rect reject (1 byte) [recommended companion]**
+
+| | |
+|---|---|
+| VA | `0x004CCA34` (imm8 of `C6 85 80 99 B3 00 01` at `0x004CCA2E`) |
+| Original | `01` |
+| Patched | `00`  (yields `mov byte [ebp+0xB39980], 0`) |
+| Effect | the screen-rect reject in `obj_cull_test` no longer hides the object; the "no render data" reject at `0x4CC969` is deliberately left intact. |
+
+**P3 — ignore `g_objHidden` at the draw sites (2 bytes x3) [only if P2 proves insufficient]**
+
+| VA | Original | Patched | Where |
+|---|---|---|---|
+| `0x004D307A` | `75 08` | `90 90` | `RenderCell_DrawObjects` collect loop |
+| `0x004D30B5` | `75 29` | `90 90` | `RenderCell_DrawObjects` overflow loop |
+| `0x004D2FB5` | `75 3D` | `90 90` | `RenderCell_DrawObject1` |
+
+Riskier than P2: it also forces the draw callback for objects whose
+`PTR_objGetRenderData (0x7A84E8)` returned 0.
+
+**P4 — narrow alternative to P1: kill only the portal backface test (2 bytes)**
+
+| | |
+|---|---|
+| VA | `0x004CC211` |
+| Original | `75 78` (`jne 0x4CC28B`) |
+| Patched | `90 90` |
+| Effect | back-facing portals are still screen-clipped by G2, so this adds only a handful of cells. Not sufficient for "all cells" — listed for completeness / as a low-risk experiment. |
+
+**P5 — data-only knobs (no code patch, fully reversible with `livetools mem write`)**
+
+- `*(int*)0x00860C20 = 0` — disables the portal draw-distance cull (`0x4CC0A0` / `0x860D44`). Zero risk, small gain.
+- `*(float*)0x0073D244` — the portal/poly backface threshold. **Do not touch**: it is shared with world-poly backface tests (`0x4D1600`) and would invert world geometry rendering.
+
+### Capacity / guard analysis for P1
+
+| Guard | Site | Limit | Behaviour on overflow |
+|---|---|---|---|
+| Region pool | `0x4CD2DC cmp edi,0x5000` | 0x5000 = 20480 regions, one per visited cell | `region_alloc_for_cell` returns 1, cell silently not visited. MAX_CELLS is approx 0x2000, so **safe**. |
+| Traversal iteration cap | `0x4CDB69 cmp ebp,0x5000` / `0x4CDB6F 74 10` | 20480 iterations | prints `WARNING: Apparent cell cycle in portal_traverse_scene (cell %d, center %g %g %g)` and clamps `g_travProcessedCount = g_travFrontierCount`. One iteration per cell, so **safe** at <=0x2000 cells. If it ever trips, patch `0x4CDB6F: 74 10 -> 90 90`. |
+| Outgoing-portal table | `0x4CD27D cmp eax,0x28000` | 163840 entries | prints `examine_portals: Overflowed outgoing_portals table.`; **safe**. |
+| Object display nodes | `0x4CCF00` `g_objNodeCount < 0x1800` | 6144 nodes | sets `g_objGatherLoopBound (0x860C1C) = 0`, aborting the remaining cell gather. **Graceful truncation — expect this on large missions.** |
+| Object render list | `0x4CCF00` `count < 0x800` | 2048 objects | silently dropped. **Graceful; likely hit on object-dense missions.** |
+| Clip-region pool | `0x7A821C == -2` reached at `0x4CE23C` | pool `0xA73320`, stride 0x20 | prints `ClipAlloc: Scene complexity too high.` **This is the real risk with P1** — one region per portal per cell. Monitor it live. |
+
+### Perf / side effects
+
+- P1 makes `WRRenderScene` software-transform (`WRXformCellVerts`) and rasterize world
+  geometry for **every** portal-connected cell, not just the visible set. Thief's world
+  render is CPU-bound software T&L plus span fill; expect a large frame-time increase on
+  missions with hundreds of cells. Since the proxy freezes/submits world geometry
+  separately, that raster work is discarded — pure waste.
+- **You cannot stub the cell render to recover it**: object drawing happens *inside*
+  `RenderCell` via `RenderCell_DrawObjects (0x4D3000)`. A perf patch would have to skip
+  only the render-poly loop inside `0x4D1FB0` / `0x4D2410` / `0x4D2AD0` while preserving
+  the `0x4D3000` call. That is a larger, per-renderer patch — treat as follow-up work,
+  not part of the minimal set.
+- P1 also sets `g_sawUnclippedCell (0x9CD890) = 1`, which makes `WRRenderScene` call
+  `0x5F2AB0` once per frame when `0xA6D0E0 != 0`. Verify live that this is benign.
+- P2 alone (no P1) is cheap and has essentially zero perf cost: it only rescues objects
+  whose cell *was* reached but whose screen AABB fell outside the portal clip rect —
+  i.e. NPCs partially or fully behind a doorway edge. It does **not** reach objects in
+  unvisited cells.
+
+### Recommended minimal set
+
+1. Start with **P2 alone** (1 byte at `0x4CCA34`) plus **P5** (`*0x860C20 = 0`). Zero
+   perf cost; confirms the `g_objHidden` gate is the right lever and fixes the common
+   "NPC pops out at the doorway edge" case.
+2. If full-level object/light submission is required, add **P1** (2 bytes at `0x4CC12E`).
+   With P1's full-screen clip rects, P2 becomes largely redundant but harmless.
+3. Reserve **P3** for the case where objects still fail to appear after P1+P2, and
+   **P4** only as a diagnostic.
+
+### Suggested live verification
+
+1. Attach, read `g_travProcessedCount` (`0xC28880` + 0x480000 = `0x10A8880`) and
+   `g_wrCellCount` (`0xEDDEB8`) each frame. Baseline: processed much less than total.
+   After P1 they should converge.
+2. `livetools bp 0x94C950` (= `0x4CC950` + 0x480000) and log `g_objHidden[objId]`
+   before/after to count how many objects the rect test currently kills per frame.
+3. `livetools trace 0x953000` (= `0x4D3000`) counting `(**0x7A84E4)` invocations per
+   frame — this is the true "objects submitted" number. Compare pre/post patch.
+4. Watch `g_objNodeCount 0xC19ACC` (`0x1099ACC`) and `g_objRenderListCount 0xB1378C`
+   (`0xF9378C`) against their 0x1800 / 0x800 caps after P1 to see whether truncation
+   kicks in on the target mission.
+5. Watch for the console strings `ClipAlloc: Scene complexity too high.` and
+   `Apparent cell cycle in portal_traverse_scene` after enabling P1.
+6. `mem write` `*0x860C20` (`0xCE0C20`) = 0 first — it is a pure data toggle and needs
+   no code patching, so it is the safest thing to try before any byte patch.
+
+### Tooling note
+`pyghidra_backend.py decompile` returned `no function found at <va>` for every address
+this session even though `status` reports the project analyzed and `funcs` in index.db
+has correct boundaries (`0x4CD1C0`, size 263, source=ghidra). The warm daemon on port
+27043 also blocked `--cold`. All decompilation above came from the r2ghidra backend
+(`--backend pdg`), cross-checked against `retools.disasm` byte output for every patch
+site quoted. The pyghidra address-resolution bug is worth a separate look.

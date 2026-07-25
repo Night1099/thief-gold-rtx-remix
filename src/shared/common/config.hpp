@@ -78,6 +78,15 @@ namespace shared::common
 			float cone_softness = 0.5f;   // penumbra fraction for forced spots
 		} lights;
 
+		struct nocull_settings
+		{
+			// 0 = engine culling untouched
+			// 1 = objects only: clear the screen-rect object reject + portal draw distance
+			// 2 = full: also flood-fill the portal walk so every cell (and its
+			//     resident objects) is submitted every frame
+			int mode = 0;
+		} nocull;
+
 		struct remix_settings
 		{
 			bool enabled = true;

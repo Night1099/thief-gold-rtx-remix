@@ -110,6 +110,7 @@ BOOL APIENTRY DllMain(HMODULE hmodule, const DWORD ul_reason_for_call, LPVOID)
 
 		// Setup memory addresses (eg. patterns)
 		comp::game::init_game_addresses();
+		comp::game::apply_no_cull();
 
 		// Find game window thread (registers modules once window is found)
 		if (const auto t = CreateThread(nullptr, 0, comp::find_game_window, nullptr, 0, nullptr); t) {

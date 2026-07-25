@@ -12441,3 +12441,85 @@ $ 0x9EA600 float g_sceneCamPosX    // alt whole-transform copy written by WRRend
 $ 0x9EA60C unsigned int g_sceneCamAng0  // alt cam angles (feed later scene code)
 $ 0x9CDB4C void* g_pRenderCam      // ptr to active render camera object; pos[+8..+0x10], angles[+0x14],[+0x18]
 $ 0x860BF0 float g_wrCamStagePosX  // staging pos inside WRCacheRenderCam (= *cam_transform)
+
+// ============================================================================
+// Engine-side visibility culling (portal walk + object gather) — 2026-07-25
+// ============================================================================
+
+// --- Portal traversal (BFS over portal-connected cells) ---
+@ 0x4CDAD0 void __cdecl portal_traverse_scene(int startCell);   // BFS driver; per-iter: 0x4CD790 pick, 0x4CD450, 0x4CC0F0 expand
+@ 0x4CC0F0 void __fastcall portal_expand_cell(void); // ESI=WRCell*; THE cell-visibility gate. Enqueues dest cells via 0x4CD490
+@ 0x4CD1C0 void __fastcall examine_portals(void);    // EAX=WRCell*; builds outgoing-portal table only (BFS ordering/dedup), NOT a visit gate
+@ 0x4CD170 char __fastcall portal_dest_in_outgoing_list(void);  // EAX=cellIdx, EDI=WRCell*; dedup helper for examine_portals
+@ 0x4CD2D0 char __fastcall region_alloc_for_cell(void);  // ESI=WRCell*; allocs region from pool 0xB3DAC0, returns 1 if pool full (0x5000)
+@ 0x4CD490 void __cdecl portal_visit_cell(void* clipRegion, WRCell* fromCell, void* portal); // EDI=destCellIdx; g_travQueue[g_travFrontierCount++]=destCell
+@ 0x4CD6C0 void __cdecl portal_visit_cell_unclipped(WRCell* fromCell, void* portal); // EDI=destCellIdx; FULL-SCREEN clip region, no plane/clip/dist test
+@ 0x4CD790 int __cdecl portal_pick_next_cell(void);  // best-first: min region+0x08 (avg depth) with region+0x1b==0
+@ 0x4CD450 void __fastcall portal_release_pred_counts(void); // EAX=WRCell*; decrements region+0x1b of outgoing dests
+@ 0x4D3340 void* __thiscall portal_get_clip_info(WRCell* cell, int vbase, void* parentRegion); // returns clip region or NULL if portal clipped away
+@ 0x4CC0A0 int __fastcall portal_within_draw_distance(void); // EAX=WRCell*, ECX=poly; any vtx z < g_portalDistThreshold
+
+// --- Object gather / cull / draw ---
+@ 0x4CE030 void __cdecl WRRenderScene(void* camCtx, float fovScale); // top-level; drives traversal, object gather, cell render
+@ 0x4CCF00 void __fastcall obj_gather_in_cell(void); // ESI=WRCell*; walks cell+0x2C obj list -> g_objNodes/g_objRenderList
+@ 0x4CC950 void __cdecl obj_cull_test(int objId);    // screen-AABB vs cell clip rect + cross-cell occlusion; sets g_objHidden[objId]
+@ 0x4CC850 void __cdecl obj_relink_visible_nodes(int objId); // marks display nodes type=1 (drawable)
+@ 0x4CC5C0 int __cdecl obj_occluded_by_cell(WRCell* cell, ...); // per-cell portal occlusion scan
+@ 0x4CCDE0 void __cdecl obj_cull_post_pass(void);
+@ 0x4CCBF0 void __cdecl obj_cull_test_batch(void);   // alternate object pass (taken when g_useNodeObjPass==0)
+@ 0x4D3000 void __cdecl RenderCell_DrawObjects(void); // walks region+0x1c nodes, draws when g_objHidden[objId]==0
+@ 0x4D2FA0 void __cdecl RenderCell_DrawObject1(uint32_t ctx); // AX=nodeIdx; single-object variant of 0x4D3000
+@ 0x4D2D70 void __cdecl obj_sort_nodes_by_depth(int16_t* nodes, int count);
+
+// --- Object lighting (NOT a visibility gate) ---
+@ 0x5AB210 bool __cdecl Light_CullTestToVisibleList(float* outCount); // EAX=lightIdx, ECX=pos; copies 0x30B light rec -> g_visibleLights, ret count<32
+@ 0x5AB3E0 void __cdecl Light_GatherAtVertex(float* pos, void* cellCtx, uint32_t* mask, float bright); // uses WRCell+0x40 light list
+@ 0x5AB6D0 void __fastcall Light_ShadeObject(void);  // EAX=locationId
+@ 0x5A9450 void __cdecl Light_AccumVertexColor(float* visibleLights, float bright);
+
+// --- Portal traversal globals ---
+$ 0x00C19AD8 int g_travFrontierCount        // cells enqueued this frame
+$ 0x00C28880 int g_travProcessedCount       // cells visited this frame (= visible cell count)
+$ 0x00B22840 int g_travQueue[]              // cell-index BFS queue
+$ 0x00B3DAA4 int g_regionPoolCount          // cap 0x5000
+$ 0x00B3DAC0 char g_regionPool[]            // stride 0x2C; cell+0x28 points here
+$ 0x00810BF0 uint16_t g_outgoingPortals[]   // cap 0x28000 dest-cell ids
+$ 0x00860C34 int g_outgoingPortalCount
+$ 0x0073D244 float g_portalPlaneThreshold   // = 0.0f; portal/poly backface test constant (SHARED with world polys)
+$ 0x00860C20 int g_portalDistCullEnable     // !=0 enables the 0x4CC0A0 z-distance portal cull
+$ 0x00860D44 float g_portalDistThreshold
+$ 0x009CD890 int g_sawUnclippedCell         // set by the flags&0x20 unconditional-expand path
+$ 0x009CD8B4 int g_traversalAbort           // set when a sky/special texture id is seen; halts traversal
+$ 0x00A73320 char g_clipRegionPool[]        // stride 0x20; free list head g_clipRegionFree
+$ 0x007A821C int g_clipRegionFree           // -2 => "ClipAlloc: Scene complexity too high."
+
+// --- Object render-list globals (indexed by object id unless noted) ---
+$ 0x00B39980 uint8_t g_objHidden[]          // 1 = culled this frame; THE object visibility gate read by 0x4D3000/0x4D2FA0
+$ 0x00C255E0 uint8_t g_objInRenderList[]    // dedup flag, memset each frame (min(numObjs,0x2000))
+$ 0x00C288A0 int16_t g_objHeadNode[]        // first display-node index for object, 0xFFFF = none
+$ 0x00C19B40 WRCell* g_objOwnerCell[]       // cell whose gather claimed the object
+$ 0x00B13820 char g_objNodes[]              // display nodes, stride 10: +0 objId(u32) +4 next(i16) +6 cell/type(i16)
+$ 0x00C19ACC int g_objNodeCount             // cap 0x1800
+$ 0x00C21CA0 uint8_t g_objNodeLive[]        // per-node flag
+$ 0x00B3B9A0 int g_objRenderList[]          // object ids to cull-test; cap 0x800
+$ 0x00B1378C int g_objRenderListCount
+$ 0x00860C1C int g_objGatherLoopBound       // = g_travProcessedCount; zeroed on node-pool overflow to abort gather
+$ 0x009E51C0 void** g_objCellListNodes      // obj-in-cell linked nodes: +4 objId, +8 next; head index at WRCell+0x2C
+$ 0x0078BBB9 uint8_t g_useNodeObjPass       // =1 -> 0x4CC950/0x4CCDE0 path; =0 -> 0x4CCBF0 batch path
+$ 0x007A84E4 void* PTR_objDrawCallback      // (objId, ctx, nodeCellOrType)
+$ 0x007A84E8 void* PTR_objGetRenderData     // returns 0 -> object has nothing to draw
+
+// --- Lighting globals (see also earlier Lighting section) ---
+$ 0x009EA660 float g_lightTable[]           // master light records, stride 0x30
+$ 0x00A026A0 float g_visibleLights[]        // per-shade-point gathered lights, stride 0x30, CAP 32 (software vertex lighting ONLY)
+
+// WRCell fields discovered/confirmed in this pass:
+//   +0x06 u8 flags   (bit 0x08 = skip-render unless g_forceRender 0x9CBFAF; bit 0x20 = expand portals UNCLIPPED)
+//   +0x28 Region*    per-frame traversal region (NULL = cell not visited this frame)
+//   +0x2C u16/int    head index into g_objCellListNodes (objects resident in this cell)
+//   +0x40 uint32_t*  cell light-index bitmask run list (used by Light_GatherAtVertex)
+// Region (0x2C bytes, pool 0xB3DAC0):
+//   +0x00 ClipRegion**  +0x04 vtxCache  +0x08 float avgDepth  +0x0C/+0x10/+0x11 light ctx
+//   +0x14 float lodDist +0x18 u8 processed  +0x19 u8 numOutgoingPortals  +0x1A u8 accumFlags
+//   +0x1B u8 pendingPredecessors  +0x1C i16 objNodeListHead  +0x20 u32 outgoingPortalBase
+//   +0x24 u32 clipDirty +0x28 int visitOrder

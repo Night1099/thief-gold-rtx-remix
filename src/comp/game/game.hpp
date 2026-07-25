@@ -61,4 +61,20 @@ namespace comp::game
 	void patch_render_device_globals(IDirect3DDevice9* wrapped, IDirect3DDevice9* raw);
 
 	extern void init_game_addresses();
+
+	// Engine-side visibility culling override ([NoCull] Mode in the INI).
+	// Evidence: findings.md "Engine-side culling disable" (2026-07-25).
+	//
+	// Mode >= 1 (objects): obj_cull_test's clip-rect reject (0x4CCA34) writes 0
+	// instead of 1 into g_objHidden[objId] (0xB39980), and the portal draw
+	// distance (0x860C20) is zeroed every frame (the engine rewrites it).
+	// Mode >= 2 (full): portal_expand_cell's flags test je (0x4CC12E) is NOPed
+	// so every cell takes the existing unconditional-expand path — the portal
+	// walk flood-fills the level and all resident objects are gathered.
+	constexpr uint32_t VA_NOCULL_OBJ_REJECT   = 0x4CCA34u; // imm8 of mov byte [ebp+0xB39980], 1
+	constexpr uint32_t VA_NOCULL_EXPAND_JE    = 0x4CC12Eu; // je +0x77 after test cl, 0x20
+	constexpr uint32_t VA_PORTAL_DRAW_DIST    = 0x860C20u; // int, portal distance cull
+
+	void apply_no_cull();  // one-time code patches; call after config load
+	void no_cull_tick();   // per-frame data re-assert (draw distance)
 }
