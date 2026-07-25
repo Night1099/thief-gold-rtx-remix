@@ -62,7 +62,6 @@ Thief Gold port (worldrep reconstruction, engine lights, HUD replay, camera work
 
 - [Dear ImGui](https://github.com/ocornut/imgui) — debug overlay
 - [MinHook](https://github.com/TsudaKageyu/minhook) — function hooking
-- [RTX Remix Bridge API](https://github.com/NVIDIAGameWorks/rtx-remix) — Remix integration
 
 ## License
 
