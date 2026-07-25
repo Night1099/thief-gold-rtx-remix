@@ -30,9 +30,10 @@ Remix can path-trace it.
    client) is **renamed to `d3d9_remix.dll`** so this proxy can take the
    `d3d9.dll` name. The Remix release ships no file called `d3d9_remix.dll`;
    `.trex/d3d9.dll` is the ~190 MB renderer and keeps its name.
-   Required confs in game dir: `bridge.conf` (`exposeRemixApi = True` — Remix
-   API dies with code 11 without it), `rtx.conf` (`rtx.orthographicIsUI = True`
-   — the HUD depends on it; canonical copy in `assets/rtx.conf`).
+   Required conf in game dir: `rtx.conf` (`rtx.orthographicIsUI = True` — the
+   HUD depends on it; `d3d9.maxEnabledLights = 768` — lights die past 8
+   without it; canonical copy in `assets/rtx.conf`). `bridge.conf` is no
+   longer needed — the Remix API path was retired 2026-07-25.
    **PITFALL**: "Save Settings" in the Remix menu writes `user.conf` and can
    DELETE `rtx.conf` (observed 2026-07-18 — HUD/exposure keys silently lost).
    After any Remix-menu save, verify `rtx.conf` still exists; restore from
@@ -104,9 +105,10 @@ Remix can path-trace it.
     https://github.com/Night1099/thief-gold-rtx-remix (MIT). A GitHub Actions
     workflow (`.github/workflows/release.yml`) builds `d3d9.dll` on every push
     and, on `v*` tags, publishes a drop-in release zip (`d3d9.dll`,
-    `remix-comp-proxy.ini`, `rtx.conf`, `bridge.conf`, `INSTALL.txt` — all
-    sourced from `assets/`). Cutting a release = `git tag v1.x.x && git push
-    origin v1.x.x`. v1.0.0 is live. The whitelist `.gitignore` excludes
+    `remix-comp-proxy.ini`, `rtx.conf`, `INSTALL.txt` — all sourced from
+    `assets/`). Cutting a release = `git tag vX.Y.Z && git push origin
+    vX.Y.Z`. Release history was reset 2026-07-25: v1.x deleted,
+    versioning restarted at v0.0.1. The whitelist `.gitignore` excludes
     backups/, ghidra/, traces/, index.db, *.pdb, and `assets/.trex/` (NVIDIA
     runtime — never commit). `build.bat` falls back to vswhere when the
     hardcoded VS 2022 paths miss (CI runners, newer VS). Commit + push + tag
@@ -120,7 +122,7 @@ build.bat release --name ThiefGold          # -> build/bin/release/d3d9.dll  (wa
 ```
 Deploy `d3d9.dll` (+ `remix-comp-proxy.ini` if changed) to
 `F:\SteamLibrary\steamapps\common\thief_gold` (game must be closed). Keep
-`bridge.conf`/`rtx.conf` intact (see above). The user launches + loads a
+`rtx.conf` intact (see above). The user launches + loads a
 mission; a console window shows the proxy log.
 
 INI toggles (`[Worldrep]`, `[Unproject]`, `[Lights]`, `[Remix]`) allow falling

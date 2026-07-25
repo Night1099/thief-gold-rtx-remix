@@ -52,10 +52,12 @@ independent runtime constraints, both fixed:
    `d3d9.*` options from rtx.conf (verified in the remix-1.5.2 log:
    "Effective Combined Config for DXVK Options").
 
-**Follow-up decision, not yet made:** flip the shipped INI default from
-`Mode=api` to `ffp` and retire the api path + `bridge.conf`
-(`exposeRemixApi`) requirement. v1.2.0 still ships `Mode=api` default; the
-game-dir INI is on `ffp`.
+**Follow-up done same day:** the api path is retired — FFP is the only
+submission mode. `remix_api` module, `deps/bridge_api`, the `[Lights] Mode`
+key, and the shipped `bridge.conf` are all removed (commit "Retire the
+Remix API light path"). Verified in-game. Release history was reset:
+all v1.x releases/tags were deleted and versioning restarted at v0.0.1
+("Fixed Remix captures and no more API needed").
 
 ## Open — Escape menu (and HUD) invisible in-mission, diagnosed, not fixed
 
