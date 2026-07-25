@@ -12523,3 +12523,179 @@ $ 0x00A026A0 float g_visibleLights[]        // per-shade-point gathered lights, 
 //   +0x14 float lodDist +0x18 u8 processed  +0x19 u8 numOutgoingPortals  +0x1A u8 accumFlags
 //   +0x1B u8 pendingPredecessors  +0x1C i16 objNodeListHead  +0x20 u32 outgoingPortalBase
 //   +0x24 u32 clipDirty +0x28 int visitOrder
+
+// ============================================================================
+// Resident object (prop/model) mesh source — 2026-07-25 static analysis
+// See findings.md "Resident object mesh source — static analysis (2026-07-25)"
+// ============================================================================
+
+// LGMD model blob: the raw on-disk header kept verbatim in memory. All off_*
+// fields are self-relative to the blob base and valid at runtime (proof:
+// Model_SetupPointers 0x5E33B0 is nothing but base + offset for all 8 arrays).
+struct LGMDModel {
+    char   magic[4];          // +0x00 "LGMD"
+    unsigned int version;     // +0x04 >=4 enables mat_flags / mat_extra
+    char   name[8];           // +0x08
+    float  radius;            // +0x10 object bounding radius (used by 0x5BF4C0)
+    float  max_poly_radius;   // +0x14
+    float  bbox_max[3];       // +0x18
+    float  bbox_min[3];       // +0x24
+    float  parent_cen[3];     // +0x30
+    unsigned short num_pgons; // +0x3C
+    unsigned short num_verts; // +0x3E
+    unsigned short num_parms; // +0x40
+    unsigned char  num_mats;  // +0x42
+    unsigned char  num_vcalls;// +0x43
+    unsigned char  num_vhots; // +0x44
+    unsigned char  num_objs;  // +0x45 sub-object count (stride 0x5D)
+    unsigned int off_objs;    // +0x46
+    unsigned int off_mats;    // +0x4A  material records, stride 0x1A
+    unsigned int off_uv;      // +0x4E  float2 UVs, stride 8
+    unsigned int off_vhots;   // +0x52  stride 0x10
+    unsigned int off_verts;   // +0x56  MODEL-SPACE float3, stride 0xC
+    unsigned int off_light;   // +0x5A
+    unsigned int off_norms;   // +0x5E  float3 normals, stride 0xC
+    unsigned int off_pgons;   // +0x62  variable-length pgon records
+    unsigned int off_nodes;   // +0x66  BSP node tree
+    unsigned int model_size;  // +0x6A  total blob size
+    unsigned int mat_flags;      // +0x6E (v4+)
+    unsigned int off_mat_extra;  // +0x72 (v4+)
+    unsigned int size_mat_extra; // +0x76 (v4+)
+};
+
+// Variable-length: total size = 0x0C + n*2*(3 if (type&7)==3 else 2).
+// vert[n] at +0x0C, norm_idx[n] at +0x0C+n*2, uv_idx[n] at +0x0C+n*4.
+struct LGMDPgon {
+    unsigned short index;     // +0x00
+    unsigned short data;      // +0x02 MATERIAL SLOT -> g_modelTexSlots[data]
+    unsigned char  type;      // +0x04 &7: 1=solid 2=wire 3=textured; &0x18 lighting; &0x60 colour src
+    unsigned char  num_verts; // +0x05
+    unsigned short norm;      // +0x06 index into off_norms
+    float          d;         // +0x08 plane distance (backface test)
+};
+
+struct LGMDMaterial {         // stride 0x1A = 26
+    char          name[16];   // +0x00
+    unsigned char type;       // +0x10 0 = textured, 1 = flat colour
+    unsigned char slot;       // +0x11 == LGMDPgon.data
+    unsigned char extra[8];   // +0x12
+};
+
+struct LGMDSubObject {        // stride 0x5D = 93 (engine), 2 more than the 91-byte community layout
+    char          name[8];    // +0x00
+    unsigned char movement;   // +0x08 0=static 1=rotate joint 2=slide joint
+    unsigned char joint_idx;  // +0x09 index into *g_mdl_pJointAngles
+    unsigned char parm_pad[11];// +0x0A .. +0x14 (parm / min_range / max_range)
+    float         rot[9];     // +0x15 3x3 basis   (MEDIUM confidence)
+    float         location[3];// +0x39 translation (HIGH — rescaled by 0x5E5B60)
+    unsigned char parent_pad[4];// +0x45 parent + 2 unmapped bytes
+    unsigned short vhot_start, num_vhots;   // +0x49 +0x4B (MEDIUM)
+    unsigned short point_start, num_points; // +0x4D +0x4F (MEDIUM)
+    unsigned short light_start, num_lights; // +0x51 +0x53 (MEDIUM)
+    unsigned short norm_start, num_norms;   // +0x55 +0x57 (HIGH)
+    unsigned short node_start, num_nodes;   // +0x59 +0x5B (MEDIUM)
+};
+
+// g_objRenderInfo[0x800] @ 0x8FBC00. NOTE: whether the index equals objId is
+// UNVERIFIED — render_queue_raw carries slot (ctx+0x14) and objId (ctx+0x18)
+// as two separate values.
+struct ObjRenderInfo {        // stride 0x14
+    void*  renderObj;         // +0x00 vtable slot 0x38 = GetModel() -> LGMDModel*
+    void** texRefs;           // +0x04 per-textured-material resource ptrs
+    int    unk08;             // +0x08
+    unsigned short unk0A;     // +0x0A
+    unsigned short renderType;// +0x0C index into g_objRenderTypeVtbl (stride 0x1C)
+    unsigned char  inUse;     // +0x0E nonzero = slot valid
+    unsigned char  texSubstSet;// +0x0F index into g_meshTexRemap (0x905C00)
+    int    unk10;             // +0x10
+};
+
+// Per-object world transform source.
+// loc = ((Location**)(*(char**)0x9CDB28 + 0x18))[objId]
+struct Location {
+    float          pos[3];    // +0x00 world position
+    unsigned int   unk0C;     // +0x0C
+    unsigned short angles[3]; // +0x10 65536 == 360deg; applied [2],[1],[0]
+};
+
+// LGMD BSP node types (Model_WalkNodes 0x5E3840, switch on *(uint8*)node)
+enum LGMDNodeType {
+    LGMD_NODE_RAW    = 0,  // sphere@+0x01, count@+0x11, u16 pgon_off[]@+0x13
+    LGMD_NODE_SPLIT  = 1,  // n_before@+0x11 norm@+0x13 d@+0x15 behind@+0x19 front@+0x1B n_after@+0x1D offs@+0x1F
+    LGMD_NODE_CALL   = 2,  // n_before@+0x11 call@+0x13 n_after@+0x15 offs@+0x17
+    LGMD_NODE_VCALL  = 3,  // idx@+0x11 -> handler at 0x94E280[idx]
+    LGMD_NODE_SUBOBJ = 4   // 3-byte header, push subobj xform, recurse at node+3
+};
+
+// --- object model / render globals ---
+$ 0x009CDB28 void* g_pLocationTable          // +0x18 = Location** byObjId (stride 4)
+$ 0x008FBC00 ObjRenderInfo g_objRenderInfo[0x800]
+$ 0x00905C00 int g_meshTexRemap[0xFF]        // memset -1, 0x3FC bytes (0x5ACD10)
+$ 0x00790A5C void* g_objRenderTypeVtbl[]     // stride 0x1C, 7 fn ptrs per render type
+$ 0x0094E490 void* g_modelTexSlots[256]      // indexed by LGMDPgon.data
+$ 0x0094E790 unsigned int g_modelColorSlots[]// flat-colour, (type&0x60)==0x40
+$ 0x0094E280 void* g_modelVCallHandlers[]    // LGMD_NODE_VCALL dispatch
+$ 0x008FBBF8 void* g_defaultTexHandle
+$ 0x009D881C LGMDModel* g_mdl_cur
+$ 0x009D8820 LGMDSubObject* g_mdl_pObjs
+$ 0x009D8824 LGMDMaterial* g_mdl_pMats
+$ 0x009D8828 float* g_mdl_pUVs               // stride 8 (u,v)
+$ 0x009D8830 float* g_mdl_pVerts             // stride 0xC, MODEL SPACE
+$ 0x009D8834 void* g_mdl_pLights
+$ 0x009D8838 float* g_mdl_pNorms             // stride 0xC
+$ 0x009D883C unsigned char* g_mdl_pPgons     // LGMDPgon records, variable length
+$ 0x009D8840 unsigned char* g_mdl_pNodes
+$ 0x009D8848 void* g_mdl_pXformVerts         // transformed-vertex output, stride g_vertStride
+$ 0x009D884C void* g_mdl_pVertColors
+$ 0x009D8850 float* g_mdl_pXformNorms        // stride 4 in the backface test
+$ 0x009D885C float* g_mdl_pJointAngles       // MEDIUM: adjacent to g_mdl_polyVertPtrs
+$ 0x009D8860 void* g_mdl_polyVertPtrs[]      // per-poly transformed-vertex pointers
+$ 0x009D8D80 int* g_mdl_vertStrideTable      // [i] = i * g_vertStride
+$ 0x009D8D8C int g_mdl_vertStrideTableCap
+$ 0x009D8718 int g_vertStride                // 0x2C or 0x34
+$ 0x009D8750 void* g_renderState             // +0x44 cur 0x34-byte xform, +0x188 matrix stack
+$ 0x009DBD9C void* g_objScreenCache          // *(*0x9DBD9C + objId*4) -> bbox/screen-rect record
+$ 0x009EA62C void* g_objModelPath            // "obj\"
+$ 0x009EA630 void* g_objTexPath              // obj\txt\ , obj\txt16\
+$ 0x009EA634 void* g_meshTexPath             // mesh\txt\
+$ 0x009EA638 void* g_meshPath                // "mesh\" (skinned creatures)
+$ 0x00790B30 int g_useObjTextures16
+$ 0x0091BE60 void* g_objDeferNodes           // 0x14-stride, cap 0x100, counter 0x923828
+$ 0x00923828 int g_objDeferNodeCount
+$ 0x009180F0 void* g_objDeferBuckets[8]      // stride 8, sort key clamped [-4,3]
+$ 0x0091D428 void* g_objRenderRecords        // 0x14-stride, two-ended: 0x91BE58 down / 0x91D260 up
+$ 0x0091D260 int g_objRenderRecordEnd
+$ 0x0091BE58 int g_objRenderRecordStart
+$ 0x00923830 unsigned int g_objSubListArray[]// render ctx +0x0C indexes this
+$ 0x007A84E4 void* g_pObjDrawCallback        // 0x5C2870 default / 0x5C33E0 defer / 0x5C35B0 immediate
+$ 0x007A84E0 void* g_pObjGetRenderData       // 0x5C2840
+$ 0x007A84EC void* g_pObjCallback3           // 0x5C3270
+$ 0x0078B444 void* g_pModelDrawPolygon       // -> 0x5E3D10, called by Model_WalkNodes
+
+// --- object model / render functions ---
+@ 0x005E33B0 void __fastcall Model_SetupPointers(LGMDModel* model);  // EAX
+@ 0x005E3840 void __cdecl Model_WalkNodes(unsigned char* node);
+@ 0x005E3D10 void __cdecl Model_DrawPolygon(LGMDPgon* pgon);
+@ 0x005E3450 void __fastcall Model_PushSubObjXform(int subObjIdx);  // EAX
+@ 0x005E3560 void Model_PopSubObjXform(void);
+@ 0x005E5B60 void* __cdecl Model_CopyAndScale(LGMDModel* src, void* dst);  // EAX
+@ 0x005AD290 void __fastcall Model_BindTextures(int renderSlot, LGMDModel* model, int arg3);
+@ 0x005BFCA0 void __cdecl render_queue_raw(void* ctx); // ctx: +4 model, +8 vbuf, +0x14 slot, +0x18 objId
+@ 0x005BF6E0 void Render_PushVertStrideState(void);
+@ 0x005D7D60 void __cdecl Render_SetObjectTransform(float* pos, unsigned short* angles);  // stack; EDI
+@ 0x005D7C20 void Render_PushMatrixStack(void);
+@ 0x005D7FC0 void __fastcall Render_ComputeVertClipFlags(void* verts, int count);  // EAX
+@ 0x005BF4C0 void __fastcall Model_SetupCellClip(int objId, int renderSlot);  // EAX
+@ 0x005BEBA0 void __fastcall Model_ComputeScreenExtent(int objId, void* outA, void* outB, int flag);  // EAX
+@ 0x005BF340 void __fastcall ObjRender_GetScreenCacheEntry(int objId, void** out[6]);  // EAX
+@ 0x005AECE0 bool __fastcall ObjRender_GetBBox(int renderSlot);  // ESI
+@ 0x005ACD10 void ObjRender_Init(void);          // clears g_objRenderInfo: base/stride/count proof
+@ 0x005C4C40 void ObjRender_InitCallbacks(void); // sets 0x7A84E0/E4/EC
+@ 0x005ACAF0 void ObjRender_InitResourcePaths(void);
+@ 0x005ACC20 void ObjRender_SetHipolyPaths(void);
+@ 0x005BF5E0 float* __fastcall ObjJoints_Get(LGMDModel* model, int objId);  // EAX
+@ 0x005C33E0 void __cdecl ObjDraw_Enqueue(int objId, int arg1, short arg2); // deferred, NOT the mesh draw
+@ 0x005C35B0 void __cdecl ObjDraw_Immediate(int objId, int arg1, short arg2);
+@ 0x005C4810 void ObjDraw_FlushQueue(void);      // swaps 0x7A84E4 to 0x5C35B0 and back
+@ 0x005C41B0 void __fastcall ObjDraw_RenderRecord(int recordIdx);  // EAX
+@ 0x004D3240 void __cdecl Model_AddCellClipPlanes(int flag, void* out, float* pos, float radius);  // EAX

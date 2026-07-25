@@ -1372,3 +1372,408 @@ has correct boundaries (`0x4CD1C0`, size 263, source=ghidra). The warm daemon on
 27043 also blocked `--cold`. All decompilation above came from the r2ghidra backend
 (`--backend pdg`), cross-checked against `retools.disasm` byte output for every patch
 site quoted. The pyghidra address-resolution bug is worth a separate look.
+
+## Resident object mesh source — static analysis (2026-07-25)
+
+### Summary
+Object (prop/model) geometry is fully resident and camera-independent, exactly like the
+worldrep. The chain is **objId -> g_pLocationTable -> world transform**, and separately
+**objId -> object render-info slot -> cModelRenderObj -> LGMD model blob**. The LGMD blob is
+the *raw on-disk model header kept verbatim in memory* (only rescaled at load), so all its
+self-relative offsets (`+0x46 objs, +0x4A mats, +0x4E uv, +0x56 verts, +0x5A light,
++0x5E norms, +0x62 pgons, +0x66 nodes`) are valid at runtime — `Model_SetupPointers
+(0x5E33B0)` does nothing but add the model base to each one and publish them to globals.
+Model-space vertices are `float3[num_verts]` at `model + *(u32*)(model+0x56)`; polygons are
+variable-length records reachable through the model's BSP node tree; per-poly texture is a
+material **slot** byte that indexes a 256-entry global handle table the engine fills per
+object. Object world transform = `pos float3 @ loc+0x00` + `uint16 angles[3] @ loc+0x10`.
+This is everything a proxy needs to submit object meshes without touching the screen-space
+RHW path.
+
+The task brief's lead `0x5C33E0` turned out **not** to be the mesh draw — it is a deferred
+render-node *enqueue* (see "Correction to the 0x5C33E0 lead" below).
+
+### Key Addresses
+| Address | Description |
+|---------|-------------|
+| 0x009CDB28 | g_pLocationTable — `+0x18` = `Location** byObjId` (stride 4) |
+| 0x008FBC00 | g_objRenderInfo[0x800] — stride 0x14, object render-info slots |
+| 0x00905C00 | end of g_objRenderInfo (= 0x8FBC00 + 0x800*0x14); also mesh-tex remap table base |
+| 0x00790A5C | g_objRenderTypeVtbl[] — stride 0x1C, 7 fn ptrs per render type |
+| 0x0094E490 | g_modelTexSlots[256] — texture handle per material slot (pgon.data) |
+| 0x0094E790 | g_modelColorSlots[] — flat-colour handle per slot (type&0x60 == 0x40) |
+| 0x009D881C | g_mdl_cur — current LGMD model base ptr |
+| 0x009D8820/24/28/30/34/38/3C/40 | g_mdl_pObjs / pMats / pUVs / pVerts / pLights / pNorms / pPgons / pNodes |
+| 0x009D8848 | g_mdl_pXformVerts — transformed-vertex output buffer base |
+| 0x009D884C | g_mdl_pVertColors — per-vertex lighting source (stride 4 or 0xC) |
+| 0x009D8850 | g_mdl_pXformNorms — transformed normals (stride 4 in the backface test) |
+| 0x009D8860 | g_mdl_polyVertPtrs[] — per-poly array of transformed-vertex pointers |
+| 0x009D885C | g_mdl_pJointAngles — ptr to current object's joint float array |
+| 0x009D8D80 | g_mdl_vertStrideTable — `[i] = i * g_vertStride`, rebuilt by 0x5E33B0 |
+| 0x009D8718 | g_vertStride — transformed-vertex stride, 0x2C or 0x34 |
+| 0x009D8750 | g_renderState — `+0x44` current 0x34-byte transform, `+0x188` matrix stack ptr |
+| 0x009EA62C / 0x9EA638 | g_objModelPath ("obj\") / g_meshPath ("mesh\") |
+| 0x009EA630 / 0x9EA634 | g_objTexPath / g_meshTexPath (obj\txt\, obj\txt16\) |
+| 0x005E33B0 | Model_SetupPointers — model base + header offsets -> globals |
+| 0x005E3840 | Model_WalkNodes — LGMD BSP node tree walk, emits pgons |
+| 0x005E3D10 | Model_DrawPolygon — per-pgon vertex/UV/colour fetch + texture bind |
+| 0x005E3450 / 0x5E3560 | Model_PushSubObjXform / Model_PopSubObjXform |
+| 0x005E5B60 | Model_CopyAndScale — load-time rescale of a whole LGMD blob |
+| 0x005AD290 | Model_BindTextures — fills g_modelTexSlots from the model's material list |
+| 0x005BFCA0 | render_queue_raw — "render_queue_raw: Bad model pointer" |
+| 0x005D7D60 | Render_SetObjectTransform(Location* pos /*EDI = pos+0x10 angles*/) |
+| 0x005BF4C0 | Model_SetupCellClip — objId -> loc, model+0x10 radius -> 0x4D3240 |
+| 0x005BEBA0 | Model_ComputeScreenExtent — objId -> loc -> SetObjectTransform |
+| 0x005AECE0 | ObjRender_GetBBox — render-type dispatch through 0x790A5C |
+| 0x005ACD10 | ObjRender_Init — clears g_objRenderInfo, proves base/stride/count |
+| 0x005BF5E0 | ObjJoints_Get — per-object joint angle array (movement_type 1/2) |
+| 0x009DBD9C | g_objScreenCache — `*(*0x9DBD9C + objId*4)` lazily-alloc'd bbox/screen-rect record |
+
+### Chain 1 — objId -> world transform (HIGH confidence)
+
+`Model_ComputeScreenExtent (0x5BEBA0)`, disasm at 0x5BEBDF and 0x5BEC5A:
+
+```
+0x005BEBDF: mov  ecx, dword ptr [0x9cdb28]    ; g_pLocationTable
+0x005BEBE5: mov  edx, dword ptr [ecx + 0x18]  ; -> Location** byObjId
+0x005BEBE8: mov  esi, dword ptr [edx + edi*4] ; edi = objId  -> Location*
+...
+0x005BEC5A: lea  edi, [esi + 0x10]            ; EDI = &loc->angles
+0x005BEC5D: push esi                          ; arg = &loc->pos
+0x005BEC5E: call 0x5d7d60                     ; Render_SetObjectTransform
+```
+
+`Render_SetObjectTransform (0x5D7D60)` then (disasm 0x5D7D73..0x5D7DAE):
+
+```
+movzx eax, word [edi+4]  -> call 0x65e7d0   ; rot about 3rd axis
+movzx ecx, word [edi+2]  -> call 0x65eaa0   ; rot about 2nd axis
+movzx ecx, word [edi+0]  -> call 0x65ea00   ; rot about 1st axis
+mov eax,[ebx+8] / mov ecx,[ebx] / mov edx,[ebx+4]   ; translation = loc->pos
+... 0x65e0c0 composes into g_renderState+0x44 (0x34 bytes), stack at +0x188
+```
+
+So:
+```c
+struct Location {           // >= 0x16 bytes, rest unmapped
+  float  pos[3];            // +0x00 world position
+  /* +0x0C unknown (4 bytes) */
+  uint16 angles[3];         // +0x10 h,p,b - 65536 == 360 deg, applied [2],[1],[0]
+};
+```
+`Location* loc = ((Location**)(*(char**)0x9CDB28 + 0x18))[objId];`
+
+**Confidence: HIGH** for `pos@+0x00` and `angles@+0x10` (both are direct disasm reads at a
+single call site). **MEDIUM** for the exact axis each angle drives — 0x65E7D0/0x65EAA0/0x65EA00
+were not decompiled; the Dark convention is heading/pitch/bank but the compose order must be
+live-checked. `+0x0C` is unidentified.
+
+`0x5BF4C0` independently confirms the same expression with `objId` in EAX and pairs it with
+`model+0x10` (bounding radius) for the cell-plane clip test in `0x4D3240`.
+
+### Chain 2 — objId -> LGMD model (HIGH confidence)
+
+`ObjRender_GetBBox (0x5AECE0)`, `0x5AA0E0` (at 0x5AA1EB/0x5AA1F4) and `0x5BF4C0`:
+
+```c
+// slot index is a small int, range-checked [0, 0x800)
+if (slot >= 0 && slot < 0x800 && *(uint8*)(0x8FBC0E + slot*0x14) != 0) {
+    void** obj = *(void***)(0x8FBC00 + slot*0x14);      // cModelRenderObj*
+    LGMDModel* model = obj ? ((GetModel_t)obj[0][0x38/4])(obj) : NULL;  // vtable +0x38
+}
+```
+
+`ObjRender_Init (0x5ACD10)` proves base/stride/count exactly:
+```
+puVar2 = 0x8fbc04; do { ...clear +0x00,+0x04,+0x08,+0x0A,+0x0C,+0x0E,+0x0F,+0x10...
+                        puVar2 += 5 /*dwords = 0x14*/ } while (puVar2 < 0x905c04);
+```
+`(0x905C00 - 0x8FBC00) / 0x14 = 0x800`.
+
+```c
+struct ObjRenderInfo {      // 0x14 bytes @ 0x8FBC00, [0x800]
+  void*  renderObj;         // +0x00 C++ obj, vtable slot 0x38 = GetModel()
+  void** texRefs;           // +0x04 per-textured-material resource ptr array (stride 4)
+  int    unk08;             // +0x08
+  uint16 unk0A;             // +0x0A
+  uint16 renderType;        // +0x0C index into g_objRenderTypeVtbl (0x790A5C, stride 0x1C)
+  uint8  inUse;             // +0x0E nonzero = slot valid
+  uint8  texSubstSet;       // +0x0F index into the 0x905C00 mesh-tex remap table
+  int    unk10;             // +0x10
+};
+```
+
+**OPEN / needs live verification: is the 0x8FBC00 index the same number as `objId`?**
+`0x5BF4C0` uses `objId` (EAX, from render-ctx+0x18) for the *location* lookup and a
+*different* value (ECX, render-ctx+0x14) for the 0x8FBC00 lookup, so they are at minimum
+carried separately. The 0x800 cap also matches `g_objRenderList`'s 0x800 cap, not the
+0x2000 objId space used by `g_objInRenderList`/`g_objHidden`. Treat "slot == objId" as
+**UNVERIFIED** — this is the single most important thing to check live.
+
+### Chain 3 — LGMD in-memory layout (HIGH confidence)
+
+`Model_SetupPointers (0x5E33B0)` is the proof — it is nothing but header offset + base:
+
+```c
+g_mdl_pObjs  (0x9D8820) = model + *(u32*)(model+0x46);
+g_mdl_pMats  (0x9D8824) = model + *(u32*)(model+0x4A);
+g_mdl_pUVs   (0x9D8828) = model + *(u32*)(model+0x4E);
+g_mdl_pVerts (0x9D8830) = model + *(u32*)(model+0x56);
+g_mdl_pLights(0x9D8834) = model + *(u32*)(model+0x5A);
+g_mdl_pNorms (0x9D8838) = model + *(u32*)(model+0x5E);
+g_mdl_pPgons (0x9D883C) = model + *(u32*)(model+0x62);
+g_mdl_pNodes (0x9D8840) = model + *(u32*)(model+0x66);
+if (model->version >= 4) { matFlags = *(u32*)(model+0x6E); /* bit0, bit1 */ }
+numVerts = *(u16*)(model+0x3E);
+```
+
+Cross-confirmed by `Model_CopyAndScale (0x5E5B60)`, which `memcpy`s `*(u32*)(model+0x6A)`
+bytes (model_size) and then rescales, in order: `+0x24/28/2C` (bbox min), `+0x18/1C/20`
+(bbox max), `+0x30/34/38` (parent centre), `+0x10` (radius), `+0x14` (max poly radius),
+the `+0x44`-count vhot array at `+0x52` (stride 0x10 = idx + float3), the `+0x3E`-count
+vertex array at `+0x56` (stride 0xC), then per sub-object the `+0x39` float3 and the
+normals at `+0x5E` — normals scaled by `(sy*sz, sx*sz, sx*sy)`, i.e. the adjugate /
+inverse-transpose scale, which is definitive proof `+0x5E` holds **normals**, stride 0xC.
+
+```c
+struct LGMDModel {                 // == the on-disk header, kept verbatim
+  char   magic[4];                 // +0x00 "LGMD"
+  uint32 version;                  // +0x04  (>=4 enables mat_flags/mat_extra)
+  char   name[8];                  // +0x08
+  float  radius;                   // +0x10   <- used as object bounding radius
+  float  max_poly_radius;          // +0x14
+  float  bbox_max[3];              // +0x18
+  float  bbox_min[3];              // +0x24
+  float  parent_cen[3];            // +0x30
+  uint16 num_pgons;                // +0x3C
+  uint16 num_verts;                // +0x3E   <- CONFIRMED (0x5BFCFF movzx [edi+0x3e])
+  uint16 num_parms;                // +0x40
+  uint8  num_mats;                 // +0x42   <- CONFIRMED (0x5AD290 loop bound)
+  uint8  num_vcalls;               // +0x43
+  uint8  num_vhots;                // +0x44
+  uint8  num_objs;                 // +0x45   <- CONFIRMED (0x5AA0E0 loop bound, stride 0x5D)
+  uint32 off_objs, off_mats, off_uv, off_vhots;      // +0x46 +0x4A +0x4E +0x52
+  uint32 off_verts, off_light, off_norms, off_pgons; // +0x56 +0x5A +0x5E +0x62
+  uint32 off_nodes;                // +0x66
+  uint32 model_size;               // +0x6A
+  uint32 mat_flags;                // +0x6E   (v4+)
+  uint32 off_mat_extra;            // +0x72   (v4+)
+  uint32 size_mat_extra;           // +0x76   (v4+)
+};
+```
+
+**Vertices are MODEL SPACE.** They are the load-time-rescaled source array; the only
+transform applied is the per-object one pushed by `0x5D7D60` into `g_renderState+0x44`,
+and the *output* of that goes to a separate buffer (`g_mdl_pXformVerts 0x9D8848`,
+stride `g_vertStride` 0x2C/0x34). Nothing writes back into `model+off_verts`.
+
+### Chain 4 — polygons (HIGH confidence)
+
+`Model_DrawPolygon (0x5E3D10)` reads, with `p` = pgon record pointer:
+
+| Field | Offset | Evidence in 0x5E3D10 |
+|---|---|---|
+| `uint16 index` | +0x00 | (unused in draw) |
+| `uint16 data` | +0x02 | `*(*(p+2)*4 + 0x94E490)` texture handle; `*(*(p+2)*4 + 0x94E790)` colour |
+| `uint8 type` | +0x04 | `(*(p+1) & 0x78A0AB) \| 0x9D87A5` -> `&7` 1=solid 2=wire 3=textured; `&0x18` lighting; `&0x60` colour source |
+| `uint8 num_verts` | +0x05 | every loop bound (`*(p+5)`) |
+| `uint16 norm` | +0x06 | backface: `*(g_mdl_pXformNorms + *(p+6)*4) + *(float*)(p+8) < 0x73D258` -> return |
+| `float d` | +0x08 | same expression (plane distance) |
+| `uint16 vert[n]` | +0x0C | `g_mdl_polyVertPtrs[i] = g_mdl_pXformVerts + g_mdl_vertStrideTable[vert[i]]` |
+| `uint16 norm_idx[n]` | +0x0C + n*2 | `vtx[+0x20] = pVertColors[norm_idx[i]]` (or *0xC in RGB mode -> +0x20/+0x2C/+0x30) |
+| `uint16 uv_idx[n]` | +0x0C + n*4 | `vtx[+0x24] = pUVs[uv_idx[i]*8+0]; vtx[+0x28] = pUVs[uv_idx[i]*8+4]` |
+
+So the **UV array at `+0x4E` has stride 8 = two floats (u,v)**, indexed per-vertex-per-poly,
+and a pgon record is `0x0C + n*2*(2 or 3)` bytes long (3 index arrays only when textured).
+Polygon records are therefore **variable length and must be reached by offset**, never by
+striding — which is exactly why the model carries a BSP node tree.
+
+Transformed-vertex struct (stride `g_vertStride`, 0x2C default — the same struct the
+worldrep path uses, see "Worldrep in-memory layout"): `+0x00/04/08` xyz, `+0x0C` cleared
+per-vertex by `render_queue_raw`, `+0x20` colour, `+0x24` u, `+0x28` v, `+0x2C/+0x30`
+extra RGB when stride is 0x34.
+
+### Chain 5 — polygon enumeration via the model BSP (HIGH confidence)
+
+`Model_WalkNodes (0x5E3840)` — `switch (*(uint8*)node)`, all pgon references are
+`g_mdl_pPgons + (uint16 offset)` and all child references are `g_mdl_pNodes + (uint16 offset)`:
+
+| type | Layout (from the decompile) |
+|---|---|
+| 0 RAW | `u8 type; float sphere[4] @+0x01; u16 count @+0x11; u16 pgon_off[count] @+0x13` |
+| 1 SPLIT | `... u16 n_before @+0x11; u16 norm @+0x13; float d @+0x15; u16 behind @+0x19; u16 front @+0x1B; u16 n_after @+0x1D; u16 pgon_off[] @+0x1F` |
+| 2 CALL | `... u16 n_before @+0x11; u16 call_node @+0x13; u16 n_after @+0x15; u16 pgon_off[] @+0x17` |
+| 3 VCALL | `u8 type; u16 idx @+0x11` -> handler `*(void**)(0x94E280 + idx*4)` |
+| 4 SUBOBJ | 3-byte header, `Model_PushSubObjXform(0x5E3450)` -> recurse at `node+3` -> `Model_PopSubObjXform(0x5E3560)` |
+
+The SPLIT plane test is `g_mdl_pXformNorms[norm] + d < 0x73D258` — **camera-dependent front/back
+ordering only**. A proxy can ignore the tree ordering entirely and walk *all* pgon offsets
+from every node (types 0/1/2 before+after lists), or decode pgons linearly by walking
+`num_pgons` variable-length records from `g_mdl_pPgons` — the linear walk needs `type&7`
+to size each record, which is available in the record itself.
+
+### Chain 6 — sub-objects / jointed models (MEDIUM-HIGH confidence)
+
+`0x5AA0E0` strides the sub-object array by **0x5D (93) bytes** and tests `*(sub+0x08) != 0`;
+`0x5E3450` reads `*(pSubObjs + idx*0x5D + 8)` as the movement type (1 = rotate, 2 = slide)
+and `*(pSubObjs + idx*0x5D + 9)` as the joint index into `*g_mdl_pJointAngles (0x9D885C)`.
+`Model_CopyAndScale` rescales `sub+0x39` as a float3.
+
+```c
+struct LGMDSubObject {       // stride 0x5D = 93
+  char   name[8];            // +0x00
+  uint8  movement;           // +0x08  0 = static, 1 = rotate joint, 2 = slide joint
+  uint8  joint_idx;          // +0x09  index into the object's joint float array
+  /* int32 parm / float min_range / max_range occupy +0x09..+0x14 */
+  float  rot[9];             // +0x15  3x3 model-space basis        (MEDIUM)
+  float  location[3];        // +0x39  translation                  (HIGH - rescaled by 0x5E5B60)
+  /* +0x45 parent + 2 unmapped bytes vs. the 91-byte community layout */
+  uint16 vhot_start, num_vhots;      // +0x49 +0x4B   (MEDIUM)
+  uint16 point_start, num_points;    // +0x4D +0x4F   (MEDIUM)
+  uint16 light_start, num_lights;    // +0x51 +0x53   (MEDIUM)
+  uint16 norm_start,  num_norms;     // +0x55 +0x57   (HIGH - used by 0x5E5B60 normal rescale)
+  uint16 node_start,  num_nodes;     // +0x59 +0x5B   (MEDIUM)
+};
+```
+The engine's stride is 93, two bytes more than the widely-published 91-byte community
+layout; the extra two bytes sit between `location` and `vhot_start` (the only placement
+consistent with `0x5E5B60` scaling normals via `+0x55`/`+0x57`). **The tail offsets need
+live verification.**
+
+**Rigid models** (`num_objs <= 1`, or all `movement == 0`) need no sub-object handling at
+all: one transform, one vertex array. That is the deliverable.
+
+### Chain 7 — textures (HIGH confidence)
+
+**Object textures are a completely separate space from worldrep `rp.texture_id`.**
+
+- Resource paths (`0x5ACAF0`, `0x5ACC20`): world textures come from `fam\`, object textures
+  from **`obj\txt\`** (or `obj\txt16\` when the `ObjTextures16` config is set) via
+  `g_objTexPath 0x9EA630`; skinned-creature textures from `mesh\txt\` via `0x9EA634`.
+  Hi-poly variants prepend `obj\hipoly\` / `mesh\hipoly\`.
+- `Model_BindTextures (0x5AD290)`, called from `render_queue_raw` with ECX = render slot,
+  EDX = model, walks the model's material list:
+
+```c
+uint8* m = model + model->off_mats + 0x11;     // -> mat.slot
+for (i = 0; i < model->num_mats; ++i, m += 0x1A) {
+    if (m[-1] == 0) {                          // mat.type == 0 -> textured
+        void* res = ((void**)*(uint32*)(0x8FBC04 + slot*0x14))[k];
+        g_modelTexSlots[ *m ] = res ? MakeTexHandle(res) : g_defaultTexHandle /*0x8FBBF8*/;
+        k += 1;
+    }
+}
+```
+so the **material record is 0x1A (26) bytes**: `char name[16]; uint8 type; uint8 slot; ...8 more`.
+
+- `Model_DrawPolygon` then binds `g_modelTexSlots[pgon.data]` — i.e. **`pgon.data` IS the
+  material slot byte**, not a global texture id. The same function reads `+0x1C` off the
+  bound handle for flags and `+0x880`/`+0x884` for u/v scale factors.
+- Per-object texture substitution ("Mesh Texture Substitution" property) overrides up to 4
+  slots via the `0x905C00` remap table indexed by `ObjRenderInfo.texSubstSet (+0x0F)`.
+
+**How a proxy resolves these to the D3D textures it already sees:** the handle written into
+`g_modelTexSlots` is the same engine texture object the renderer later hands to
+`SetTexture`, so a proxy can key on it directly — read `g_modelTexSlots[pgon.data]` at
+submit time and correlate with the `IDirect3DTexture9*` seen at the D3D9 boundary, the same
+way the worldrep path correlates engine bitmaps. This is the **only part of the plan with a
+real unknown**: the handle -> `IDirect3DTexture9*` step is not proven statically here.
+
+### Correction to the 0x5C33E0 lead
+
+`0x5C33E0` is a **deferred render-node enqueue**, not a mesh draw. Disasm 0x5C33E0..0x5C34E1:
+it calls `(**0x9D7D30)->[0x50](objId, &sortKey)`, clamps the returned int16 sort key to
+[-4, 3], appends a 0x14-byte record to the array at `0x91BE60` (counter `0x923828`, cap 0x100)
+and links it into one of 8 bucket lists at `0x9180F0` (stride 8). Record layout: `+0x00 objId,
++0x04 arg1, +0x08 u16 arg2, +0x0A/+0x0B bytes from 0x9CD888/0x9CD88C, +0x0C flags, +0x10 next`.
+
+The **flush** is `0x5C4810`, which temporarily swaps `_PTR_objDrawCallback (0x7A84E4)` to
+`0x5C35B0` (the immediate-draw variant) and restores `0x5C33E0` at the end. The renderer's
+default binding, set in `ObjRender_Init2 (0x5C4C40)`, is `0x7A84E4 = 0x5C2870`,
+`0x7A84E0 = 0x5C2840`, `0x7A84EC = 0x5C3270`. So `0x7A84E4` holds three different callbacks
+over a frame — a live trace that samples it once will mislead.
+
+Neither `0x5C33E0`, `0x5C35B0` nor `0x5C2870` exists as a function in the Ghidra project
+(they are only reachable through that pointer), which is why `pyghidra decompile` returned
+"no function found" last session. That was **not** a stale-daemon problem.
+
+### Render context passed to render_queue_raw (0x5BFCA0)
+From the disasm `mov ebp,[esp+0x14]` then `[ebp+...]`:
+
+| Off | Meaning |
+|---|---|
+| +0x00 | stored to 0x78B438 |
+| +0x04 | **LGMD model ptr** (the "Bad model pointer" null-check target) |
+| +0x08 | transformed-vertex output buffer base |
+| +0x0C | start index into the sub-list array at 0x923830 |
+| +0x10 | count |
+| +0x14 | **object render slot** (index into g_objRenderInfo) — ECX to 0x5AD290 |
+| +0x18 | **objId** — EAX to 0x5BF4C0, used for the g_pLocationTable lookup |
+| +0x1C | byte flag (1 = clear per-vertex colour first) |
+
+This is the clearest evidence that render slot and objId are carried as two separate values.
+
+### Confidence summary
+
+| Claim | Confidence |
+|---|---|
+| LGMD header offsets +0x3E/+0x42/+0x45/+0x46..+0x76, model = raw header in memory | HIGH — 0x5E33B0 is literally base+offset for all 8 arrays |
+| Vertices float3 model-space @ model+off_verts, count model+0x3E | HIGH |
+| Normals float3 @ model+off_norms (adjugate rescale proof) | HIGH |
+| UVs float2 (stride 8) @ model+off_uv | HIGH |
+| pgon layout +0x02 data / +0x04 type / +0x05 n / +0x06 norm / +0x08 d / +0x0C indices | HIGH |
+| pgon variable length, reached via node tree | HIGH |
+| Material stride 0x1A, slot byte @+0x11, pgon.data == slot | HIGH |
+| Object textures separate space (obj\txt\), not worldrep texture ids | HIGH |
+| Location: pos float3 @+0x00, uint16 angles[3] @+0x10 | HIGH |
+| Angle -> axis assignment and compose order | MEDIUM |
+| ObjRenderInfo base 0x8FBC00 / stride 0x14 / count 0x800 / +0x0E inUse / vtable+0x38 GetModel | HIGH |
+| **0x8FBC00 slot index == objId** | **UNVERIFIED — verify first** |
+| SubObject stride 0x5D, movement@+0x08, joint@+0x09, location@+0x39 | HIGH |
+| SubObject rot@+0x15 and the +0x49..+0x5B tail | MEDIUM |
+| g_modelTexSlots handle -> IDirect3DTexture9* correlation | UNPROVEN |
+| g_mdl_pJointAngles == 0x9D885C (adjacent to 0x9D8860, easy to confuse) | MEDIUM |
+
+### Suggested Live Verification
+Runtime delta is +0x480000 (static 0x400000 -> observed 0x880000).
+
+1. **Slot vs objId (do this first).** `bp 0x5AD290` (runtime 0xA2D290); read ECX (render slot)
+   and EDX (model ptr). Separately `bp 0x5BF4C0` (0xA3F4C0) and read EAX (objId) plus the
+   stack arg. If they differ, find the mapping before anything else.
+2. **Location record.** Read `ptr @ 0xE4DB28` -> `+0x18` -> `[objId*4]`. Dump 0x18 bytes: the
+   first 3 floats must be a plausible world position. Then read `uint16[3] @ +0x10` and rotate
+   an object in-game (a door) to watch them change.
+3. **Model blob.** From the slot, read `[0x8FBC00+slot*0x14]` -> vtable -> `+0x38` -> call it
+   (or `bp 0x5E33B0` / runtime 0xA633B0 and read EAX = model ptr). Verify `magic == "LGMD"`
+   at +0x00, sane `version` at +0x04, `num_verts` at +0x3E, and that
+   `model + *(u32*)(model+0x56)` lands inside the blob (`< *(u32*)(model+0x6A)`).
+4. **Vertices are model-space.** Dump `num_verts` float3s from `model+off_verts` and confirm
+   they are centred near origin and bounded by `bbox_min/max` at +0x24/+0x18 — *not* world
+   coords, and **unchanged as the camera moves** (re-read after moving; this is the whole
+   premise of the module).
+5. **Polygons.** `bp 0x5E3D10` (0xA63D10), read the pgon ptr, dump 0x0C + n*6 bytes; check
+   `num_verts` at +0x05 is 3..8 and every `uint16` index at +0x0C is `< model->num_verts`.
+6. **Textures.** At the same breakpoint read `g_modelTexSlots[pgon.data]` (0xDCE490 + data*4)
+   and compare with the texture the proxy sees bound on the following draw call.
+7. **Sub-objects.** For a multi-part object (door, lever), read `model+0x45` and dump
+   `num_objs * 0x5D` bytes from `model+off_objs`; confirm `+0x08` is 1 or 2 and `+0x39` is a
+   plausible float3 pivot. For rigid props expect `num_objs <= 1` / all `movement == 0`.
+8. **Table walk sanity.** Loop slots 0..0x7FF, count those with `+0x0E != 0`; should roughly
+   match the object count in the mission and stay stable frame to frame.
+
+### Notes on skinned / animated models (task 4 — deliberately shallow)
+- Two distinct systems. Rigid + jointed props are **LGMD** under `obj\`. Creatures are
+  **LGMM-style skinned meshes** under `mesh\` (`g_meshPath 0x9EA638`,
+  `g_meshTexPath 0x9EA634`), loaded by `0x5ACC20`/`0x5ACAF0`, and driven by the
+  `IMesh` / `cCreature` / `cHumanoidCreature` hierarchy (`IMesh` vtable @ 0x71F46C).
+  Errors "likely mismatch between creature type and mesh model for object %d" (0x71F3A0) and
+  "corrupt mesh model cal/length data" (0x71F408) belong to that path. Motion data is
+  `motiondb.bin` / `mschema\motiondb.bin`.
+- Jointed **LGMD** models (doors, levers, chests) are *not* skinned — each sub-object is a
+  rigid part with its own `rot`/`location` plus one joint scalar from `ObjJoints_Get
+  (0x5BF5E0)`, which pulls the per-object joint float array through property manager
+  `*0x9D8548` and caps at 6 joints. A proxy that wants these correct composes
+  `objectXform * subObjectXform(joint)` per sub-object; a proxy that ignores joints renders
+  them in their rest pose.
+- Recommendation: ship rigid-only (`num_objs <= 1` or all `movement == 0`), skip anything
+  reached through the `mesh\` path, and revisit jointed props after the rigid path is stable.
