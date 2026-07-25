@@ -56,6 +56,7 @@ namespace comp
 		bool m_enabled = true;
 
 		float m_radiance_scale = 1.0f;
+		float m_point_scale = 1.0f;
 		float m_emitter_radius = 0.4f;
 		bool m_skip_infinite = true;
 		bool m_force_spot = false;

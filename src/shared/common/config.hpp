@@ -63,12 +63,14 @@ namespace shared::common
 			bool winding_flip = false; // flip triangle winding if faces are backwards
 			std::vector<uint16_t> skip_tex_ids; // texture ids dropped from submission (249 = sky hack)
 			float lightmap_attenuation = 0.0f; // 0=off .. 1=full: darken vertex color by baked lightmap luminance
+			float lightmap_gamma = 1.0f;       // >1 = steeper curve: dark luxels darken harder, lit areas barely change
 		} worldrep;
 
 		struct lights_settings
 		{
 			bool enabled = true;        // mirror engine lights into Remix as sphere lights
 			float radiance_scale = 20.0f; // engine color units (~0..5) -> Remix radiance multiplier
+			float point_scale = 1.0f;   // extra radiance multiplier for omni/point lights only (spots stay at 1)
 			float emitter_radius = 0.4f; // sphere-light emitter size, engine units
 			bool skip_infinite = false;  // skip radius==0 records (radius 0 is common on normal lights — leave off)
 			bool force_spot = false;     // shape every light as a spot (engine dir or straight down)

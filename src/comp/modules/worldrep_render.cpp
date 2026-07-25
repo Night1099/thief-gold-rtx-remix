@@ -156,6 +156,7 @@ namespace comp
 		const bool flip = cfg.worldrep.winding_flip;
 		const auto& skip_ids = cfg.worldrep.skip_tex_ids;
 		const float lm_atten = cfg.worldrep.lightmap_attenuation;
+		const float lm_gamma = cfg.worldrep.lightmap_gamma;
 
 		for (int ci = 0; ci < count; ci++)
 		{
@@ -243,7 +244,10 @@ namespace comp
 					ov.color = 0xFFFFFFFFu;
 					if (lmi)
 					{
-						const float lum = lightmap_luminance(*lmi, ov.u, ov.v);
+						float lum = lightmap_luminance(*lmi, ov.u, ov.v);
+						if (lm_gamma != 1.0f) {
+							lum = std::pow(lum, lm_gamma);
+						}
 						const float f = 1.0f - lm_atten * (1.0f - lum);
 						const auto c = static_cast<DWORD>(std::clamp(f, 0.0f, 1.0f) * 255.0f);
 						ov.color = 0xFF000000u | (c << 16) | (c << 8) | c;

@@ -90,6 +90,7 @@ namespace shared::common
 		worldrep.enabled = get_bool("Worldrep", "Enabled", true);
 		worldrep.winding_flip = get_bool("Worldrep", "WindingFlip", false);
 		worldrep.lightmap_attenuation = std::clamp(get_float("Worldrep", "LightmapAttenuation", 0.0f), 0.0f, 1.0f);
+		worldrep.lightmap_gamma = std::clamp(get_float("Worldrep", "LightmapGamma", 1.0f), 0.1f, 8.0f);
 		worldrep.skip_tex_ids.clear();
 		{
 			const auto list = get_string("Worldrep", "SkipTexIds", "");
@@ -112,6 +113,7 @@ namespace shared::common
 		// [Lights] — engine light table -> Remix sphere lights
 		lights.enabled = get_bool("Lights", "Enabled", true);
 		lights.radiance_scale = get_float("Lights", "RadianceScale", 20.0f);
+		lights.point_scale = get_float("Lights", "PointLightScale", 1.0f);
 		lights.emitter_radius = get_float("Lights", "EmitterRadius", 0.4f);
 		lights.skip_infinite = get_bool("Lights", "SkipInfinite", false);
 		lights.force_spot = get_bool("Lights", "ForceSpot", false);

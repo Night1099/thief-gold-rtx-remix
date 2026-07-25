@@ -67,18 +67,6 @@ namespace comp
 			l.Diffuse = { rec.color[0], rec.color[1], rec.color[2], 1.0f };
 			l.Position = { rec.pos[0], rec.pos[1], rec.pos[2] };
 
-			// Radiance is encoded in Range: with Attenuation0=1 and no
-			// falloff terms the runtime uses Range as the attenuation
-			// end-distance and derives sphere radiance as
-			//   NEW_LIGHT_END_VALUE / (pi * r^2) * Range^2,
-			// r = rtx.lightConversionSphereLightFixedRadius, which rtx.conf
-			// pins to EmitterRadius. Inverted here so the max color
-			// component * RadianceScale matches the intended radiance.
-			const float target_radiance =
-				std::max({ rec.color[0], rec.color[1], rec.color[2] }) * m_radiance_scale;
-			l.Range = m_emitter_radius * std::sqrt(target_radiance * PI / NEW_LIGHT_END_VALUE);
-			l.Attenuation0 = 1.0f;
-
 			// cone_inner_cos == -1 is a full sphere (omni); anything tighter
 			// with a valid direction is an engine spotlight. With ForceSpot,
 			// omni records with a direction are shaped too (torches carry
@@ -111,6 +99,20 @@ namespace comp
 				l.Type = D3DLIGHT_POINT;
 			}
 
+			// Radiance is encoded in Range: with Attenuation0=1 and no
+			// falloff terms the runtime uses Range as the attenuation
+			// end-distance and derives sphere radiance as
+			//   NEW_LIGHT_END_VALUE / (pi * r^2) * Range^2,
+			// r = rtx.lightConversionSphereLightFixedRadius, which rtx.conf
+			// pins to EmitterRadius. Inverted here so the max color
+			// component * RadianceScale matches the intended radiance.
+			// Omni/point lights additionally take PointLightScale; spots don't.
+			const float type_scale = l.Type == D3DLIGHT_POINT ? m_point_scale : 1.0f;
+			const float target_radiance =
+				std::max({ rec.color[0], rec.color[1], rec.color[2] }) * m_radiance_scale * type_scale;
+			l.Range = m_emitter_radius * std::sqrt(target_radiance * PI / NEW_LIGHT_END_VALUE);
+			l.Attenuation0 = 1.0f;
+
 			if (SUCCEEDED(device->SetLight(i, &l)))
 			{
 				if (m_ffp_enabled.insert(i).second) {
@@ -140,6 +142,7 @@ namespace comp
 		const auto& cfg = shared::common::config::get();
 		m_enabled = cfg.lights.enabled;
 		m_radiance_scale = cfg.lights.radiance_scale;
+		m_point_scale = cfg.lights.point_scale;
 		m_emitter_radius = cfg.lights.emitter_radius;
 		m_skip_infinite = cfg.lights.skip_infinite;
 		m_force_spot = cfg.lights.force_spot;
