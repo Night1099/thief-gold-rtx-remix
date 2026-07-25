@@ -8,7 +8,6 @@
 #include "modules/unproject.hpp"
 #include "modules/worldrep_render.hpp"
 #include "modules/engine_lights.hpp"
-#include "shared/common/remix_api.hpp"
 #include "shared/common/config.hpp"
 
 // see comment in main()
@@ -87,10 +86,6 @@ namespace comp
 
 	void main()
 	{
-		// #Step 2: init remix api if you want to use it or comment it otherwise
-		// Requires "exposeRemixApi = True" in the "bridge.conf" that is located in the .trex folder
-		shared::common::remix_api::initialize(nullptr, nullptr, nullptr, false);
-
 		// Core modules
 		shared::common::loader::module_loader::register_module(std::make_unique<tracer>());
 		shared::common::loader::module_loader::register_module(std::make_unique<imgui>());

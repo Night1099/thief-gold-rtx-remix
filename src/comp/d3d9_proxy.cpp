@@ -109,9 +109,6 @@ namespace d3d9_proxy
 			return false;
 		}
 
-		// Publish to shared globals so remix_api can find the chain module
-		shared::globals::d3d9_chain_module = chain_module_;
-
 		return true;
 	}
 

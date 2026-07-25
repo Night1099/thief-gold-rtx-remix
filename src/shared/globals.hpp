@@ -24,10 +24,6 @@ namespace shared::globals
 	extern IDirect3DDevice9* d3d_device;
 	extern IDirect3D9* d3d9_interface;
 
-	// Module handle of the real d3d9 chain (Remix bridge or system d3d9.dll).
-	// Set by d3d9_proxy::init(), consumed by remix_api for API lookups.
-	extern HMODULE d3d9_chain_module;
-
 	extern bool imgui_is_rendering;
 	extern bool imgui_menu_open;
 	extern bool imgui_allow_input_bypass;

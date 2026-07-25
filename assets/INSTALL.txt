@@ -34,8 +34,7 @@ F:\SteamLibrary\steamapps\common\thief_gold
 
   d3d9.dll               the proxy (this project)
   remix-comp-proxy.ini   proxy configuration
-  rtx.conf               Remix settings tuned for Thief (HUD, exposure)
-  bridge.conf            enables the Remix API (proxy dies with exit code 11 without it)
+  rtx.conf               Remix settings tuned for Thief (HUD, exposure, lights)
 
 The game directory should now contain both d3d9.dll (this proxy) and
 d3d9_remix.dll (the renamed Remix bridge client). If d3d9_remix.dll is

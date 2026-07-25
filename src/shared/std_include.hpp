@@ -36,7 +36,6 @@
 #define XASSERT(x) if (x) MessageBoxA(HWND_DESKTOP, #x, "FATAL ERROR", MB_ICONERROR)
 
 #include "MinHook.h"
-#include "bridge_remix_api.h"
 
 #include "common/console.hpp"
 #include "utils/utils.hpp"

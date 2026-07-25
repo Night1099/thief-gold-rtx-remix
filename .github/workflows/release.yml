@@ -25,7 +25,6 @@ jobs:
           Copy-Item build/bin/release/d3d9.dll dist/
           Copy-Item assets/remix-comp-proxy.ini dist/
           Copy-Item assets/rtx.conf dist/
-          Copy-Item assets/bridge.conf dist/
           Copy-Item assets/INSTALL.txt dist/
           $name = if ('${{ github.ref_type }}' -eq 'tag') { '${{ github.ref_name }}' } else { '${{ github.sha }}'.Substring(0, 7) }
           Compress-Archive -Path dist/* -DestinationPath "ThiefGold-RTX-Remix-$name.zip"

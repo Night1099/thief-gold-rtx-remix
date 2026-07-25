@@ -1,6 +1,6 @@
 #pragma once
 
-#include <unordered_map>
+#include <unordered_set>
 
 struct IDirect3DDevice9;
 
@@ -10,19 +10,17 @@ namespace comp
 	 * ThiefGold engine-light injection.
 	 *
 	 * Reads the Dark engine's master runtime light table (game::light_table)
-	 * each frame and mirrors every active light into RTX Remix. Animated
-	 * (flickering) lights need no special handling: the engine rewrites their
-	 * color fields in the same table every frame, so re-reading the record
-	 * picks up the flicker.
+	 * each frame and mirrors every active light into the D3D9 fixed-function
+	 * light state (SetLight/LightEnable, table index = light index). The
+	 * Remix runtime converts enabled FFP lights to path-traced sphere lights,
+	 * writes them into game captures, and matches them against toolkit light
+	 * replacements. Animated (flickering) lights need no special handling:
+	 * the engine rewrites their color fields in the same table every frame,
+	 * so re-reading the record picks up the flicker.
 	 *
-	 * Two submission paths, selected by [Lights] Mode:
-	 *  - "api": Remix bridge API sphere lights (CreateLight/DrawLightInstance).
-	 *    Each table index maps to a stable Remix light hash; handles are
-	 *    recreated only when a record's values actually change.
-	 *  - "ffp": D3D9 fixed-function SetLight/LightEnable, table index = light
-	 *    index. The Remix runtime converts enabled FFP lights to sphere lights
-	 *    itself, and — unlike API lights — writes them into game captures and
-	 *    matches them against toolkit light replacements.
+	 * Requires rtx.conf to pin rtx.lightConversionSphereLightFixedRadius to
+	 * EmitterRadius (radiance is encoded in Range) and to raise
+	 * d3d9.maxEnabledLights beyond the runtime's 8-slot default.
 	 */
 	class engine_lights final : public shared::common::loader::component_module
 	{
@@ -46,8 +44,7 @@ namespace comp
 		// is flushed with this frame's geometry.
 		void submit(IDirect3DDevice9* device);
 
-		// Drop all light state (device reset / mission unload). API handles
-		// are destroyed; FFP device light state dies with the reset itself.
+		// Drop all light state (device reset / mission unload).
 		void reset();
 
 		// Stats (read by ImGui)
@@ -55,21 +52,8 @@ namespace comp
 		uint32_t m_skipped_lights = 0;
 
 	private:
-		struct tracked_light
-		{
-			remixapi_LightHandle handle = nullptr;
-			bool ffp_enabled = false;
-			float pos[3] = {};
-			float color[3] = {};
-			float radius = 0.0f;
-		};
-
-		void submit_api();
-		void submit_ffp(IDirect3DDevice9* device);
-
 		bool m_initialized = false;
 		bool m_enabled = true;
-		bool m_ffp = false;
 
 		float m_radiance_scale = 1.0f;
 		float m_emitter_radius = 0.4f;
@@ -79,6 +63,6 @@ namespace comp
 		float m_cone_softness = 0.5f;
 
 		int m_last_light_count = 0;
-		std::unordered_map<int, tracked_light> m_tracked; // table index -> handle
+		std::unordered_set<int> m_ffp_enabled; // table indices with LightEnable(TRUE)
 	};
 }

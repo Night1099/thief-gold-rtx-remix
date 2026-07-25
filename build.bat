@@ -80,7 +80,7 @@ mkdir "%GAME_OUT%" 2>nul
 mkdir "%GAME_OBJ%" 2>nul
 
 :: Include paths
-set "INC=/I"%SRC%" /I"%DEPS%\bridge_api" /I"%DEPS%\dxsdk\Include" /I"%DEPS%\imgui" /I"%DEPS%\minhook\include""
+set "INC=/I"%SRC%" /I"%DEPS%\dxsdk\Include" /I"%DEPS%\imgui" /I"%DEPS%\minhook\include""
 
 :: Lib search path
 set "LIBPATH=/LIBPATH:"%DEPS%\dxsdk\Lib\x86""
@@ -166,7 +166,6 @@ cl /nologo /c %CF% %INC% ^
     "%SRC%\shared\common\flags.cpp" ^
     "%SRC%\shared\common\imgui_helper.cpp" ^
     "%SRC%\shared\common\loader.cpp" ^
-    "%SRC%\shared\common\remix_api.cpp" ^
     "%SRC%\shared\globals.cpp" ^
     "%SRC%\shared\utils\hooking.cpp" ^
     "%SRC%\shared\utils\memory.cpp" ^

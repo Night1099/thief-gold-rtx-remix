@@ -11,7 +11,6 @@
 
 #define DotProduct(x,y)			((x)[0]*(y)[0]+(x)[1]*(y)[1]+(x)[2]*(y)[2])
 
-#include "remix/remix_c.h"
 
 struct float3x4
 {
@@ -463,10 +462,6 @@ public:
 			position.y >= min_bounds.y && position.y <= max_bounds.y &&
 			position.z >= min_bounds.z && position.z <= max_bounds.z;
 	}
-	remixapi_Float3D ToRemixFloat3D() const
-	{
-		return remixapi_Float3D{ x, y, z };
-	}
 	D3DXVECTOR3 ToD3DXVector() const
 	{
 		return D3DXVECTOR3 { x, y, z };
@@ -620,22 +615,5 @@ namespace shared::utils::vector
 			std::swap(m[1][2], m[2][1]);
 		}
 
-		remixapi_Transform to_remixapi_transform(const Vector& pos)
-		{
-			remixapi_Transform result = {};
-			result.matrix[0][0] = m[0][0];
-			result.matrix[0][1] = m[0][1];
-			result.matrix[0][2] = m[0][2];
-			result.matrix[1][0] = m[1][0];
-			result.matrix[1][1] = m[1][1];
-			result.matrix[1][2] = m[1][2];
-			result.matrix[2][0] = m[2][0];
-			result.matrix[2][1] = m[2][1];
-			result.matrix[2][2] = m[2][2];
-			result.matrix[0][3] = pos.x;
-			result.matrix[1][3] = pos.y;
-			result.matrix[2][3] = pos.z;
-			return result;
-		}
 	};
 }

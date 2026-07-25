@@ -111,7 +111,6 @@ namespace shared::common
 
 		// [Lights] — engine light table -> Remix sphere lights
 		lights.enabled = get_bool("Lights", "Enabled", true);
-		lights.ffp = get_string("Lights", "Mode", "api") == "ffp";
 		lights.radiance_scale = get_float("Lights", "RadianceScale", 20.0f);
 		lights.emitter_radius = get_float("Lights", "EmitterRadius", 0.4f);
 		lights.skip_infinite = get_bool("Lights", "SkipInfinite", false);
