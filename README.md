@@ -18,9 +18,10 @@ The Dark engine is a software-T&L engine: it CPU-transforms geometry to screen s
 Grab the latest zip from [Releases](../../releases) and follow `INSTALL.txt` inside. Short version:
 
 1. Thief Gold (Steam) + **TFix Lite** (NewDark 1.27). Never run Steam "verify integrity" afterwards.
-2. **RTX Remix runtime 1.5.2+** ([download](https://github.com/NVIDIAGameWorks/rtx-remix/releases)): `d3d9_remix.dll` + `.trex/` into the game dir.
-3. From the release zip into the game dir: `d3d9.dll`, `remix-comp-proxy.ini`, `rtx.conf`, `bridge.conf`.
-4. `cam_ext.cfg`: `force_windowed`, MSAA/atoc/distortion off.
+2. **RTX Remix runtime 1.5.2+** ([download](https://github.com/NVIDIAGameWorks/rtx-remix/releases)): unzip the **entire** release into the game dir.
+3. **Rename Remix's `d3d9.dll` → `d3d9_remix.dll`.** The Remix release ships no file by that name — it ships its bridge client as `d3d9.dll`, and this proxy needs that name for itself. Rename only the ~850 KB one in the game dir root; leave `.trex/d3d9.dll` (the ~190 MB renderer) alone.
+4. From the release zip into the game dir: `d3d9.dll`, `remix-comp-proxy.ini`, `rtx.conf`, `bridge.conf`.
+5. `cam_ext.cfg`: `force_windowed`, MSAA/atoc/distortion off.
 
 > **Pitfall:** "Save Settings" in the Remix menu writes `user.conf` and can silently delete `rtx.conf` (HUD/exposure settings live there). Restore it from the release zip if that happens.
 

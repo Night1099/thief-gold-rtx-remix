@@ -4,17 +4,42 @@ Thief Gold RTX Remix proxy — drop-in install
 Prerequisites
 1. Thief Gold (Steam) patched with TFix Lite (NewDark 1.27).
    Do NOT run Steam "Verify integrity of game files" afterwards — it reverts NewDark.
-2. RTX Remix runtime 1.5.2+ (d3d9_remix.dll + .trex folder) from
+2. RTX Remix runtime 1.5.2+ from
    https://github.com/NVIDIAGameWorks/rtx-remix/releases
-   Copy d3d9_remix.dll and the .trex folder into the game directory.
+   Unzip the ENTIRE Remix release into the game directory (not just a couple
+   of files) — you should end up with d3d9.dll and a .trex\ folder in the
+   game dir, alongside the rest of the runtime.
 3. An RTX GPU (Remix requirement).
 
-Install (files from this zip -> game directory, e.g.
-F:\SteamLibrary\steamapps\common\thief_gold)
+Install
+-------
+Step 1 — Remix runtime, then RENAME its DLL.
+
+  The Remix release does NOT contain a file called d3d9_remix.dll. It ships
+  its bridge client as d3d9.dll in the release root. This proxy has to occupy
+  the d3d9.dll name itself (that is how the game loads it), so after unzipping
+  the Remix runtime:
+
+      rename  d3d9.dll  ->  d3d9_remix.dll
+
+  Rename ONLY the ~850 KB d3d9.dll in the game directory root. Leave
+  .trex\d3d9.dll alone — that one is the ~190 MB renderer and must keep its
+  name and location.
+
+  The proxy chain-loads the renamed file; the name is configurable via
+  [Remix] DLLName in remix-comp-proxy.ini.
+
+Step 2 — copy the files from THIS zip into the game directory, e.g.
+F:\SteamLibrary\steamapps\common\thief_gold
+
   d3d9.dll               the proxy (this project)
   remix-comp-proxy.ini   proxy configuration
   rtx.conf               Remix settings tuned for Thief (HUD, exposure)
   bridge.conf            enables the Remix API (proxy dies with exit code 11 without it)
+
+The game directory should now contain both d3d9.dll (this proxy) and
+d3d9_remix.dll (the renamed Remix bridge client). If d3d9_remix.dll is
+missing, the proxy cannot load Remix.
 
 Game setup (cam_ext.cfg in the game directory)
   - force_windowed (windowed mode recommended, e.g. 1920x1080)

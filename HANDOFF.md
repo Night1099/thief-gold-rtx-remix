@@ -25,7 +25,11 @@ Remix can path-trace it.
 1. **Setup**: Steam Thief Gold + TFix Lite (NewDark 1.27), windowed 1920x1080.
    `cam_ext.cfg` has MSAA/atoc/distortion off, `force_windowed`. Do NOT run
    Steam "verify integrity" (reverts NewDark).
-2. **Path tracing works**: RTX Remix 1.5.2 (`d3d9_remix.dll` + `.trex/`).
+2. **Path tracing works**: RTX Remix 1.5.2 — the whole runtime release is
+   unzipped into the game dir, and its root `d3d9.dll` (the ~850 KB bridge
+   client) is **renamed to `d3d9_remix.dll`** so this proxy can take the
+   `d3d9.dll` name. The Remix release ships no file called `d3d9_remix.dll`;
+   `.trex/d3d9.dll` is the ~190 MB renderer and keeps its name.
    Required confs in game dir: `bridge.conf` (`exposeRemixApi = True` — Remix
    API dies with code 11 without it), `rtx.conf` (`rtx.orthographicIsUI = True`
    — the HUD depends on it; canonical copy in `assets/rtx.conf`).
