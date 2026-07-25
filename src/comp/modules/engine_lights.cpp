@@ -216,16 +216,11 @@ namespace comp
 
 			auto& t = m_tracked[i];
 
-			const bool changed = !t.ffp_enabled
-				|| !nearly_equal(t.pos[0], rec.pos[0])
-				|| !nearly_equal(t.pos[1], rec.pos[1])
-				|| !nearly_equal(t.pos[2], rec.pos[2])
-				|| !nearly_equal(t.color[0], rec.color[0])
-				|| !nearly_equal(t.color[1], rec.color[1])
-				|| !nearly_equal(t.color[2], rec.color[2])
-				|| !nearly_equal(t.radius, rec.radius);
-
-			if (changed)
+			// SetLight must be issued every frame even when nothing changed:
+			// the runtime only re-touches FFP lights on a DirtyLights frame,
+			// and untouched lights are garbage-collected after
+			// rtx.numFramesToKeepLights (100) frames. Skipping unchanged
+			// lights makes every static light vanish ~1.5s after load.
 			{
 				D3DLIGHT9 l = {};
 				l.Diffuse = { rec.color[0], rec.color[1], rec.color[2], 1.0f };
