@@ -1777,3 +1777,16 @@ Runtime delta is +0x480000 (static 0x400000 -> observed 0x880000).
   them in their rest pose.
 - Recommendation: ship rigid-only (`num_objs <= 1` or all `movement == 0`), skip anything
   reached through the `mesh\` path, and revisit jointed props after the rigid path is stable.
+
+### Live verification (2026-07-25, thief.exe base 0x60000)
+
+- **Model-table index != objId — CONFIRMED DIFFERENT.** `Model_BindTextures
+  (0x5AD290, runtime 0x20D290)` trace: ECX = model slot (0x00..0x7E observed),
+  while EBX and [esp+4] carry the objId (112..1379 observed). Both values are
+  present at the call, so the render path carries the mapping; the proxy must
+  resolve objId -> model slot (render-queue record +0x14/+0x18, or the object
+  struct model-handle field).
+- **Location chain — CONFIRMED.** `*(0x9CDB28)` (runtime 0x62DB28) -> +0x18
+  -> [objId*4] -> Location. objId 999: pos (24.0, -152.9, -1.2), angles
+  (0x1374, 0x1374, 0x0000) — sane mission coordinates.
+- Retval of Model_BindTextures = per-model material count (1..7 observed).
