@@ -76,6 +76,7 @@ namespace shared::common
 			bool force_spot = false;     // shape every light as a spot (engine dir or straight down)
 			float cone_angle_deg = 70.0f; // cone half-angle for lights without valid cone data
 			float cone_softness = 0.5f;   // penumbra fraction for forced spots
+			float spot_z_offset = 0.0f;   // world-Z offset added to spotlight positions, engine units (z-up; negative = lower)
 		} lights;
 
 		struct nocull_settings

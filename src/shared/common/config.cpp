@@ -119,6 +119,7 @@ namespace shared::common
 		lights.force_spot = get_bool("Lights", "ForceSpot", false);
 		lights.cone_angle_deg = get_float("Lights", "ConeAngleDeg", 70.0f);
 		lights.cone_softness = get_float("Lights", "ConeSoftness", 0.5f);
+		lights.spot_z_offset = get_float("Lights", "SpotZOffset", 0.0f);
 
 		// [NoCull] — engine-side visibility culling override
 		nocull.mode = std::clamp(get_int("NoCull", "Mode", 0), 0, 2);

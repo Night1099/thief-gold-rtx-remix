@@ -99,6 +99,10 @@ namespace comp
 				l.Type = D3DLIGHT_POINT;
 			}
 
+			if (l.Type == D3DLIGHT_SPOT) {
+				l.Position.z += m_spot_z_offset;
+			}
+
 			// Radiance is encoded in Range: with Attenuation0=1 and no
 			// falloff terms the runtime uses Range as the attenuation
 			// end-distance and derives sphere radiance as
@@ -148,6 +152,7 @@ namespace comp
 		m_force_spot = cfg.lights.force_spot;
 		m_cone_angle_deg = cfg.lights.cone_angle_deg;
 		m_cone_softness = cfg.lights.cone_softness;
+		m_spot_z_offset = cfg.lights.spot_z_offset;
 
 		m_initialized = true;
 		shared::common::log("Lights",

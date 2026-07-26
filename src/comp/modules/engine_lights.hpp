@@ -62,6 +62,7 @@ namespace comp
 		bool m_force_spot = false;
 		float m_cone_angle_deg = 70.0f;
 		float m_cone_softness = 0.5f;
+		float m_spot_z_offset = 0.0f;
 
 		int m_last_light_count = 0;
 		std::unordered_set<int> m_ffp_enabled; // table indices with LightEnable(TRUE)
