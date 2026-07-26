@@ -1,10 +1,26 @@
 # Next Session
 
-Updated 2026-07-25 (PM): no open issues — everything below is closed and
-shipped. Current release is v0.0.2 (Escape-menu fix; release history was
-reset earlier today, v1.x deleted). Next work comes from the Backlog.
-Read `HANDOFF.md` (project state) first, then `PHASE4_LIGHTING_HUD.md`
-(overlay/injection architecture) if unfamiliar.
+Updated 2026-07-26: no open issues — everything below is closed and
+shipped. Current release is v0.0.3 (SpotZOffset + rtx.conf sync). Next
+work comes from the Backlog (resident object submission is in progress —
+see HANDOFF item 0). Read `HANDOFF.md` (project state) first, then
+`PHASE4_LIGHTING_HUD.md` (overlay/injection architecture) if unfamiliar.
+
+## Closed 2026-07-26 — spotlight height offset + rtx.conf sync (v0.0.3)
+
+New `[Lights] SpotZOffset` INI key: world-Z offset added to every
+`D3DLIGHT_SPOT` submission (engine units ≈ feet, z-up, negative = lower);
+point/sphere lights untouched. Shipped at `-1.23` (~0.375 m down) after
+in-game tuning — spotlight cone apexes sat too high. Runtime-tunable, no
+rebuild.
+
+`assets/rtx.conf` re-synced with the in-game tuned settings (local
+tonemapper exposure 6, vertex capture + vertex-color-as-baked-lighting,
+material scales, light anti-culling explicitly off). While merging:
+a Remix-menu "Save Settings" had **silently deleted
+`d3d9.maxEnabledLights = 768`** from the live game-dir rtx.conf — the
+documented pitfall is real; the key is restored in both copies. Check it
+after any Remix-menu save.
 
 ## Closed this session — drawn weapon no longer breaks path tracing
 
@@ -82,12 +98,17 @@ per-scene latch — both invariants now live in findings.md).
 
 ## Backlog
 
-1. True path-traced viewmodel: give the weapon Remix's view-model treatment
+1. **Resident object submission (in progress)** — submit rigid prop meshes
+   from resident LGMD data with per-object transforms so off-screen objects
+   keep contributing occlusion/GI. Full plan + first step (live-verify model
+   slot vs objId) in `HANDOFF.md` item 0 and findings.md "Resident object
+   mesh source".
+2. True path-traced viewmodel: give the weapon Remix's view-model treatment
    instead of leaving it as ordinary geometry. Note the deleted `viewmodel`
    module is **not** a useful starting point — it was built to solve a problem
    that turned out not to exist.
-2. Objects still use per-frame `unproject` reconstruction (hash churn).
-3. DrawPrimitiveUP perf.
+3. Objects still use per-frame `unproject` reconstruction (hash churn).
+4. DrawPrimitiveUP perf.
 
 ## Resume checklist
 
